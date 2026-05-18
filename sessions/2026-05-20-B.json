@@ -17,16 +17,16 @@
         },
         {
           "set": 2,
-          "reps": 3,
-          "weight_kg": 4
+          "reps": 345,
+          "weight_kg": 865
         },
         {
           "set": 3,
-          "reps": 5,
-          "weight_kg": 6
+          "reps": 294,
+          "weight_kg": 464468
         }
       ],
-      "rpe_last_set": 7,
+      "rpe_last_set": null,
       "notes": ""
     },
     {
@@ -131,5 +131,5 @@
     }
   ],
   "session_notes": "",
-  "duration_min": null
+  "duration_min": 1
 }
