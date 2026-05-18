@@ -1,0 +1,17 @@
+{
+  "name": "Workout Logger",
+  "short_name": "Workout",
+  "description": "Log your gym sessions set by set",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#111827",
+  "theme_color": "#111827",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/google/material-design-icons/master/png/maps/fitness_center/materialicons/48dp/2x/baseline_fitness_center_white_48dp.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ]
+}

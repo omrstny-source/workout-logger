@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#111827">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="manifest" href="manifest.json">
+  <title>Workout Logger</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #111827;
+      color: #f9fafb;
+      min-height: 100vh;
+    }
+
+    /* ── Screens ────────────────────────────────────── */
+    .screen { display: none; }
+    .screen.active { display: block; }
+
+    /* ── Header ─────────────────────────────────────── */
+    .header {
+      background: #1f2937;
+      padding: 16px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 1px solid #374151;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .header-text h1 { font-size: 18px; font-weight: 700; }
+    .header-text .sub { font-size: 13px; color: #9ca3af; margin-top: 2px; }
+    .settings-btn {
+      background: none; border: none; color: #6b7280;
+      font-size: 22px; cursor: pointer; padding: 4px;
+    }
+
+    /* ── Setup / Settings ────────────────────────────── */
+    .form-body { padding: 24px 20px; }
+    .form-body h2 { font-size: 22px; font-weight: 700; margin-bottom: 8px; }
+    .form-body p { color: #9ca3af; font-size: 14px; margin-bottom: 24px; line-height: 1.6; }
+
+    label {
+      display: block;
+      font-size: 11px;
+      font-weight: 700;
+      color: #6b7280;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="number"],
+    textarea {
+      width: 100%;
+      background: #374151;
+      border: 1.5px solid #4b5563;
+      border-radius: 10px;
+      color: #f9fafb;
+      font-size: 16px;
+      padding: 13px 14px;
+      margin-bottom: 18px;
+      outline: none;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+    input:focus, textarea:focus { border-color: #6366f1; }
+    textarea { resize: none; min-height: 80px; }
+
+    /* ── Buttons ─────────────────────────────────────── */
+    .btn {
+      display: block; width: 100%;
+      padding: 16px; border: none; border-radius: 12px;
+      font-size: 16px; font-weight: 700;
+      cursor: pointer; text-align: center;
+      margin-bottom: 10px;
+    }
+    .btn-primary  { background: #6366f1; color: #fff; }
+    .btn-success  { background: #10b981; color: #fff; }
+    .btn-muted    { background: #374151; color: #9ca3af; }
+    .btn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+    /* ── Loading ─────────────────────────────────────── */
+    .loading {
+      padding: 80px 20px;
+      text-align: center;
+      color: #9ca3af;
+    }
+    .spinner {
+      width: 36px; height: 36px;
+      border: 3px solid #374151;
+      border-top-color: #6366f1;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      margin: 0 auto 16px;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ── Error box ───────────────────────────────────── */
+    .error-box {
+      background: #1c1010;
+      border: 1px solid #7f1d1d;
+      border-radius: 8px;
+      padding: 14px;
+      margin-top: 4px;
+      color: #fca5a5;
+      font-size: 14px;
+      line-height: 1.5;
+      display: none;
+    }
+    .error-box.show { display: block; }
+
+    /* ── Exercise cards ──────────────────────────────── */
+    .section-label {
+      font-size: 11px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.08em;
+      color: #4b5563; padding: 20px 16px 8px;
+    }
+
+    .exercise-card {
+      background: #1f2937;
+      margin: 0 12px 12px;
+      border-radius: 14px;
+      overflow: hidden;
+    }
+
+    .exercise-header {
+      padding: 14px 16px 12px;
+      border-bottom: 1px solid #374151;
+    }
+    .exercise-name { font-size: 17px; font-weight: 700; margin-bottom: 3px; }
+    .exercise-meta { font-size: 13px; color: #9ca3af; }
+    .exercise-note { font-size: 12px; color: #6b7280; margin-top: 6px; font-style: italic; line-height: 1.4; }
+
+    /* ── Set rows ────────────────────────────────────── */
+    .set-row {
+      padding: 12px 16px 10px;
+      border-bottom: 1px solid #2d3748;
+    }
+    .set-row:last-of-type { border-bottom: none; }
+
+    .set-label {
+      font-size: 11px; font-weight: 700;
+      color: #6366f1; text-transform: uppercase;
+      letter-spacing: 0.06em; margin-bottom: 8px;
+    }
+    .set-label.completed { color: #10b981; }
+
+    .inputs-row {
+      display: grid;
+      gap: 8px;
+    }
+    .inputs-row.two   { grid-template-columns: 1fr 1fr; }
+    .inputs-row.three { grid-template-columns: 1fr 1fr 72px; }
+
+    .input-group label { margin-bottom: 4px; }
+    .input-group input {
+      margin-bottom: 0;
+      padding: 11px 10px;
+      font-size: 20px;
+      font-weight: 700;
+      text-align: center;
+      border-radius: 8px;
+    }
+    .input-group input.rpe {
+      background: #0f172a;
+      border-color: #4f46e5;
+      color: #a5b4fc;
+    }
+    .input-group input.done {
+      border-color: #065f46;
+      color: #6ee7b7;
+    }
+
+    /* ── RPE row (last set only) ─────────────────────── */
+    .rpe-row {
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px dashed #374151;
+    }
+    .rpe-row .input-group input {
+      text-align: center;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    /* ── Rest timer ──────────────────────────────────── */
+    .rest-timer {
+      background: #0f172a;
+      border: 1px solid #1e3a5f;
+      border-radius: 8px;
+      padding: 9px 14px;
+      margin-top: 10px;
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .rest-timer.show { display: flex; }
+    .rest-label { font-size: 12px; color: #60a5fa; }
+    .rest-countdown { font-size: 22px; font-weight: 800; color: #93c5fd; font-variant-numeric: tabular-nums; }
+    .rest-stop { background: none; border: none; color: #60a5fa; font-size: 18px; cursor: pointer; padding: 0 4px; }
+
+    /* ── Session footer ──────────────────────────────── */
+    .session-footer {
+      margin: 0 12px 12px;
+      background: #1f2937;
+      border-radius: 14px;
+      padding: 16px;
+    }
+    .session-footer h3 { font-size: 14px; font-weight: 600; color: #d1d5db; margin-bottom: 10px; }
+
+    /* ── Bottom bar ──────────────────────────────────── */
+    .bottom-bar {
+      position: fixed; bottom: 0; left: 0; right: 0;
+      background: #1f2937;
+      border-top: 1px solid #374151;
+      padding: 12px 16px;
+      padding-bottom: calc(12px + env(safe-area-inset-bottom));
+    }
+    .bottom-bar .btn { margin-bottom: 0; }
+    .page-bottom-spacer { height: 90px; }
+
+    /* ── Success ─────────────────────────────────────── */
+    .success-body {
+      padding: 80px 24px 40px;
+      text-align: center;
+    }
+    .success-icon { font-size: 72px; margin-bottom: 16px; }
+    .success-body h2 { font-size: 26px; font-weight: 800; margin-bottom: 8px; }
+    .success-body p { color: #9ca3af; margin-bottom: 32px; line-height: 1.6; }
+
+    .hidden { display: none !important; }
+  </style>
+</head>
+<body>
+
+<!-- ── SETUP SCREEN ────────────────────────────────────────── -->
+<div id="screen-setup" class="screen">
+  <div class="header">
+    <div class="header-text">
+      <h1>Workout Logger</h1>
+      <div class="sub">First-time setup</div>
+    </div>
+  </div>
+  <div class="form-body">
+    <h2>Connect to GitHub</h2>
+    <p>Your completed sessions are saved directly to your GitHub repo. Claude reads them automatically the next time you open /trainer.</p>
+
+    <label>GitHub Repo (username/repo-name)</label>
+    <input type="text" id="setup-repo" placeholder="e.g. ondrej/workout-logger"
+      autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+
+    <label>GitHub Personal Access Token</label>
+    <input type="password" id="setup-token" placeholder="ghp_xxxxxxxxxxxx"
+      autocomplete="off" autocorrect="off" spellcheck="false">
+
+    <button class="btn btn-primary" onclick="saveSetup()">Save &amp; Load Session</button>
+    <div id="setup-error" class="error-box"></div>
+  </div>
+</div>
+
+<!-- ── LOADING SCREEN ──────────────────────────────────────── -->
+<div id="screen-loading" class="screen active">
+  <div class="loading">
+    <div class="spinner"></div>
+    <div>Loading session plan&hellip;</div>
+  </div>
+</div>
+
+<!-- ── SESSION SCREEN ──────────────────────────────────────── -->
+<div id="screen-session" class="screen">
+  <div class="header">
+    <div class="header-text">
+      <h1 id="session-title"></h1>
+      <div class="sub" id="session-date"></div>
+    </div>
+    <button class="settings-btn" onclick="showScreen('settings')" title="Settings">⚙</button>
+  </div>
+
+  <div class="section-label">Exercises</div>
+  <div id="exercises-container"></div>
+
+  <div class="section-label">Session</div>
+  <div class="session-footer">
+    <h3>Notes</h3>
+    <textarea id="session-notes" placeholder="How did it go? Any form issues, energy level, etc."></textarea>
+  </div>
+
+  <div class="page-bottom-spacer"></div>
+  <div class="bottom-bar">
+    <button class="btn btn-success" id="finish-btn" onclick="finishSession()">Finish &amp; Save to GitHub</button>
+  </div>
+</div>
+
+<!-- ── SUCCESS SCREEN ──────────────────────────────────────── -->
+<div id="screen-success" class="screen">
+  <div class="success-body">
+    <div class="success-icon">&#x2705;</div>
+    <h2>Session saved!</h2>
+    <p>Your workout has been committed to GitHub.<br>Claude will pick it up automatically next time you open /trainer.</p>
+    <button class="btn btn-primary" onclick="resetApp()">Done</button>
+  </div>
+</div>
+
+<!-- ── SETTINGS SCREEN ─────────────────────────────────────── -->
+<div id="screen-settings" class="screen">
+  <div class="header">
+    <div class="header-text">
+      <h1>Settings</h1>
+      <div class="sub">GitHub connection</div>
+    </div>
+  </div>
+  <div class="form-body">
+    <label>GitHub Repo</label>
+    <input type="text" id="settings-repo" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+
+    <label>GitHub Personal Access Token</label>
+    <input type="password" id="settings-token" autocomplete="off">
+
+    <button class="btn btn-primary" onclick="saveSettings()">Save</button>
+    <button class="btn btn-muted" onclick="showScreen('session')">Cancel</button>
+  </div>
+</div>
+
+<script>
+// ─── State ────────────────────────────────────────────────────────────────────
+let plan = null;
+let restTimer = { id: null, elTimer: null, elCountdown: null };
+
+// ─── Boot ─────────────────────────────────────────────────────────────────────
+window.addEventListener('DOMContentLoaded', async () => {
+  await loadPlan(ls('gh_repo'), ls('gh_token'));
+});
+
+// ─── Screen management ────────────────────────────────────────────────────────
+function showScreen(name) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById('screen-' + name).classList.add('active');
+}
+
+// ─── Setup ────────────────────────────────────────────────────────────────────
+async function saveSetup() {
+  const repo  = document.getElementById('setup-repo').value.trim();
+  const token = document.getElementById('setup-token').value.trim();
+  const err   = document.getElementById('setup-error');
+  err.classList.remove('show');
+
+  if (!repo || !token) { showErr(err, 'Fill in both fields.'); return; }
+  if (!repo.includes('/')) { showErr(err, 'Repo must be in the format: username/repo-name'); return; }
+
+  lsSet('gh_repo', repo);
+  lsSet('gh_token', token);
+  showScreen('loading');
+  await loadPlan(repo, token);
+}
+
+// ─── Load plan.json ───────────────────────────────────────────────────────────
+async function loadPlan(repo, token) {
+  try {
+    const url = `plan.json?cb=${Date.now()}`;
+    const res = await fetch(url);
+    if (!res.ok) {
+      const cached = ls('cached_plan');
+      if (cached) { plan = JSON.parse(cached); renderSession(); showScreen('session'); return; }
+      throw new Error(`Could not load plan.json (${res.status}).`);
+    }
+    plan = await res.json();
+    lsSet('cached_plan', JSON.stringify(plan));
+    renderSession();
+    showScreen('session');
+  } catch (err) {
+    showScreen('setup');
+    const errEl = document.getElementById('setup-error');
+    showErr(errEl, err.message);
+  }
+}
+
+// ─── Render session ────────────────────────────────────────────────────────────
+const DAY_LABELS = { A: 'Push + Legs', B: 'Pull + Hinge', C: 'Full Body' };
+
+function renderSession() {
+  document.getElementById('session-title').textContent =
+    `Day ${plan.day_type} — ${DAY_LABELS[plan.day_type] || ''}`;
+  document.getElementById('session-date').textContent = fmtDate(plan.date);
+
+  const container = document.getElementById('exercises-container');
+  container.innerHTML = '';
+
+  plan.exercises.forEach((ex, ei) => {
+    const card = document.createElement('div');
+    card.className = 'exercise-card';
+
+    const weight = ex.target_weight_kg > 0 ? `${ex.target_weight_kg} kg` : 'BW';
+
+    card.innerHTML = `
+      <div class="exercise-header">
+        <div class="exercise-name">${ex.name}</div>
+        <div class="exercise-meta">${ex.target_sets} sets &times; ${ex.target_reps} reps @ ${weight}</div>
+        ${ex.notes ? `<div class="exercise-note">${ex.notes}</div>` : ''}
+      </div>
+    `;
+
+    for (let si = 0; si < ex.target_sets; si++) {
+      const isLast   = si === ex.target_sets - 1;
+      const storeKey = `s_${ei}_${si}`;
+      const saved    = savedSet(storeKey);
+      const isDone   = saved.reps !== '';
+
+      const row = document.createElement('div');
+      row.className = 'set-row';
+      row.id = `row-${ei}-${si}`;
+
+      const rpeRow = isLast ? `
+        <div class="rpe-row">
+          <div class="input-group">
+            <label>RPE — last set only (1-10)</label>
+            <input type="number" inputmode="numeric" pattern="[0-9]*" min="1" max="10"
+              id="${storeKey}_rpe"
+              value="${saved.rpe}"
+              placeholder="1-10"
+              class="rpe${isDone ? ' done' : ''}"
+              onchange="persist('${storeKey}_rpe', this.value)">
+          </div>
+        </div>` : '';
+
+      row.innerHTML = `
+        <div class="set-label${isDone ? ' completed' : ''}" id="lbl-${ei}-${si}">
+          ${isDone ? '&#x2713; Set ' : 'Set '}${si + 1}
+        </div>
+        <div class="inputs-row two">
+          <div class="input-group">
+            <label>Reps</label>
+            <input type="number" inputmode="numeric" pattern="[0-9]*"
+              id="${storeKey}_reps"
+              value="${saved.reps}"
+              placeholder="${targetRepsHint(ex.target_reps)}"
+              class="${isDone ? 'done' : ''}"
+              onchange="onRepsChange('${storeKey}', ${ei}, ${si}, this.value)">
+          </div>
+          <div class="input-group">
+            <label>Weight (kg)</label>
+            <input type="number" inputmode="decimal" pattern="[0-9.]*"
+              id="${storeKey}_weight"
+              value="${saved.weight}"
+              placeholder="${ex.target_weight_kg || 'BW'}"
+              class="${isDone ? 'done' : ''}"
+              onchange="persist('${storeKey}_weight', this.value)">
+          </div>
+        </div>
+        ${rpeRow}
+        <div class="rest-timer" id="timer-${ei}-${si}">
+          <span class="rest-label">Rest</span>
+          <span class="rest-countdown" id="cd-${ei}-${si}">0:00</span>
+          <button class="rest-stop" onclick="stopTimer()">&#x2715;</button>
+        </div>
+      `;
+
+      card.appendChild(row);
+    }
+
+    container.appendChild(card);
+  });
+
+  // Restore session notes
+  const notes = ls('session_notes');
+  if (notes) document.getElementById('session-notes').value = notes;
+  document.getElementById('session-notes').addEventListener('input', e =>
+    lsSet('session_notes', e.target.value)
+  );
+}
+
+// ─── Set change handler ────────────────────────────────────────────────────────
+function onRepsChange(storeKey, ei, si, value) {
+  persist(storeKey + '_reps', value);
+  if (value !== '') markSetDone(ei, si);
+  startTimer(ei, si);
+}
+
+function markSetDone(ei, si) {
+  const lbl = document.getElementById(`lbl-${ei}-${si}`);
+  if (lbl) { lbl.classList.add('completed'); lbl.innerHTML = `&#x2713; Set ${si + 1}`; }
+  // Turn inputs green
+  [`s_${ei}_${si}_reps`, `s_${ei}_${si}_weight`, `s_${ei}_${si}_rpe`].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.classList.add('done');
+  });
+}
+
+function targetRepsHint(targetReps) {
+  // "10-12" → show upper bound as placeholder
+  if (targetReps.includes('-')) return targetReps.split('-')[1];
+  return targetReps.replace(/\D/g, '') || '—';
+}
+
+// ─── Rest timer ───────────────────────────────────────────────────────────────
+function startTimer(ei, si) {
+  stopTimer();
+  const secs = restSeconds(ei);
+  let rem = secs;
+
+  const timerEl    = document.getElementById(`timer-${ei}-${si}`);
+  const countdownEl = document.getElementById(`cd-${ei}-${si}`);
+  if (!timerEl) return;
+
+  restTimer = { id: null, timerEl, countdownEl };
+  timerEl.classList.add('show');
+
+  function tick() {
+    const m = Math.floor(rem / 60), s = rem % 60;
+    countdownEl.textContent = `${m}:${s.toString().padStart(2, '0')}`;
+    if (rem <= 0) {
+      clearInterval(restTimer.id);
+      countdownEl.textContent = 'Go!';
+      if (navigator.vibrate) navigator.vibrate([300, 150, 300]);
+      return;
+    }
+    rem--;
+  }
+  tick();
+  restTimer.id = setInterval(tick, 1000);
+}
+
+function stopTimer() {
+  if (restTimer.id) clearInterval(restTimer.id);
+  if (restTimer.timerEl) restTimer.timerEl.classList.remove('show');
+  restTimer = { id: null, timerEl: null, countdownEl: null };
+}
+
+function restSeconds(ei) {
+  if (!plan || !plan.rest_periods) return 90;
+  const name = plan.exercises[ei]?.name;
+  const val  = plan.rest_periods?.[name];
+  if (!val) return ei === 0 ? 120 : 90;
+  if (val.includes('min')) return parseInt(val) * 60;
+  return parseInt(val);
+}
+
+// ─── Build completed session JSON ─────────────────────────────────────────────
+function buildSession() {
+  const exercises = plan.exercises.map((ex, ei) => {
+    const sets = [];
+    for (let si = 0; si < ex.target_sets; si++) {
+      const k = `s_${ei}_${si}`;
+      sets.push({
+        set: si + 1,
+        reps:      parseInt(ls(`${k}_reps`))   || null,
+        weight_kg: parseFloat(ls(`${k}_weight`)) || (ex.target_weight_kg === 0 ? 0 : null)
+      });
+    }
+    const lastK = `s_${ei}_${ex.target_sets - 1}`;
+    return {
+      name:             ex.name,
+      target_sets:      ex.target_sets,
+      target_reps:      ex.target_reps,
+      target_weight_kg: ex.target_weight_kg,
+      sets,
+      rpe_last_set:     parseInt(ls(`${lastK}_rpe`)) || null,
+      notes:            ''
+    };
+  });
+
+  return {
+    date:           plan.date,
+    day_type:       plan.day_type,
+    session_number: plan.session_number,
+    notion_page_id: plan.notion_page_id,
+    exercises,
+    session_notes:  document.getElementById('session-notes').value,
+    duration_min:   null
+  };
+}
+
+// ─── GitHub: commit session JSON ──────────────────────────────────────────────
+async function finishSession() {
+  const btn = document.getElementById('finish-btn');
+  btn.textContent = 'Saving…';
+  btn.disabled = true;
+
+  const session  = buildSession();
+  const token    = ls('gh_token');
+  const repo     = ls('gh_repo');
+  const filepath = `sessions/${session.date}-${session.day_type}.json`;
+  const content  = toBase64(JSON.stringify(session, null, 2));
+
+  try {
+    // Check if file already exists (need its SHA to update)
+    let sha;
+    const check = await ghFetch('GET', repo, token, `contents/${filepath}`);
+    if (check.ok) sha = (await check.json()).sha;
+
+    const body = {
+      message: `Log session ${session.date}-${session.day_type}`,
+      content,
+      ...(sha ? { sha } : {})
+    };
+
+    const res = await ghFetch('PUT', repo, token, `contents/${filepath}`, body);
+    if (!res.ok) {
+      const e = await res.json();
+      throw new Error(e.message || `GitHub API error ${res.status}`);
+    }
+
+    clearAutosave();
+    showScreen('success');
+  } catch (err) {
+    btn.textContent = 'Finish & Save to GitHub';
+    btn.disabled = false;
+    alert('Save failed: ' + err.message);
+  }
+}
+
+// ─── Settings ─────────────────────────────────────────────────────────────────
+function showScreen_settings_prep() {
+  document.getElementById('settings-repo').value  = ls('gh_repo')  || '';
+  document.getElementById('settings-token').value = ls('gh_token') || '';
+}
+
+// Override showScreen to pre-fill settings before showing
+const _showScreen = showScreen;
+window.showScreen = function(name) {
+  if (name === 'settings') showScreen_settings_prep();
+  _showScreen(name);
+};
+
+function saveSettings() {
+  lsSet('gh_repo',  document.getElementById('settings-repo').value.trim());
+  lsSet('gh_token', document.getElementById('settings-token').value.trim());
+  showScreen('session');
+}
+
+// ─── Reset after success ──────────────────────────────────────────────────────
+function resetApp() {
+  clearAutosave();
+  showScreen('loading');
+  loadPlan(ls('gh_repo'), ls('gh_token'));
+}
+
+function clearAutosave() {
+  Object.keys(localStorage)
+    .filter(k => k.startsWith('s_') || k === 'session_notes')
+    .forEach(k => localStorage.removeItem(k));
+}
+
+// ─── Helpers ──────────────────────────────────────────────────────────────────
+function ls(k)       { return localStorage.getItem(k) || ''; }
+function lsSet(k, v) { localStorage.setItem(k, v); }
+
+function persist(key, val) { lsSet(key, val); }
+
+function savedSet(key) {
+  return {
+    reps:   ls(`${key}_reps`),
+    weight: ls(`${key}_weight`),
+    rpe:    ls(`${key}_rpe`)
+  };
+}
+
+function showErr(el, msg) { el.textContent = msg; el.classList.add('show'); }
+
+function fmtDate(d) {
+  return new Date(d + 'T12:00:00').toLocaleDateString('en-GB',
+    { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+}
+
+function toBase64(str) {
+  return btoa(unescape(encodeURIComponent(str)));
+}
+
+function ghFetch(method, repo, token, path, body) {
+  const opts = {
+    method,
+    headers: {
+      Authorization: `token ${token}`,
+      Accept: 'application/vnd.github+json',
+      'Content-Type': 'application/json'
+    }
+  };
+  if (body) opts.body = JSON.stringify(body);
+  return fetch(`https://api.github.com/repos/${repo}/${path}`, opts);
+}
+</script>
+</body>
+</html>

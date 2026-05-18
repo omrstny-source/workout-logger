@@ -1,0 +1,50 @@
+{
+  "date": "2026-05-20",
+  "day_type": "B",
+  "session_number": 2,
+  "notion_page_id": "364f3995-0a22-81d6-beb0-cfc0c5fad4fe",
+  "exercises": [
+    {
+      "name": "Romanian Deadlift",
+      "target_sets": 3,
+      "target_reps": "6-8",
+      "target_weight_kg": 70,
+      "notes": "First RDL session — conservative start. Legs may carry fatigue from Tuesday floorball."
+    },
+    {
+      "name": "Pull-Up Parallel Close Grip",
+      "target_sets": 3,
+      "target_reps": "max",
+      "target_weight_kg": 0,
+      "notes": "BW. Stop each set at RPE 9 — do not go to failure. Establishes baseline."
+    },
+    {
+      "name": "Machine Seated Row",
+      "target_sets": 3,
+      "target_reps": "10-12",
+      "target_weight_kg": 30,
+      "notes": "Old school machine — max is 45 kg for 3 reps. Start at 30 kg, adjust up on set 2 if easy."
+    },
+    {
+      "name": "EZ Bar Curl",
+      "target_sets": 3,
+      "target_reps": "10-12",
+      "target_weight_kg": 30,
+      "notes": "Estimated. Adjust at gym."
+    },
+    {
+      "name": "Face Pull",
+      "target_sets": 3,
+      "target_reps": "15",
+      "target_weight_kg": 20,
+      "notes": "Light and controlled. Shoulder health."
+    }
+  ],
+  "rest_periods": {
+    "Romanian Deadlift": "2min",
+    "Pull-Up Parallel Close Grip": "2min",
+    "Machine Seated Row": "90s",
+    "EZ Bar Curl": "90s",
+    "Face Pull": "60s"
+  }
+}
