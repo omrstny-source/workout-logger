@@ -1,0 +1,135 @@
+{
+  "date": "2026-05-20",
+  "day_type": "B",
+  "session_number": 2,
+  "notion_page_id": "364f3995-0a22-81d6-beb0-cfc0c5fad4fe",
+  "exercises": [
+    {
+      "name": "Romanian Deadlift",
+      "target_sets": 3,
+      "target_reps": "6-8",
+      "target_weight_kg": 70,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 1,
+          "weight_kg": 2
+        },
+        {
+          "set": 2,
+          "reps": 3,
+          "weight_kg": 4
+        },
+        {
+          "set": 3,
+          "reps": 5,
+          "weight_kg": 6
+        }
+      ],
+      "rpe_last_set": 7,
+      "notes": ""
+    },
+    {
+      "name": "Pull-Up Parallel Close Grip",
+      "target_sets": 3,
+      "target_reps": "max",
+      "target_weight_kg": 0,
+      "sets": [
+        {
+          "set": 1,
+          "reps": null,
+          "weight_kg": 0
+        },
+        {
+          "set": 2,
+          "reps": null,
+          "weight_kg": 0
+        },
+        {
+          "set": 3,
+          "reps": null,
+          "weight_kg": 0
+        }
+      ],
+      "rpe_last_set": null,
+      "notes": ""
+    },
+    {
+      "name": "Machine Seated Row",
+      "target_sets": 3,
+      "target_reps": "10-12",
+      "target_weight_kg": 30,
+      "sets": [
+        {
+          "set": 1,
+          "reps": null,
+          "weight_kg": null
+        },
+        {
+          "set": 2,
+          "reps": null,
+          "weight_kg": null
+        },
+        {
+          "set": 3,
+          "reps": null,
+          "weight_kg": null
+        }
+      ],
+      "rpe_last_set": null,
+      "notes": ""
+    },
+    {
+      "name": "EZ Bar Curl",
+      "target_sets": 3,
+      "target_reps": "10-12",
+      "target_weight_kg": 30,
+      "sets": [
+        {
+          "set": 1,
+          "reps": null,
+          "weight_kg": null
+        },
+        {
+          "set": 2,
+          "reps": null,
+          "weight_kg": null
+        },
+        {
+          "set": 3,
+          "reps": null,
+          "weight_kg": null
+        }
+      ],
+      "rpe_last_set": null,
+      "notes": ""
+    },
+    {
+      "name": "Face Pull",
+      "target_sets": 3,
+      "target_reps": "15",
+      "target_weight_kg": 20,
+      "sets": [
+        {
+          "set": 1,
+          "reps": null,
+          "weight_kg": null
+        },
+        {
+          "set": 2,
+          "reps": null,
+          "weight_kg": null
+        },
+        {
+          "set": 3,
+          "reps": null,
+          "weight_kg": null
+        }
+      ],
+      "rpe_last_set": null,
+      "notes": ""
+    }
+  ],
+  "session_notes": "",
+  "duration_min": null
+}
