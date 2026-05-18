@@ -236,6 +236,27 @@
     .success-body p { color: #9ca3af; margin-bottom: 32px; line-height: 1.6; }
 
     .hidden { display: none !important; }
+
+    /* ── Modal ───────────────────────────────────────── */
+    .modal-overlay {
+      position: fixed; inset: 0;
+      background: rgba(0,0,0,0.75);
+      z-index: 200;
+      display: flex; align-items: center; justify-content: center;
+      padding: 24px;
+    }
+    .modal {
+      background: #1f2937;
+      border: 1px solid #374151;
+      border-radius: 16px;
+      padding: 24px;
+      width: 100%;
+      max-width: 360px;
+    }
+    .modal h3 { font-size: 17px; font-weight: 700; margin-bottom: 10px; }
+    .modal p  { font-size: 14px; color: #d1d5db; line-height: 1.6; margin-bottom: 6px; }
+    .modal ul { font-size: 13px; color: #fca5a5; line-height: 1.8; margin: 8px 0 16px 16px; }
+    .modal-actions { display: flex; flex-direction: column; gap: 8px; margin-top: 18px; }
   </style>
 </head>
 <body>
@@ -328,13 +349,25 @@
   </div>
 </div>
 
+<!-- ── MODAL ────────────────────────────────────────────────────────────── -->
+<div id="modal-overlay" class="modal-overlay hidden">
+  <div class="modal">
+    <h3 id="modal-title"></h3>
+    <div id="modal-body"></div>
+    <div class="modal-actions" id="modal-actions"></div>
+  </div>
+</div>
+
 <script>
 // ─── State ────────────────────────────────────────────────────────────────────
 let plan = null;
+let sessionStartTime = null;
 let restTimer = { id: null, elTimer: null, elCountdown: null };
 
 // ─── Boot ─────────────────────────────────────────────────────────────────────
 window.addEventListener('DOMContentLoaded', async () => {
+  const saved = ls('session_start_time');
+  if (saved) sessionStartTime = parseInt(saved);
   await loadPlan(ls('gh_repo'), ls('gh_token'));
 });
 
@@ -478,7 +511,13 @@ function renderSession() {
 // ─── Set change handler ────────────────────────────────────────────────────────
 function onRepsChange(storeKey, ei, si, value) {
   persist(storeKey + '_reps', value);
-  if (value !== '') markSetDone(ei, si);
+  if (value !== '') {
+    markSetDone(ei, si);
+    if (!sessionStartTime) {
+      sessionStartTime = Date.now();
+      lsSet('session_start_time', sessionStartTime);
+    }
+  }
   startTimer(ei, si);
 }
 
@@ -565,6 +604,10 @@ function buildSession() {
     };
   });
 
+  const duration = sessionStartTime
+    ? Math.round((Date.now() - sessionStartTime) / 60000)
+    : null;
+
   return {
     date:           plan.date,
     day_type:       plan.day_type,
@@ -572,12 +615,102 @@ function buildSession() {
     notion_page_id: plan.notion_page_id,
     exercises,
     session_notes:  document.getElementById('session-notes').value,
-    duration_min:   null
+    duration_min:   duration
   };
+}
+
+// ─── Modal ────────────────────────────────────────────────────────────────────
+function showModal({ title, body, actions }) {
+  document.getElementById('modal-title').textContent = title;
+  document.getElementById('modal-body').innerHTML = body;
+  const actEl = document.getElementById('modal-actions');
+  actEl.innerHTML = '';
+  actions.forEach(a => {
+    const btn = document.createElement('button');
+    btn.className = `btn ${a.cls}`;
+    btn.textContent = a.label;
+    btn.onclick = a.onclick;
+    actEl.appendChild(btn);
+  });
+  document.getElementById('modal-overlay').classList.remove('hidden');
+}
+
+function closeModal() {
+  document.getElementById('modal-overlay').classList.add('hidden');
+}
+
+// ─── Validation ───────────────────────────────────────────────────────────────
+function validateSession() {
+  const issues = [];
+  plan.exercises.forEach((ex, ei) => {
+    for (let si = 0; si < ex.target_sets; si++) {
+      const k = `s_${ei}_${si}`;
+      const reps   = parseFloat(ls(`${k}_reps`));
+      const weight = parseFloat(ls(`${k}_weight`));
+
+      let targetRepsMax = 30;
+      if (ex.target_reps === 'max') targetRepsMax = 50;
+      else if (ex.target_reps.includes('-')) targetRepsMax = parseInt(ex.target_reps.split('-')[1]);
+      else { const n = parseInt(ex.target_reps); if (!isNaN(n)) targetRepsMax = n; }
+
+      if (!isNaN(reps)) {
+        if (reps > 50)                          issues.push(`${ex.name} set ${si+1}: ${reps} reps (max expected ~50)`);
+        else if (reps > targetRepsMax * 2.5)   issues.push(`${ex.name} set ${si+1}: ${reps} reps vs target ${ex.target_reps}`);
+      }
+      if (!isNaN(weight) && ex.target_weight_kg > 0) {
+        if (weight > 300)                        issues.push(`${ex.name} set ${si+1}: ${weight} kg (over 300 kg?)`);
+        else if (weight > ex.target_weight_kg * 2.5) issues.push(`${ex.name} set ${si+1}: ${weight} kg vs target ${ex.target_weight_kg} kg`);
+      }
+    }
+  });
+  return issues;
+}
+
+function countSets() {
+  let filled = 0, total = 0;
+  plan.exercises.forEach((ex, ei) => {
+    for (let si = 0; si < ex.target_sets; si++) {
+      total++;
+      if (ls(`s_${ei}_${si}_reps`) !== '') filled++;
+    }
+  });
+  return { filled, total };
 }
 
 // ─── GitHub: commit session JSON ──────────────────────────────────────────────
 async function finishSession() {
+  // 1. Bounds check
+  const issues = validateSession();
+  if (issues.length) {
+    showModal({
+      title: 'Check your numbers',
+      body: `<p>These values look unusual — double-tap typo?</p><ul>${issues.map(i => `<li>${i}</li>`).join('')}</ul><p>Go back to fix, or save anyway.</p>`,
+      actions: [
+        { label: 'Go back', cls: 'btn-primary', onclick: closeModal },
+        { label: 'Save anyway', cls: 'btn-muted', onclick: () => { closeModal(); doSave(); } }
+      ]
+    });
+    return;
+  }
+
+  // 2. Empty sets check
+  const { filled, total } = countSets();
+  if (filled < total) {
+    showModal({
+      title: 'Some sets are empty',
+      body: `<p>${filled} of ${total} sets have data. Save with missing sets?</p>`,
+      actions: [
+        { label: 'Keep logging', cls: 'btn-primary', onclick: closeModal },
+        { label: 'Save anyway', cls: 'btn-muted', onclick: () => { closeModal(); doSave(); } }
+      ]
+    });
+    return;
+  }
+
+  doSave();
+}
+
+async function doSave() {
   const btn = document.getElementById('finish-btn');
   btn.textContent = 'Saving…';
   btn.disabled = true;
@@ -589,7 +722,6 @@ async function finishSession() {
   const content  = toBase64(JSON.stringify(session, null, 2));
 
   try {
-    // Check if file already exists (need its SHA to update)
     let sha;
     const check = await ghFetch('GET', repo, token, `contents/${filepath}`);
     if (check.ok) sha = (await check.json()).sha;
@@ -643,8 +775,9 @@ function resetApp() {
 
 function clearAutosave() {
   Object.keys(localStorage)
-    .filter(k => k.startsWith('s_') || k === 'session_notes')
+    .filter(k => k.startsWith('s_') || k === 'session_notes' || k === 'session_start_time')
     .forEach(k => localStorage.removeItem(k));
+  sessionStartTime = null;
 }
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
