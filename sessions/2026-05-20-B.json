@@ -12,21 +12,21 @@
       "sets": [
         {
           "set": 1,
-          "reps": 1,
-          "weight_kg": 2
+          "reps": 8,
+          "weight_kg": 70
         },
         {
           "set": 2,
-          "reps": 345,
-          "weight_kg": 865
+          "reps": 8,
+          "weight_kg": 70
         },
         {
           "set": 3,
-          "reps": 294,
-          "weight_kg": 464468
+          "reps": 8,
+          "weight_kg": 70
         }
       ],
-      "rpe_last_set": null,
+      "rpe_last_set": 9,
       "notes": ""
     },
     {
@@ -37,21 +37,21 @@
       "sets": [
         {
           "set": 1,
-          "reps": null,
+          "reps": 5,
           "weight_kg": 0
         },
         {
           "set": 2,
-          "reps": null,
+          "reps": 5,
           "weight_kg": 0
         },
         {
           "set": 3,
-          "reps": null,
+          "reps": 4,
           "weight_kg": 0
         }
       ],
-      "rpe_last_set": null,
+      "rpe_last_set": 9,
       "notes": ""
     },
     {
@@ -62,21 +62,21 @@
       "sets": [
         {
           "set": 1,
-          "reps": null,
-          "weight_kg": null
+          "reps": 7,
+          "weight_kg": 30
         },
         {
           "set": 2,
-          "reps": null,
-          "weight_kg": null
+          "reps": 5,
+          "weight_kg": 30
         },
         {
           "set": 3,
-          "reps": null,
-          "weight_kg": null
+          "reps": 5,
+          "weight_kg": 30
         }
       ],
-      "rpe_last_set": null,
+      "rpe_last_set": 9,
       "notes": ""
     },
     {
@@ -87,21 +87,21 @@
       "sets": [
         {
           "set": 1,
-          "reps": null,
-          "weight_kg": null
+          "reps": 12,
+          "weight_kg": 30
         },
         {
           "set": 2,
-          "reps": null,
-          "weight_kg": null
+          "reps": 10,
+          "weight_kg": 30
         },
         {
           "set": 3,
-          "reps": null,
-          "weight_kg": null
+          "reps": 8,
+          "weight_kg": 30
         }
       ],
-      "rpe_last_set": null,
+      "rpe_last_set": 10,
       "notes": ""
     },
     {
@@ -112,24 +112,24 @@
       "sets": [
         {
           "set": 1,
-          "reps": null,
-          "weight_kg": null
+          "reps": 15,
+          "weight_kg": 20
         },
         {
           "set": 2,
-          "reps": null,
-          "weight_kg": null
+          "reps": 15,
+          "weight_kg": 20
         },
         {
           "set": 3,
-          "reps": null,
-          "weight_kg": null
+          "reps": 15,
+          "weight_kg": 20
         }
       ],
-      "rpe_last_set": null,
+      "rpe_last_set": 8,
       "notes": ""
     }
   ],
-  "session_notes": "",
-  "duration_min": 1
+  "session_notes": "forearms fail first on pullups after deadlift, again running into quick loss of power now on pullup and row",
+  "duration_min": 37
 }
