@@ -9,35 +9,50 @@
       "target_sets": 3,
       "target_reps": "10-12",
       "target_weight_kg": 20,
-      "rest_seconds": 90
+      "notes": "Estimated. Adjust at gym."
     },
     {
       "name": "Box Squat",
       "target_sets": 3,
       "target_reps": "8-10",
       "target_weight_kg": 40,
-      "rest_seconds": 90
+      "notes": "High box, limited depth. Knee-safe."
     },
     {
       "name": "Cable Row",
       "target_sets": 3,
       "target_reps": "10-12",
       "target_weight_kg": 35,
-      "rest_seconds": 90
+      "notes": "Estimated. Adjust at gym."
     },
     {
       "name": "Bulgarian Split Squat",
       "target_sets": 3,
       "target_reps": "8-10",
       "target_weight_kg": 0,
-      "rest_seconds": 90
+      "notes": "First session at BW — knee-safe. Add load next session if pain-free."
+    },
+    {
+      "name": "Hammer Curl",
+      "target_sets": 3,
+      "target_reps": "10-12",
+      "target_weight_kg": 14,
+      "notes": "Neutral grip, controlled eccentric. Covers brachialis + brachioradialis (bicep peak + forearm thickness). Estimate — adjust at gym."
     },
     {
       "name": "Ab Wheel",
       "target_sets": 3,
       "target_reps": "8",
       "target_weight_kg": 0,
-      "rest_seconds": 45
+      "notes": "Do this last — requires shoulder/core stability. Stop if form breaks."
     }
-  ]
+  ],
+  "rest_periods": {
+    "Dumbbell Incline Bench Press": "90s",
+    "Box Squat": "2min",
+    "Cable Row": "90s",
+    "Bulgarian Split Squat": "90s",
+    "Hammer Curl": "60s",
+    "Ab Wheel": "60s"
+  }
 }
