@@ -1,58 +1,61 @@
 {
-  "date": "2026-05-24",
-  "day_type": "C",
-  "session_number": 3,
-  "notion_page_id": "366f3995-0a22-8113-ac4e-d9e3f540d3e5",
+  "date": "2026-05-26",
+  "day_type": "A",
+  "session_number": 2,
   "exercises": [
     {
-      "name": "Dumbbell Incline Bench Press",
+      "name": "Plate Loaded Bench Press",
+      "target_sets": 4,
+      "target_reps": "5",
+      "target_weight_kg": 70,
+      "sets": [],
+      "rpe": null,
+      "notes": "Hold at 70 kg — RPE drifted 8→10 last session. All 4x5 completed but first session back. Move to 72.5 kg when last-set RPE drops to ≤8."
+    },
+    {
+      "name": "Leg Press 45°",
+      "target_sets": 3,
+      "target_reps": "10-12",
+      "target_weight_kg": 132.5,
+      "sets": [],
+      "rpe": null,
+      "notes": "Progress from 130 kg. Hit 3x12 @ RPE 8 last session. Partial ROM, knee-friendly depth."
+    },
+    {
+      "name": "DB Shoulder Press",
       "target_sets": 3,
       "target_reps": "10-12",
       "target_weight_kg": 20,
-      "notes": "Estimated. Adjust at gym."
+      "sets": [],
+      "rpe": null,
+      "notes": "Hold at 20 kg. REST INCREASED TO 90s — dropped 10→8→6 reps on 60s last session. If still drops below 8 reps, reduce to 17.5 kg next session."
     },
     {
-      "name": "Box Squat",
-      "target_sets": 3,
-      "target_reps": "8-10",
-      "target_weight_kg": 40,
-      "notes": "High box, limited depth. Knee-safe."
+      "name": "Tricep Pushdown",
+      "target_sets": 2,
+      "target_reps": "12-15",
+      "target_weight_kg": 25,
+      "sets": [],
+      "rpe": null,
+      "notes": "Down from 30 kg — second set failed last session. 90s rest. If both sets hit 15 reps @ RPE ≤8, return to 27.5 kg."
     },
     {
-      "name": "Cable Row",
-      "target_sets": 3,
-      "target_reps": "10-12",
-      "target_weight_kg": 35,
-      "notes": "Estimated. Adjust at gym."
-    },
-    {
-      "name": "Bulgarian Split Squat",
-      "target_sets": 3,
-      "target_reps": "8-10",
-      "target_weight_kg": 0,
-      "notes": "First session at BW — knee-safe. Add load next session if pain-free."
-    },
-    {
-      "name": "Hammer Curl",
+      "name": "Hanging Leg Raise",
       "target_sets": 3,
       "target_reps": "10-12",
-      "target_weight_kg": 14,
-      "notes": "Neutral grip, controlled eccentric. Covers brachialis + brachioradialis (bicep peak + forearm thickness). Estimate — adjust at gym."
-    },
-    {
-      "name": "Ab Wheel",
-      "target_sets": 3,
-      "target_reps": "8",
       "target_weight_kg": 0,
-      "notes": "Do this last — requires shoulder/core stability. Stop if form breaks."
+      "sets": [],
+      "rpe": null,
+      "notes": "Replaces Ab Wheel. Ab wheel requires shoulder/tricep stability depleted by this point. BW, controlled. If no bar available, use lying leg raise."
     }
   ],
+  "session_notes": "Key fixes from session 1: shoulder press and tricep pushdown get 90s rest (was 60s), tricep pushdown down to 25 kg, ab wheel replaced with hanging leg raise. Leg press up 2.5 kg. Everything else holds.",
   "rest_periods": {
-    "Dumbbell Incline Bench Press": "90s",
-    "Box Squat": "2min",
-    "Cable Row": "90s",
-    "Bulgarian Split Squat": "90s",
-    "Hammer Curl": "60s",
-    "Ab Wheel": "60s"
-  }
+    "Plate Loaded Bench Press": "2 min",
+    "Leg Press 45°": "90s",
+    "DB Shoulder Press": "90s",
+    "Tricep Pushdown": "90s",
+    "Hanging Leg Raise": "45s"
+  },
+  "duration_min": null
 }
