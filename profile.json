@@ -1,0 +1,78 @@
+{
+  "personal": {
+    "name": "Ondrej",
+    "age": 33,
+    "height_cm": 188,
+    "weight_kg": 84.9,
+    "body_fat_pct": 20.5,
+    "lean_mass_kg": 67.5,
+    "fat_mass_kg": 17.4,
+    "last_weighed": "2026-05-24"
+  },
+  "goals": {
+    "phase": "cut",
+    "target_body_fat_pct": 13,
+    "target_weight_kg_estimate": 77,
+    "target_note": "Show abs before next bulk. Then bulk back to ~85kg lean.",
+    "timeline_estimate_weeks": "18-24"
+  },
+  "tdee_estimate": {
+    "bmr_kcal": 1875,
+    "activity_level": "moderate_variable",
+    "notes": "WFH (low base), 3x gym, 2h floorball Tuesday (high intensity), 2x family walks 10K+ steps, avg daily 5-7K steps",
+    "estimated_tdee_kcal": 2840,
+    "method": "Mifflin-St Jeor + variable activity weighting"
+  },
+  "nutrition": {
+    "current_intake_kcal": 2900,
+    "target_intake_kcal": 2400,
+    "target_deficit_kcal": 440,
+    "expected_loss_kg_per_week": 0.5,
+    "protein_target_g": 195,
+    "fat_target_g": 75,
+    "carb_target_g": 235,
+    "notes": "User tracks in dedicated app. Protein currently at 160g — increase to 190-200g during cut is evidence-based. User started at 3800 (bulk), recently dropped to 2900."
+  },
+  "training": {
+    "current_program": "3-day split (Mon/Thu/Fri)",
+    "sessions_per_week_target": 3,
+    "session_duration_target_min": 50,
+    "training_history": "Several years lifting, intermediate level",
+    "experience_notes": "Was bulking Aug 2025 - May 2026. Plateaued during bulk, reached 3800 kcal. Recent weeks training dropped to 1-2x/week due to work/family/travel. Getting back to 3x.",
+    "current_weights_unknown": true
+  },
+  "injuries": {
+    "right_knee": {
+      "history": "2 surgeries",
+      "limitation": "No full knee flexion",
+      "impact": "Cannot do full back squat. Box squat OK at limited depth with low weight. Walking lunges problematic."
+    },
+    "lower_back": {
+      "history": "Sensitivity, improving",
+      "notes": "Improved with weight gain and weighted carries. Monitor during cut."
+    }
+  },
+  "activity": {
+    "tuesday_florbal": true,
+    "florbal_duration_h": 2,
+    "florbal_intensity": "high",
+    "family_walks_per_week": 2,
+    "avg_daily_steps": 6000,
+    "high_step_days_per_week": 3,
+    "has_walking_treadmill": true
+  },
+  "github": {
+    "repo": "omrstny-source/workout-logger"
+  },
+  "tracking": {
+    "notion_master_page_id": "363f3995-0a22-8166-af68-e233917f20a8",
+    "current_program_start": "2026-05-17",
+    "last_review_date": null,
+    "review_interval_days": 14,
+    "weight_log": [
+      {"date": "2025-08", "weight_kg": 78, "note": "Start of bulk"},
+      {"date": "2026-05-17", "weight_kg": 86, "body_fat_pct": 22, "lean_mass_kg": 67.1, "fat_mass_kg": 18.9, "note": "Start of cut"},
+      {"date": "2026-05-24", "weight_kg": 84.9, "body_fat_pct": 20.5, "lean_mass_kg": 67.5, "fat_mass_kg": 17.4, "note": "Week 1 weigh-in"}
+    ]
+  }
+}
