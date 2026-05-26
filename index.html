@@ -396,14 +396,26 @@ async function saveSetup() {
 // ─── Load plan.json ───────────────────────────────────────────────────────────
 async function loadPlan(repo, token) {
   try {
-    const url = `plan.json?cb=${Date.now()}`;
-    const res = await fetch(url);
-    if (!res.ok) {
-      const cached = ls('cached_plan');
-      if (cached) { plan = JSON.parse(cached); renderSession(); showScreen('session'); return; }
-      throw new Error(`Could not load plan.json (${res.status}).`);
+    let plan_data;
+    if (repo && token) {
+      const res = await ghFetch('GET', repo, token, 'contents/plan.json');
+      if (!res.ok) {
+        const cached = ls('cached_plan');
+        if (cached) { plan = JSON.parse(cached); renderSession(); showScreen('session'); return; }
+        throw new Error(`Could not load plan.json (${res.status}).`);
+      }
+      const file = await res.json();
+      plan_data = JSON.parse(atob(file.content.replace(/\n/g, '')));
+    } else {
+      const res = await fetch(`plan.json?cb=${Date.now()}`);
+      if (!res.ok) {
+        const cached = ls('cached_plan');
+        if (cached) { plan = JSON.parse(cached); renderSession(); showScreen('session'); return; }
+        throw new Error(`Could not load plan.json (${res.status}).`);
+      }
+      plan_data = await res.json();
     }
-    plan = await res.json();
+    plan = plan_data;
     lsSet('cached_plan', JSON.stringify(plan));
     renderSession();
     showScreen('session');
