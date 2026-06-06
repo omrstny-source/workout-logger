@@ -1,0 +1,134 @@
+{
+  "date": "2026-06-06",
+  "day_type": "C",
+  "session_number": 5,
+  "exercises": [
+    {
+      "name": "Dumbbell Incline Bench Press",
+      "target_sets": 3,
+      "target_reps": "11",
+      "target_weight_kg": 20,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 11,
+          "weight_kg": 20
+        },
+        {
+          "set": 2,
+          "reps": 11,
+          "weight_kg": 20
+        },
+        {
+          "set": 3,
+          "reps": 11,
+          "weight_kg": 20
+        }
+      ],
+      "rpe_last_set": 9,
+      "notes": ""
+    },
+    {
+      "name": "Box Squat",
+      "target_sets": 3,
+      "target_reps": "8-10",
+      "target_weight_kg": 42.5,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 10,
+          "weight_kg": 45
+        },
+        {
+          "set": 2,
+          "reps": 10,
+          "weight_kg": 45
+        },
+        {
+          "set": 3,
+          "reps": 10,
+          "weight_kg": 45
+        }
+      ],
+      "rpe_last_set": 7,
+      "notes": ""
+    },
+    {
+      "name": "Cable Row",
+      "target_sets": 3,
+      "target_reps": "10-12",
+      "target_weight_kg": 40,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 12,
+          "weight_kg": 40
+        },
+        {
+          "set": 2,
+          "reps": 12,
+          "weight_kg": 40
+        },
+        {
+          "set": 3,
+          "reps": 12,
+          "weight_kg": 40
+        }
+      ],
+      "rpe_last_set": 8,
+      "notes": ""
+    },
+    {
+      "name": "Bulgarian Split Squat",
+      "target_sets": 3,
+      "target_reps": "8-10",
+      "target_weight_kg": 5,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 10,
+          "weight_kg": 5
+        },
+        {
+          "set": 2,
+          "reps": 10,
+          "weight_kg": 5
+        },
+        {
+          "set": 3,
+          "reps": 10,
+          "weight_kg": 5
+        }
+      ],
+      "rpe_last_set": 8,
+      "notes": ""
+    },
+    {
+      "name": "Ab Wheel",
+      "target_sets": 3,
+      "target_reps": "8",
+      "target_weight_kg": 0,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 8,
+          "weight_kg": 0
+        },
+        {
+          "set": 2,
+          "reps": 8,
+          "weight_kg": 0
+        },
+        {
+          "set": 3,
+          "reps": 8,
+          "weight_kg": 0
+        }
+      ],
+      "rpe_last_set": 9,
+      "notes": ""
+    }
+  ],
+  "session_notes": "How high should box squat be? I 24, 20 or 16 inch side of box? Bow I am using 24 which makes the range of motion quite short.\nI think you forgot hammer curls, I will do some this session. 8x15, 8x15,8x15",
+  "duration_min": 140
+}
