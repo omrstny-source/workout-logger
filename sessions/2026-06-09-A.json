@@ -1,0 +1,159 @@
+{
+  "date": "2026-06-09",
+  "day_type": "A",
+  "session_number": 6,
+  "exercises": [
+    {
+      "name": "Plate Loaded Bench Press",
+      "target_sets": 4,
+      "target_reps": "5",
+      "target_weight_kg": 70,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 5,
+          "weight_kg": 70
+        },
+        {
+          "set": 2,
+          "reps": 5,
+          "weight_kg": 70
+        },
+        {
+          "set": 3,
+          "reps": 5,
+          "weight_kg": 70
+        },
+        {
+          "set": 4,
+          "reps": 5,
+          "weight_kg": 70
+        }
+      ],
+      "rpe_last_set": 8,
+      "notes": ""
+    },
+    {
+      "name": "Leg Press 45Â°",
+      "target_sets": 3,
+      "target_reps": "10-12",
+      "target_weight_kg": 137.5,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 12,
+          "weight_kg": 137.5
+        },
+        {
+          "set": 2,
+          "reps": 12,
+          "weight_kg": 137.5
+        },
+        {
+          "set": 3,
+          "reps": 12,
+          "weight_kg": 137.5
+        }
+      ],
+      "rpe_last_set": 8,
+      "notes": ""
+    },
+    {
+      "name": "DB Shoulder Press",
+      "target_sets": 3,
+      "target_reps": "9",
+      "target_weight_kg": 17.5,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 9,
+          "weight_kg": 20
+        },
+        {
+          "set": 2,
+          "reps": 9,
+          "weight_kg": 20
+        },
+        {
+          "set": 3,
+          "reps": 9,
+          "weight_kg": 20
+        }
+      ],
+      "rpe_last_set": 9,
+      "notes": ""
+    },
+    {
+      "name": "Tricep Pushdown",
+      "target_sets": 2,
+      "target_reps": "12-15",
+      "target_weight_kg": 25,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 15,
+          "weight_kg": 25
+        },
+        {
+          "set": 2,
+          "reps": 15,
+          "weight_kg": 25
+        }
+      ],
+      "rpe_last_set": 8,
+      "notes": ""
+    },
+    {
+      "name": "Hanging Leg Raise",
+      "target_sets": 3,
+      "target_reps": "10",
+      "target_weight_kg": 0,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 10,
+          "weight_kg": 0
+        },
+        {
+          "set": 2,
+          "reps": 10,
+          "weight_kg": 0
+        },
+        {
+          "set": 3,
+          "reps": 10,
+          "weight_kg": 0
+        }
+      ],
+      "rpe_last_set": 9,
+      "notes": ""
+    },
+    {
+      "name": "Reverse Curl",
+      "target_sets": 3,
+      "target_reps": "10-12",
+      "target_weight_kg": 17.5,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 12,
+          "weight_kg": 20
+        },
+        {
+          "set": 2,
+          "reps": 12,
+          "weight_kg": 20
+        },
+        {
+          "set": 3,
+          "reps": 12,
+          "weight_kg": 20
+        }
+      ],
+      "rpe_last_set": 8,
+      "notes": ""
+    }
+  ],
+  "session_notes": "17.5 was unavailable for shoulders so I went with 20s. ",
+  "duration_min": 49
+}
