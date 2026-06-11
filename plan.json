@@ -1,48 +1,53 @@
 {
-  "date": "2026-06-10",
-  "day_type": "B",
-  "session_number": 5,
-  "target_duration_min": 50,
+  "date": "2026-06-11",
+  "day_type": "C",
   "exercises": [
     {
-      "name": "Romanian Deadlift",
+      "name": "Dumbbell Incline Bench Press",
       "target_sets": 3,
-      "target_reps": "6-8",
-      "target_weight_kg": 70,
-      "rest_seconds": 120,
-      "notes": "Hold at 70kg. Hit 3x8 at RPE 8 last B — RPE 8 on a primary lift = hold."
+      "target_reps": "10-12",
+      "target_weight_kg": 20,
+      "sets": [],
+      "rpe": null,
+      "notes": "Hold — RPE 9 last session"
     },
     {
-      "name": "Pull-Up Parallel Close Grip",
-      "target_sets": 4,
-      "target_reps": "5",
-      "target_weight_kg": 0,
-      "rest_seconds": 90,
-      "notes": "Last B: 6/6/5 at RPE 10 — tough. 4x5 target, controlled reps."
-    },
-    {
-      "name": "Machine Seated Row",
+      "name": "Box Squat",
       "target_sets": 3,
       "target_reps": "8-10",
-      "target_weight_kg": 25,
-      "rest_seconds": 90,
-      "notes": "Hold at 25kg. Hit 3x8 at RPE 9 last B — not ready to increase."
+      "target_weight_kg": 47.5,
+      "sets": [],
+      "rpe": null,
+      "notes": "+2.5 kg. Consider stepping down from 24\" to 20\" box — 24\" makes ROM too short"
     },
     {
-      "name": "EZ Bar Curl",
+      "name": "Cable Row",
       "target_sets": 3,
-      "target_reps": "9",
-      "target_weight_kg": 30,
-      "rest_seconds": 60,
-      "notes": "Hold at 30kg. Hit 3x9 at RPE 9 last B — consistent, not ready to increase."
+      "target_reps": "10-12",
+      "target_weight_kg": 42.5,
+      "sets": [],
+      "rpe": null,
+      "notes": "+2.5 kg — hit 12s at RPE 8"
     },
     {
-      "name": "Face Pull",
+      "name": "Bulgarian Split Squat",
       "target_sets": 3,
-      "target_reps": "15",
-      "target_weight_kg": 27.5,
-      "rest_seconds": 45,
-      "notes": "Bump to 27.5kg. Hit 3x15 at RPE 7 on 25kg — at ceiling with room, earned the bump."
+      "target_reps": "8-10",
+      "target_weight_kg": 7.5,
+      "sets": [],
+      "rpe": null,
+      "notes": "+2.5 kg — cleared range cleanly"
+    },
+    {
+      "name": "Hammer Curl",
+      "target_sets": 3,
+      "target_reps": "10-12",
+      "target_weight_kg": 15,
+      "sets": [],
+      "rpe": null,
+      "notes": "Target 10-12 reps per set"
     }
-  ]
+  ],
+  "session_notes": "",
+  "duration_min": null
 }
