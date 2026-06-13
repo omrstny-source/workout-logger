@@ -1,51 +1,60 @@
 {
-  "date": "2026-06-11",
-  "day_type": "C",
+  "date": "2026-06-16",
+  "day_type": "A",
   "exercises": [
     {
-      "name": "Dumbbell Incline Bench Press",
+      "name": "Plate Loaded Bench Press",
+      "target_sets": 4,
+      "target_reps": "5",
+      "target_weight_kg": 70,
+      "sets": [],
+      "rpe": null,
+      "notes": "Hold — RPE 8 last session. Two sessions at 70kg now. Third at RPE ≤7 earns +2.5kg."
+    },
+    {
+      "name": "Leg Press 45°",
+      "target_sets": 3,
+      "target_reps": "10-12",
+      "target_weight_kg": 140,
+      "sets": [],
+      "rpe": null,
+      "notes": "+2.5 kg — hit 3x12 at RPE 8 on 06-09"
+    },
+    {
+      "name": "DB Shoulder Press",
       "target_sets": 3,
       "target_reps": "10-12",
       "target_weight_kg": 20,
       "sets": [],
       "rpe": null,
-      "notes": "Hold — RPE 9 last session"
+      "notes": "Hold at 20kg — RPE 9 at 9 reps on 06-09 (17.5s were unavailable, effectively a weight jump). Build reps to 12 before progressing."
     },
     {
-      "name": "Box Squat",
-      "target_sets": 3,
-      "target_reps": "8-10",
-      "target_weight_kg": 47.5,
+      "name": "Tricep Pushdown",
+      "target_sets": 2,
+      "target_reps": "12-15",
+      "target_weight_kg": 27.5,
       "sets": [],
       "rpe": null,
-      "notes": "+2.5 kg. Consider stepping down from 24\" to 20\" box — 24\" makes ROM too short"
+      "notes": "+2.5 kg — hit 2x15 at RPE 8 on 06-09"
     },
     {
-      "name": "Cable Row",
+      "name": "Hanging Leg Raise",
       "target_sets": 3,
-      "target_reps": "10-12",
-      "target_weight_kg": 42.5,
+      "target_reps": "12-15",
+      "target_weight_kg": 0,
       "sets": [],
       "rpe": null,
-      "notes": "+2.5 kg — hit 12s at RPE 8"
+      "notes": "Hold — RPE 9 at 10 reps on 06-09. Aim for 12 reps before adding load."
     },
     {
-      "name": "Bulgarian Split Squat",
-      "target_sets": 3,
-      "target_reps": "8-10",
-      "target_weight_kg": 7.5,
-      "sets": [],
-      "rpe": null,
-      "notes": "+2.5 kg — cleared range cleanly"
-    },
-    {
-      "name": "Hammer Curl",
+      "name": "Reverse Curl",
       "target_sets": 3,
       "target_reps": "10-12",
-      "target_weight_kg": 15,
+      "target_weight_kg": 20,
       "sets": [],
       "rpe": null,
-      "notes": "Target 10-12 reps per set"
+      "notes": "Hold at 20kg — hit 3x12 at RPE 8 on 06-09. Clean reps at RPE ≤7 earns +2.5kg next time."
     }
   ],
   "session_notes": "",
