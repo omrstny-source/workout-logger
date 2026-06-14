@@ -1,60 +1,47 @@
 {
   "date": "2026-06-16",
   "day_type": "A",
+  "session_number": 7,
   "exercises": [
     {
       "name": "Plate Loaded Bench Press",
       "target_sets": 4,
       "target_reps": "5",
       "target_weight_kg": 70,
-      "sets": [],
-      "rpe": null,
-      "notes": "Hold — RPE 8 last session. Two sessions at 70kg now. Third at RPE ≤7 earns +2.5kg."
+      "progression_note": "RPE 8 last session — hold at 70 kg",
+      "notes": "RPE 8 at 70 kg on 2026-06-09. Cut phase: hold weight, focus on consistency."
     },
     {
       "name": "Leg Press 45°",
       "target_sets": 3,
       "target_reps": "10-12",
       "target_weight_kg": 140,
-      "sets": [],
-      "rpe": null,
-      "notes": "+2.5 kg — hit 3x12 at RPE 8 on 06-09"
+      "progression_note": "+2.5 kg — hit 12 reps at RPE 8 last session",
+      "notes": "Was 137.5 kg × 12 reps at RPE 8 on 2026-06-09. Top of range + RPE ≤8 → progress."
     },
     {
       "name": "DB Shoulder Press",
       "target_sets": 3,
       "target_reps": "10-12",
       "target_weight_kg": 20,
-      "sets": [],
-      "rpe": null,
-      "notes": "Hold at 20kg — RPE 9 at 9 reps on 06-09 (17.5s were unavailable, effectively a weight jump). Build reps to 12 before progressing."
+      "progression_note": "Hold at 20 kg — RPE 9 last session",
+      "notes": "20 kg × 9 reps at RPE 9 on 2026-06-09. RPE 9 = hold."
     },
     {
       "name": "Tricep Pushdown",
       "target_sets": 2,
       "target_reps": "12-15",
-      "target_weight_kg": 27.5,
-      "sets": [],
-      "rpe": null,
-      "notes": "+2.5 kg — hit 2x15 at RPE 8 on 06-09"
+      "target_weight_kg": 25,
+      "progression_note": "Hold at 25 kg — RPE 8, not yet at top of range consistently",
+      "notes": "25 kg × 15 reps at RPE 8 on 2026-06-09. At top of range + RPE 8 — could progress, but cut phase: hold one more session to confirm."
     },
     {
       "name": "Hanging Leg Raise",
       "target_sets": 3,
       "target_reps": "12-15",
       "target_weight_kg": 0,
-      "sets": [],
-      "rpe": null,
-      "notes": "Hold — RPE 9 at 10 reps on 06-09. Aim for 12 reps before adding load."
-    },
-    {
-      "name": "Reverse Curl",
-      "target_sets": 3,
-      "target_reps": "10-12",
-      "target_weight_kg": 20,
-      "sets": [],
-      "rpe": null,
-      "notes": "Hold at 20kg — hit 3x12 at RPE 8 on 06-09. Clean reps at RPE ≤7 earns +2.5kg next time."
+      "progression_note": "Push toward 12-15 rep target — RPE 9 at 10 reps",
+      "notes": "10 reps × 3 sets at RPE 9 on 2026-06-09. Try to reach 12 reps per set before adding difficulty."
     }
   ],
   "session_notes": "",
