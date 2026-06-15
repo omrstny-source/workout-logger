@@ -1,0 +1,163 @@
+{
+  "date": "2026-06-16",
+  "day_type": "A",
+  "exercises": [
+    {
+      "name": "Plate Loaded Bench Press",
+      "target_sets": 4,
+      "target_reps": "5",
+      "target_weight_kg": 70,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 5,
+          "weight_kg": 70
+        },
+        {
+          "set": 2,
+          "reps": 5,
+          "weight_kg": 70
+        },
+        {
+          "set": 3,
+          "reps": 5,
+          "weight_kg": 70
+        },
+        {
+          "set": 4,
+          "reps": 5,
+          "weight_kg": 70
+        }
+      ],
+      "rpe_last_set": 7,
+      "notes": ""
+    },
+    {
+      "name": "Leg Press 45Â°",
+      "target_sets": 3,
+      "target_reps": "10-12",
+      "target_weight_kg": 140,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 12,
+          "weight_kg": 140
+        },
+        {
+          "set": 2,
+          "reps": 12,
+          "weight_kg": 140
+        },
+        {
+          "set": 3,
+          "reps": 9,
+          "weight_kg": 140
+        }
+      ],
+      "rpe_last_set": 10,
+      "notes": ""
+    },
+    {
+      "name": "DB Shoulder Press",
+      "target_sets": 3,
+      "target_reps": "10-12",
+      "target_weight_kg": 20,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 12,
+          "weight_kg": 20
+        },
+        {
+          "set": 2,
+          "reps": 9,
+          "weight_kg": 20
+        },
+        {
+          "set": 3,
+          "reps": 6,
+          "weight_kg": 20
+        }
+      ],
+      "rpe_last_set": 10,
+      "notes": ""
+    },
+    {
+      "name": "Tricep Pushdown",
+      "target_sets": 3,
+      "target_reps": "12-15",
+      "target_weight_kg": 25,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 15,
+          "weight_kg": 25
+        },
+        {
+          "set": 2,
+          "reps": 15,
+          "weight_kg": 25
+        },
+        {
+          "set": 3,
+          "reps": 15,
+          "weight_kg": 25
+        }
+      ],
+      "rpe_last_set": 10,
+      "notes": ""
+    },
+    {
+      "name": "Cable Crunch",
+      "target_sets": 3,
+      "target_reps": "12-15",
+      "target_weight_kg": 0,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 15,
+          "weight_kg": 50
+        },
+        {
+          "set": 2,
+          "reps": 15,
+          "weight_kg": 55
+        },
+        {
+          "set": 3,
+          "reps": 15,
+          "weight_kg": 60
+        }
+      ],
+      "rpe_last_set": 7,
+      "notes": ""
+    },
+    {
+      "name": "Reverse Curl",
+      "target_sets": 3,
+      "target_reps": "10-12",
+      "target_weight_kg": 20,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 12,
+          "weight_kg": 20
+        },
+        {
+          "set": 2,
+          "reps": 12,
+          "weight_kg": 20
+        },
+        {
+          "set": 3,
+          "reps": 12,
+          "weight_kg": 20
+        }
+      ],
+      "rpe_last_set": 8,
+      "notes": ""
+    }
+  ],
+  "session_notes": "gas ran out extremely quickly on shoulder press, triceps pushdown with heavy loss on form lower reps might be better since we added set, ",
+  "duration_min": 44
+}
