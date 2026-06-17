@@ -1,0 +1,168 @@
+{
+  "date": "2026-06-19",
+  "day_type": "B",
+  "exercises": [
+    {
+      "name": "Romanian Deadlift",
+      "target_sets": 3,
+      "target_reps": "6-8",
+      "target_weight_kg": 70,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 8,
+          "weight_kg": 70
+        },
+        {
+          "set": 2,
+          "reps": 8,
+          "weight_kg": 70
+        },
+        {
+          "set": 3,
+          "reps": 8,
+          "weight_kg": 70
+        }
+      ],
+      "rpe_last_set": 7,
+      "notes": ""
+    },
+    {
+      "name": "Pull-Up Parallel Close Grip",
+      "target_sets": 4,
+      "target_reps": "5",
+      "target_weight_kg": 0,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 5,
+          "weight_kg": 0
+        },
+        {
+          "set": 2,
+          "reps": 5,
+          "weight_kg": 0
+        },
+        {
+          "set": 3,
+          "reps": 5,
+          "weight_kg": 0
+        },
+        {
+          "set": 4,
+          "reps": 5,
+          "weight_kg": 0
+        }
+      ],
+      "rpe_last_set": 8,
+      "notes": ""
+    },
+    {
+      "name": "Machine Seated Row",
+      "target_sets": 3,
+      "target_reps": "8-10",
+      "target_weight_kg": 25,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 10,
+          "weight_kg": 25
+        },
+        {
+          "set": 2,
+          "reps": 10,
+          "weight_kg": 25
+        },
+        {
+          "set": 3,
+          "reps": 10,
+          "weight_kg": 25
+        }
+      ],
+      "rpe_last_set": 9,
+      "notes": ""
+    },
+    {
+      "name": "EZ Bar Curl",
+      "target_sets": 4,
+      "target_reps": "10-12",
+      "target_weight_kg": 30,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 12,
+          "weight_kg": 30
+        },
+        {
+          "set": 2,
+          "reps": 12,
+          "weight_kg": 30
+        },
+        {
+          "set": 3,
+          "reps": 12,
+          "weight_kg": 30
+        },
+        {
+          "set": 4,
+          "reps": 8,
+          "weight_kg": 30
+        }
+      ],
+      "rpe_last_set": 10,
+      "notes": ""
+    },
+    {
+      "name": "Face Pull",
+      "target_sets": 3,
+      "target_reps": "15",
+      "target_weight_kg": 32.5,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 15,
+          "weight_kg": 35
+        },
+        {
+          "set": 2,
+          "reps": 15,
+          "weight_kg": 35
+        },
+        {
+          "set": 3,
+          "reps": 15,
+          "weight_kg": 35
+        }
+      ],
+      "rpe_last_set": 8,
+      "notes": ""
+    },
+    {
+      "name": "Ab Wheel",
+      "target_sets": 3,
+      "target_reps": "10-12",
+      "target_weight_kg": 0,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 12,
+          "weight_kg": 0
+        },
+        {
+          "set": 2,
+          "reps": null,
+          "weight_kg": 0
+        },
+        {
+          "set": 3,
+          "reps": null,
+          "weight_kg": 0
+        }
+      ],
+      "rpe_last_set": null,
+      "notes": ""
+    }
+  ],
+  "session_notes": "failed ab wheel on shoulders and lower back, switched to 2 sets of cable crunch 10x70, also face pull scales by 5kg so I went to 35",
+  "duration_min": 70
+}
