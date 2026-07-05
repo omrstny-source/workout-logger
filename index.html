@@ -441,7 +441,11 @@ function renderSession() {
     const card = document.createElement('div');
     card.className = 'exercise-card';
 
-    const weight = ex.target_weight_kg > 0 ? `${ex.target_weight_kg} kg` : 'BW';
+    const setWeights = (ex.sets || []).map(s => (s && s.weight_kg != null) ? s.weight_kg : ex.target_weight_kg);
+    const distinctW = [...new Set(setWeights)];
+    const weight = ex.target_weight_kg > 0
+      ? (distinctW.length > 1 ? `${distinctW.join('→')} kg` : `${ex.target_weight_kg} kg`)
+      : 'BW';
 
     card.innerHTML = `
       <div class="exercise-header">
@@ -456,6 +460,8 @@ function renderSession() {
       const storeKey = `s_${ei}_${si}`;
       const saved    = savedSet(storeKey);
       const isDone   = saved.reps !== '';
+      const setTgtWeight = (ex.sets && ex.sets[si] && ex.sets[si].weight_kg != null)
+        ? ex.sets[si].weight_kg : ex.target_weight_kg;
 
       const row = document.createElement('div');
       row.className = 'set-row';
@@ -493,7 +499,7 @@ function renderSession() {
             <input type="number" inputmode="decimal" pattern="[0-9.]*"
               id="${storeKey}_weight"
               value="${saved.weight}"
-              placeholder="${ex.target_weight_kg || 'BW'}"
+              placeholder="${setTgtWeight || 'BW'}"
               class="${isDone ? 'done' : ''}"
               onchange="persist('${storeKey}_weight', this.value)">
           </div>
