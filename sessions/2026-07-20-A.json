@@ -1,0 +1,188 @@
+{
+  "date": "2026-07-20",
+  "day_type": "A",
+  "exercises": [
+    {
+      "name": "Plate Loaded Bench Press",
+      "target_sets": 4,
+      "target_reps": "5",
+      "target_weight_kg": 72.5,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 5,
+          "weight_kg": 72.5
+        },
+        {
+          "set": 2,
+          "reps": 5,
+          "weight_kg": 72.5
+        },
+        {
+          "set": 3,
+          "reps": 5,
+          "weight_kg": 72.5
+        },
+        {
+          "set": 4,
+          "reps": 5,
+          "weight_kg": 72.5
+        }
+      ],
+      "rpe_last_set": 10,
+      "notes": ""
+    },
+    {
+      "name": "DB Shoulder Press",
+      "target_sets": 3,
+      "target_reps": "12",
+      "target_weight_kg": 17.5,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 12,
+          "weight_kg": 17.5
+        },
+        {
+          "set": 2,
+          "reps": 10,
+          "weight_kg": 17.5
+        },
+        {
+          "set": 3,
+          "reps": 8,
+          "weight_kg": 17.5
+        }
+      ],
+      "rpe_last_set": 10,
+      "notes": ""
+    },
+    {
+      "name": "Leg Press 45",
+      "target_sets": 3,
+      "target_reps": "12",
+      "target_weight_kg": 145,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 10,
+          "weight_kg": 145
+        },
+        {
+          "set": 2,
+          "reps": 8,
+          "weight_kg": 145
+        },
+        {
+          "set": 3,
+          "reps": 8,
+          "weight_kg": 145
+        }
+      ],
+      "rpe_last_set": 10,
+      "notes": ""
+    },
+    {
+      "name": "Lateral Raise",
+      "target_sets": 3,
+      "target_reps": "12",
+      "target_weight_kg": 7.5,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 10,
+          "weight_kg": 7.5
+        },
+        {
+          "set": 2,
+          "reps": 10,
+          "weight_kg": 7.5
+        },
+        {
+          "set": 3,
+          "reps": 8,
+          "weight_kg": 7.5
+        }
+      ],
+      "rpe_last_set": 10,
+      "notes": ""
+    },
+    {
+      "name": "Cable Crunch",
+      "target_sets": 3,
+      "target_reps": "15",
+      "target_weight_kg": 75,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 15,
+          "weight_kg": 75
+        },
+        {
+          "set": 2,
+          "reps": 15,
+          "weight_kg": 75
+        },
+        {
+          "set": 3,
+          "reps": 15,
+          "weight_kg": 75
+        }
+      ],
+      "rpe_last_set": 10,
+      "notes": ""
+    },
+    {
+      "name": "Reverse Curl",
+      "target_sets": 3,
+      "target_reps": "10",
+      "target_weight_kg": 26,
+      "sets": [
+        {
+          "set": 1,
+          "reps": null,
+          "weight_kg": null
+        },
+        {
+          "set": 2,
+          "reps": null,
+          "weight_kg": null
+        },
+        {
+          "set": 3,
+          "reps": null,
+          "weight_kg": null
+        }
+      ],
+      "rpe_last_set": null,
+      "notes": ""
+    },
+    {
+      "name": "Pec Deck Fly (drop set)",
+      "target_sets": 3,
+      "target_reps": "to failure",
+      "target_weight_kg": 45,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 10,
+          "weight_kg": 47
+        },
+        {
+          "set": 2,
+          "reps": 6,
+          "weight_kg": 40
+        },
+        {
+          "set": 3,
+          "reps": 8,
+          "weight_kg": 33
+        }
+      ],
+      "rpe_last_set": 10,
+      "notes": ""
+    }
+  ],
+  "session_notes": "i am trying to focus on technique and slowing down and its taking a lot of my reps. But also I am feeling without energy. How long should I continue the cut like this when I am stagnant? Instead of reverse curl i did cable wrist curl 3x10x60kg",
+  "duration_min": 62
+}
