@@ -54,9 +54,9 @@
       "name": "Pec Deck Fly (drop set)",
       "target_sets": 3,
       "target_reps": "to failure",
-      "target_weight_kg": 42.5,
+      "target_weight_kg": 45,
       "rest_sec": 0,
-      "notes": "ONE triple-drop, no rest: 42.5 to failure -> drop ~30kg to failure -> drop ~22.5kg to failure. Bumped first drop 40->42.5 (got 14 reps last time, too light)."
+      "notes": "ONE triple-drop, no rest: 45 to failure -> drop ~32kg to failure -> drop ~24kg to failure. Bumped first drop 40->45 (got 14 reps last time = too light, should fail at 8-12)."
     }
   ],
   "session_notes": "Cut phase — retention, not PRs. Holding most lifts is a win. Lower-back caution: keep Cable Crunch controlled, no ballistic movement.",
