@@ -16,15 +16,15 @@
       "target_reps": "6",
       "target_weight_kg": 0,
       "rest_sec": 90,
-      "notes": "Bodyweight. Last was all-6 @ RPE 10. This block: stop with ~1 rep in the tank, don't hit dead failure on every set."
+      "notes": "Bodyweight. Push to RPE 9 (~1 rep left) — 5-6 clean reps is the target, don't grind the last ugly rep. Pull-ups aren't a big fatigue driver, so keeping reps beats shaving effort here."
     },
     {
       "name": "Machine Seated Row",
       "target_sets": 3,
       "target_reps": "10",
-      "target_weight_kg": 25,
+      "target_weight_kg": 22.5,
       "rest_sec": 90,
-      "notes": "HOLD 25kg. Faded to 10/10/8 @ RPE 10 last time — this block aim clean 10/10/10 at RPE 8-9, no fade."
+      "notes": "DROP to 22.5kg (from 25kg). Last was 10/10/8 @ RPE 10 — the lighter load lets you hit a clean 10/10/10 at RPE 8. Preserve reps/volume, cut the fatigue."
     },
     {
       "name": "EZ Bar Curl",
