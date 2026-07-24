@@ -1,0 +1,188 @@
+{
+  "date": "2026-07-23",
+  "day_type": "B",
+  "exercises": [
+    {
+      "name": "Romanian Deadlift",
+      "target_sets": 3,
+      "target_reps": "8",
+      "target_weight_kg": 75,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 8,
+          "weight_kg": 75
+        },
+        {
+          "set": 2,
+          "reps": 8,
+          "weight_kg": 75
+        },
+        {
+          "set": 3,
+          "reps": 8,
+          "weight_kg": 75
+        }
+      ],
+      "rpe_last_set": 9,
+      "notes": ""
+    },
+    {
+      "name": "Pull-Up Parallel Close Grip",
+      "target_sets": 4,
+      "target_reps": "6",
+      "target_weight_kg": 0,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 5,
+          "weight_kg": 0
+        },
+        {
+          "set": 2,
+          "reps": 5,
+          "weight_kg": 0
+        },
+        {
+          "set": 3,
+          "reps": 5,
+          "weight_kg": 0
+        },
+        {
+          "set": 4,
+          "reps": 5,
+          "weight_kg": 0
+        }
+      ],
+      "rpe_last_set": 9,
+      "notes": ""
+    },
+    {
+      "name": "Machine Seated Row",
+      "target_sets": 3,
+      "target_reps": "10",
+      "target_weight_kg": 22.5,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 10,
+          "weight_kg": 20
+        },
+        {
+          "set": 2,
+          "reps": 10,
+          "weight_kg": 20
+        },
+        {
+          "set": 3,
+          "reps": 10,
+          "weight_kg": 20
+        }
+      ],
+      "rpe_last_set": 8,
+      "notes": ""
+    },
+    {
+      "name": "EZ Bar Curl",
+      "target_sets": 3,
+      "target_reps": "12",
+      "target_weight_kg": 30,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 12,
+          "weight_kg": 30
+        },
+        {
+          "set": 2,
+          "reps": 12,
+          "weight_kg": 30
+        },
+        {
+          "set": 3,
+          "reps": 12,
+          "weight_kg": 30
+        }
+      ],
+      "rpe_last_set": 10,
+      "notes": ""
+    },
+    {
+      "name": "Face Pull",
+      "target_sets": 3,
+      "target_reps": "15",
+      "target_weight_kg": 40,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 15,
+          "weight_kg": 40
+        },
+        {
+          "set": 2,
+          "reps": 15,
+          "weight_kg": 40
+        },
+        {
+          "set": 3,
+          "reps": 15,
+          "weight_kg": 40
+        }
+      ],
+      "rpe_last_set": 7,
+      "notes": ""
+    },
+    {
+      "name": "Box Situp",
+      "target_sets": 3,
+      "target_reps": "15",
+      "target_weight_kg": 0,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 10,
+          "weight_kg": 0
+        },
+        {
+          "set": 2,
+          "reps": 10,
+          "weight_kg": 0
+        },
+        {
+          "set": 3,
+          "reps": 10,
+          "weight_kg": 0
+        }
+      ],
+      "rpe_last_set": 9,
+      "notes": ""
+    },
+    {
+      "name": "Machine Preacher Curl (drop set)",
+      "target_sets": 3,
+      "target_reps": "to failure",
+      "target_weight_kg": 30,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 8,
+          "weight_kg": 30
+        },
+        {
+          "set": 2,
+          "reps": 5,
+          "weight_kg": 25
+        },
+        {
+          "set": 3,
+          "reps": 5,
+          "weight_kg": 20
+        }
+      ],
+      "rpe_last_set": 10,
+      "notes": ""
+    }
+  ],
+  "session_notes": "",
+  "duration_min": 56
+}
