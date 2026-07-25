@@ -1,54 +1,54 @@
 {
-  "date": "2026-07-23",
-  "day_type": "B",
+  "date": "2026-07-26",
+  "day_type": "C",
   "exercises": [
     {
-      "name": "Romanian Deadlift",
-      "target_sets": 3,
-      "target_reps": "8",
-      "target_weight_kg": 75,
-      "rest_sec": 120,
-      "notes": "HOLD 75kg. Moderate block: stop each set at RPE 8 (2 in reserve), don't grind. Last was 8/8/8 @ RPE 9. Lower-back priority — brace, no rounding."
-    },
-    {
-      "name": "Pull-Up Parallel Close Grip",
-      "target_sets": 4,
-      "target_reps": "6",
-      "target_weight_kg": 0,
-      "rest_sec": 90,
-      "notes": "Bodyweight. Push to RPE 9 (~1 rep left) — 5-6 clean reps is the target, don't grind the last ugly rep. Pull-ups aren't a big fatigue driver, so keeping reps beats shaving effort here."
-    },
-    {
-      "name": "Machine Seated Row",
-      "target_sets": 3,
-      "target_reps": "10",
-      "target_weight_kg": 22.5,
-      "rest_sec": 90,
-      "notes": "DROP to 22.5kg (from 25kg). Last was 10/10/8 @ RPE 10 — the lighter load lets you hit a clean 10/10/10 at RPE 8. Preserve reps/volume, cut the fatigue."
-    },
-    {
-      "name": "EZ Bar Curl",
+      "name": "Dumbbell Incline Bench Press",
       "target_sets": 3,
       "target_reps": "12",
-      "target_weight_kg": 30,
+      "target_weight_kg": 22.5,
+      "rest_sec": 90,
+      "notes": "UP to 22.5kg (from 20kg). Last was 12/12/12 @ RPE 7 - clearest room on the day. If reps land at 9-10 that's fine, 22.5 becomes the new baseline."
+    },
+    {
+      "name": "Box Squat",
+      "target_sets": 3,
+      "target_reps": "10",
+      "target_weight_kg": 52.5,
+      "rest_sec": 90,
+      "notes": "HOLD 52.5kg. Last was 10/10/10 @ RPE 8 - technically earned +2.5, but it has been 23 days since you last squatted. Requalify the load today, add 2.5kg next Day C. High box, controlled depth, KNEE CAUTION. Warm up with 2 light ramp sets."
+    },
+    {
+      "name": "Cable Row",
+      "target_sets": 3,
+      "target_reps": "12",
+      "target_weight_kg": 52.5,
+      "rest_sec": 90,
+      "notes": "UP to 52.5kg (from 50kg). Last was 12/12/12 @ RPE 8. Chest up, no torso swing - lower back is the priority."
+    },
+    {
+      "name": "Bulgarian Split Squat",
+      "target_sets": 3,
+      "target_reps": "10",
+      "target_weight_kg": 10,
+      "rest_sec": 90,
+      "notes": "HOLD 10kg per hand. Unilateral + knee history + 23-day layoff on this movement = hold, don't load. Controlled, front knee tracking over mid-foot."
+    },
+    {
+      "name": "Lat Pulldown",
+      "target_sets": 3,
+      "target_reps": "12",
+      "target_weight_kg": 45,
+      "rest_sec": 90,
+      "notes": "HOLD 45kg. This machine only scales in 5kg steps, and you were already at RPE 9 on 45 - a jump to 50 is too big. 45 is the real baseline (the old 42.5 target was wrong)."
+    },
+    {
+      "name": "Hammer Curl",
+      "target_sets": 3,
+      "target_reps": "10",
+      "target_weight_kg": 15,
       "rest_sec": 60,
-      "notes": "HOLD 30kg (last 12/12/12 @ RPE 10). Leave 1 in reserve this block."
-    },
-    {
-      "name": "Face Pull",
-      "target_sets": 3,
-      "target_reps": "15",
-      "target_weight_kg": 40,
-      "rest_sec": 45,
-      "notes": "HOLD 40kg (last 15s @ RPE 9). Posture/shoulder health — controlled, squeeze rear delts."
-    },
-    {
-      "name": "Box Situp",
-      "target_sets": 3,
-      "target_reps": "15",
-      "target_weight_kg": 0,
-      "rest_sec": 45,
-      "notes": "Bodyweight. Feet/legs supported. LOWER-BACK CAUTION — controlled range, no ballistic hyperextension. (Last Day B you subbed cable crunch for time — do the box situp this time.)"
+      "notes": "HOLD 15kg, reps capped at 10 - your own call from last time: form breaks down at 12 with the 15s. Clean 10/10/10 beats 12/10/8."
     },
     {
       "name": "Machine Preacher Curl (drop set)",
@@ -56,9 +56,9 @@
       "target_reps": "to failure",
       "target_weight_kg": 30,
       "rest_sec": 0,
-      "notes": "ONE triple-drop, no rest: 30kg to failure -> ~25kg to failure -> ~20kg to failure. Finisher — taking these to failure is fine even in the hold block."
+      "notes": "ONE triple-drop, no rest: 30kg to failure -> 25kg to failure -> 20kg to failure. Last was 11/5/5. Optional 4th drop to 15kg if you have time, like you did on 2026-07-03."
     }
   ],
-  "session_notes": "Moderate pre-vacation block: hold weights, cap working sets at RPE 8-9, leave 1-2 reps in reserve. Only the preacher drop-set finisher goes to failure. Retention, not PRs.",
+  "session_notes": "First Day C in 23 days - the legs and lats work here is the least recently trained in the program, so form quality beats load. Two weights up (incline DB, cable row) where RPE was 7-8 with all reps; everything else holds to requalify after the layoff. Extra warm-up on Box Squat and Bulgarian - knee and lower back both need it after the gap.",
   "duration_min": null
 }
