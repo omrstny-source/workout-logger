@@ -1,0 +1,183 @@
+{
+  "date": "2026-07-26",
+  "day_type": "C",
+  "exercises": [
+    {
+      "name": "Dumbbell Incline Bench Press",
+      "target_sets": 3,
+      "target_reps": "12",
+      "target_weight_kg": 22.5,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 12,
+          "weight_kg": 22.5
+        },
+        {
+          "set": 2,
+          "reps": 9,
+          "weight_kg": 22.5
+        },
+        {
+          "set": 3,
+          "reps": 8,
+          "weight_kg": 20
+        }
+      ],
+      "rpe_last_set": 10,
+      "notes": ""
+    },
+    {
+      "name": "Box Squat",
+      "target_sets": 3,
+      "target_reps": "10",
+      "target_weight_kg": 52.5,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 10,
+          "weight_kg": 50
+        },
+        {
+          "set": 2,
+          "reps": 10,
+          "weight_kg": 50
+        },
+        {
+          "set": 3,
+          "reps": 10,
+          "weight_kg": 50
+        }
+      ],
+      "rpe_last_set": 7,
+      "notes": ""
+    },
+    {
+      "name": "Cable Row",
+      "target_sets": 3,
+      "target_reps": "12",
+      "target_weight_kg": 52.5,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 12,
+          "weight_kg": 50
+        },
+        {
+          "set": 2,
+          "reps": 12,
+          "weight_kg": 50
+        },
+        {
+          "set": 3,
+          "reps": 12,
+          "weight_kg": 50
+        }
+      ],
+      "rpe_last_set": 10,
+      "notes": ""
+    },
+    {
+      "name": "Bulgarian Split Squat",
+      "target_sets": 3,
+      "target_reps": "10",
+      "target_weight_kg": 10,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 10,
+          "weight_kg": 10
+        },
+        {
+          "set": 2,
+          "reps": 10,
+          "weight_kg": 10
+        },
+        {
+          "set": 3,
+          "reps": 10,
+          "weight_kg": 10
+        }
+      ],
+      "rpe_last_set": 9,
+      "notes": ""
+    },
+    {
+      "name": "Lat Pulldown",
+      "target_sets": 3,
+      "target_reps": "12",
+      "target_weight_kg": 45,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 12,
+          "weight_kg": 40
+        },
+        {
+          "set": 2,
+          "reps": 12,
+          "weight_kg": 40
+        },
+        {
+          "set": 3,
+          "reps": 12,
+          "weight_kg": 40
+        }
+      ],
+      "rpe_last_set": 10,
+      "notes": ""
+    },
+    {
+      "name": "Hammer Curl",
+      "target_sets": 3,
+      "target_reps": "10",
+      "target_weight_kg": 15,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 10,
+          "weight_kg": 12.5
+        },
+        {
+          "set": 2,
+          "reps": 10,
+          "weight_kg": 12.5
+        },
+        {
+          "set": 3,
+          "reps": 10,
+          "weight_kg": 12.5
+        }
+      ],
+      "rpe_last_set": 8,
+      "notes": ""
+    },
+    {
+      "name": "Machine Preacher Curl (drop set)",
+      "target_sets": 3,
+      "target_reps": "to failure",
+      "target_weight_kg": 30,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 10,
+          "weight_kg": 30
+        },
+        {
+          "set": 2,
+          "reps": 4,
+          "weight_kg": 25
+        },
+        {
+          "set": 3,
+          "reps": 5,
+          "weight_kg": 20
+        }
+      ],
+      "rpe_last_set": 10,
+      "notes": ""
+    }
+  ],
+  "session_notes": "",
+  "duration_min": 58
+}
