@@ -1,64 +1,64 @@
 {
-  "date": "2026-07-26",
-  "day_type": "C",
+  "date": "2026-07-28",
+  "day_type": "A",
   "exercises": [
     {
-      "name": "Dumbbell Incline Bench Press",
-      "target_sets": 3,
-      "target_reps": "12",
-      "target_weight_kg": 22.5,
-      "rest_sec": 90,
-      "notes": "UP to 22.5kg (from 20kg). Last was 12/12/12 @ RPE 7 - clearest room on the day. If reps land at 9-10 that's fine, 22.5 becomes the new baseline."
+      "name": "Plate Loaded Bench Press",
+      "target_sets": 4,
+      "target_reps": "5",
+      "target_weight_kg": 72.5,
+      "rest_sec": 120,
+      "notes": "HOLD 72.5kg. Last was 5/5/5/5 but RPE 10 - completed, don't add. Fatigue is elevated across the whole program right now, this lift doesn't need more load risk."
     },
     {
-      "name": "Box Squat",
+      "name": "DB Shoulder Press",
       "target_sets": 3,
       "target_reps": "10",
-      "target_weight_kg": 52.5,
-      "rest_sec": 90,
-      "notes": "HOLD 52.5kg. Last was 10/10/10 @ RPE 8 - technically earned +2.5, but it has been 23 days since you last squatted. Requalify the load today, add 2.5kg next Day C. High box, controlled depth, KNEE CAUTION. Warm up with 2 light ramp sets."
-    },
-    {
-      "name": "Cable Row",
-      "target_sets": 3,
-      "target_reps": "12",
-      "target_weight_kg": 52.5,
-      "rest_sec": 90,
-      "notes": "UP to 52.5kg (from 50kg). Last was 12/12/12 @ RPE 8. Chest up, no torso swing - lower back is the priority."
-    },
-    {
-      "name": "Bulgarian Split Squat",
-      "target_sets": 3,
-      "target_reps": "10",
-      "target_weight_kg": 10,
-      "rest_sec": 90,
-      "notes": "HOLD 10kg per hand. Unilateral + knee history + 23-day layoff on this movement = hold, don't load. Controlled, front knee tracking over mid-foot."
-    },
-    {
-      "name": "Lat Pulldown",
-      "target_sets": 3,
-      "target_reps": "12",
-      "target_weight_kg": 45,
-      "rest_sec": 90,
-      "notes": "HOLD 45kg. This machine only scales in 5kg steps, and you were already at RPE 9 on 45 - a jump to 50 is too big. 45 is the real baseline (the old 42.5 target was wrong)."
-    },
-    {
-      "name": "Hammer Curl",
-      "target_sets": 3,
-      "target_reps": "10",
-      "target_weight_kg": 15,
+      "target_weight_kg": 17.5,
       "rest_sec": 60,
-      "notes": "HOLD 15kg, reps capped at 10 - your own call from last time: form breaks down at 12 with the 15s. Clean 10/10/10 beats 12/10/8."
+      "notes": "HOLD 17.5kg, reps trimmed 12->10. Last was 12/10/8 @ RPE 10 - reps fell off a cliff across sets. Aim for 3 clean sets of 10 instead of chasing 12."
     },
     {
-      "name": "Machine Preacher Curl (drop set)",
+      "name": "Leg Press 45",
+      "target_sets": 3,
+      "target_reps": "10",
+      "target_weight_kg": 145,
+      "rest_sec": 90,
+      "notes": "HOLD 145kg, reps back to 10 (from 12). 10/10/10 @ RPE 9 was clean two sessions ago; the bump to 12 reps produced 10/8/8 @ RPE 10 last time. Reverting to the rep target that actually worked."
+    },
+    {
+      "name": "Lateral Raise",
+      "target_sets": 3,
+      "target_reps": "10",
+      "target_weight_kg": 7.5,
+      "rest_sec": 60,
+      "notes": "HOLD 7.5kg, reps trimmed 12->10. Last was 10/10/8 @ RPE 10, down from a clean 12/12/12 the session before - regression, not a plateau. Lighter rep target should let form stay tight."
+    },
+    {
+      "name": "Cable Crunch",
+      "target_sets": 3,
+      "target_reps": "10",
+      "target_weight_kg": 75,
+      "rest_sec": 45,
+      "notes": "HOLD 75kg, reps trimmed 15->10. You've completed 15/15/15 clean twice in a row but logged RPE 10 both times - dialing reps back to bring this into the 7-8 RPE zone accessories are supposed to sit in during a cut."
+    },
+    {
+      "name": "Reverse Curl",
+      "target_sets": 3,
+      "target_reps": "10",
+      "target_weight_kg": 26,
+      "rest_sec": 60,
+      "notes": "HOLD 26kg. Last real data on this exercise (07-13) was 12/10/10 @ RPE 9 - solid, no change needed. (07-20 was swapped to cable wrist curl instead - use Reverse Curl today.)"
+    },
+    {
+      "name": "Pec Deck Fly (drop set)",
       "target_sets": 3,
       "target_reps": "to failure",
-      "target_weight_kg": 30,
+      "target_weight_kg": 47,
       "rest_sec": 0,
-      "notes": "ONE triple-drop, no rest: 30kg to failure -> 25kg to failure -> 20kg to failure. Last was 11/5/5. Optional 4th drop to 15kg if you have time, like you did on 2026-07-03."
+      "notes": "ONE triple-drop, no rest: 47kg to failure -> ~40kg to failure -> ~33kg to failure. Matches your last logged first-drop weight."
     }
   ],
-  "session_notes": "First Day C in 23 days - the legs and lats work here is the least recently trained in the program, so form quality beats load. Two weights up (incline DB, cable row) where RPE was 7-8 with all reps; everything else holds to requalify after the layoff. Extra warm-up on Box Squat and Bulgarian - knee and lower back both need it after the gap.",
+  "session_notes": "Fatigue check-in: your last three sessions (07-20 A, 07-23 B, 07-26 C) hit RPE 9-10 on almost every set, several with reps dropping off across the set (e.g. shoulder press 12/10/8, lateral raise 10/10/8), and you flagged low energy on 07-20. That's outside the program's target zone (RPE 8-9 main lifts, 7-8 accessories) and is a fatigue signal, not a strength problem. Today: every weight holds, and accessory rep targets are trimmed to bring effort back down. If a lift still grinds to RPE 10 at these lighter targets, that's useful data - flag it in the session notes.",
   "duration_min": null
 }
