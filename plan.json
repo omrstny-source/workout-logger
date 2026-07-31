@@ -1,64 +1,64 @@
 {
-  "date": "2026-07-28",
-  "day_type": "A",
+  "date": "2026-07-31",
+  "day_type": "B",
   "exercises": [
     {
-      "name": "Plate Loaded Bench Press",
+      "name": "Romanian Deadlift",
+      "target_sets": 3,
+      "target_reps": "8",
+      "target_weight_kg": 75,
+      "rest_sec": 120,
+      "notes": "HOLD 75kg. You've hit a clean 3x8 @ RPE 9 twice in a row (07-09 and 07-23). RPE 9 on a main lift is exactly the target zone, so no reason to move it - but no reason to add weight either while overall fatigue is elevated. Retention is the goal on a cut."
+    },
+    {
+      "name": "Pull-Up Parallel Close Grip",
       "target_sets": 4,
       "target_reps": "5",
-      "target_weight_kg": 70,
-      "rest_sec": 120,
-      "notes": "DELOAD to 70kg (from 72.5, your call). Last was 5/5/5/5 @ RPE 10 - completed but maxed out. Fatigue is elevated across the whole program right now; a small step back here should let all 4 sets move faster and cleaner."
-    },
-    {
-      "name": "DB Shoulder Press",
-      "target_sets": 3,
-      "target_reps": "10",
-      "target_weight_kg": 17.5,
-      "rest_sec": 60,
-      "notes": "HOLD 17.5kg, reps trimmed 12->10. Last was 12/10/8 @ RPE 10 - reps fell off a cliff across sets. Aim for 3 clean sets of 10 instead of chasing 12."
-    },
-    {
-      "name": "Leg Press 45",
-      "target_sets": 3,
-      "target_reps": "10",
-      "target_weight_kg": 145,
+      "target_weight_kg": 0,
       "rest_sec": 90,
-      "notes": "HOLD 145kg, reps back to 10 (from 12). 10/10/10 @ RPE 9 was clean two sessions ago; the bump to 12 reps produced 10/8/8 @ RPE 10 last time. Reverting to the rep target that actually worked."
+      "notes": "Target trimmed 6 -> 5. You did 4x6 @ RPE 10 on 07-09, then 4x5 @ RPE 9 on 07-23. The 5-rep version is the one that lands in the right effort zone. Hit 4 clean sets of 5; if the last set feels like RPE 7-8, say so in the notes and we go back up next time."
     },
     {
-      "name": "Lateral Raise",
+      "name": "Machine Seated Row",
+      "target_sets": 3,
+      "target_reps": "12",
+      "target_weight_kg": 20,
+      "rest_sec": 90,
+      "notes": "HOLD 20kg, reps 10 -> 12. This is the only Day B lift with real headroom: after the deload from 25kg you did 3x10 @ RPE 8 (vs 10/10/8 @ RPE 10 at 25kg). Progress via reps first - earn 3x12 here and 22.5kg comes back next session."
+    },
+    {
+      "name": "EZ Bar Curl",
       "target_sets": 3,
       "target_reps": "10",
-      "target_weight_kg": 7.5,
+      "target_weight_kg": 30,
       "rest_sec": 60,
-      "notes": "HOLD 7.5kg, reps trimmed 12->10. Last was 10/10/8 @ RPE 10, down from a clean 12/12/12 the session before - regression, not a plateau. Lighter rep target should let form stay tight."
+      "notes": "HOLD 30kg, reps trimmed 12 -> 10. You've completed 3x12 @ RPE 10 twice running. Completed but maxed - an accessory should sit at RPE 7-8 during a cut, especially with a to-failure preacher drop set still coming at the end."
     },
     {
-      "name": "Cable Crunch",
+      "name": "Face Pull",
       "target_sets": 3,
-      "target_reps": "10",
-      "target_weight_kg": 75,
+      "target_reps": "15",
+      "target_weight_kg": 42.5,
       "rest_sec": 45,
-      "notes": "HOLD 75kg, reps trimmed 15->10. You've completed 15/15/15 clean twice in a row but logged RPE 10 both times - dialing reps back to bring this into the 7-8 RPE zone accessories are supposed to sit in during a cut."
+      "notes": "UP to 42.5kg (from 40). 3x15 @ RPE 7 last time - the one lift in the program with clear room, so it earns the 2.5kg. If the stack only steps in 5kg, take 45kg and drop to 12 reps. Keep this one strict: it's doing lower-back / posture work, not chasing load."
     },
     {
-      "name": "Reverse Curl",
+      "name": "Box Situp",
       "target_sets": 3,
       "target_reps": "10",
-      "target_weight_kg": 26,
-      "rest_sec": 60,
-      "notes": "HOLD 26kg. Last real data on this exercise (07-13) was 12/10/10 @ RPE 9 - solid, no change needed. (07-20 was swapped to cable wrist curl instead - use Reverse Curl today.)"
+      "target_weight_kg": 0,
+      "rest_sec": 45,
+      "notes": "Target trimmed 15 -> 10. You got 3x10 @ RPE 9 last time against a 15 target, so 10 is the honest number. LOWER BACK: controlled backward extension over the box, no ballistic hyperextension - this slot exists because Ab Wheel aggravated your back."
     },
     {
-      "name": "Pec Deck Fly (drop set)",
+      "name": "Machine Preacher Curl (drop set)",
       "target_sets": 3,
       "target_reps": "to failure",
-      "target_weight_kg": 47,
+      "target_weight_kg": 30,
       "rest_sec": 0,
-      "notes": "ONE triple-drop, no rest: 47kg to failure -> ~40kg to failure -> ~33kg to failure. Matches your last logged first-drop weight."
+      "notes": "ONE triple-drop, no rest between drops: 30kg to failure -> 25kg to failure -> 20kg to failure. Weights hold. RPE 10 here is by design, so I'm not deloading it - but note your first drop fell 12 reps (07-09) to 8 reps (07-23) at the same weight. If it lands at 8 or below again, that's a systemic recovery signal, not a bicep problem."
     }
   ],
-  "session_notes": "Fatigue check-in: your last three sessions (07-20 A, 07-23 B, 07-26 C) hit RPE 9-10 on almost every set, several with reps dropping off across the set (e.g. shoulder press 12/10/8, lateral raise 10/10/8), and you flagged low energy on 07-20. That's outside the program's target zone (RPE 8-9 main lifts, 7-8 accessories) and is a fatigue signal, not a strength problem. Today: every weight holds, and accessory rep targets are trimmed to bring effort back down. If a lift still grinds to RPE 10 at these lighter targets, that's useful data - flag it in the session notes.",
+  "session_notes": "Two things to know today. (1) Every weight holds except Face Pull, and three rep targets are trimmed (pull-up 6->5, EZ curl 12->10, box situp 15->10) to pull effort back into the RPE 8-9 main / 7-8 accessory zone. This continues the de-load posture from 07-28, because the clean fatigue read on Day B lifts (07-23: RPE 9-10 on 5 of 7) still says fatigue, not weakness. (2) The 07-28 session was at a different gym and those numbers are NOT comparable - bench logged 40kg against a 70kg target. If you're at that gym again, treat the three machine targets (Seated Row, Face Pull, Preacher Curl) as effort references only: match the target REPS at whatever weight puts you in the right RPE, and log the actual weight so I can build a separate baseline for that gym. Barbell and bodyweight work (RDL, pull-ups, EZ curl) transfers unchanged.",
   "duration_min": null
 }
