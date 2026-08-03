@@ -1,64 +1,64 @@
 {
-  "date": "2026-07-31",
-  "day_type": "B",
+  "date": "2026-08-03",
+  "day_type": "C",
   "exercises": [
     {
-      "name": "Romanian Deadlift",
+      "name": "Dumbbell Incline Bench Press",
       "target_sets": 3,
-      "target_reps": "8",
-      "target_weight_kg": 75,
-      "rest_sec": 120,
-      "notes": "HOLD 75kg. You've hit a clean 3x8 @ RPE 9 twice in a row (07-09 and 07-23). RPE 9 on a main lift is exactly the target zone, so no reason to move it - but no reason to add weight either while overall fatigue is elevated. Retention is the goal on a cut."
-    },
-    {
-      "name": "Pull-Up Parallel Close Grip",
-      "target_sets": 4,
-      "target_reps": "5",
-      "target_weight_kg": 0,
+      "target_reps": "10",
+      "target_weight_kg": 22.5,
       "rest_sec": 90,
-      "notes": "Target trimmed 6 -> 5. You did 4x6 @ RPE 10 on 07-09, then 4x5 @ RPE 9 on 07-23. The 5-rep version is the one that lands in the right effort zone. Hit 4 clean sets of 5; if the last set feels like RPE 7-8, say so in the notes and we go back up next time."
+      "notes": "HOLD 22.5kg, reps 12 -> 10. Last time the 22.5 jump broke you: 12 / 9 / 8 and you had to drop to 20kg on set 3, RPE 10. That is not a weight you own yet. Own it at 10 reps first - 3 clean sets of 10 at 22.5 and the 12s come back next cycle."
     },
     {
-      "name": "Machine Seated Row",
+      "name": "Box Squat",
+      "target_sets": 3,
+      "target_reps": "10",
+      "target_weight_kg": 52.5,
+      "rest_sec": 90,
+      "notes": "UP to 52.5kg (from the 50 you actually used). 3x10 @ RPE 7 is the single cleanest set of data in your last two sessions and the only lift that earned a jump. You already did 52.5 @ RPE 8 on 07-03, so this is re-taking known ground. KNEE: high box, controlled depth, no bouncing off the box."
+    },
+    {
+      "name": "Cable Row",
+      "target_sets": 3,
+      "target_reps": "10",
+      "target_weight_kg": 50,
+      "rest_sec": 75,
+      "notes": "HOLD 50kg, reps 12 -> 10. You completed 3x12 but at RPE 10 - completed and maxed is not the same as earned. An accessory pull should sit at RPE 7-8 on a cut. Shorter rest here is deliberate: it is one of the time savings that keeps today under an hour."
+    },
+    {
+      "name": "Bulgarian Split Squat",
+      "target_sets": 3,
+      "target_reps": "10",
+      "target_weight_kg": 10,
+      "rest_sec": 90,
+      "notes": "HOLD 10kg x 10 per leg. Third session in a row at 3x10 @ RPE 8-9 - right zone, no change needed. KNEE: front shin vertical, weight through the front heel, stop short of full flexion on the back knee."
+    },
+    {
+      "name": "Lat Pulldown",
+      "target_sets": 3,
+      "target_reps": "10",
+      "target_weight_kg": 40,
+      "rest_sec": 60,
+      "notes": "HOLD 40kg, reps 12 -> 10. Read the trend: 45kg x 12 @ RPE 9 on 07-03, then 40kg x 12 still @ RPE 10 on 07-26. You deloaded 5kg and it got HARDER - that is a recovery signal, not a lat problem. Stack steps in 5kg so 40 stays. TIME LEVER: if you are past 45 min when you reach this, do 2 sets instead of 3 - Cable Row already covered your back today."
+    },
+    {
+      "name": "Hammer Curl",
       "target_sets": 3,
       "target_reps": "12",
-      "target_weight_kg": 20,
-      "rest_sec": 90,
-      "notes": "HOLD 20kg, reps 10 -> 12. This is the only Day B lift with real headroom: after the deload from 25kg you did 3x10 @ RPE 8 (vs 10/10/8 @ RPE 10 at 25kg). Progress via reps first - earn 3x12 here and 22.5kg comes back next session."
-    },
-    {
-      "name": "EZ Bar Curl",
-      "target_sets": 3,
-      "target_reps": "10",
-      "target_weight_kg": 30,
+      "target_weight_kg": 12.5,
       "rest_sec": 60,
-      "notes": "HOLD 30kg, reps trimmed 12 -> 10. You've completed 3x12 @ RPE 10 twice running. Completed but maxed - an accessory should sit at RPE 7-8 during a cut, especially with a to-failure preacher drop set still coming at the end."
-    },
-    {
-      "name": "Face Pull",
-      "target_sets": 3,
-      "target_reps": "15",
-      "target_weight_kg": 42.5,
-      "rest_sec": 45,
-      "notes": "UP to 42.5kg (from 40). 3x15 @ RPE 7 last time - the one lift in the program with clear room, so it earns the 2.5kg. If the stack only steps in 5kg, take 45kg and drop to 12 reps. Keep this one strict: it's doing lower-back / posture work, not chasing load."
-    },
-    {
-      "name": "Box Situp",
-      "target_sets": 3,
-      "target_reps": "10",
-      "target_weight_kg": 0,
-      "rest_sec": 45,
-      "notes": "Target trimmed 15 -> 10. You got 3x10 @ RPE 9 last time against a 15 target, so 10 is the honest number. LOWER BACK: controlled backward extension over the box, no ballistic hyperextension - this slot exists because Ab Wheel aggravated your back."
+      "notes": "HOLD 12.5kg, reps 10 -> 12. Progressing by reps on purpose: 15kg is where your form broke down on 07-03, so earn 3x12 at 12.5 before going back. 3x10 @ RPE 8 last time means there is room."
     },
     {
       "name": "Machine Preacher Curl (drop set)",
       "target_sets": 3,
       "target_reps": "to failure",
-      "target_weight_kg": 30,
+      "target_weight_kg": 35,
       "rest_sec": 0,
-      "notes": "ONE triple-drop, no rest between drops: 30kg to failure -> 25kg to failure -> 20kg to failure. Weights hold. RPE 10 here is by design, so I'm not deloading it - but note your first drop fell 12 reps (07-09) to 8 reps (07-23) at the same weight. If it lands at 8 or below again, that's a systemic recovery signal, not a bicep problem."
+      "notes": "ONE triple-drop, no rest between drops: 35kg to failure -> 30kg -> 25kg. Start weight is UP from 30 because you actually ran 35 on 07-31 and got 9 reps out of it. RPE 10 here is by design. Go straight from the last Hammer Curl set into this with minimal transition - biceps are already warm and it saves you 2-3 min."
     }
   ],
-  "session_notes": "Two things to know today. (1) Every weight holds except Face Pull, and three rep targets are trimmed (pull-up 6->5, EZ curl 12->10, box situp 15->10) to pull effort back into the RPE 8-9 main / 7-8 accessory zone. This continues the de-load posture from 07-28, because the clean fatigue read on Day B lifts (07-23: RPE 9-10 on 5 of 7) still says fatigue, not weakness. (2) The 07-28 session was at a different gym and those numbers are NOT comparable - bench logged 40kg against a 70kg target. If you're at that gym again, treat the three machine targets (Seated Row, Face Pull, Preacher Curl) as effort references only: match the target REPS at whatever weight puts you in the right RPE, and log the actual weight so I can build a separate baseline for that gym. Barbell and bodyweight work (RDL, pull-ups, EZ curl) transfers unchanged.",
-  "duration_min": null
+  "session_notes": "UNDER-AN-HOUR BUILD. Same 7 exercises, but rest is tightened (Cable Row 75s, Lat Pulldown and Hammer Curl 60s) and Hammer Curl runs straight into the preacher drop set. Math: ~22 working sets at these rests plus a 5-min warmup lands around 52-55 min. Your last two sessions were 58 and 62 min, so the difference is rest discipline, not exercise count - watch the clock between sets, that is the whole trick. If you are behind at the 45-min mark, the named cut is Lat Pulldown set 3. PROGRESSION: only Box Squat (50 -> 52.5) and the preacher start (30 -> 35) go up. Everything else holds, and four rep targets come down 12 -> 10. That is intentional. THE PATTERN WORTH SEEING: across 07-26, 07-28 and 07-31 you logged RPE 9-10 on nearly every exercise, reps declining across sets, and you wrote 'very low energy' twice. On a cut that is fatigue accumulating faster than you are recovering, and RPE 10 training buys you no extra muscle retention over RPE 8-9 - it just costs recovery and raises injury risk. Today is built to land at RPE 8-9. If it still feels like a 10 on the holds, log that and the next call is a real deload week, not another rep trim."
+  ,"duration_min": null
 }
