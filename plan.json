@@ -43,12 +43,20 @@
       "notes": "HOLD 75kg x 15. You completed 3x15 clean on 07-20 - the RPE 10 here is abs burn, not systemic load, so this one stays as-is. Kneeling, facing the stack, crunch with the abs not the hips."
     },
     {
-      "name": "Reverse Curl",
+      "name": "Cable Reverse Curl (superset A)",
       "target_sets": 3,
       "target_reps": "10",
-      "target_weight_kg": 26,
+      "target_weight_kg": 25,
+      "rest_sec": 0,
+      "notes": "CALIBRATION SET - 25kg is an estimate, not data. You have no logged cable reverse curl at this gym; 25 is your old 26kg EZ-bar number rounded to the stack. Cable holds tension through the whole curl so it usually feels harder than the bar at the same load. Pick whatever lands at RPE 8 and LOG THE ACTUAL WEIGHT - that number becomes the baseline every future Day A progresses from. Straight into wrist curl with no rest."
+    },
+    {
+      "name": "Cable Wrist Curl (superset B)",
+      "target_sets": 3,
+      "target_reps": "10",
+      "target_weight_kg": 60,
       "rest_sec": 60,
-      "notes": "HOLD 26kg x 10. No clean home-gym data in two sessions - you swapped in cable wrist curl 3x10x60 on 07-20 and supersetted both at the other gym on 07-28. Either log the reverse curl at 26 today or log the wrist curl weight in the notes so the next plan has a real number to progress from."
+      "notes": "HOLD 60kg x 10, straight after the reverse curl with no rest. This is real data - you ran exactly 3x10x60 on 07-20. 60s rest AFTER the pair, then move on. Forearms recover fast, so this is the one place a superset costs you nothing."
     },
     {
       "name": "Pec Deck Fly (drop set)",
@@ -59,6 +67,6 @@
       "notes": "ONE triple-drop, no rest between drops: 47kg to failure -> 35kg -> 26kg. Start weight held at 47 from your 07-20 home-gym run (10 reps). RPE 10 is the point of this one - it is the only exercise today where that is by design."
     }
   ],
-  "session_notes": "FIRST SESSION BACK AFTER 9 DAYS OFF (last logged: 07-31 B; the 08-03 Day C plan was never run - vacation). Read this as a re-entry session, not a test day. WHAT CHANGED: bench comes down 72.5 -> 70, four rep targets come down 12 -> 10, everything else holds. Nothing goes up. WHY: across 07-20, 07-26, 07-28 and 07-31 you logged RPE 9-10 on nearly every exercise with reps declining inside sets, and wrote 'without energy' and 'very low energy' in the notes. RPE 10 buys no extra muscle retention over RPE 8-9 on a cut, it just costs recovery - and you have been paying that tax for a month. Target today is RPE 8 on the compounds, 7-8 on accessories. The layoff actually helps here: you should feel fresher than the numbers suggest. DATA NOTE: 07-28 was the other gym (dual-system smith bench, super leg press 45) and those weights are machine-specific, so every target above is calculated from 07-20, your last session on these machines. If you are at the other gym again, match RPE not kilos, and say so in the notes. IF IT STILL FEELS LIKE A 10: that is the signal for a real deload week, not another rep trim - tell me and we plan one. WEIGH IN before this session if you can - the last reading is 07-27 (82.6) and it is now post-vacation, so the calorie call is overdue and I need a number that is not two weeks and one holiday old."
+  "session_notes": "FIRST SESSION BACK AFTER 9 DAYS OFF (last logged: 07-31 B; the 08-03 Day C plan was never run - vacation). Read this as a re-entry session, not a test day. WHAT CHANGED: bench comes down 72.5 -> 70, four rep targets come down 12 -> 10, everything else holds. Nothing goes up. FOREARMS ARE NOW A SUPERSET: standalone Reverse Curl is gone, replaced permanently by Cable Reverse Curl straight into Cable Wrist Curl, no rest between them, 60s after the pair. That is 8 entries on the list but the same time cost as 7 - the superset is why. It also formalises what you were already improvising on 07-20 and 07-28. The wrist curl weight is real (60kg from 07-20); the reverse curl weight is a guess, so log what you actually use. WHY: across 07-20, 07-26, 07-28 and 07-31 you logged RPE 9-10 on nearly every exercise with reps declining inside sets, and wrote 'without energy' and 'very low energy' in the notes. RPE 10 buys no extra muscle retention over RPE 8-9 on a cut, it just costs recovery - and you have been paying that tax for a month. Target today is RPE 8 on the compounds, 7-8 on accessories. The layoff actually helps here: you should feel fresher than the numbers suggest. DATA NOTE: 07-28 was the other gym (dual-system smith bench, super leg press 45) and those weights are machine-specific, so every target above is calculated from 07-20, your last session on these machines. If you are at the other gym again, match RPE not kilos, and say so in the notes. IF IT STILL FEELS LIKE A 10: that is the signal for a real deload week, not another rep trim - tell me and we plan one. WEIGH IN before this session if you can - the last reading is 07-27 (82.6) and it is now post-vacation, so the calorie call is overdue and I need a number that is not two weeks and one holiday old."
   ,"duration_min": null
 }
