@@ -138,6 +138,41 @@
     .exercise-meta { font-size: 13px; color: #9ca3af; }
     .exercise-note { font-size: 12px; color: #6b7280; margin-top: 6px; font-style: italic; line-height: 1.4; }
 
+    /* ── Day selector ────────────────────────────────── */
+    .day-select-wrap { padding: 0 12px 4px; }
+    .day-select-wrap label {
+      display: block; font-size: 11px; font-weight: 700; color: #6b7280;
+      text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 6px;
+    }
+    select#day-select {
+      width: 100%; padding: 12px 14px; font-size: 16px; font-weight: 600;
+      color: #f9fafb; background: #1f2937; border: 1px solid #374151;
+      border-radius: 12px; appearance: none; -webkit-appearance: none;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%239ca3af' stroke-width='3'><path d='M6 9l6 6 6-6'/></svg>");
+      background-repeat: no-repeat; background-position: right 14px center;
+    }
+    select#day-select:focus { outline: none; border-color: #6366f1; }
+    .day-progress { font-size: 12px; color: #6b7280; margin-top: 6px; }
+
+    /* ── Session briefing ────────────────────────────── */
+    .briefing {
+      margin: 0 12px 12px; padding: 14px 16px;
+      background: #1e2536; border: 1px solid #374151;
+      border-left: 3px solid #6366f1; border-radius: 12px;
+    }
+    .briefing h4 {
+      font-size: 11px; font-weight: 700; color: #818cf8;
+      text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 8px;
+    }
+    .briefing p { font-size: 13px; color: #d1d5db; line-height: 1.55; }
+    .briefing.collapsed p {
+      display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden;
+    }
+    .briefing-toggle {
+      margin-top: 8px; font-size: 12px; font-weight: 700; color: #818cf8;
+      background: none; border: none; padding: 0; cursor: pointer;
+    }
+
     /* ── Set rows ────────────────────────────────────── */
     .set-row {
       padding: 12px 16px 10px;
@@ -304,6 +339,14 @@
     <button class="settings-btn" onclick="showScreen('settings')" title="Settings">⚙</button>
   </div>
 
+  <div class="day-select-wrap" id="day-select-wrap" style="display:none">
+    <label for="day-select">Training day</label>
+    <select id="day-select" onchange="selectDay(this.value)"></select>
+    <div class="day-progress" id="day-progress"></div>
+  </div>
+
+  <div id="briefing-container"></div>
+
   <div class="section-label">Exercises</div>
   <div id="exercises-container"></div>
 
@@ -360,14 +403,14 @@
 
 <script>
 // ─── State ────────────────────────────────────────────────────────────────────
-let plan = null;
+let planFile = null;          // whole plan.json (may hold several days)
+let plan     = null;          // the day currently selected
+let currentDay = null;        // 'A' | 'B' | 'C'
 let sessionStartTime = null;
 let restTimer = { id: null, elTimer: null, elCountdown: null };
 
 // ─── Boot ─────────────────────────────────────────────────────────────────────
 window.addEventListener('DOMContentLoaded', async () => {
-  const saved = ls('session_start_time');
-  if (saved) sessionStartTime = parseInt(saved);
   await loadPlan(ls('gh_repo'), ls('gh_token'));
 });
 
@@ -401,7 +444,7 @@ async function loadPlan(repo, token) {
       const res = await ghFetch('GET', repo, token, 'contents/plan.json');
       if (!res.ok) {
         const cached = ls('cached_plan');
-        if (cached) { plan = JSON.parse(cached); renderSession(); showScreen('session'); return; }
+        if (cached) { activatePlan(JSON.parse(cached)); return; }
         throw new Error(`Could not load plan.json (${res.status}).`);
       }
       const file = await res.json();
@@ -410,15 +453,13 @@ async function loadPlan(repo, token) {
       const res = await fetch(`plan.json?cb=${Date.now()}`);
       if (!res.ok) {
         const cached = ls('cached_plan');
-        if (cached) { plan = JSON.parse(cached); renderSession(); showScreen('session'); return; }
+        if (cached) { activatePlan(JSON.parse(cached)); return; }
         throw new Error(`Could not load plan.json (${res.status}).`);
       }
       plan_data = await res.json();
     }
-    plan = plan_data;
-    lsSet('cached_plan', JSON.stringify(plan));
-    renderSession();
-    showScreen('session');
+    lsSet('cached_plan', JSON.stringify(plan_data));
+    activatePlan(plan_data);
   } catch (err) {
     showScreen('setup');
     const errEl = document.getElementById('setup-error');
@@ -426,13 +467,95 @@ async function loadPlan(repo, token) {
   }
 }
 
+// ─── Multi-day plan handling ──────────────────────────────────────────────────
+// plan.json may be either:
+//   (a) multi-day: { recommended_day: "B", days: { A: {...}, B: {...}, C: {...} } }
+//   (b) legacy single-day: { date, day_type, exercises: [...] }
+// Both are supported; (b) is wrapped into (a) on load.
+function normalizePlan(data) {
+  if (data && data.days && typeof data.days === 'object') return data;
+  const key = (data && data.day_type) || 'A';
+  return { recommended_day: key, days: { [key]: data } };
+}
+
+function activatePlan(data) {
+  purgeLegacyAutosave();
+  planFile = normalizePlan(data);
+  const available = Object.keys(planFile.days);
+  const remembered = ls('current_day');
+  currentDay = available.includes(remembered) ? remembered
+             : (available.includes(planFile.recommended_day) ? planFile.recommended_day : available[0]);
+  renderDaySelector();
+  applyDay();
+  showScreen('session');
+}
+
+function renderDaySelector() {
+  const wrap = document.getElementById('day-select-wrap');
+  const sel  = document.getElementById('day-select');
+  const days = Object.keys(planFile.days);
+
+  // Only worth showing when there is an actual choice to make.
+  if (days.length < 2) { wrap.style.display = 'none'; return; }
+
+  sel.innerHTML = days.map(d => {
+    const label = `Day ${d} — ${DAY_LABELS[d] || ''}`.trim();
+    const rec   = d === planFile.recommended_day ? '  ★ suggested next' : '';
+    return `<option value="${d}"${d === currentDay ? ' selected' : ''}>${label}${rec}</option>`;
+  }).join('');
+  wrap.style.display = 'block';
+}
+
+// Switching days keeps each day's in-progress inputs separate, so an
+// interrupted session is never lost by looking at another day.
+function selectDay(day) {
+  if (!planFile.days[day]) return;
+  stopTimer();
+  currentDay = day;
+  lsSet('current_day', day);
+  applyDay();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function applyDay() {
+  plan = planFile.days[currentDay];
+  const started = ls(`session_start_time_${currentDay}`);
+  sessionStartTime = started ? parseInt(started) : null;
+  renderSession();
+  renderDayProgress();
+}
+
+function renderDayProgress() {
+  const el = document.getElementById('day-progress');
+  if (!el) return;
+  const others = Object.keys(planFile.days)
+    .filter(d => d !== currentDay)
+    .map(d => ({ d, n: countSetsFor(d).filled }))
+    .filter(x => x.n > 0);
+  const here = countSets();
+  const mine = here.filled > 0 ? `${here.filled}/${here.total} sets logged here.` : '';
+  const rest = others.length
+    ? ` Unfinished elsewhere: ${others.map(o => `Day ${o.d} (${o.n})`).join(', ')}.`
+    : '';
+  el.textContent = (mine + rest).trim();
+}
+
+// ─── Storage keys (namespaced per day) ────────────────────────────────────────
+function setKey(ei, si, day) { return `s_${day || currentDay}_${ei}_${si}`; }
+
 // ─── Render session ────────────────────────────────────────────────────────────
 const DAY_LABELS = { A: 'Push + Legs', B: 'Pull + Hinge', C: 'Full Body' };
 
 function renderSession() {
+  const dayKey = plan.day_type || currentDay;
   document.getElementById('session-title').textContent =
-    `Day ${plan.day_type} — ${DAY_LABELS[plan.day_type] || ''}`;
-  document.getElementById('session-date').textContent = fmtDate(plan.date);
+    `Day ${dayKey} — ${DAY_LABELS[dayKey] || ''}`;
+  // Show today — the plan date is only a suggestion once days are selectable.
+  const planned = plan.date && plan.date !== todayISO()
+    ? `  (planned ${fmtDate(plan.date)})` : '';
+  document.getElementById('session-date').textContent = fmtDate(todayISO()) + planned;
+
+  renderBriefing();
 
   const container = document.getElementById('exercises-container');
   container.innerHTML = '';
@@ -446,18 +569,19 @@ function renderSession() {
     const weight = ex.target_weight_kg > 0
       ? (distinctW.length > 1 ? `${distinctW.join('→')} kg` : `${ex.target_weight_kg} kg`)
       : 'BW';
+    const rest = ex.rest_sec != null ? ` &middot; rest ${fmtRest(ex.rest_sec)}` : '';
 
     card.innerHTML = `
       <div class="exercise-header">
         <div class="exercise-name">${ex.name}</div>
-        <div class="exercise-meta">${ex.target_sets} sets &times; ${ex.target_reps} reps @ ${weight}</div>
-        ${ex.notes ? `<div class="exercise-note">${ex.notes}</div>` : ''}
+        <div class="exercise-meta">${ex.target_sets} sets &times; ${ex.target_reps} reps @ ${weight}${rest}</div>
+        ${ex.notes ? `<div class="exercise-note">${escapeHtml(ex.notes)}</div>` : ''}
       </div>
     `;
 
     for (let si = 0; si < ex.target_sets; si++) {
       const isLast   = si === ex.target_sets - 1;
-      const storeKey = `s_${ei}_${si}`;
+      const storeKey = setKey(ei, si);
       const saved    = savedSet(storeKey);
       const isDone   = saved.reps !== '';
       const setTgtWeight = (ex.sets && ex.sets[si] && ex.sets[si].weight_kg != null)
@@ -518,12 +642,33 @@ function renderSession() {
     container.appendChild(card);
   });
 
-  // Restore session notes
-  const notes = ls('session_notes');
-  if (notes) document.getElementById('session-notes').value = notes;
-  document.getElementById('session-notes').addEventListener('input', e =>
-    lsSet('session_notes', e.target.value)
-  );
+  // Restore session notes (per day; assigned not added, so re-rendering
+  // on a day switch cannot stack duplicate listeners)
+  const notesEl = document.getElementById('session-notes');
+  notesEl.value = ls(`session_notes_${currentDay}`);
+  notesEl.oninput = e => lsSet(`session_notes_${currentDay}`, e.target.value);
+}
+
+// ─── Session briefing (plan.session_notes) ────────────────────────────────────
+function renderBriefing() {
+  const host = document.getElementById('briefing-container');
+  host.innerHTML = '';
+  const text = (plan.session_notes || '').trim();
+  if (!text) return;
+
+  const box = document.createElement('div');
+  box.className = 'briefing collapsed';
+  box.innerHTML = `
+    <h4>Session brief</h4>
+    <p>${escapeHtml(text)}</p>
+    <button class="briefing-toggle" type="button">Show more</button>
+  `;
+  const btn = box.querySelector('.briefing-toggle');
+  btn.onclick = () => {
+    const collapsed = box.classList.toggle('collapsed');
+    btn.textContent = collapsed ? 'Show more' : 'Show less';
+  };
+  host.appendChild(box);
 }
 
 // ─── Set change handler ────────────────────────────────────────────────────────
@@ -533,9 +678,10 @@ function onRepsChange(storeKey, ei, si, value) {
     markSetDone(ei, si);
     if (!sessionStartTime) {
       sessionStartTime = Date.now();
-      lsSet('session_start_time', sessionStartTime);
+      lsSet(`session_start_time_${currentDay}`, sessionStartTime);
     }
   }
+  renderDayProgress();
   startTimer(ei, si);
 }
 
@@ -543,7 +689,8 @@ function markSetDone(ei, si) {
   const lbl = document.getElementById(`lbl-${ei}-${si}`);
   if (lbl) { lbl.classList.add('completed'); lbl.innerHTML = `&#x2713; Set ${si + 1}`; }
   // Turn inputs green
-  [`s_${ei}_${si}_reps`, `s_${ei}_${si}_weight`, `s_${ei}_${si}_rpe`].forEach(id => {
+  const k = setKey(ei, si);
+  [`${k}_reps`, `${k}_weight`, `${k}_rpe`].forEach(id => {
     const el = document.getElementById(id);
     if (el) el.classList.add('done');
   });
@@ -590,12 +737,20 @@ function stopTimer() {
 }
 
 function restSeconds(ei) {
-  if (!plan || !plan.rest_periods) return 90;
-  const name = plan.exercises[ei]?.name;
-  const val  = plan.rest_periods?.[name];
-  if (!val) return ei === 0 ? 120 : 90;
-  if (val.includes('min')) return parseInt(val) * 60;
-  return parseInt(val);
+  if (!plan) return 90;
+  // Preferred: per-exercise rest_sec on the plan.
+  const secs = plan.exercises?.[ei]?.rest_sec;
+  if (secs != null && !isNaN(secs)) return Number(secs);
+  // Legacy: top-level rest_periods map keyed by exercise name.
+  const val = plan.rest_periods?.[plan.exercises?.[ei]?.name];
+  if (val) return String(val).includes('min') ? parseInt(val) * 60 : parseInt(val);
+  return ei === 0 ? 120 : 90;
+}
+
+function fmtRest(secs) {
+  const s = Number(secs);
+  if (!s) return 'none';
+  return s >= 60 && s % 60 === 0 ? `${s / 60} min` : `${s}s`;
 }
 
 // ─── Build completed session JSON ─────────────────────────────────────────────
@@ -603,14 +758,14 @@ function buildSession() {
   const exercises = plan.exercises.map((ex, ei) => {
     const sets = [];
     for (let si = 0; si < ex.target_sets; si++) {
-      const k = `s_${ei}_${si}`;
+      const k = setKey(ei, si);
       sets.push({
         set: si + 1,
         reps:      parseInt(ls(`${k}_reps`))   || null,
         weight_kg: parseFloat(ls(`${k}_weight`)) || (ex.target_weight_kg === 0 ? 0 : null)
       });
     }
-    const lastK = `s_${ei}_${ex.target_sets - 1}`;
+    const lastK = setKey(ei, ex.target_sets - 1);
     return {
       name:             ex.name,
       target_sets:      ex.target_sets,
@@ -626,9 +781,13 @@ function buildSession() {
     ? Math.round((Date.now() - sessionStartTime) / 60000)
     : null;
 
+  // Date is stamped when the session is SAVED, not when it was planned.
+  // With a day selector the planned date is only a suggestion, so using it
+  // would misfile (and could overwrite) a session trained on another day.
   return {
-    date:           plan.date,
-    day_type:       plan.day_type,
+    date:           todayISO(),
+    day_type:       plan.day_type || currentDay,
+    planned_date:   plan.date || null,
     session_number: plan.session_number,
     notion_page_id: plan.notion_page_id,
     exercises,
@@ -662,7 +821,7 @@ function validateSession() {
   const issues = [];
   plan.exercises.forEach((ex, ei) => {
     for (let si = 0; si < ex.target_sets; si++) {
-      const k = `s_${ei}_${si}`;
+      const k = setKey(ei, si);
       const reps   = parseFloat(ls(`${k}_reps`));
       const weight = parseFloat(ls(`${k}_weight`));
 
@@ -692,12 +851,16 @@ function validateSession() {
   return issues;
 }
 
-function countSets() {
+function countSets() { return countSetsFor(currentDay); }
+
+function countSetsFor(day) {
   let filled = 0, total = 0;
-  plan.exercises.forEach((ex, ei) => {
+  const d = planFile?.days?.[day];
+  if (!d) return { filled, total };
+  d.exercises.forEach((ex, ei) => {
     for (let si = 0; si < ex.target_sets; si++) {
       total++;
-      if (ls(`s_${ei}_${si}_reps`) !== '') filled++;
+      if (ls(`${setKey(ei, si, day)}_reps`) !== '') filled++;
     }
   });
   return { filled, total };
@@ -765,6 +928,7 @@ async function doSave() {
     }
 
     clearAutosave();
+    advanceDay();
     showScreen('success');
   } catch (err) {
     btn.textContent = 'Finish & Save to GitHub';
@@ -792,6 +956,16 @@ function saveSettings() {
   showScreen('session');
 }
 
+// After saving, pre-select the next day in the A -> B -> C rotation so the
+// app opens on the right session without needing a new plan pushed.
+function advanceDay() {
+  const order = ['A', 'B', 'C'].filter(d => planFile?.days?.[d]);
+  if (order.length < 2) return;
+  const next = order[(order.indexOf(currentDay) + 1) % order.length];
+  currentDay = next;
+  lsSet('current_day', next);
+}
+
 // ─── Reset after success ──────────────────────────────────────────────────────
 function resetApp() {
   clearAutosave();
@@ -799,11 +973,23 @@ function resetApp() {
   loadPlan(ls('gh_repo'), ls('gh_token'));
 }
 
+// Clears the CURRENT day only — a half-finished other day must survive.
 function clearAutosave() {
+  const prefix = `s_${currentDay}_`;
   Object.keys(localStorage)
-    .filter(k => k.startsWith('s_') || k === 'session_notes' || k === 'session_start_time')
+    .filter(k => k.startsWith(prefix)
+              || k === `session_notes_${currentDay}`
+              || k === `session_start_time_${currentDay}`)
     .forEach(k => localStorage.removeItem(k));
   sessionStartTime = null;
+}
+
+// Keys from the pre-selector build were `s_<ei>_<si>_*` (digit first).
+// Namespaced keys are `s_<DAY>_<ei>_<si>_*`, so this cannot match them.
+function purgeLegacyAutosave() {
+  Object.keys(localStorage)
+    .filter(k => /^s_\d+_\d+_/.test(k) || k === 'session_notes' || k === 'session_start_time')
+    .forEach(k => localStorage.removeItem(k));
 }
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
@@ -823,8 +1009,22 @@ function savedSet(key) {
 function showErr(el, msg) { el.textContent = msg; el.classList.add('show'); }
 
 function fmtDate(d) {
+  if (!d) return '';
   return new Date(d + 'T12:00:00').toLocaleDateString('en-GB',
     { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+}
+
+// Local calendar date — toISOString() is UTC and rolls over a day early
+// for evening sessions in CEST.
+function todayISO() {
+  const n = new Date();
+  const p = v => String(v).padStart(2, '0');
+  return `${n.getFullYear()}-${p(n.getMonth() + 1)}-${p(n.getDate())}`;
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c =>
+    ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 }
 
 function toBase64(str) {
