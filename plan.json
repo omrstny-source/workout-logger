@@ -49,7 +49,7 @@
     "C": {
       "date": "2026-08-14",
       "day_type": "C",
-      "session_notes": "First Day C since 07-26 - the 08-03 one was never run (vacation), so these numbers come off 07-26. Box Squat is the only lift going up: 3x10 at RPE 7 was the cleanest data in that session. Everything else holds with rep targets at 10, because 07-26 was RPE 10 on incline press, cable row and lat pulldown. TIME LEVER: this day has run 58 min twice. If you are past 40 min when you reach Bulgarian Split Squat, do 2 sets instead of 3.",
+      "session_notes": "First Day C since 07-26 - the 08-03 one was never run (vacation), so these numbers come off 07-26. Box Squat is the only lift going up: 3x10 at RPE 7 was the cleanest data in that session. Everything else holds with rep targets at 10, because 07-26 was RPE 10 on incline press, cable row and lat pulldown. TIME LEVER: this day has run 58 min twice. If you are past 40 min when you reach Bulgarian Split Squat, do 2 sets instead of 3. NEW FINISHER: the preacher drop set is replaced by a lying incline dumbbell curl drop set - it is the only stretch-position bicep movement in the program, and it covers what Hammer Curl and the Day B preacher both miss. Treat the first one as a calibration set.",
       "exercises": [
         { "name": "Dumbbell Incline Bench Press", "target_sets": 3, "target_reps": "10", "target_weight_kg": 22.5, "rest_sec": 90,
           "notes": "Hold 22.5kg, target 10. Last time the 22.5 broke you: 12/9/8 and you dropped to 20 on set 3. Own it at 10 first." },
@@ -63,8 +63,8 @@
           "notes": "Hold 40kg, reps 12 -> 10. Read the trend: 45kg at RPE 9 on 07-03, then 40kg still at RPE 10 on 07-26. Lighter and harder is a recovery signal, not a lat problem." },
         { "name": "Hammer Curl", "target_sets": 3, "target_reps": "10", "target_weight_kg": 12.5, "rest_sec": 60,
           "notes": "Hold 12.5kg x 10. This was RPE 8 last time - correct zone for an accessory, leave it alone." },
-        { "name": "Machine Preacher Curl (drop set)", "target_sets": 3, "target_reps": "to failure", "target_weight_kg": 35, "rest_sec": 0,
-          "notes": "One triple-drop, no rest: 35kg to failure -> 30kg -> 25kg. Same finisher as Day B." }
+        { "name": "Lying Incline Dumbbell Curl (drop set)", "target_sets": 3, "target_reps": "to failure", "target_weight_kg": 10, "rest_sec": 0,
+          "notes": "NEW - replaces the preacher curl on this day. One triple-drop per hand, no rest: 10kg to failure -> 7.5kg -> 5kg. CALIBRATION: 10kg is an estimate off your 12.5kg hammer curl - the incline stretch makes this noticeably harder than a standing curl, so expect fewer reps than you think. Log what you actually use, that becomes the baseline. FORM: bench at 45-60 degrees, upper arms hanging behind you and STILL - if the shoulder rolls forward to start the rep you have lost the stretch that makes this exercise worth doing." }
       ]
     }
   }
