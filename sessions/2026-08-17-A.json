@@ -1,0 +1,214 @@
+{
+  "date": "2026-08-17",
+  "day_type": "A",
+  "planned_date": "2026-08-17",
+  "exercises": [
+    {
+      "name": "Plate Loaded Bench Press",
+      "target_sets": 4,
+      "target_reps": "5",
+      "target_weight_kg": 70,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 5,
+          "weight_kg": 70
+        },
+        {
+          "set": 2,
+          "reps": 5,
+          "weight_kg": 70
+        },
+        {
+          "set": 3,
+          "reps": 5,
+          "weight_kg": 70
+        },
+        {
+          "set": 4,
+          "reps": 5,
+          "weight_kg": 70
+        }
+      ],
+      "rpe_last_set": 10,
+      "notes": ""
+    },
+    {
+      "name": "Dumbbell Shoulder Press",
+      "target_sets": 3,
+      "target_reps": "10",
+      "target_weight_kg": 17.5,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 10,
+          "weight_kg": 17.5
+        },
+        {
+          "set": 2,
+          "reps": 10,
+          "weight_kg": 17.5
+        },
+        {
+          "set": 3,
+          "reps": 10,
+          "weight_kg": 17.5
+        }
+      ],
+      "rpe_last_set": 9,
+      "notes": ""
+    },
+    {
+      "name": "Leg Press 45",
+      "target_sets": 3,
+      "target_reps": "10",
+      "target_weight_kg": 145,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 10,
+          "weight_kg": 145
+        },
+        {
+          "set": 2,
+          "reps": 10,
+          "weight_kg": 145
+        },
+        {
+          "set": 3,
+          "reps": 10,
+          "weight_kg": 145
+        }
+      ],
+      "rpe_last_set": 9,
+      "notes": ""
+    },
+    {
+      "name": "Lateral Raise",
+      "target_sets": 3,
+      "target_reps": "10",
+      "target_weight_kg": 7.5,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 10,
+          "weight_kg": 7.5
+        },
+        {
+          "set": 2,
+          "reps": 10,
+          "weight_kg": 7.5
+        },
+        {
+          "set": 3,
+          "reps": 10,
+          "weight_kg": 7.5
+        }
+      ],
+      "rpe_last_set": 9,
+      "notes": ""
+    },
+    {
+      "name": "Cable Crunch",
+      "target_sets": 3,
+      "target_reps": "15",
+      "target_weight_kg": 75,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 15,
+          "weight_kg": 75
+        },
+        {
+          "set": 2,
+          "reps": 15,
+          "weight_kg": 75
+        },
+        {
+          "set": 3,
+          "reps": 15,
+          "weight_kg": 75
+        }
+      ],
+      "rpe_last_set": 8,
+      "notes": ""
+    },
+    {
+      "name": "Cable Reverse Curl (superset A)",
+      "target_sets": 3,
+      "target_reps": "10",
+      "target_weight_kg": 24,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 10,
+          "weight_kg": 25
+        },
+        {
+          "set": 2,
+          "reps": 10,
+          "weight_kg": 25
+        },
+        {
+          "set": 3,
+          "reps": 10,
+          "weight_kg": 25
+        }
+      ],
+      "rpe_last_set": 10,
+      "notes": ""
+    },
+    {
+      "name": "Cable Wrist Curl (superset B)",
+      "target_sets": 3,
+      "target_reps": "10",
+      "target_weight_kg": 60,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 10,
+          "weight_kg": 25
+        },
+        {
+          "set": 2,
+          "reps": 10,
+          "weight_kg": 25
+        },
+        {
+          "set": 3,
+          "reps": 10,
+          "weight_kg": 25
+        }
+      ],
+      "rpe_last_set": 9,
+      "notes": ""
+    },
+    {
+      "name": "Pec Deck Fly (drop set)",
+      "target_sets": 3,
+      "target_reps": "to failure",
+      "target_weight_kg": 45,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 11,
+          "weight_kg": 45
+        },
+        {
+          "set": 2,
+          "reps": 8,
+          "weight_kg": 40
+        },
+        {
+          "set": 3,
+          "reps": 7,
+          "weight_kg": 35
+        }
+      ],
+      "rpe_last_set": 10,
+      "notes": ""
+    }
+  ],
+  "session_notes": "",
+  "duration_min": 62
+}
