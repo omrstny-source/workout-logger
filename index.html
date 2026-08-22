@@ -406,6 +406,7 @@
 let planFile = null;          // whole plan.json (may hold several days)
 let plan     = null;          // the day currently selected
 let currentDay = null;        // 'A' | 'B' | 'C'
+let dayHistory = null;        // { A: 'YYYY-MM-DD', ... } last trained per day
 let sessionStartTime = null;
 let restTimer = { id: null, elTimer: null, elCountdown: null };
 
@@ -459,6 +460,7 @@ async function loadPlan(repo, token) {
       plan_data = await res.json();
     }
     lsSet('cached_plan', JSON.stringify(plan_data));
+    dayHistory = await fetchDayHistory(repo || ls('gh_repo'), token);
     activatePlan(plan_data);
   } catch (err) {
     showScreen('setup');
@@ -478,13 +480,73 @@ function normalizePlan(data) {
   return { recommended_day: key, days: { [key]: data } };
 }
 
+// ─── Which day to suggest ─────────────────────────────────────────────────────
+// plan.json carries a `recommended_day`, but it is frozen at generation time:
+// it went stale the moment a session was logged, which is why the star sat on
+// Day B for weeks. The suggestion is now derived from what was actually
+// trained — the day left the longest wins.
+async function fetchDayHistory(repo, token) {
+  try {
+    if (!repo) throw new Error('no repo configured');
+    const res = token
+      ? await ghFetch('GET', repo, token, 'contents/sessions')
+      : await fetch(`https://api.github.com/repos/${repo}/contents/sessions`,
+                    { headers: { Accept: 'application/vnd.github+json' } });
+    if (!res.ok) throw new Error(`sessions listing failed (${res.status})`);
+    const files = await res.json();
+    const hist = {};
+    (Array.isArray(files) ? files : []).forEach(f => {
+      // sessions/YYYY-MM-DD-<DAY>.json. `_planned` files are not training done.
+      const m = /^(\d{4}-\d{2}-\d{2})-([A-Z])\.json$/.exec(f.name || '');
+      if (!m) return;
+      const [, date, day] = m;
+      if (!hist[day] || date > hist[day]) hist[day] = date;
+    });
+    lsSet('cached_day_history', JSON.stringify(hist));
+    return hist;
+  } catch (err) {
+    return cachedDayHistory();   // offline: stale history still beats a frozen field
+  }
+}
+
+function cachedDayHistory() {
+  try { return JSON.parse(ls('cached_day_history') || 'null'); } catch (e) { return null; }
+}
+
+// Longest-unrun wins: a day never trained ranks first, then the oldest last-trained
+// date. Ties keep the plan's own day order (A -> B -> C).
+function computeRecommendedDay(available) {
+  if (!available || !available.length) return null;
+  if (!dayHistory) dayHistory = cachedDayHistory();
+  if (!dayHistory) return null;
+  return available.slice().sort((x, y) => {
+    const a = dayHistory[x], b = dayHistory[y];
+    if (a === b) return available.indexOf(x) - available.indexOf(y);
+    if (!a) return -1;
+    if (!b) return 1;
+    return a < b ? -1 : 1;
+  })[0];
+}
+
+function daysSince(iso) {
+  if (!iso) return null;
+  const ms = new Date(todayISO() + 'T12:00:00') - new Date(iso + 'T12:00:00');
+  return Math.max(0, Math.round(ms / 86400000));
+}
+
 function activatePlan(data) {
   purgeLegacyAutosave();
   planFile = normalizePlan(data);
   const available = Object.keys(planFile.days);
+  const suggested = computeRecommendedDay(available);
+  if (suggested) planFile.recommended_day = suggested;
   const remembered = ls('current_day');
-  currentDay = available.includes(remembered) ? remembered
-             : (available.includes(planFile.recommended_day) ? planFile.recommended_day : available[0]);
+  // A day with sets already typed in wins — never drop him mid-session. Otherwise
+  // open on the suggestion rather than on whatever was last looked at.
+  const resume = available.includes(remembered) && countSetsFor(remembered).filled > 0
+    ? remembered : null;
+  currentDay = resume
+    || (available.includes(planFile.recommended_day) ? planFile.recommended_day : available[0]);
   renderDaySelector();
   applyDay();
   showScreen('session');
@@ -501,7 +563,10 @@ function renderDaySelector() {
   sel.innerHTML = days.map(d => {
     const label = `Day ${d} — ${DAY_LABELS[d] || ''}`.trim();
     const rec   = d === planFile.recommended_day ? '  ★ suggested next' : '';
-    return `<option value="${d}"${d === currentDay ? ' selected' : ''}>${label}${rec}</option>`;
+    // Show the gap that produced the suggestion, so the star is never a mystery.
+    const n     = daysSince(dayHistory && dayHistory[d]);
+    const ago   = dayHistory ? (n === null ? '  (never done)' : `  (${n}d ago)`) : '';
+    return `<option value="${d}"${d === currentDay ? ' selected' : ''}>${label}${rec}${ago}</option>`;
   }).join('');
   wrap.style.display = 'block';
 }
@@ -956,12 +1021,17 @@ function saveSettings() {
   showScreen('session');
 }
 
-// After saving, pre-select the next day in the A -> B -> C rotation so the
+// After saving, pre-select the day that has now been left the longest, so the
 // app opens on the right session without needing a new plan pushed.
 function advanceDay() {
   const order = ['A', 'B', 'C'].filter(d => planFile?.days?.[d]);
   if (order.length < 2) return;
-  const next = order[(order.indexOf(currentDay) + 1) % order.length];
+  // Record the save locally: the suggestion must be right immediately, before
+  // the next sessions listing comes back from GitHub.
+  dayHistory = Object.assign({}, dayHistory || {}, { [currentDay]: todayISO() });
+  lsSet('cached_day_history', JSON.stringify(dayHistory));
+  const next = computeRecommendedDay(order)
+            || order[(order.indexOf(currentDay) + 1) % order.length];
   currentDay = next;
   lsSet('current_day', next);
 }
