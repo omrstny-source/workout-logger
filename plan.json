@@ -1,70 +1,202 @@
 {
-  "generated": "2026-08-10",
-  "recommended_day": "B",
+  "generated": "2026-08-22",
+  "recommended_day": "C",
   "days": {
     "A": {
-      "date": "2026-08-17",
+      "date": "2026-08-24",
       "day_type": "A",
-      "session_notes": "HOLD EVERYTHING. 08-09 was your cleanest session since June - every set hit target, no mid-set collapse, RPE down to 9. Nothing has earned a jump yet, so repeat it and aim for RPE 8 this time. Bench stays at 70: it was the only lift that stayed at RPE 10 through the deload, so it does not go back to 72.5 until it feels like an 8. DATA FIX: last time your wrist curl logged as 24-25kg, identical to the reverse curl above it - that was a copy error. It should be 60kg. Log it correctly today.",
+      "session_notes": "Bench drops to 3 sets, same 70kg. It was RPE 10 for all 4 sets on both 08-09 and 08-17, and two sessions at 10 with no reps gained means the volume is the problem, not the load. If set 3 comes in at RPE 8 or easier, add a 4th. Cable crunch earns +2.5 (RPE 8 last time, the only exercise on this day that improved). Everything else holds. CHECK THE WRIST CURL: the plan said 60kg, you logged 25kg twice. 25 is set as the target now - if that was a different stack or attachment, log the real number and I will fix it. Last two Day A sessions ran 62-66 min against a 50-min target; the 3-set bench buys some of that back.",
       "exercises": [
-        { "name": "Plate Loaded Bench Press", "target_sets": 4, "target_reps": "5", "target_weight_kg": 70, "rest_sec": 120,
-          "notes": "Hold 70kg. Full 2 min rest - take all of it. Target RPE 8, not 10." },
-        { "name": "Dumbbell Shoulder Press", "target_sets": 3, "target_reps": "10", "target_weight_kg": 17.5, "rest_sec": 60,
-          "notes": "Hold 17.5kg. You finally got 3 clean 10s here after weeks of 12/10/8. Repeat it before adding reps." },
-        { "name": "Leg Press 45", "target_sets": 3, "target_reps": "10", "target_weight_kg": 145, "rest_sec": 90,
-          "notes": "Hold 145kg x 10. Partial ROM, knee-friendly depth. Do not chase depth." },
-        { "name": "Lateral Raise", "target_sets": 3, "target_reps": "10", "target_weight_kg": 7.5, "rest_sec": 60,
-          "notes": "Hold 7.5kg. Accessory - this should feel like RPE 7-8. If it is a 9 again, drop to 2 sets rather than dropping the weight." },
-        { "name": "Cable Crunch", "target_sets": 3, "target_reps": "15", "target_weight_kg": 75, "rest_sec": 45,
-          "notes": "Hold 75kg x 15. Kneeling, facing the stack. Crunch with the abs, not the hips." },
-        { "name": "Cable Reverse Curl (superset A)", "target_sets": 3, "target_reps": "10", "target_weight_kg": 24, "rest_sec": 0,
-          "notes": "24kg - this is your calibrated number from last time (you started 25 and settled at 24 for RPE 8). Straight into the wrist curl, no rest." },
-        { "name": "Cable Wrist Curl (superset B)", "target_sets": 3, "target_reps": "10", "target_weight_kg": 60, "rest_sec": 60,
-          "notes": "60kg - NOT 24. Last session logged this wrong by copying the line above. 60kg is your real number from 07-20. 60s rest after the pair." },
-        { "name": "Pec Deck Fly (drop set)", "target_sets": 3, "target_reps": "to failure", "target_weight_kg": 45, "rest_sec": 0,
-          "notes": "One triple-drop, no rest: 45kg to failure -> 35kg -> 26kg. Start moved to 45 because that is what you actually use. RPE 10 here is by design." }
+        {
+          "name": "Plate Loaded Bench Press",
+          "target_sets": 3,
+          "target_reps": "5",
+          "target_weight_kg": 70,
+          "rest_sec": 120,
+          "notes": "Hold 70. Stop at RPE 9 - do not grind a 4th set unless set 3 felt like RPE 8."
+        },
+        {
+          "name": "Dumbbell Shoulder Press",
+          "target_sets": 3,
+          "target_reps": "10",
+          "target_weight_kg": 17.5,
+          "rest_sec": 60,
+          "notes": "Hold - RPE 9 twice at this load."
+        },
+        {
+          "name": "Leg Press 45",
+          "target_sets": 3,
+          "target_reps": "10",
+          "target_weight_kg": 145,
+          "rest_sec": 90,
+          "notes": "Hold - RPE 9 twice. Partial ROM, knee-friendly depth."
+        },
+        {
+          "name": "Lateral Raise",
+          "target_sets": 3,
+          "target_reps": "10",
+          "target_weight_kg": 7.5,
+          "rest_sec": 60,
+          "notes": "Hold. Strict, no torso swing."
+        },
+        {
+          "name": "Cable Crunch",
+          "target_sets": 3,
+          "target_reps": "15",
+          "target_weight_kg": 77.5,
+          "rest_sec": 45,
+          "notes": "+2.5 - RPE 8 last session at 75. Kneeling, facing the stack."
+        },
+        {
+          "name": "Cable Reverse Curl (superset A)",
+          "target_sets": 3,
+          "target_reps": "10",
+          "target_weight_kg": 25,
+          "rest_sec": 0,
+          "notes": "Hold 25. Went RPE 8 -> 10 at this load, so no add. Straight into the wrist curl, no rest."
+        },
+        {
+          "name": "Cable Wrist Curl (superset B)",
+          "target_sets": 3,
+          "target_reps": "10",
+          "target_weight_kg": 25,
+          "rest_sec": 60,
+          "notes": "Target corrected to the 25 you actually logged twice. 60s rest after the pair."
+        },
+        {
+          "name": "Pec Deck Fly (drop set)",
+          "target_sets": 3,
+          "target_reps": "to failure",
+          "target_weight_kg": 45,
+          "rest_sec": 90,
+          "notes": "ONE triple drop, no rest between drops: 45 to failure -> 40 to failure -> 35 to failure."
+        }
       ]
     },
     "B": {
-      "date": "2026-08-12",
+      "date": "2026-08-26",
       "day_type": "B",
-      "session_notes": "The deload is working, so Day B gets the same treatment. RDL drops 75 -> 70 because you collapsed 8/6/5 at RPE 10 last time - that is the exact pattern the Day A deload fixed. Face Pull drops to 40 because it is prehab, not a lift. Seated Row is the ONLY thing going up (it hit 3x12 at RPE 8, textbook earned). Target RPE 8 everywhere except the final drop set. ABS SETTLED: Box Situp is out, Cable Crunch is the permanent slot-6 movement here from now on - it is what you were already doing, and it is easier on the lower back than the box was.",
+      "session_notes": "This day is deliberately backed off because of the back pinch on 08-21. RDL comes down 70 -> 60 and pull-ups to 3 sets. If anything pinches on the first RDL rep, skip RDL entirely and start at the pull-ups - a hinge on an irritated back is the one thing here that can cost you weeks. Seated row rep target drops 12 -> 10 at the same 22.5 (it was RPE 10 on 08-11). Preacher finisher starts at 35 now - you handled 3x10x35 straight on 08-21. Everything else holds. Build the load back on RDL only once a full session passes symptom-free.",
       "exercises": [
-        { "name": "Romanian Deadlift", "target_sets": 3, "target_reps": "8", "target_weight_kg": 70, "rest_sec": 120,
-          "notes": "DOWN to 70kg from 75. LOWER BACK: highest-risk lift on the board for you. Stop the rep when the back rounds, not when the hamstrings give out." },
-        { "name": "Pull-Up Parallel Close Grip", "target_sets": 4, "target_reps": "5", "target_weight_kg": 0, "rest_sec": 90,
-          "notes": "Hold 4x5 bodyweight. Worth noting: same reps at a lighter bodyweight is a real strength gain the log does not show as a number." },
-        { "name": "Machine Seated Row", "target_sets": 3, "target_reps": "12", "target_weight_kg": 22.5, "rest_sec": 90,
-          "notes": "UP to 22.5kg. The only lift going up today - 3x12 at RPE 8 earned it outright." },
-        { "name": "EZ Bar Curl", "target_sets": 3, "target_reps": "10", "target_weight_kg": 30, "rest_sec": 60,
-          "notes": "Hold 30kg, target 10. Preacher drop set still to come - leave something in the tank." },
-        { "name": "Face Pull", "target_sets": 3, "target_reps": "15", "target_weight_kg": 40, "rest_sec": 45,
-          "notes": "DOWN to 40kg. This is shoulder prehab - RPE 9 on a face pull misses the point. High elbows, pull to the forehead, no leaning back." },
-        { "name": "Cable Crunch", "target_sets": 3, "target_reps": "15", "target_weight_kg": 75, "rest_sec": 45,
-          "notes": "75kg x 15 - your actual number from 07-31. Box Situp is gone for good, this is the permanent Day B abs movement now. Kneeling, facing the stack, crunch with the abs not the hips." },
-        { "name": "Machine Preacher Curl (drop set)", "target_sets": 3, "target_reps": "to failure", "target_weight_kg": 35, "rest_sec": 0,
-          "notes": "One triple-drop, no rest: 35kg to failure -> 30kg -> 25kg. RPE 10 belongs here and nowhere else today." }
+        {
+          "name": "Romanian Deadlift",
+          "target_sets": 3,
+          "target_reps": "8",
+          "target_weight_kg": 60,
+          "rest_sec": 120,
+          "notes": "DELOADED from 70 after the 08-21 pinch. Light, slow, flat back. Any pinch = skip this exercise."
+        },
+        {
+          "name": "Pull-Up Parallel Close Grip",
+          "target_sets": 3,
+          "target_reps": "5",
+          "target_weight_kg": 0,
+          "rest_sec": 90,
+          "notes": "3 sets, not 4. This is where the pinch happened - stop the set the moment anything catches."
+        },
+        {
+          "name": "Machine Seated Row",
+          "target_sets": 3,
+          "target_reps": "10",
+          "target_weight_kg": 22.5,
+          "rest_sec": 90,
+          "notes": "Same 22.5, reps 12 -> 10 to pull effort back to RPE 8-9."
+        },
+        {
+          "name": "EZ Bar Curl",
+          "target_sets": 3,
+          "target_reps": "10",
+          "target_weight_kg": 30,
+          "rest_sec": 60,
+          "notes": "Hold - RPE 9 last session."
+        },
+        {
+          "name": "Face Pull",
+          "target_sets": 3,
+          "target_reps": "15",
+          "target_weight_kg": 40,
+          "rest_sec": 45,
+          "notes": "Hold. Good for the upper back after the pinch."
+        },
+        {
+          "name": "Cable Crunch",
+          "target_sets": 3,
+          "target_reps": "15",
+          "target_weight_kg": 75,
+          "rest_sec": 45,
+          "notes": "Hold 75. It was RPE 10 here but RPE 8 on Day A at the same load - it is session fatigue, not the weight."
+        },
+        {
+          "name": "Machine Preacher Curl (drop set)",
+          "target_sets": 3,
+          "target_reps": "to failure",
+          "target_weight_kg": 35,
+          "rest_sec": 90,
+          "notes": "ONE triple drop, no rest: 35 to failure -> 30 to failure -> 25 to failure."
+        }
       ]
     },
     "C": {
-      "date": "2026-08-14",
+      "date": "2026-08-22",
       "day_type": "C",
-      "session_notes": "First Day C since 07-26 - the 08-03 one was never run (vacation), so these numbers come off 07-26. Box Squat is the only lift going up: 3x10 at RPE 7 was the cleanest data in that session. Everything else holds with rep targets at 10, because 07-26 was RPE 10 on incline press, cable row and lat pulldown. TIME LEVER: this day has run 58 min twice. If you are past 40 min when you reach Bulgarian Split Squat, do 2 sets instead of 3. NEW FINISHER: the preacher drop set is replaced by a lying incline dumbbell curl drop set - it is the only stretch-position bicep movement in the program, and it covers what Hammer Curl and the Day B preacher both miss. Treat the first one as a calibration set.",
+      "session_notes": "Suggested day - Day C has been sitting the longest (last done 08-16). It is also the day with the most room: 08-16 came in at RPE 7 on box squat, lat pulldown and hammer curl, so all three go up 2.5. Cable row up 2.5 as well. Bulgarian split squat holds the weight but the rep target drops 10 -> 8 - it was RPE 10 and it is the highest knee-risk movement in the program. The last Day C ran 81 minutes against a 50-min target: hold the listed rests, do not stretch them.",
       "exercises": [
-        { "name": "Dumbbell Incline Bench Press", "target_sets": 3, "target_reps": "10", "target_weight_kg": 22.5, "rest_sec": 90,
-          "notes": "Hold 22.5kg, target 10. Last time the 22.5 broke you: 12/9/8 and you dropped to 20 on set 3. Own it at 10 first." },
-        { "name": "Box Squat", "target_sets": 3, "target_reps": "10", "target_weight_kg": 52.5, "rest_sec": 90,
-          "notes": "UP to 52.5kg. 3x10 at RPE 7 earned this, and you already did 52.5 on 07-03. KNEE: high box, controlled depth, no bouncing off the box." },
-        { "name": "Cable Row", "target_sets": 3, "target_reps": "10", "target_weight_kg": 50, "rest_sec": 90,
-          "notes": "Hold 50kg, reps 12 -> 10. You completed 3x12 but at RPE 10 - completed and maxed are not the same thing." },
-        { "name": "Bulgarian Split Squat", "target_sets": 3, "target_reps": "10", "target_weight_kg": 10, "rest_sec": 90,
-          "notes": "Hold 10kg x 10 per leg. KNEE: front shin vertical, weight through the front heel, stop short of full flexion on the back knee. Cut to 2 sets if you are behind on time." },
-        { "name": "Lat Pulldown", "target_sets": 3, "target_reps": "10", "target_weight_kg": 40, "rest_sec": 75,
-          "notes": "Hold 40kg, reps 12 -> 10. Read the trend: 45kg at RPE 9 on 07-03, then 40kg still at RPE 10 on 07-26. Lighter and harder is a recovery signal, not a lat problem." },
-        { "name": "Hammer Curl", "target_sets": 3, "target_reps": "10", "target_weight_kg": 12.5, "rest_sec": 60,
-          "notes": "Hold 12.5kg x 10. This was RPE 8 last time - correct zone for an accessory, leave it alone." },
-        { "name": "Lying Incline Dumbbell Curl (drop set)", "target_sets": 3, "target_reps": "to failure", "target_weight_kg": 10, "rest_sec": 0,
-          "notes": "NEW - replaces the preacher curl on this day. One triple-drop per hand, no rest: 10kg to failure -> 7.5kg -> 5kg. CALIBRATION: 10kg is an estimate off your 12.5kg hammer curl - the incline stretch makes this noticeably harder than a standing curl, so expect fewer reps than you think. Log what you actually use, that becomes the baseline. FORM: bench at 45-60 degrees, upper arms hanging behind you and STILL - if the shoulder rolls forward to start the rep you have lost the stretch that makes this exercise worth doing." }
+        {
+          "name": "Dumbbell Incline Bench Press",
+          "target_sets": 3,
+          "target_reps": "10",
+          "target_weight_kg": 22.5,
+          "rest_sec": 90,
+          "notes": "Hold - RPE 9 last session."
+        },
+        {
+          "name": "Box Squat",
+          "target_sets": 3,
+          "target_reps": "10",
+          "target_weight_kg": 55,
+          "rest_sec": 90,
+          "notes": "+2.5 - RPE 7 at 52.5. High box, controlled depth, knee-safe."
+        },
+        {
+          "name": "Cable Row",
+          "target_sets": 3,
+          "target_reps": "10",
+          "target_weight_kg": 52.5,
+          "rest_sec": 90,
+          "notes": "+2.5 - RPE 8 at 50."
+        },
+        {
+          "name": "Bulgarian Split Squat",
+          "target_sets": 3,
+          "target_reps": "8",
+          "target_weight_kg": 10,
+          "rest_sec": 90,
+          "notes": "Hold 10kg, reps 10 -> 8. Was RPE 10 - back off the effort, not the load. Stop on any knee pain."
+        },
+        {
+          "name": "Lat Pulldown",
+          "target_sets": 3,
+          "target_reps": "10",
+          "target_weight_kg": 42.5,
+          "rest_sec": 90,
+          "notes": "+2.5 - RPE 7 at 40, the clearest add on this day."
+        },
+        {
+          "name": "Hammer Curl",
+          "target_sets": 3,
+          "target_reps": "10",
+          "target_weight_kg": 15,
+          "rest_sec": 60,
+          "notes": "+2.5 - RPE 7 at 12.5."
+        },
+        {
+          "name": "Lying Incline Dumbbell Curl (drop set)",
+          "target_sets": 3,
+          "target_reps": "to failure",
+          "target_weight_kg": 10,
+          "rest_sec": 90,
+          "notes": "ONE triple drop, no rest: 10 -> 7.5 -> 5 per hand. Reps fell 10/5/2 last time, so the drops go lower. Bench 45-60 degrees, upper arms hanging behind you and still."
+        }
       ]
     }
   }
