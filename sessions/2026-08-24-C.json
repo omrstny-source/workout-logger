@@ -1,0 +1,184 @@
+{
+  "date": "2026-08-24",
+  "day_type": "C",
+  "planned_date": "2026-08-24",
+  "exercises": [
+    {
+      "name": "Dumbbell Incline Bench Press",
+      "target_sets": 3,
+      "target_reps": "10",
+      "target_weight_kg": 22.5,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 10,
+          "weight_kg": 22.5
+        },
+        {
+          "set": 2,
+          "reps": 10,
+          "weight_kg": 22.5
+        },
+        {
+          "set": 3,
+          "reps": 9,
+          "weight_kg": 22.5
+        }
+      ],
+      "rpe_last_set": 10,
+      "notes": ""
+    },
+    {
+      "name": "Box Squat",
+      "target_sets": 3,
+      "target_reps": "10",
+      "target_weight_kg": 55,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 10,
+          "weight_kg": 55
+        },
+        {
+          "set": 2,
+          "reps": 10,
+          "weight_kg": 55
+        },
+        {
+          "set": 3,
+          "reps": 10,
+          "weight_kg": 55
+        }
+      ],
+      "rpe_last_set": 10,
+      "notes": ""
+    },
+    {
+      "name": "Cable Row",
+      "target_sets": 3,
+      "target_reps": "10",
+      "target_weight_kg": 52.5,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 10,
+          "weight_kg": 55
+        },
+        {
+          "set": 2,
+          "reps": 10,
+          "weight_kg": 55
+        },
+        {
+          "set": 3,
+          "reps": 10,
+          "weight_kg": 55
+        }
+      ],
+      "rpe_last_set": 9,
+      "notes": ""
+    },
+    {
+      "name": "Bulgarian Split Squat",
+      "target_sets": 3,
+      "target_reps": "8",
+      "target_weight_kg": 10,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 8,
+          "weight_kg": 10
+        },
+        {
+          "set": 2,
+          "reps": 8,
+          "weight_kg": 10
+        },
+        {
+          "set": 3,
+          "reps": 8,
+          "weight_kg": 10
+        }
+      ],
+      "rpe_last_set": 8,
+      "notes": ""
+    },
+    {
+      "name": "Lat Pulldown",
+      "target_sets": 3,
+      "target_reps": "10",
+      "target_weight_kg": 42.5,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 10,
+          "weight_kg": 45
+        },
+        {
+          "set": 2,
+          "reps": 10,
+          "weight_kg": 45
+        },
+        {
+          "set": 3,
+          "reps": 10,
+          "weight_kg": 45
+        }
+      ],
+      "rpe_last_set": 9,
+      "notes": ""
+    },
+    {
+      "name": "Hammer Curl",
+      "target_sets": 3,
+      "target_reps": "10",
+      "target_weight_kg": 15,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 10,
+          "weight_kg": 15
+        },
+        {
+          "set": 2,
+          "reps": 10,
+          "weight_kg": 15
+        },
+        {
+          "set": 3,
+          "reps": 10,
+          "weight_kg": 12.5
+        }
+      ],
+      "rpe_last_set": 9,
+      "notes": ""
+    },
+    {
+      "name": "Lying Incline Dumbbell Curl (drop set)",
+      "target_sets": 3,
+      "target_reps": "to failure",
+      "target_weight_kg": 10,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 10,
+          "weight_kg": 10
+        },
+        {
+          "set": 2,
+          "reps": 8,
+          "weight_kg": 7.5
+        },
+        {
+          "set": 3,
+          "reps": 8,
+          "weight_kg": 5
+        }
+      ],
+      "rpe_last_set": 10,
+      "notes": ""
+    }
+  ],
+  "session_notes": "cable row 52.5 not available rope jumps by 5kg, same case for lat pulldown, form breakdown on hanmer curl with 15 first rep ok second very hard went to 12.5 for last set but I think I could do 3x8x15,",
+  "duration_min": 60
+}
