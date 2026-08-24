@@ -1,43 +1,43 @@
 {
-  "generated": "2026-08-23",
+  "generated": "2026-08-24",
   "recommended_day": "C",
   "days": {
     "A": {
-      "date": "2026-08-23",
+      "date": "2026-08-27",
       "day_type": "A",
-      "session_notes": "BACK REWORK. Cable Crunch is out, Hanging Knee Raise is in (slot 5), on the straight bar so it doubles as grip work. Cue: curl your PELVIS up toward your ribs, do not just lift the knees - slight lower-back rounding at the top is correct here. Knees-only makes it a hip flexor exercise, the opposite of what we want. Stop each set when you start swinging, not when grip gives out. Bench cut to 3 sets at 70: two sessions at RPE 10 with no progress is a volume problem, add a 4th set only if set 3 comes in at RPE 8. Cable Wrist Curl target is 25 - you logged 25 twice against a plan of 60, please confirm which is right.",
+      "session_notes": "Two changes, both REP cuts at the same weight: leg press and shoulder press go 10 -> 8. Load protects muscle in a deficit, the last 2 grinding reps only cost recovery. Bench HOLDS at 70 - RPE 10 twice means that is your ceiling this month, and holding it during a cut is a good session, not a stall. Cable crunch is gone: hanging knee raise replaces it. Curl the pelvis up toward your ribs, do NOT just lift the knees - knees-only makes it a hip flexor exercise, which is backwards for anterior pelvic tilt. Straight bar (your call, for the grip work), and end the set when you start swinging, not when grip fails - a kipping rep loads the lower back and defeats the whole point.",
       "exercises": [
         {
           "name": "Plate Loaded Bench Press",
-          "target_sets": 3,
+          "target_sets": 4,
           "target_reps": "5",
           "target_weight_kg": 70,
           "rest_sec": 120,
-          "notes": "3 sets, not 4. Add a 4th only if set 3 is RPE 8 or easier."
+          "notes": "HOLD 70. RPE 10 on both 08-09 and 08-17 with all reps complete = at ceiling. Do not add. Retention is the goal, not a PR."
         },
         {
           "name": "Dumbbell Shoulder Press",
           "target_sets": 3,
-          "target_reps": "10",
+          "target_reps": "8",
           "target_weight_kg": 17.5,
           "rest_sec": 60,
-          "notes": "Hold. No RPE logged last time."
+          "notes": "Was 3x10 @17.5 at RPE 9. Same weight, 2 fewer reps. Should land at RPE 8."
         },
         {
           "name": "Leg Press 45",
           "target_sets": 3,
-          "target_reps": "10",
+          "target_reps": "8",
           "target_weight_kg": 145,
           "rest_sec": 90,
-          "notes": "Hold 145. Partial ROM. Stop before your pelvis tucks off the pad at the bottom."
+          "notes": "Biggest change of the day. Was 3x10 @145 at RPE 9 - highest tonnage in the session and it is the twice-operated knee. Tonnage drops 4350 -> 3480 kg. Partial ROM, knee-friendly depth."
         },
         {
           "name": "Lateral Raise",
           "target_sets": 3,
-          "target_reps": "12",
+          "target_reps": "10",
           "target_weight_kg": 7.5,
           "rest_sec": 60,
-          "notes": "Same weight, 12 reps instead of 10."
+          "notes": "Unchanged. RPE 9 here costs you almost nothing systemically at 7.5 kg, so it is not worth trimming."
         },
         {
           "name": "Hanging Knee Raise",
@@ -45,46 +45,46 @@
           "target_reps": "12",
           "target_weight_kg": 0,
           "rest_sec": 60,
-          "notes": "NEW - replaces Cable Crunch. Straight bar, per your call - grip-limited reps are fine, it doubles as forearm work. Curl the pelvis up toward the ribs, not just the knees. Hanging also puts the spine in traction instead of compression. HARD RULE: end the set the moment you start swinging, not when grip fails. A kipping/swinging rep loads the lower back, which is the whole thing we are avoiding. Captain's chair only if you cannot stop the swing."
+          "notes": "NEW - replaces Cable Crunch. Hanging puts the spine in traction instead of compression. FORM: curl the pelvis toward the ribs, slight lower-back rounding at the top is correct. Knees-only = hip flexors = counterproductive. Straight bar for the grip work. STOP the set when swinging starts, not when grip fails. Grip-limited reps are fine."
         },
         {
           "name": "Cable Reverse Curl (superset A)",
           "target_sets": 3,
-          "target_reps": "12",
+          "target_reps": "10",
           "target_weight_kg": 25,
           "rest_sec": 0,
-          "notes": "Straight into the wrist curl, no rest."
+          "notes": "Straight into the wrist curl, no rest. Supersets run high on RPE by design - leaving this alone."
         },
         {
           "name": "Cable Wrist Curl (superset B)",
           "target_sets": 3,
-          "target_reps": "12",
+          "target_reps": "10",
           "target_weight_kg": 25,
           "rest_sec": 60,
-          "notes": "CONFIRM THIS NUMBER. Plan said 60, you logged 25 on 08-09 and 08-17."
+          "notes": "Second half of the pair. Rest 60s after this, then back to the reverse curl."
         },
         {
           "name": "Pec Deck Fly (drop set)",
           "target_sets": 3,
           "target_reps": "to failure",
-          "target_weight_kg": 47.5,
-          "rest_sec": 0,
-          "notes": "One triple drop, no rest between drops. 47.5 to failure, drop ~25%, to failure, drop, to failure."
+          "target_weight_kg": 45,
+          "rest_sec": 90,
+          "notes": "ONE triple-drop, no rest between drops: 45 to failure -> 40 to failure -> 35 to failure. RPE 10 here is the design, not a problem. Chest finisher - loads the pec stretch that flat bench underworks."
         }
       ]
     },
     "B": {
-      "date": "2026-08-23",
+      "date": "2026-08-28",
       "day_type": "B",
-      "session_notes": "THE BACK DAY - biggest changes here. RDL is PARKED for 3-4 weeks after the 08-21 pinch, replaced by Hip Thrust. Cable Crunch is replaced by Suitcase Carry, which your profile says helped your back before and which has not been in the program in months. Pull-ups down to 3 sets - that is where the pinch happened, so stop instantly on any catch. Hip thrust and carry weights below are starting guesses: log what you actually do and they will be right next time. RETURN-TO-HINGE LADDER now that the Roman chair is confirmed: (1) Hip Thrust, spine fully supported - you are here; (2) 45-degree back extension, bodyweight, in 3-4 weeks once a Day B passes symptom-free; (3) RDL restarting at 60kg, not 70. Do not skip steps.",
+      "session_notes": "Biggest rework of the three days, all of it aimed at the back. RDL is PARKED for 3-4 weeks - hip thrust replaces it, starting deliberately light at 40 kg to learn the pattern. Shoulder blades on a bench, chin tucked, squeeze the glutes and STOP AT NEUTRAL - never arch past straight at the top. If 40 kg lands under RPE 7, go up 10-20 kg next time. Cable crunch is out, suitcase carry is in: 2 x 40 m per side, one dumbbell in one hand, stand tall, ribs down, do NOT lean away from the weight. Carries are the one intervention your own history says actually helped. Pull-ups cut to 3 sets - this is the exercise your back pinched on. Stop the set AND the exercise on any catch, no negotiating.",
       "exercises": [
         {
           "name": "Hip Thrust",
           "target_sets": 3,
           "target_reps": "10",
-          "target_weight_kg": 50,
+          "target_weight_kg": 40,
           "rest_sec": 120,
-          "notes": "NEW - replaces RDL. Shoulder blades on a bench, chin tucked, squeeze glutes and stop at NEUTRAL. Do not arch past straight at the top. This is the loadable version of the reverse hyper you said helps you. 50 kg is a form-finding load, go heavier next time if it is easy. Step 1 of 3 on the return-to-hinge ladder - see session notes."
+          "notes": "NEW - replaces the parked RDL. The program had ZERO direct glute work across all 30 logged sessions. 40 kg is a deliberate learn-the-pattern load, not a strength target - if it comes in under RPE 7, add 10-20 kg next session. FORM: shoulder blades on bench, chin tucked, squeeze glutes, STOP AT NEUTRAL. Never arch past straight."
         },
         {
           "name": "Pull-Up Parallel Close Grip",
@@ -92,15 +92,15 @@
           "target_reps": "5",
           "target_weight_kg": 0,
           "rest_sec": 90,
-          "notes": "3 sets, not 4. This is where the back pinched on 08-21. Stop the set and the exercise on any catch."
+          "notes": "Cut from 4 sets to 3. This is what your back pinched on 08-21. Stop the set AND the exercise on any catch - do not try to finish it."
         },
         {
           "name": "Machine Seated Row",
           "target_sets": 3,
-          "target_reps": "12",
+          "target_reps": "10",
           "target_weight_kg": 22.5,
           "rest_sec": 90,
-          "notes": "Hold 22.5. Gained here on 08-11, then not logged on 08-21."
+          "notes": "Was 3x12 @22.5 at RPE 10. Same weight, 2 fewer reps. You gained +2.5 kg here this cycle, so hold the load and give back the grinding reps."
         },
         {
           "name": "EZ Bar Curl",
@@ -108,7 +108,7 @@
           "target_reps": "10",
           "target_weight_kg": 30,
           "rest_sec": 60,
-          "notes": "Hold. Skipped on 08-21."
+          "notes": "Hold. RPE 9 last time with all reps complete."
         },
         {
           "name": "Face Pull",
@@ -116,38 +116,38 @@
           "target_reps": "15",
           "target_weight_kg": 40,
           "rest_sec": 45,
-          "notes": "Hold 40. Skipped on 08-21."
+          "notes": "This is a posture and shoulder-health movement - it should feel like RPE 7-8, not the 9 you logged. If 40 does not feel easy, drop to 35. Nothing is gained by grinding this one."
         },
         {
           "name": "Suitcase Carry",
           "target_sets": 2,
-          "target_reps": "40 m per side",
+          "target_reps": "40",
           "target_weight_kg": 24,
           "rest_sec": 90,
-          "notes": "NEW - replaces Cable Crunch. One dumbbell, one hand, walk 40 m, swap hands, walk 40 m back. Stand tall, do not lean away from the weight, ribs down. This is anti-lateral-flexion work under load. Go heavier if 24 feels easy."
+          "notes": "NEW - replaces Cable Crunch. 40 METRES per side, not reps. Anti-lateral-flexion under load with near-zero spinal shear, plus grip and trap carryover. Your profile says weighted carries previously helped the back - they had been absent from the program entirely. FORM: one dumbbell, one hand, stand tall, ribs down, do not lean away from the weight. 2 sets only - that is ~5 min, same as the cable crunch it replaces."
         },
         {
           "name": "Machine Preacher Curl (drop set)",
           "target_sets": 3,
           "target_reps": "to failure",
           "target_weight_kg": 35,
-          "rest_sec": 0,
-          "notes": "One triple drop, no rest between drops."
+          "rest_sec": 90,
+          "notes": "ONE triple-drop, no rest between drops: 35 to failure -> 30 to failure -> 25 to failure. Starting at 35 because you did 3x10 at 35 as straight sets on 08-21."
         }
       ]
     },
     "C": {
-      "date": "2026-08-23",
+      "date": "2026-08-24",
       "day_type": "C",
-      "session_notes": "SUGGESTED NEXT - Day C is the stalest at 7 days. Unchanged structurally, and this is your free-progress day: four adds are earned from the 08-16 numbers. Box squat and lat pulldown both came in at RPE 7 with all reps, so those two go up with high confidence. Cable row and hammer curl go up with medium confidence - if either feels like RPE 9+, drop back and hold. Watch the clock: last Day C was 81 min against a 50-min target, so keep the rests honest.",
+      "session_notes": "Your best-calibrated day - you logged RPE 7/7/8/7 here, which is exactly the target band, so this is the day that earns progressions. Four of them: box squat 55, cable row 52.5, lat pulldown 42.5, hammer curl 15. All four were all-reps-complete at RPE 7-8, which is the rule for adding load. Two things do NOT move: incline bench holds at 22.5 (RPE 9), and Bulgarian split squat drops to 8 reps at the same weight (it came back RPE 10, the only outlier on this day).",
       "exercises": [
         {
           "name": "Dumbbell Incline Bench Press",
           "target_sets": 3,
-          "target_reps": "12",
+          "target_reps": "10",
           "target_weight_kg": 22.5,
           "rest_sec": 90,
-          "notes": "Same weight, 12 reps instead of 10."
+          "notes": "Hold. RPE 9 last time. Real improvement already banked - you went from 12/9/8 with a drop-off to a clean 10/10/10 at full weight."
         },
         {
           "name": "Box Squat",
@@ -155,7 +155,7 @@
           "target_reps": "10",
           "target_weight_kg": 55,
           "rest_sec": 90,
-          "notes": "ADD 2.5. Was 52.5 at RPE 7 with all reps. Controlled depth, knee-safe."
+          "notes": "+2.5 kg. Earned: 3x10 @52.5 at RPE 7. High box, limited depth, knee-safe. If the knee says anything at all, stop the set."
         },
         {
           "name": "Cable Row",
@@ -163,23 +163,23 @@
           "target_reps": "10",
           "target_weight_kg": 52.5,
           "rest_sec": 90,
-          "notes": "ADD 2.5. Was 50 at RPE 8. Keep the torso still, do not row with your lower back."
+          "notes": "+2.5 kg. Earned: 3x10 @50 at RPE 8."
         },
         {
           "name": "Bulgarian Split Squat",
           "target_sets": 3,
-          "target_reps": "10",
+          "target_reps": "8",
           "target_weight_kg": 10,
           "rest_sec": 90,
-          "notes": "Hold. Came in at RPE 10 on 08-16. Bonus: the rear leg gets a loaded hip flexor stretch, which is on-theme for the tilt."
+          "notes": "Rep cut, same weight. Came back RPE 10 - the only outlier on an otherwise well-calibrated day. Should land at RPE 8 now."
         },
         {
           "name": "Lat Pulldown",
           "target_sets": 3,
           "target_reps": "10",
-          "target_weight_kg": 45,
+          "target_weight_kg": 42.5,
           "rest_sec": 90,
-          "notes": "ADD 5. Was 40 at RPE 7, down from RPE 10 - the effort collapsed, so take the jump."
+          "notes": "+2.5 kg. Earned: 3x10 @40 at RPE 7. This one regressed earlier in the cut, so getting it moving again is worth noting."
         },
         {
           "name": "Hammer Curl",
@@ -187,15 +187,15 @@
           "target_reps": "10",
           "target_weight_kg": 15,
           "rest_sec": 60,
-          "notes": "ADD 2.5. Was 12.5 at RPE 7."
+          "notes": "+2.5 kg. Earned: 3x10 @12.5 at RPE 7. Neutral grip, brachialis bias."
         },
         {
           "name": "Lying Incline Dumbbell Curl (drop set)",
           "target_sets": 3,
           "target_reps": "to failure",
           "target_weight_kg": 10,
-          "rest_sec": 0,
-          "notes": "Hold 10. Bench at 45-60 deg, upper arms hanging behind the torso and still."
+          "rest_sec": 90,
+          "notes": "ONE triple-drop per hand, no rest between drops: 10 to failure -> 7.5 to failure -> 5 to failure. The only stretch-position bicep movement in the whole program. FORM: bench at 45-60 degrees, upper arms hanging BEHIND the torso and kept still, no rolling the shoulder forward to cheat the rep."
         }
       ]
     }
