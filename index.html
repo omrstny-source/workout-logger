@@ -270,6 +270,76 @@
     .success-body h2 { font-size: 26px; font-weight: 800; margin-bottom: 8px; }
     .success-body p { color: #9ca3af; margin-bottom: 32px; line-height: 1.6; }
 
+    /* ── Back log ────────────────────────────────────── */
+    .header-actions { display: flex; align-items: center; gap: 4px; }
+    .link-btn {
+      background: #374151; border: 1px solid #4b5563; color: #d1d5db;
+      font-size: 12px; font-weight: 700; border-radius: 999px;
+      padding: 7px 12px; cursor: pointer; white-space: nowrap;
+    }
+
+    .back-banner {
+      margin: 10px 12px 0; padding: 11px 14px;
+      background: #1e2536; border: 1px solid #374151;
+      border-left: 3px solid #f59e0b; border-radius: 10px;
+      font-size: 13px; color: #fcd34d; line-height: 1.45;
+      cursor: pointer; display: none;
+    }
+    .back-banner.show { display: block; }
+    .back-banner.done { border-left-color: #10b981; color: #6ee7b7; }
+
+    .card {
+      background: #1f2937; margin: 0 12px 12px;
+      border-radius: 14px; padding: 16px;
+    }
+    .card .hint {
+      font-size: 12px; color: #6b7280;
+      line-height: 1.5; margin-bottom: 12px;
+    }
+
+    /* Two rows of six, not one row of eleven. Eleven across a phone gives 27px-wide
+       buttons — too small for something tapped half-asleep before breakfast, and a
+       mis-tap here silently corrupts the series. `10` spans the spare cell. */
+    .score-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 5px; }
+    .score-btn {
+      min-height: 46px; padding: 0;
+      border: 1.5px solid #4b5563; background: #374151; color: #d1d5db;
+      border-radius: 8px; font-size: 16px; font-weight: 700; cursor: pointer;
+    }
+    .score-btn:last-child { grid-column: span 2; }
+    .score-btn.sel { background: #6366f1; border-color: #a5b4fc; color: #fff; }
+    .score-scale {
+      display: flex; justify-content: space-between;
+      font-size: 10px; color: #4b5563; margin-top: 6px;
+      text-transform: uppercase; letter-spacing: 0.05em;
+    }
+
+    .chip-row { display: flex; flex-wrap: wrap; gap: 6px; }
+    .chip {
+      padding: 9px 13px; border: 1.5px solid #4b5563;
+      background: #374151; color: #d1d5db; border-radius: 999px;
+      font-size: 13px; font-weight: 600; cursor: pointer;
+    }
+    .chip.sel { background: #6366f1; border-color: #a5b4fc; color: #fff; }
+    .chip.flare { border-color: #7f1d1d; background: #1c1010; color: #fca5a5; }
+
+    .hist { width: 100%; border-collapse: collapse; font-size: 13px; }
+    .hist th {
+      font-size: 10px; font-weight: 700; color: #4b5563; text-align: right;
+      text-transform: uppercase; letter-spacing: 0.06em;
+      padding: 0 0 8px; border-bottom: 1px solid #374151;
+    }
+    .hist th:first-child, .hist td:first-child { text-align: left; }
+    .hist td {
+      padding: 9px 0; border-bottom: 1px solid #2d3748;
+      text-align: right; font-variant-numeric: tabular-nums; color: #d1d5db;
+    }
+    .hist tr:last-child td { border-bottom: none; }
+    .hist .up   { color: #fca5a5; font-weight: 700; }
+    .hist .flat { color: #6b7280; }
+    .hist .down { color: #6ee7b7; font-weight: 700; }
+    .hist .dim  { color: #4b5563; }
+
     .hidden { display: none !important; }
 
     /* ── Modal ───────────────────────────────────────── */
@@ -336,8 +406,13 @@
       <h1 id="session-title"></h1>
       <div class="sub" id="session-date"></div>
     </div>
-    <button class="settings-btn" onclick="showScreen('settings')" title="Settings">⚙</button>
+    <div class="header-actions">
+      <button class="link-btn" onclick="showScreen('back')">Back log</button>
+      <button class="settings-btn" onclick="showScreen('settings')" title="Settings">⚙</button>
+    </div>
   </div>
+
+  <div class="back-banner" id="back-banner" onclick="showScreen('back')"></div>
 
   <div class="day-select-wrap" id="day-select-wrap" style="display:none">
     <label for="day-select">Training day</label>
@@ -392,6 +467,69 @@
   </div>
 </div>
 
+<!-- ── BACK LOG SCREEN ─────────────────────────────────────── -->
+<div id="screen-back" class="screen">
+  <div class="header">
+    <div class="header-text">
+      <h1>Back log</h1>
+      <div class="sub" id="back-date"></div>
+    </div>
+    <button class="settings-btn" onclick="showScreen('session')" title="Close">&#x2715;</button>
+  </div>
+
+  <div class="section-label">Morning &mdash; before the 5-min routine</div>
+  <div class="card">
+    <div class="hint">
+      First thing, before you get moving and before move 1. This is the hard-mattress
+      reading and the day's clean baseline &mdash; score it after the routine and you can
+      never tell whether the routine is doing anything.
+    </div>
+    <div class="score-grid" id="am-grid"></div>
+    <div class="score-scale"><span>0 &middot; nothing</span><span>10 &middot; worst it gets</span></div>
+    <div style="margin-top:16px">
+      <label>Did the 5-min routine</label>
+      <div class="chip-row" id="routine-row"></div>
+    </div>
+  </div>
+
+  <div class="section-label">Evening &mdash; last thing</div>
+  <div class="card">
+    <div class="hint">
+      After the full day's upright dose. Evening minus morning is the number that
+      actually carries the signal &mdash; a single daily score cannot separate a bad day
+      from a bad afternoon.
+    </div>
+    <div class="score-grid" id="pm-grid"></div>
+    <div class="score-scale"><span>0 &middot; nothing</span><span>10 &middot; worst it gets</span></div>
+    <div style="margin-top:16px">
+      <label>Longest unbroken block on your feet</label>
+      <div class="chip-row" id="upright-row"></div>
+    </div>
+    <div style="margin-top:16px">
+      <label>Note (optional)</label>
+      <textarea id="back-note" placeholder="Anything different today"></textarea>
+    </div>
+  </div>
+
+  <div class="section-label">It hurts right now</div>
+  <div class="card">
+    <div class="hint">
+      No schedule &mdash; tap whenever it flares. A 14:00 spike that has faded by bedtime
+      is invisible to the evening score, and that is exactly the event worth catching.
+    </div>
+    <div class="chip-row" id="flare-row"></div>
+    <div class="hint" id="flare-today" style="margin:12px 0 0"></div>
+  </div>
+
+  <div class="section-label">Last 14 days</div>
+  <div class="card" id="back-history"></div>
+
+  <div class="page-bottom-spacer"></div>
+  <div class="bottom-bar">
+    <button class="btn btn-success" id="back-sync-btn" onclick="syncBackLog(true)">Save to GitHub</button>
+  </div>
+</div>
+
 <!-- ── MODAL ────────────────────────────────────────────────────────────── -->
 <div id="modal-overlay" class="modal-overlay hidden">
   <div class="modal">
@@ -412,7 +550,12 @@ let restTimer = { id: null, elTimer: null, elCountdown: null };
 
 // ─── Boot ─────────────────────────────────────────────────────────────────────
 window.addEventListener('DOMContentLoaded', async () => {
+  // Local back-log state first: the banner must be right on the very first paint,
+  // before any network call, or the nudge arrives too late to be acted on.
+  backLog = loadLocalBackLog();
+  renderBackBanner();
   await loadPlan(ls('gh_repo'), ls('gh_token'));
+  syncBackLog(false);            // pulls remote, flushes anything logged offline
 });
 
 // ─── Screen management ────────────────────────────────────────────────────────
@@ -1012,7 +1155,10 @@ function showScreen_settings_prep() {
 const _showScreen = showScreen;
 window.showScreen = function(name) {
   if (name === 'settings') showScreen_settings_prep();
+  if (name === 'back')     renderBack();
+  if (name === 'session')  renderBackBanner();
   _showScreen(name);
+  window.scrollTo({ top: 0 });
 };
 
 function saveSettings() {
@@ -1062,6 +1208,335 @@ function purgeLegacyAutosave() {
     .forEach(k => localStorage.removeItem(k));
 }
 
+// ─── Back log ─────────────────────────────────────────────────────────────────
+// Two scheduled scores a day plus unscheduled flares, in back-log.json at the repo
+// root so /trainer reads the whole symptom history in one fetch.
+//
+// Design notes worth keeping:
+//  * TWO scores, not one. The provocation pattern is cumulative time upright, so the
+//    signal is pm-minus-am, not the absolute level. One number a day cannot tell a
+//    bad day from a bad afternoon.
+//  * The morning score is taken BEFORE the 5-min routine. After it, the routine's own
+//    effect is baked into the baseline and becomes unmeasurable.
+//  * Flares are unscheduled and one tap. A spike at 14:00 that fades by bedtime is
+//    invisible to an am/pm pair, and that is the most diagnostic event there is.
+//  * Local-first, always. Every tap lands in localStorage and GitHub is caught up
+//    afterwards — an entry that needs a working network is an entry that stops
+//    happening, and adherence is the whole point of this feature.
+let backLog       = { days: {}, flares: [] };
+let backSyncTimer = null;
+
+const UPRIGHT_BANDS = ['none', 'under 15 min', '15-30 min', '30-45 min', '45 min +'];
+const FLARE_CAUSES  = ['standing', 'walking', 'running', 'lying flat', 'gym', 'no idea'];
+
+// ─── Back log: storage ────────────────────────────────────────────────────────
+function loadLocalBackLog() {
+  try {
+    const v = JSON.parse(ls('back_log_local') || 'null');
+    return (v && v.days) ? { days: v.days, flares: v.flares || [] } : { days: {}, flares: [] };
+  } catch (e) { return { days: {}, flares: [] }; }
+}
+
+function persistLocalBackLog() { lsSet('back_log_local', JSON.stringify(backLog)); }
+
+// Dirty = date keys edited locally since the last successful push. These win over
+// whatever GitHub holds; every other day is taken from the remote copy.
+function dirtyDays() {
+  try { return new Set(JSON.parse(ls('back_log_dirty') || '[]')); } catch (e) { return new Set(); }
+}
+function markDirty(day) {
+  const s = dirtyDays(); s.add(day);
+  lsSet('back_log_dirty', JSON.stringify([...s]));
+}
+
+function todayEntry() {
+  const d = todayISO();
+  if (!backLog.days[d]) backLog.days[d] = {};
+  return backLog.days[d];
+}
+
+// ─── Back log: writes ─────────────────────────────────────────────────────────
+// Tapping the selected value again clears it — a mis-tap must be undoable, or the
+// series quietly fills with numbers he did not mean.
+function setScore(slot, val) {
+  const e = todayEntry();
+  if (e[slot] === val) { delete e[slot]; delete e[slot + '_at']; }
+  else                 { e[slot] = val;  e[slot + '_at'] = nowHM(); }
+  commitBackEntry();
+}
+
+function setRoutine(done) {
+  const e = todayEntry();
+  if (e.routine === done) delete e.routine; else e.routine = done;
+  commitBackEntry();
+}
+
+function setUpright(band) {
+  const e = todayEntry();
+  if (e.longest_upright === band) delete e.longest_upright; else e.longest_upright = band;
+  commitBackEntry();
+}
+
+function setBackNote(v) {
+  const e = todayEntry();
+  if (v.trim()) e.note = v; else delete e.note;
+  markDirty(todayISO());
+  persistLocalBackLog();
+  queueBackSync();
+}
+
+// Flares carry their own id, not just a timestamp. Two taps inside the same minute
+// are entirely plausible (mis-tap, then the right cause), and keying the union on the
+// time alone made the second one vanish.
+function flareId(at) {
+  return `${at}#${Math.random().toString(36).slice(2, 8)}`;
+}
+function flareKey(f) { return f.id || f.at; }
+
+function addFlare(cause) {
+  const at = `${todayISO()}T${nowHMS()}`;
+  backLog.flares.push({ id: flareId(at), at, cause });
+  commitBackEntry();
+}
+
+// Flares merge by union, so a plain splice would be undone the moment the remote
+// copy is read back. Deletions need a tombstone that outlives the merge.
+function deletedFlares() {
+  try { return new Set(JSON.parse(ls('back_log_flares_deleted') || '[]')); } catch (e) { return new Set(); }
+}
+
+function undoLastFlare() {
+  const today = todayISO();
+  for (let i = backLog.flares.length - 1; i >= 0; i--) {
+    if (String(backLog.flares[i].at).startsWith(today)) {
+      const dead = deletedFlares();
+      dead.add(flareKey(backLog.flares[i]));
+      lsSet('back_log_flares_deleted', JSON.stringify([...dead]));
+      backLog.flares.splice(i, 1);
+      break;
+    }
+  }
+  commitBackEntry();
+  syncBackLog(true);
+}
+
+function commitBackEntry() {
+  markDirty(todayISO());
+  persistLocalBackLog();
+  renderBack();
+  renderBackBanner();
+  queueBackSync();
+}
+
+// ─── Back log: sync ───────────────────────────────────────────────────────────
+function queueBackSync() {
+  if (backSyncTimer) clearTimeout(backSyncTimer);
+  setSyncState('pending');
+  backSyncTimer = setTimeout(() => syncBackLog(false), 2500);
+}
+
+// Local dirty days overwrite remote; flares are unioned by timestamp so two devices
+// cannot lose each other's taps.
+function mergeBackLog(remote) {
+  const out = { days: Object.assign({}, (remote && remote.days) || {}),
+                flares: ((remote && remote.flares) || []).slice() };
+  const dirty = dirtyDays();
+  Object.keys(backLog.days).forEach(d => {
+    if (dirty.has(d) || !out.days[d]) out.days[d] = backLog.days[d];
+  });
+  const have = new Set(out.flares.map(flareKey));
+  backLog.flares.forEach(f => { if (!have.has(flareKey(f))) out.flares.push(f); });
+  const dead = deletedFlares();
+  out.flares = out.flares.filter(f => !dead.has(flareKey(f)));
+  out.flares.sort((a, b) => (a.at < b.at ? -1 : a.at > b.at ? 1 : 0));
+  return out;
+}
+
+async function syncBackLog(force) {
+  if (backSyncTimer) { clearTimeout(backSyncTimer); backSyncTimer = null; }
+  const repo = ls('gh_repo'), token = ls('gh_token');
+  if (!repo || !token) { setSyncState('offline'); return false; }
+
+  setSyncState('syncing');
+  try {
+    let remote = null, sha = null;
+    const res = await ghFetch('GET', repo, token, 'contents/back-log.json');
+    if (res.ok) {
+      const file = await res.json();
+      sha    = file.sha;
+      remote = JSON.parse(fromBase64(file.content));
+    } else if (res.status !== 404) {
+      throw new Error(`read failed (${res.status})`);
+    }
+
+    const merged = mergeBackLog(remote);
+
+    // Only the data decides whether to push. Otherwise every app open would land a
+    // commit that changes nothing but the `updated` stamp.
+    const before = JSON.stringify({ days: (remote && remote.days) || {},
+                                    flares: (remote && remote.flares) || [] });
+    const after  = JSON.stringify({ days: merged.days, flares: merged.flares });
+
+    if (before !== after || (force && !remote)) {
+      const body = {
+        message: `Back log ${todayISO()}`,
+        content: toBase64(JSON.stringify({
+          updated: todayISO(),
+          scale:   '0-10, 0 = nothing, 10 = worst it gets. am is scored BEFORE the 5-min routine.',
+          days:    merged.days,
+          flares:  merged.flares
+        }, null, 2)),
+        ...(sha ? { sha } : {})
+      };
+      const put = await ghFetch('PUT', repo, token, 'contents/back-log.json', body);
+      if (!put.ok) {
+        const e = await put.json().catch(() => ({}));
+        throw new Error(e.message || `write failed (${put.status})`);
+      }
+    }
+
+    backLog = merged;
+    persistLocalBackLog();
+    lsSet('back_log_dirty', '[]');
+    setSyncState('clean');
+    renderBack();
+    renderBackBanner();
+    return true;
+  } catch (err) {
+    // The tap is already safe in localStorage; the next open retries.
+    setSyncState('failed', err.message);
+    return false;
+  }
+}
+
+function setSyncState(state, msg) {
+  const btn = document.getElementById('back-sync-btn');
+  if (!btn) return;
+  const label = {
+    clean:   'Saved to GitHub ✓',
+    syncing: 'Saving…',
+    pending: 'Save to GitHub',
+    offline: 'Connect GitHub in settings to sync',
+    failed:  `Not saved (${msg || 'offline'}) — tap to retry`
+  }[state] || 'Save to GitHub';
+  btn.textContent = label;
+  btn.className   = 'btn ' + (state === 'clean' ? 'btn-muted' : 'btn-success');
+  btn.disabled    = state === 'syncing' || state === 'offline';
+}
+
+// ─── Back log: render ─────────────────────────────────────────────────────────
+function renderBack() {
+  if (!document.getElementById('am-grid')) return;
+  const today = todayISO();
+  const e = backLog.days[today] || {};
+
+  document.getElementById('back-date').textContent = fmtDate(today);
+  renderScoreGrid('am-grid', 'am', e.am);
+  renderScoreGrid('pm-grid', 'pm', e.pm);
+
+  renderChips('routine-row', ['Yes', 'No'], e.routine === true ? 'Yes' : e.routine === false ? 'No' : null,
+              v => setRoutine(v === 'Yes'));
+  renderChips('upright-row', UPRIGHT_BANDS, e.longest_upright || null, setUpright);
+  renderChips('flare-row', FLARE_CAUSES, null, addFlare, 'flare');
+
+  const note = document.getElementById('back-note');
+  note.value  = e.note || '';
+  note.oninput = ev => setBackNote(ev.target.value);
+
+  const mine = backLog.flares.filter(f => String(f.at).startsWith(today));
+  const host = document.getElementById('flare-today');
+  if (!mine.length) {
+    host.textContent = 'No flares logged today.';
+  } else {
+    host.innerHTML = `Today: ${mine.map(f => `<strong>${escapeHtml(f.at.slice(11, 16))}</strong> ${escapeHtml(f.cause)}`).join(' &middot; ')}
+      <button class="link-btn" style="margin-left:8px" onclick="undoLastFlare()">Undo last</button>`;
+  }
+
+  renderBackHistory();
+}
+
+function renderScoreGrid(id, slot, sel) {
+  const host = document.getElementById(id);
+  host.innerHTML = '';
+  for (let i = 0; i <= 10; i++) {
+    const b = document.createElement('button');
+    b.type      = 'button';
+    b.className = 'score-btn' + (sel === i ? ' sel' : '');
+    b.textContent = i;
+    b.onclick   = () => setScore(slot, i);
+    host.appendChild(b);
+  }
+}
+
+function renderChips(id, values, sel, onPick, extraCls) {
+  const host = document.getElementById(id);
+  host.innerHTML = '';
+  values.forEach(v => {
+    const b = document.createElement('button');
+    b.type      = 'button';
+    b.className = 'chip' + (extraCls ? ' ' + extraCls : '') + (sel === v ? ' sel' : '');
+    b.textContent = v;
+    b.onclick   = () => onPick(v);
+    host.appendChild(b);
+  });
+}
+
+function renderBackHistory() {
+  const host = document.getElementById('back-history');
+  const days = Object.keys(backLog.days).sort().reverse().slice(0, 14);
+  if (!days.length) {
+    host.innerHTML = `<div class="hint" style="margin:0">Nothing logged yet. Two taps a day and this table starts answering whether anything is working.</div>`;
+    return;
+  }
+  const rows = days.map(d => {
+    const e  = backLog.days[d] || {};
+    const am = e.am != null ? e.am : null;
+    const pm = e.pm != null ? e.pm : null;
+    const n  = backLog.flares.filter(f => String(f.at).startsWith(d)).length;
+    let delta = '<span class="dim">&mdash;</span>';
+    if (am != null && pm != null) {
+      const v   = pm - am;
+      const cls = v > 0 ? 'up' : v < 0 ? 'down' : 'flat';
+      delta = `<span class="${cls}">${v > 0 ? '+' : ''}${v}</span>`;
+    }
+    const short = new Date(d + 'T12:00:00')
+      .toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' });
+    return `<tr>
+      <td>${short}</td>
+      <td>${am != null ? am : '<span class="dim">&mdash;</span>'}</td>
+      <td>${pm != null ? pm : '<span class="dim">&mdash;</span>'}</td>
+      <td>${delta}</td>
+      <td>${n ? n : '<span class="dim">0</span>'}</td>
+      <td class="dim" style="font-size:11px">${escapeHtml(e.longest_upright || '')}</td>
+    </tr>`;
+  }).join('');
+  host.innerHTML = `<table class="hist">
+    <thead><tr><th>Day</th><th>AM</th><th>PM</th><th>&Delta;</th><th>Flares</th><th>Upright</th></tr></thead>
+    <tbody>${rows}</tbody></table>`;
+}
+
+// The session screen is opened ~3x a week and the log needs 14 entries in that time,
+// so this banner is a catch-net, not the reminder. The reminder has to be an alarm.
+function renderBackBanner() {
+  const el = document.getElementById('back-banner');
+  if (!el) return;
+  const e = backLog.days[todayISO()] || {};
+  const h = new Date().getHours();
+
+  let msg = null, done = false;
+  if (e.am == null)            msg = 'Morning back score not logged &mdash; tap to add it.';
+  else if (e.pm == null && h >= 18) msg = 'Evening back score still open &mdash; tap to close the day.';
+  else if (e.pm != null) {
+    const v = e.pm - e.am;
+    msg = `Back today: ${e.am} &rarr; ${e.pm} (${v > 0 ? '+' : ''}${v}). Logged.`;
+    done = true;
+  }
+
+  el.classList.toggle('show', !!msg);
+  el.classList.toggle('done', done);
+  if (msg) el.innerHTML = msg;
+}
+
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 function ls(k)       { return localStorage.getItem(k) || ''; }
 function lsSet(k, v) { localStorage.setItem(k, v); }
@@ -1097,8 +1572,24 @@ function escapeHtml(s) {
     ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 }
 
+function nowHM() {
+  const n = new Date(), p = v => String(v).padStart(2, '0');
+  return `${p(n.getHours())}:${p(n.getMinutes())}`;
+}
+
+function nowHMS() {
+  const n = new Date(), p = v => String(v).padStart(2, '0');
+  return `${p(n.getHours())}:${p(n.getMinutes())}:${p(n.getSeconds())}`;
+}
+
 function toBase64(str) {
   return btoa(unescape(encodeURIComponent(str)));
+}
+
+// Inverse of toBase64. A bare atob() mangles any non-ASCII — the note field will
+// eventually hold Czech, so it has to round-trip through UTF-8.
+function fromBase64(b64) {
+  return decodeURIComponent(escape(atob(String(b64).replace(/\s/g, ''))));
 }
 
 function ghFetch(method, repo, token, path, body) {
