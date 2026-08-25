@@ -3,7 +3,9 @@
   "scale": "0-10, 0 = nothing, 10 = worst it gets. am is scored BEFORE the 5-min routine.",
   "days": {
     "2026-08-25": {
-      "routine": true
+      "routine": true,
+      "am": 2,
+      "am_at": "10:28"
     }
   },
   "flares": []
