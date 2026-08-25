@@ -1,0 +1,10 @@
+{
+  "updated": "2026-08-25",
+  "scale": "0-10, 0 = nothing, 10 = worst it gets. am is scored BEFORE the 5-min routine.",
+  "days": {
+    "2026-08-25": {
+      "routine": true
+    }
+  },
+  "flares": []
+}
