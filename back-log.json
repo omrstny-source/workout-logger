@@ -10,7 +10,10 @@
     "2026-08-31": {
       "am": 2,
       "am_at": "19:38",
-      "routine": false
+      "routine": false,
+      "longest_upright": "45 min +",
+      "pm": 3,
+      "pm_at": "19:38"
     }
   },
   "flares": [
