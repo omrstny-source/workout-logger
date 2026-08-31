@@ -1,0 +1,214 @@
+{
+  "date": "2026-08-31",
+  "day_type": "A",
+  "planned_date": "2026-08-27",
+  "exercises": [
+    {
+      "name": "Plate Loaded Bench Press",
+      "target_sets": 4,
+      "target_reps": "5",
+      "target_weight_kg": 70,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 5,
+          "weight_kg": 70
+        },
+        {
+          "set": 2,
+          "reps": 5,
+          "weight_kg": 70
+        },
+        {
+          "set": 3,
+          "reps": 5,
+          "weight_kg": 70
+        },
+        {
+          "set": 4,
+          "reps": 6,
+          "weight_kg": 50
+        }
+      ],
+      "rpe_last_set": 10,
+      "notes": ""
+    },
+    {
+      "name": "Dumbbell Shoulder Press",
+      "target_sets": 3,
+      "target_reps": "8",
+      "target_weight_kg": 17.5,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 8,
+          "weight_kg": 17.5
+        },
+        {
+          "set": 2,
+          "reps": 8,
+          "weight_kg": 17.5
+        },
+        {
+          "set": 3,
+          "reps": 8,
+          "weight_kg": 17.5
+        }
+      ],
+      "rpe_last_set": 7,
+      "notes": ""
+    },
+    {
+      "name": "Leg Press 45",
+      "target_sets": 3,
+      "target_reps": "8",
+      "target_weight_kg": 145,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 8,
+          "weight_kg": 145
+        },
+        {
+          "set": 2,
+          "reps": 8,
+          "weight_kg": 145
+        },
+        {
+          "set": 3,
+          "reps": 8,
+          "weight_kg": 145
+        }
+      ],
+      "rpe_last_set": 9,
+      "notes": ""
+    },
+    {
+      "name": "Lateral Raise",
+      "target_sets": 3,
+      "target_reps": "10",
+      "target_weight_kg": 7.5,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 10,
+          "weight_kg": 7.5
+        },
+        {
+          "set": 2,
+          "reps": 10,
+          "weight_kg": 7.5
+        },
+        {
+          "set": 3,
+          "reps": 10,
+          "weight_kg": 7.5
+        }
+      ],
+      "rpe_last_set": 10,
+      "notes": ""
+    },
+    {
+      "name": "Hanging Knee Raise",
+      "target_sets": 3,
+      "target_reps": "12",
+      "target_weight_kg": 0,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 12,
+          "weight_kg": 0
+        },
+        {
+          "set": 2,
+          "reps": 12,
+          "weight_kg": 0
+        },
+        {
+          "set": 3,
+          "reps": 12,
+          "weight_kg": 0
+        }
+      ],
+      "rpe_last_set": 10,
+      "notes": ""
+    },
+    {
+      "name": "Cable Reverse Curl (superset A)",
+      "target_sets": 3,
+      "target_reps": "10",
+      "target_weight_kg": 25,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 10,
+          "weight_kg": 25
+        },
+        {
+          "set": 2,
+          "reps": 10,
+          "weight_kg": 25
+        },
+        {
+          "set": 3,
+          "reps": 10,
+          "weight_kg": 25
+        }
+      ],
+      "rpe_last_set": 9,
+      "notes": ""
+    },
+    {
+      "name": "Cable Wrist Curl (superset B)",
+      "target_sets": 3,
+      "target_reps": "10",
+      "target_weight_kg": 25,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 10,
+          "weight_kg": 25
+        },
+        {
+          "set": 2,
+          "reps": 10,
+          "weight_kg": 25
+        },
+        {
+          "set": 3,
+          "reps": 10,
+          "weight_kg": 25
+        }
+      ],
+      "rpe_last_set": 9,
+      "notes": ""
+    },
+    {
+      "name": "Pec Deck Fly (drop set)",
+      "target_sets": 3,
+      "target_reps": "to failure",
+      "target_weight_kg": 45,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 10,
+          "weight_kg": 47
+        },
+        {
+          "set": 2,
+          "reps": 6,
+          "weight_kg": 40
+        },
+        {
+          "set": 3,
+          "reps": 4,
+          "weight_kg": 33
+        }
+      ],
+      "rpe_last_set": 10,
+      "notes": ""
+    }
+  ],
+  "session_notes": "low on time so I combined bench and legnraise into superset",
+  "duration_min": 43
+}
