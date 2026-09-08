@@ -1,0 +1,174 @@
+{
+  "date": "2026-09-08",
+  "day_type": "A",
+  "planned_date": "2026-09-08",
+  "exercises": [
+    {
+      "name": "Barbell Overhead Press - top set",
+      "target_sets": 1,
+      "target_reps": "5",
+      "target_weight_kg": 32.5,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 5,
+          "weight_kg": 35
+        }
+      ],
+      "rpe_last_set": 5,
+      "notes": ""
+    },
+    {
+      "name": "Barbell Overhead Press - back-off",
+      "target_sets": 2,
+      "target_reps": "7",
+      "target_weight_kg": 27.5,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 7,
+          "weight_kg": 30
+        },
+        {
+          "set": 2,
+          "reps": 7,
+          "weight_kg": 30
+        }
+      ],
+      "rpe_last_set": 5,
+      "notes": ""
+    },
+    {
+      "name": "Plate Loaded Bench Press - top set",
+      "target_sets": 1,
+      "target_reps": "3",
+      "target_weight_kg": 72.5,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 3,
+          "weight_kg": 72.5
+        }
+      ],
+      "rpe_last_set": 8,
+      "notes": ""
+    },
+    {
+      "name": "Plate Loaded Bench Press - back-off",
+      "target_sets": 2,
+      "target_reps": "6",
+      "target_weight_kg": 60,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 6,
+          "weight_kg": 60
+        },
+        {
+          "set": 2,
+          "reps": 7,
+          "weight_kg": 60
+        }
+      ],
+      "rpe_last_set": 8,
+      "notes": ""
+    },
+    {
+      "name": "Leg Press 45 (partial ROM)",
+      "target_sets": 2,
+      "target_reps": "8",
+      "target_weight_kg": 135,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 8,
+          "weight_kg": 135
+        },
+        {
+          "set": 2,
+          "reps": 8,
+          "weight_kg": 135
+        }
+      ],
+      "rpe_last_set": 6,
+      "notes": ""
+    },
+    {
+      "name": "Suitcase Hold (straps)",
+      "target_sets": 2,
+      "target_reps": "25",
+      "target_weight_kg": 24,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 45,
+          "weight_kg": 24
+        },
+        {
+          "set": 2,
+          "reps": 45,
+          "weight_kg": 24
+        }
+      ],
+      "rpe_last_set": 6,
+      "notes": ""
+    },
+    {
+      "name": "Lateral Raise",
+      "target_sets": 2,
+      "target_reps": "15",
+      "target_weight_kg": 5,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 15,
+          "weight_kg": 5
+        },
+        {
+          "set": 2,
+          "reps": 15,
+          "weight_kg": 5
+        }
+      ],
+      "rpe_last_set": 8,
+      "notes": ""
+    },
+    {
+      "name": "Pec Deck Fly (drop set)",
+      "target_sets": 3,
+      "target_reps": "to failure",
+      "target_weight_kg": 42.5,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 11,
+          "weight_kg": 43
+        },
+        {
+          "set": 2,
+          "reps": 8,
+          "weight_kg": 33
+        },
+        {
+          "set": 3,
+          "reps": 10,
+          "weight_kg": 19
+        }
+      ],
+      "rpe_last_set": 10,
+      "notes": ""
+    }
+  ],
+  "warmup_completed": [
+    "Leg swings",
+    "Couch stretch",
+    "Seated 90/90 hip switch",
+    "90/90 push-up",
+    "Side plank",
+    "Clamshell",
+    "Seated good morning, unloaded",
+    "Straddle hold"
+  ],
+  "session_notes": "ad side lying hip raise or what it was called after clamshells, did calf raises on the 45 sled in rest time and feels good, ",
+  "duration_min": 46
+}
