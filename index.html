@@ -421,6 +421,7 @@
   </div>
 
   <div id="briefing-container"></div>
+  <div id="warmup-container"></div>
 
   <div class="section-label">Exercises</div>
   <div id="exercises-container"></div>
@@ -764,6 +765,7 @@ function renderSession() {
   document.getElementById('session-date').textContent = fmtDate(todayISO()) + planned;
 
   renderBriefing();
+  renderWarmup();
 
   const container = document.getElementById('exercises-container');
   container.innerHTML = '';
@@ -876,6 +878,64 @@ function renderBriefing() {
     const collapsed = box.classList.toggle('collapsed');
     btn.textContent = collapsed ? 'Show more' : 'Show less';
   };
+  host.appendChild(box);
+}
+
+
+// ─── Warm-up block (plan.warmup, or planFile.warmup shared by all days) ───────
+// The mobility/activation block is identical every session and is the part most
+// likely to be skipped when time is short, so it gets its own checklist above the
+// lifts rather than being buried in the session brief. Ticks are per day and are
+// cleared with the rest of the autosave when a session is saved.
+function warmupList() {
+  const list = (plan && plan.warmup) || (planFile && planFile.warmup) || [];
+  return Array.isArray(list) ? list : [];
+}
+
+function warmupKey(i) { return `w_${currentDay}_${i}`; }
+
+function renderWarmup() {
+  const host = document.getElementById('warmup-container');
+  host.innerHTML = '';
+  const list = warmupList();
+  if (!list.length) return;
+
+  const box = document.createElement('div');
+  box.className = 'warmup';
+  const done = list.filter((_, i) => ls(warmupKey(i)) === '1').length;
+  // Collapse it once it is finished so it stops taking up the screen mid-session.
+  if (done === list.length) box.classList.add('collapsed');
+
+  box.innerHTML = `
+    <div class="warmup-head">
+      <h4>Warm-up &middot; hips &amp; core</h4>
+      <span class="warmup-count${done === list.length ? ' done' : ''}">${done}/${list.length}</span>
+    </div>
+    <ul></ul>
+  `;
+  const ul = box.querySelector('ul');
+
+  list.forEach((d, i) => {
+    const li = document.createElement('li');
+    const checked = ls(warmupKey(i)) === '1';
+    if (checked) li.classList.add('checked');
+    const cb = document.createElement('input');
+    cb.type = 'checkbox';
+    cb.checked = checked;
+    cb.id = `wu-${i}`;
+    const lab = document.createElement('label');
+    lab.htmlFor = cb.id;
+    lab.innerHTML = `
+      <div class="wu-name">${escapeHtml(d.name || '')}</div>
+      ${d.dose ? `<div class="wu-dose">${escapeHtml(d.dose)}</div>` : ''}
+      ${d.note ? `<div class="wu-note">${escapeHtml(d.note)}</div>` : ''}
+    `;
+    cb.onchange = () => { lsSet(warmupKey(i), cb.checked ? '1' : ''); renderWarmup(); };
+    li.appendChild(cb); li.appendChild(lab);
+    ul.appendChild(li);
+  });
+
+  box.querySelector('.warmup-head').onclick = () => box.classList.toggle('collapsed');
   host.appendChild(box);
 }
 
@@ -999,6 +1059,7 @@ function buildSession() {
     session_number: plan.session_number,
     notion_page_id: plan.notion_page_id,
     exercises,
+    warmup_completed: warmupList().filter((_, i) => ls(warmupKey(i)) === '1').map(d => d.name),
     session_notes:  document.getElementById('session-notes').value,
     duration_min:   duration
   };
@@ -1192,8 +1253,10 @@ function resetApp() {
 // Clears the CURRENT day only — a half-finished other day must survive.
 function clearAutosave() {
   const prefix = `s_${currentDay}_`;
+  const wprefix = `w_${currentDay}_`;
   Object.keys(localStorage)
     .filter(k => k.startsWith(prefix)
+              || k.startsWith(wprefix)
               || k === `session_notes_${currentDay}`
               || k === `session_start_time_${currentDay}`)
     .forEach(k => localStorage.removeItem(k));
