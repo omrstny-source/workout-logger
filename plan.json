@@ -103,19 +103,20 @@
           "name": "Suitcase Hold (straps)",
           "target_sets": 2,
           "target_reps": "25",
-          "target_weight_kg": 28,
+          "target_weight_kg": 24,
           "rest_sec": 60,
-          "notes": "Reps field = SECONDS per side. Use the straps - that is the whole fix for your forearms dying first. Stand tall, ribs down, do not lean away from the weight.",
+          "notes": "24 kg - the load you already carried on 09-03, so it definitely exists in the gym. Straps on: that is the whole fix for your forearms failing before your core. Stand tall, ribs down, do not lean away from the weight. Go up when 24 feels easy for the full 25 s.",
           "sets": [],
-          "rpe_last_set": null
+          "rpe_last_set": null,
+          "unit": "s/side"
         },
         {
           "name": "Lateral Raise",
           "target_sets": 2,
-          "target_reps": "12",
-          "target_weight_kg": 6,
+          "target_reps": "15",
+          "target_weight_kg": 5,
           "rest_sec": 60,
-          "notes": "6 kg not 7.5. Keep it clean.",
+          "notes": "6 kg does not exist - dumbbells go in 2.5 kg steps. 5 kg x 15 this week (RPE 7 cap), then 7.5 kg x 12 from week 2. Your old RPE 9-10 at 7.5 was a fatigue-inflated rating, not a real ceiling.",
           "sets": [],
           "rpe_last_set": null
         },
@@ -125,7 +126,7 @@
           "target_reps": "to failure",
           "target_weight_kg": 42.5,
           "rest_sec": 0,
-          "notes": "Drop 25-30% each time: 42.5 -> 31 -> 22.5. Aim for 10-12 reps on the FIRST drop. Your old 15% drops were why the last mini-set collapsed to 4 reps.",
+          "notes": "Drop 25-30% each time on 2.5 kg steps: 42.5 -> 32.5 -> 22.5. Aim 10-12 reps on the FIRST drop. Your old ~15% drops are why the last mini-set collapsed to 4 reps.",
           "sets": [],
           "rpe_last_set": null
         }
@@ -142,7 +143,7 @@
           "target_reps": "12",
           "target_weight_kg": 0,
           "rest_sec": 90,
-          "notes": "GATE: this is the step before the trap bar. Squeeze glutes, chin tucked, STOP AT NEUTRAL - never arch past straight. Drive it as HIP extension, not a back bend.",
+          "notes": "GATE: this is the step before the trap bar. Squeeze glutes, chin tucked, STOP AT NEUTRAL - never arch past straight. Drive it as HIP extension, not a back bend. NOTE for when the trap bar opens: check its bare weight - most hex bars are 25 kg, not 20, so 70 kg means bar + 2x22.5.",
           "sets": [],
           "rpe_last_set": null
         },
@@ -190,9 +191,9 @@
           "name": "Face Pull",
           "target_sets": 2,
           "target_reps": "15",
-          "target_weight_kg": 27.5,
+          "target_weight_kg": 25,
           "rest_sec": 45,
-          "notes": "27.5 not 40. This is the posture exercise - do not skip it because your upper back feels irritable. If it pinches, swap to a prone Y-raise at bodyweight.",
+          "notes": "25 kg, not 40. Cable stacks are usually 5 kg steps, so take the nearest plate below 27.5. This is the posture exercise - do not skip it because your upper back feels irritable. If it pinches, prone Y-raise at bodyweight.",
           "sets": [],
           "rpe_last_set": null
         },
@@ -200,9 +201,9 @@
           "name": "Machine Preacher Curl (drop set)",
           "target_sets": 3,
           "target_reps": "to failure",
-          "target_weight_kg": 27.5,
+          "target_weight_kg": 25,
           "rest_sec": 0,
-          "notes": "Drop 25-30%: 27.5 -> 20 -> 15. Aim 10-12 on the first drop. EZ bar curl is gone, so you come into this fresh - it should not read 7 reps again.",
+          "notes": "25 kg start (the stack has 25 and 30, not 27.5). Drop to the next two plates down, roughly 25 -> 17.5 -> 12.5. Aim 10-12 on the first drop. EZ bar curl is gone so you come into this fresh - it should not read 7 reps again.",
           "sets": [],
           "rpe_last_set": null
         }
@@ -259,7 +260,7 @@
           "target_reps": "10",
           "target_weight_kg": 15,
           "rest_sec": 60,
-          "notes": "NEW. 10 per side. Half-kneeling so your legs cannot help. Press the handle straight out from your chest and resist the cable twisting you. Slow.",
+          "notes": "NEW. 10 per side. Half-kneeling so your legs cannot help. Press the handle straight out from your chest and resist the twist. Pick the nearest stack plate to 15 kg - exact load does not matter here, control does.",
           "sets": [],
           "rpe_last_set": null
         },
@@ -289,7 +290,7 @@
           "target_reps": "to failure",
           "target_weight_kg": 7.5,
           "rest_sec": 0,
-          "notes": "Drop 25-30% per hand: 7.5 -> 5 -> 4. The only stretch-position bicep movement you do - upper arms hang behind the torso, do not roll the shoulder forward.",
+          "notes": "Per hand, on 2.5 kg steps: 7.5 -> 5 -> 2.5. The only stretch-position bicep movement you do - upper arms hang behind the torso, do not roll the shoulder forward.",
           "sets": [],
           "rpe_last_set": null
         }
