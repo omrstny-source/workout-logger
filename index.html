@@ -123,12 +123,44 @@
       color: #4b5563; padding: 20px 16px 8px;
     }
 
+    /* ── Exercise groups ─────────────────────────────── */
+    /* Multi-entry lifts (top set + back-off) render as ONE bordered block so the
+       eye reads one exercise, not two. Colour separates the kinds of work:
+       green = warm-up, blue = the lifts, amber = the drop-set finisher. */
+    .ex-group {
+      margin: 0 12px 14px; border-radius: 12px; overflow: hidden;
+      border: 2px solid #2563eb; background: #1b2231;
+    }
+    .ex-group.finisher { border-color: #f59e0b; }
+    .ex-group-head {
+      padding: 11px 16px; background: #2563eb;
+      display: flex; align-items: center; justify-content: space-between; gap: 10px;
+    }
+    .ex-group.finisher .ex-group-head { background: #f59e0b; }
+    .ex-group-name {
+      font-size: 17px; font-weight: 800; color: #f2f7ff; letter-spacing: -0.01em;
+    }
+    .ex-group.finisher .ex-group-name { color: #2b1a00; }
+    .ex-group-tag {
+      font-size: 10px; font-weight: 800; letter-spacing: 0.09em; text-transform: uppercase;
+      color: #2b1a00; background: rgba(255,255,255,0.5);
+      padding: 3px 8px; border-radius: 999px; flex: none;
+    }
+    .ex-part + .ex-part { border-top: 2px solid #2d3748; }
+    .ex-part-label {
+      font-size: 10px; font-weight: 800; letter-spacing: 0.09em; text-transform: uppercase;
+      color: #93b4f5; margin-bottom: 5px;
+    }
+    .ex-group.finisher .ex-part-label { color: #fbbf24; }
+
     .exercise-card {
       background: #1f2937;
       margin: 0 12px 12px;
       border-radius: 14px;
       overflow: hidden;
     }
+    .ex-group .exercise-card { margin: 0; border-radius: 0; background: transparent; }
+    .ex-group .exercise-header { border-bottom: 1px solid #2d3748; }
 
     .exercise-header {
       padding: 14px 16px 12px;
@@ -823,9 +855,32 @@ function renderSession() {
   const container = document.getElementById('exercises-container');
   container.innerHTML = '';
 
+  // Group consecutive entries that share a base name, so "Bench - top set" and
+  // "Bench - back-off" read as one exercise instead of two unrelated cards.
+  const groups = [];
   plan.exercises.forEach((ex, ei) => {
+    const base  = String(ex.name).split(' - ')[0].trim();
+    const part  = String(ex.name).includes(' - ')
+      ? String(ex.name).slice(String(ex.name).indexOf(' - ') + 3).trim() : '';
+    const isFin = /drop\s*set/i.test(ex.name)
+      || String(ex.target_reps).toLowerCase().includes('failure');
+    const last  = groups[groups.length - 1];
+    if (last && last.base === base && last.isFin === isFin) last.items.push({ ex, ei, part });
+    else groups.push({ base, isFin, items: [{ ex, ei, part }] });
+  });
+
+  groups.forEach(group => {
+    const wrap = document.createElement('div');
+    wrap.className = 'ex-group' + (group.isFin ? ' finisher' : '');
+    wrap.innerHTML = `
+      <div class="ex-group-head">
+        <div class="ex-group-name">${escapeHtml(group.base)}</div>
+        ${group.isFin ? '<span class="ex-group-tag">Finisher</span>' : ''}
+      </div>`;
+
+    group.items.forEach(({ ex, ei, part }) => {
     const card = document.createElement('div');
-    card.className = 'exercise-card';
+    card.className = 'exercise-card ex-part';
 
     const setWeights = (ex.sets || []).map(s => (s && s.weight_kg != null) ? s.weight_kg : ex.target_weight_kg);
     const distinctW = [...new Set(setWeights)];
@@ -834,9 +889,13 @@ function renderSession() {
       : 'BW';
     const rest = ex.rest_sec != null ? ` &middot; rest ${fmtRest(ex.rest_sec)}` : '';
 
+    // The group header already carries the name, so a part only labels itself
+    // when the group actually has more than one (top set / back-off).
+    const partLabel = (group.items.length > 1 && part)
+      ? `<div class="ex-part-label">${escapeHtml(part)}</div>` : '';
     card.innerHTML = `
       <div class="exercise-header">
-        <div class="exercise-name">${ex.name}</div>
+        ${partLabel}
         <div class="exercise-meta">${ex.target_sets} sets &times; ${ex.target_reps} ${unitShort(ex)} @ ${weight}${rest}</div>
         ${ex.notes ? `<div class="exercise-note">${escapeHtml(ex.notes)}</div>` : ''}
       </div>
@@ -902,7 +961,9 @@ function renderSession() {
       card.appendChild(row);
     }
 
-    container.appendChild(card);
+    wrap.appendChild(card);
+    });
+    container.appendChild(wrap);
   });
 
   // Restore session notes (per day; assigned not added, so re-rendering
