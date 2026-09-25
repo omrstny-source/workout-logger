@@ -211,7 +211,7 @@
     "C": {
       "date": "2026-09-28",
       "day_type": "C",
-      "session_notes": "Box squat: 55 was RPE 7, so go for 10 reps at 55, then 60. After the last box squat set, stay standing and hold the bar racked 30-45 s. Hip thrust gave you lower back last time, so same 45 but 8 reps, not 10, and hard focus on the top: ribs down, chin tucked, tilt the pelvis under, stop at neutral. If you feel the lower back again, stop the exercise and tell the log. Pallof stays 18 with a 2 s hold, because your shoulder limits it, not your obliques. Wrist + reverse curl superset in the hip thrust rests. RECOMP VOLUME (+6 sets): goblet box squat 3x12 (same box, no setup) and lat pulldown 2x10 added, DB incline to 3 sets. Expect ~60 min.",
+      "session_notes": "Box squat: 55 was RPE 7, so go for 10 reps at 55, then 60. After the last box squat set, stay standing and hold the bar racked 30-45 s. Hip thrust gave you lower back last time, so same 45 but 8 reps, not 10, and hard focus on the top: ribs down, chin tucked, tilt the pelvis under, stop at neutral. If you feel the lower back again, stop the exercise and tell the log. Pallof stays 18 with a 2 s hold, because your shoulder limits it, not your obliques. Wrist + reverse curl superset in the hip thrust rests. RECOMP VOLUME (+6 sets): goblet squat 3x12 (no box) and lat pulldown 2x10 added, DB incline to 3 sets. Expect ~60 min.",
       "exercises": [
         {
           "name": "Box Squat (high box) - top set",
@@ -254,12 +254,12 @@
           "notes": "10 per side, 2 s hold at full extension. Shoulder is the limiter, so we add the hold, not load."
         },
         {
-          "name": "Goblet Box Squat",
+          "name": "Goblet Squat",
           "target_sets": 3,
           "target_reps": "12",
           "target_weight_kg": 22.5,
           "rest_sec": 75,
-          "notes": "REPLACES Bulgarian split squat 09-25 (too slow to set up and do per side). Same high box as the box squat, so zero setup. Heaviest DB held at the chest, 3 s down, touch the box, stand. Quad volume with almost no spinal load. RPE 7-8; if 22.5 is easy, slow the lowering to 4 s rather than hunting for a heavier DB."
+          "notes": "REPLACES Bulgarian split squat 09-25. No box (his call, he is fine without one). Heaviest DB held at the chest, 3 s down to the depth your knee allows - stop above where the knee complains, do not chase depth. Quad volume with almost no spinal load. RPE 7-8; if 22.5 is easy, slow the lowering to 4 s rather than hunting for a heavier DB."
         },
         {
           "name": "Lat Pulldown",
