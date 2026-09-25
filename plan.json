@@ -52,7 +52,7 @@
     "A": {
       "date": "2026-09-28",
       "day_type": "A",
-      "session_notes": "FIRST SESSION AFTER BEING SICK: if you still feel weak, take ~10% off every load and cap everything at RPE 7-8. Fever or body aches = do not train. Changes: overhead press goes to 40 (35 was RPE 5). Bench top set 75 for the triple, your call, and we build from there. Back-off stays at 60 and aims for 7 reps so you do not have to hunt for 1.25 plates. Calf raises on the 45 sled in the bench rests.",
+      "session_notes": "FIRST SESSION AFTER BEING SICK: if you still feel weak, take ~10% off every load and cap everything at RPE 7-8. Fever or body aches = do not train. Changes: overhead press goes to 40 (35 was RPE 5). Bench top set 75 for the triple, your call, and we build from there. Back-off stays at 60 and aims for 7 reps so you do not have to hunt for 1.25 plates. Calf raises on the 45 sled in the bench rests. RECOMP VOLUME (+5 sets): lat pulldown 3x10 added, leg press and lateral raise go to 3 sets. Expect ~60 min.",
       "exercises": [
         {
           "name": "Barbell Overhead Press - top set",
@@ -88,11 +88,19 @@
         },
         {
           "name": "Leg Press 45 (partial ROM)",
-          "target_sets": 2,
+          "target_sets": 3,
           "target_reps": "8",
           "target_weight_kg": 145,
           "rest_sec": 120,
-          "notes": "RPE 6 at 135, back to the 145 you have run before. Partial ROM, the knee is the boss."
+          "notes": "RPE 6 at 135, back to the 145 you have run before. Partial ROM, the knee is the boss. 3rd set added 09-25 for quad volume."
+        },
+        {
+          "name": "Lat Pulldown",
+          "target_sets": 3,
+          "target_reps": "10",
+          "target_weight_kg": 45,
+          "rest_sec": 90,
+          "notes": "BACK IN 09-25 for lat volume (recomp block). 45x10 was RPE 8 on 09-06. Chest up, pull to the collarbone, no leaning back. RPE 8 cap, stop on any catch in the back."
         },
         {
           "name": "Suitcase Hold (straps)",
@@ -105,11 +113,11 @@
         },
         {
           "name": "Lateral Raise",
-          "target_sets": 2,
+          "target_sets": 3,
           "target_reps": "10",
           "target_weight_kg": 7.5,
           "rest_sec": 60,
-          "notes": "5 kg x15 was RPE 8, so 7.5 for 10."
+          "notes": "5 kg x15 was RPE 8, so 7.5 for 10. 3rd set added 09-25."
         },
         {
           "name": "Pec Deck Fly (drop set)",
@@ -124,7 +132,7 @@
     "B": {
       "date": "2026-09-28",
       "day_type": "B",
-      "session_notes": "BACK: last Day B gave you the usual back pain the next day, worse with movement and at florbal. So the trap bar gate is CLOSED again, and back extension stays in but lighter: 2x8 at RPE 6, not 3x12 at RPE 9. If the day after is clean, it goes to 2x10, then the trap bar. If the pain comes back again, back extension comes out. Try not to do Day B the day before florbal, or we cannot tell which one did it. Dips get +5 kg, face pull drops to 30 so you hit the full 15.",
+      "session_notes": "BACK: last Day B gave you the usual back pain the next day, worse with movement and at florbal. So the trap bar gate is CLOSED again, and back extension stays in but lighter: 2x8 at RPE 6, not 3x12 at RPE 9. If the day after is clean, it goes to 2x10, then the trap bar. If the pain comes back again, back extension comes out. Try not to do Day B the day before florbal, or we cannot tell which one did it. Dips get +5 kg, face pull drops to 30 so you hit the full 15. RECOMP VOLUME (+6 sets): leg press 3x10 and lateral raise 2x15 added, face pull to 3 sets. Expect ~50-55 min.",
       "exercises": [
         {
           "name": "45 Back Extension (stop at neutral)",
@@ -167,8 +175,24 @@
           "notes": "+5 kg (bodyweight was RPE 7). Stop at ~90 deg elbow, slight forward lean, do not sink."
         },
         {
-          "name": "Face Pull",
+          "name": "Leg Press 45 (partial ROM)",
+          "target_sets": 3,
+          "target_reps": "10",
+          "target_weight_kg": 130,
+          "rest_sec": 90,
+          "notes": "ADDED 09-25 for quad volume - B had no quad work. Lighter than Day A (130x10, RPE 7-8). Partial ROM, knee is the boss. Keep the lower back flat on the pad."
+        },
+        {
+          "name": "Lateral Raise",
           "target_sets": 2,
+          "target_reps": "15",
+          "target_weight_kg": 5,
+          "rest_sec": 60,
+          "notes": "ADDED 09-25. Side delts only got 2 sets per rotation. 5 kg x15 was RPE 8."
+        },
+        {
+          "name": "Face Pull",
+          "target_sets": 3,
           "target_reps": "15",
           "target_weight_kg": 30,
           "rest_sec": 45,
@@ -187,7 +211,7 @@
     "C": {
       "date": "2026-09-28",
       "day_type": "C",
-      "session_notes": "Box squat: 55 was RPE 7, so go for 10 reps at 55, then 60. After the last box squat set, stay standing and hold the bar racked 30-45 s. Hip thrust gave you lower back last time, so same 45 but 8 reps, not 10, and hard focus on the top: ribs down, chin tucked, tilt the pelvis under, stop at neutral. If you feel the lower back again, stop the exercise and tell the log. Pallof stays 18 with a 2 s hold, because your shoulder limits it, not your obliques. Wrist + reverse curl superset in the hip thrust rests.",
+      "session_notes": "Box squat: 55 was RPE 7, so go for 10 reps at 55, then 60. After the last box squat set, stay standing and hold the bar racked 30-45 s. Hip thrust gave you lower back last time, so same 45 but 8 reps, not 10, and hard focus on the top: ribs down, chin tucked, tilt the pelvis under, stop at neutral. If you feel the lower back again, stop the exercise and tell the log. Pallof stays 18 with a 2 s hold, because your shoulder limits it, not your obliques. Wrist + reverse curl superset in the hip thrust rests. RECOMP VOLUME (+6 sets): Bulgarian split squat 3x8/side and lat pulldown 2x10 added, DB incline to 3 sets. Expect ~60 min.",
       "exercises": [
         {
           "name": "Box Squat (high box) - top set",
@@ -230,8 +254,24 @@
           "notes": "10 per side, 2 s hold at full extension. Shoulder is the limiter, so we add the hold, not load."
         },
         {
-          "name": "DB Incline Bench Press",
+          "name": "Bulgarian Split Squat",
+          "target_sets": 3,
+          "target_reps": "8",
+          "target_weight_kg": 10,
+          "rest_sec": 75,
+          "notes": "8 PER SIDE. BACK IN 09-25 - the cut you disliked most, and the only unilateral leg work. 10 kg DBs x8/side was RPE 8 on 09-06. Torso slightly forward, do not arch. Knee is the boss."
+        },
+        {
+          "name": "Lat Pulldown",
           "target_sets": 2,
+          "target_reps": "10",
+          "target_weight_kg": 45,
+          "rest_sec": 90,
+          "notes": "ADDED 09-25 - C had no back work. Same cues as Day A."
+        },
+        {
+          "name": "DB Incline Bench Press",
+          "target_sets": 3,
           "target_reps": "8",
           "target_weight_kg": 22.5,
           "rest_sec": 90,
