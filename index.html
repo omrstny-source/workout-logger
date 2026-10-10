@@ -168,6 +168,8 @@
     }
     .exercise-name { font-size: 17px; font-weight: 700; margin-bottom: 3px; }
     .exercise-meta { font-size: 13px; color: #9ca3af; }
+    .variant-select { margin-top: 8px; width: 100%; padding: 8px; font-size: 14px; border-radius: 8px;
+                      background: #111827; color: #e5e7eb; border: 1px solid #374151; }
     .exercise-note { font-size: 12px; color: #6b7280; margin-top: 6px; font-style: italic; line-height: 1.4; }
 
     /* ── Day selector ────────────────────────────────── */
@@ -767,7 +769,7 @@ function activatePlan(data) {
   purgeLegacyAutosave();
   planFile = normalizePlan(data);
   const available = Object.keys(planFile.days);
-  const suggested = computeRecommendedDay(available);
+  const suggested = computeRecommendedDay(available.filter(d => ROTATION.includes(d)));
   if (suggested) planFile.recommended_day = suggested;
   const remembered = ls('current_day');
   // A day with sets already typed in wins — never drop him mid-session. Otherwise
@@ -790,7 +792,7 @@ function renderDaySelector() {
   if (days.length < 2) { wrap.style.display = 'none'; return; }
 
   sel.innerHTML = days.map(d => {
-    const label = `Day ${d} — ${DAY_LABELS[d] || ''}`.trim();
+    const label = dayTitle(d);
     const rec   = d === planFile.recommended_day ? '  ★ suggested next' : '';
     // Show the gap that produced the suggestion, so the star is never a mystery.
     const n     = daysSince(dayHistory && dayHistory[d]);
@@ -829,7 +831,7 @@ function renderDayProgress() {
   const here = countSets();
   const mine = here.filled > 0 ? `${here.filled}/${here.total} sets logged here.` : '';
   const rest = others.length
-    ? ` Unfinished elsewhere: ${others.map(o => `Day ${o.d} (${o.n})`).join(', ')}.`
+    ? ` Unfinished elsewhere: ${others.map(o => `${dayShort(o.d)} (${o.n})`).join(', ')}.`
     : '';
   el.textContent = (mine + rest).trim();
 }
@@ -838,12 +840,18 @@ function renderDayProgress() {
 function setKey(ei, si, day) { return `s_${day || currentDay}_${ei}_${si}`; }
 
 // ─── Render session ────────────────────────────────────────────────────────────
-const DAY_LABELS = { A: 'Push + Legs', B: 'Pull + Hinge', C: 'Full Body' };
+const DAY_LABELS = { A: 'Push + Legs', B: 'Pull + Hinge', C: 'Full Body', H: 'missed gym' };
+
+// Day H is the home/hotel stand-in for a missed gym session. It is selectable and
+// logged like any day, but it never takes part in the A -> B -> C suggestion:
+// a home session does not mean the gym day it replaced was trained.
+const ROTATION = ['A', 'B', 'C'];
+function dayShort(d) { return d === 'H' ? 'Home' : `Day ${d}`; }
+function dayTitle(d) { return `${dayShort(d)} — ${DAY_LABELS[d] || ''}`.replace(/ — $/, ''); }
 
 function renderSession() {
   const dayKey = plan.day_type || currentDay;
-  document.getElementById('session-title').textContent =
-    `Day ${dayKey} — ${DAY_LABELS[dayKey] || ''}`;
+  document.getElementById('session-title').textContent = dayTitle(dayKey);
   // Show today — the plan date is only a suggestion once days are selectable.
   const planned = plan.date && plan.date !== todayISO()
     ? `  (planned ${fmtDate(plan.date)})` : '';
@@ -898,6 +906,7 @@ function renderSession() {
         ${partLabel}
         <div class="exercise-meta">${ex.target_sets} sets &times; ${ex.target_reps} ${unitShort(ex)} @ ${weight}${rest}</div>
         ${ex.notes ? `<div class="exercise-note">${escapeHtml(ex.notes)}</div>` : ''}
+        ${variantPicker(ex, ei)}
       </div>
     `;
 
@@ -996,6 +1005,18 @@ function renderBriefing() {
 }
 
 
+
+// `variants` on a plan entry (home day: chin-up OR door-frame row) renders a
+// picker, so the log records which movement was actually done. Stored under the
+// day's s_ prefix so clearAutosave wipes it with the sets.
+function variantKey(ei, day) { return `s_${day || currentDay}_${ei}_variant`; }
+function variantPicker(ex, ei) {
+  if (!Array.isArray(ex.variants) || ex.variants.length < 2) return '';
+  const cur = ls(variantKey(ei)) || ex.variants[0];
+  const opts = ex.variants.map(v =>
+    `<option${v === cur ? ' selected' : ''}>${escapeHtml(v)}</option>`).join('');
+  return `<select class="variant-select" onchange="persist('${variantKey(ei)}', this.value)">${opts}</select>`;
+}
 
 // Some entries are timed or measured in distance rather than reps (suitcase holds,
 // carries). `unit` on the plan entry relabels the field so the log stops calling
@@ -1168,6 +1189,8 @@ function buildSession() {
       target_weight_kg: ex.target_weight_kg,
       sets,
       rpe_last_set:     parseInt(ls(`${lastK}_rpe`)) || null,
+      ...(Array.isArray(ex.variants) && ex.variants.length > 1
+        ? { variant: ls(variantKey(ei)) || ex.variants[0] } : {}),
       notes:            ''
     };
   });
@@ -1360,7 +1383,7 @@ function saveSettings() {
 // After saving, pre-select the day that has now been left the longest, so the
 // app opens on the right session without needing a new plan pushed.
 function advanceDay() {
-  const order = ['A', 'B', 'C'].filter(d => planFile?.days?.[d]);
+  const order = ROTATION.filter(d => planFile?.days?.[d]);
   if (order.length < 2) return;
   // Record the save locally: the suggestion must be right immediately, before
   // the next sessions listing comes back from GitHub.
