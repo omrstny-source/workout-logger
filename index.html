@@ -796,7 +796,9 @@ function renderDaySelector() {
     const rec   = d === planFile.recommended_day ? '  ★ suggested next' : '';
     // Show the gap that produced the suggestion, so the star is never a mystery.
     const n     = daysSince(dayHistory && dayHistory[d]);
-    const ago   = dayHistory ? (n === null ? '  (never done)' : `  (${n}d ago)`) : '';
+    // Home is not in the rotation, so "never done" would read as a nudge to do it.
+    const ago   = !dayHistory || (d === 'H' && n === null) ? ''
+                : (n === null ? '  (never done)' : `  (${n}d ago)`);
     return `<option value="${d}"${d === currentDay ? ' selected' : ''}>${label}${rec}${ago}</option>`;
   }).join('');
   wrap.style.display = 'block';
