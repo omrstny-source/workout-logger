@@ -301,6 +301,23 @@
       "session_notes": "Use this only to replace a missed gym day. It doesn't move the A/B/C rotation. Bodyweight only: every set ends 1-2 reps short of failure, or it doesn't count as growth work. Too easy (target hit at RPE 7)? Slow the lowering to 4-5 s or add a pause before adding reps. Pick the pull variant you actually did so the log stays honest.",
       "exercises": [
         {
+          "name": "Pike Push-up",
+          "target_sets": 3,
+          "target_reps": "8",
+          "target_weight_kg": 0,
+          "rest_sec": 90,
+          "notes": "Feet on bed for harder, floor for easier. Head travels in front of the hands."
+        },
+        {
+          "name": "Bulgarian Split Squat",
+          "target_sets": 3,
+          "target_reps": "12",
+          "unit": "reps/side",
+          "target_weight_kg": 0,
+          "rest_sec": 90,
+          "notes": "Rear foot on bed or chair, 3 s down. Slight forward lean, ribs down, never arch to go deeper. Knee sets the depth."
+        },
+        {
           "name": "Pull",
           "variants": [
             "Chin-up",
@@ -314,13 +331,13 @@
           "notes": "Chin-up 8 (palms toward you), RPE 8 cap, stop on any catch. No bar: door-frame row 12 per side, feet closer to the frame = harder. Towel row: stand on the push-to-open side so pulling shuts the door."
         },
         {
-          "name": "Bulgarian Split Squat",
+          "name": "Single-leg Hip Thrust",
           "target_sets": 3,
           "target_reps": "12",
           "unit": "reps/side",
           "target_weight_kg": 0,
           "rest_sec": 90,
-          "notes": "Rear foot on bed or chair, 3 s down. Slight forward lean, ribs down, never arch to go deeper. Knee sets the depth."
+          "notes": "Shoulders on bed or sofa (floor = glute bridge). 2 s squeeze, ribs down, stop at neutral, never arch past straight."
         },
         {
           "name": "Push-up",
@@ -334,23 +351,6 @@
           "target_weight_kg": 0,
           "rest_sec": 90,
           "notes": "Feet on bed if there is one. Floor: 3 s down, 1 s chest on floor. End the set when the hips sag."
-        },
-        {
-          "name": "Single-leg Hip Thrust",
-          "target_sets": 3,
-          "target_reps": "12",
-          "unit": "reps/side",
-          "target_weight_kg": 0,
-          "rest_sec": 90,
-          "notes": "Shoulders on bed or sofa (floor = glute bridge). 2 s squeeze, ribs down, stop at neutral, never arch past straight."
-        },
-        {
-          "name": "Pike Push-up",
-          "target_sets": 3,
-          "target_reps": "8",
-          "target_weight_kg": 0,
-          "rest_sec": 90,
-          "notes": "Feet on bed for harder, floor for easier. Head travels in front of the hands."
         }
       ]
     }
