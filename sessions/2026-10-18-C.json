@@ -1,0 +1,215 @@
+{
+  "date": "2026-10-18",
+  "day_type": "C",
+  "planned_date": "2026-09-28",
+  "exercises": [
+    {
+      "name": "Box Squat (high box) - top set",
+      "target_sets": 1,
+      "target_reps": "10",
+      "target_weight_kg": 55,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 10,
+          "weight_kg": 10
+        }
+      ],
+      "rpe_last_set": 7,
+      "notes": ""
+    },
+    {
+      "name": "Box Squat (high box) - back-off",
+      "target_sets": 2,
+      "target_reps": "8",
+      "target_weight_kg": 50,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 8,
+          "weight_kg": 10
+        },
+        {
+          "set": 2,
+          "reps": 8,
+          "weight_kg": 10
+        }
+      ],
+      "rpe_last_set": 7,
+      "notes": ""
+    },
+    {
+      "name": "Hip Thrust",
+      "target_sets": 3,
+      "target_reps": "12-15",
+      "target_weight_kg": 20,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 15,
+          "weight_kg": 20
+        },
+        {
+          "set": 2,
+          "reps": 15,
+          "weight_kg": 20
+        },
+        {
+          "set": 3,
+          "reps": 15,
+          "weight_kg": 20
+        }
+      ],
+      "rpe_last_set": 9,
+      "notes": ""
+    },
+    {
+      "name": "Pallof Press (half-kneeling)",
+      "target_sets": 2,
+      "target_reps": "10",
+      "target_weight_kg": 18,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 12,
+          "weight_kg": 11.3
+        },
+        {
+          "set": 2,
+          "reps": 12,
+          "weight_kg": 11.3
+        }
+      ],
+      "rpe_last_set": 9,
+      "notes": ""
+    },
+    {
+      "name": "Goblet Squat",
+      "target_sets": 3,
+      "target_reps": "12",
+      "target_weight_kg": 22.5,
+      "sets": [
+        {
+          "set": 1,
+          "reps": null,
+          "weight_kg": null
+        },
+        {
+          "set": 2,
+          "reps": null,
+          "weight_kg": null
+        },
+        {
+          "set": 3,
+          "reps": null,
+          "weight_kg": null
+        }
+      ],
+      "rpe_last_set": null,
+      "notes": ""
+    },
+    {
+      "name": "Lat Pulldown",
+      "target_sets": 2,
+      "target_reps": "10",
+      "target_weight_kg": 45,
+      "sets": [
+        {
+          "set": 1,
+          "reps": null,
+          "weight_kg": null
+        },
+        {
+          "set": 2,
+          "reps": null,
+          "weight_kg": null
+        }
+      ],
+      "rpe_last_set": null,
+      "notes": ""
+    },
+    {
+      "name": "DB Incline Bench Press",
+      "target_sets": 3,
+      "target_reps": "8",
+      "target_weight_kg": 22.5,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 12,
+          "weight_kg": 20
+        },
+        {
+          "set": 2,
+          "reps": 10,
+          "weight_kg": 20
+        },
+        {
+          "set": 3,
+          "reps": 8,
+          "weight_kg": 20
+        }
+      ],
+      "rpe_last_set": 10,
+      "notes": ""
+    },
+    {
+      "name": "Hammer Curl",
+      "target_sets": 2,
+      "target_reps": "8",
+      "target_weight_kg": 17.5,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 8,
+          "weight_kg": 18
+        },
+        {
+          "set": 2,
+          "reps": 8,
+          "weight_kg": 18
+        }
+      ],
+      "rpe_last_set": 10,
+      "notes": ""
+    },
+    {
+      "name": "Lying Incline DB Curl (drop set)",
+      "target_sets": 3,
+      "target_reps": "to failure",
+      "target_weight_kg": 10,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 8,
+          "weight_kg": 10
+        },
+        {
+          "set": 2,
+          "reps": 10,
+          "weight_kg": 8
+        },
+        {
+          "set": 3,
+          "reps": 10,
+          "weight_kg": 6
+        }
+      ],
+      "rpe_last_set": 10,
+      "notes": ""
+    }
+  ],
+  "warmup_completed": [
+    "Leg swings",
+    "Couch stretch",
+    "Seated 90/90 hip switch",
+    "90/90 push-up",
+    "Side plank",
+    "Clamshell",
+    "Side-lying hip abduction",
+    "Seated good morning, unloaded",
+    "Straddle hold"
+  ],
+  "session_notes": "no box in this gym did do squats on \"matrix perfect squat machine\", different cable machine so palof was harder this time so had to go lower, highest dunbel was 20 so had to do 20 on the incline bench, ",
+  "duration_min": 45
+}
