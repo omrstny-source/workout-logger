@@ -1,0 +1,160 @@
+{
+  "date": "2026-10-19",
+  "day_type": "A",
+  "planned_date": "2026-10-19",
+  "exercises": [
+    {
+      "name": "Shoulder Press - top set",
+      "target_sets": 1,
+      "target_reps": "5",
+      "target_weight_kg": 40,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 5,
+          "weight_kg": 50
+        }
+      ],
+      "rpe_last_set": 7,
+      "variant": "Machine shoulder press",
+      "notes": ""
+    },
+    {
+      "name": "Shoulder Press - back-off",
+      "target_sets": 2,
+      "target_reps": "8",
+      "target_weight_kg": 35,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 5,
+          "weight_kg": 40
+        },
+        {
+          "set": 2,
+          "reps": 8,
+          "weight_kg": 45
+        }
+      ],
+      "rpe_last_set": 8,
+      "variant": "Machine shoulder press",
+      "notes": ""
+    },
+    {
+      "name": "Leg Press 45 (partial ROM)",
+      "target_sets": 3,
+      "target_reps": "8",
+      "target_weight_kg": 140,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 8,
+          "weight_kg": 140
+        },
+        {
+          "set": 2,
+          "reps": 8,
+          "weight_kg": 140
+        },
+        {
+          "set": 3,
+          "reps": 8,
+          "weight_kg": 140
+        }
+      ],
+      "rpe_last_set": 8,
+      "variant": "Leg press 45",
+      "notes": ""
+    },
+    {
+      "name": "Lat Pulldown",
+      "target_sets": 3,
+      "target_reps": "10",
+      "target_weight_kg": 50,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 10,
+          "weight_kg": 50
+        },
+        {
+          "set": 2,
+          "reps": 10,
+          "weight_kg": 50
+        },
+        {
+          "set": 3,
+          "reps": 10,
+          "weight_kg": 50
+        }
+      ],
+      "rpe_last_set": 9,
+      "variant": "Cable lat pulldown",
+      "notes": ""
+    },
+    {
+      "name": "Pec Deck Fly",
+      "target_sets": 3,
+      "target_reps": "12",
+      "target_weight_kg": 40,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 12,
+          "weight_kg": 40
+        },
+        {
+          "set": 2,
+          "reps": 12,
+          "weight_kg": 40
+        },
+        {
+          "set": 3,
+          "reps": 12,
+          "weight_kg": 40
+        }
+      ],
+      "rpe_last_set": 9,
+      "variant": "Pec deck",
+      "notes": ""
+    },
+    {
+      "name": "Machine Preacher Curl (drop set)",
+      "target_sets": 3,
+      "target_reps": "to failure",
+      "target_weight_kg": 35,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 10,
+          "weight_kg": 35
+        },
+        {
+          "set": 2,
+          "reps": 9,
+          "weight_kg": 25
+        },
+        {
+          "set": 3,
+          "reps": 8,
+          "weight_kg": 20
+        }
+      ],
+      "rpe_last_set": 10,
+      "variant": "Machine preacher",
+      "notes": ""
+    }
+  ],
+  "warmup_completed": [
+    "Couch stretch",
+    "Seated 90/90 hip switch",
+    "90/90 push-up",
+    "Side plank",
+    "Clamshell",
+    "Side-lying hip abduction",
+    "Seated good morning, unloaded",
+    "Straddle hold"
+  ],
+  "session_notes": "",
+  "duration_min": 38
+}
