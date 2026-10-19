@@ -842,12 +842,12 @@ function renderDayProgress() {
 function setKey(ei, si, day) { return `s_${day || currentDay}_${ei}_${si}`; }
 
 // ─── Render session ────────────────────────────────────────────────────────────
-const DAY_LABELS = { A: 'Push + Legs', B: 'Pull + Hinge', C: 'Full Body', H: 'missed gym' };
+const DAY_LABELS = { A: 'Overhead', B: 'Chest', C: 'Back + Hinge', D: 'Carry + Core', H: 'missed gym' };
 
 // Day H is the home/hotel stand-in for a missed gym session. It is selectable and
 // logged like any day, but it never takes part in the A -> B -> C suggestion:
 // a home session does not mean the gym day it replaced was trained.
-const ROTATION = ['A', 'B', 'C'];
+const ROTATION = ['A', 'B', 'C', 'D'];
 function dayShort(d) { return d === 'H' ? 'Home' : `Day ${d}`; }
 function dayTitle(d) { return `${dayShort(d)} — ${DAY_LABELS[d] || ''}`.replace(/ — $/, ''); }
 
