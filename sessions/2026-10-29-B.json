@@ -1,0 +1,150 @@
+{
+  "date": "2026-10-29",
+  "day_type": "B",
+  "planned_date": "2026-10-19",
+  "exercises": [
+    {
+      "name": "Plate Loaded Bench Press - top set",
+      "target_sets": 1,
+      "target_reps": "3",
+      "target_weight_kg": 75,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 3,
+          "weight_kg": 75
+        }
+      ],
+      "rpe_last_set": 9,
+      "variant": "Plate loaded bench",
+      "notes": ""
+    },
+    {
+      "name": "Plate Loaded Bench Press - back-off",
+      "target_sets": 2,
+      "target_reps": "7",
+      "target_weight_kg": 60,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 7,
+          "weight_kg": 60
+        },
+        {
+          "set": 2,
+          "reps": 7,
+          "weight_kg": 60
+        }
+      ],
+      "rpe_last_set": 8,
+      "variant": "Plate loaded bench",
+      "notes": ""
+    },
+    {
+      "name": "Squat Machine",
+      "target_sets": 3,
+      "target_reps": "8",
+      "target_weight_kg": 20,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 8,
+          "weight_kg": null
+        },
+        {
+          "set": 2,
+          "reps": 8,
+          "weight_kg": 20
+        },
+        {
+          "set": 3,
+          "reps": 8,
+          "weight_kg": 20
+        }
+      ],
+      "rpe_last_set": 6,
+      "variant": "Hack squat",
+      "notes": ""
+    },
+    {
+      "name": "Machine Seated Row",
+      "target_sets": 3,
+      "target_reps": "12",
+      "target_weight_kg": 20,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 12,
+          "weight_kg": 20
+        },
+        {
+          "set": 2,
+          "reps": 12,
+          "weight_kg": 20
+        },
+        {
+          "set": 3,
+          "reps": 12,
+          "weight_kg": 20
+        }
+      ],
+      "rpe_last_set": 9,
+      "variant": "Machine seated row",
+      "notes": ""
+    },
+    {
+      "name": "Hip Thrust",
+      "target_sets": 3,
+      "target_reps": "12",
+      "target_weight_kg": 25,
+      "sets": [
+        {
+          "set": 1,
+          "reps": null,
+          "weight_kg": null
+        },
+        {
+          "set": 2,
+          "reps": null,
+          "weight_kg": null
+        },
+        {
+          "set": 3,
+          "reps": null,
+          "weight_kg": null
+        }
+      ],
+      "rpe_last_set": null,
+      "variant": "Barbell hip thrust",
+      "notes": ""
+    },
+    {
+      "name": "Lying Incline DB Curl (drop set)",
+      "target_sets": 3,
+      "target_reps": "to failure",
+      "target_weight_kg": 10,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 10,
+          "weight_kg": 10
+        },
+        {
+          "set": 2,
+          "reps": 8,
+          "weight_kg": 7.5
+        },
+        {
+          "set": 3,
+          "reps": 8,
+          "weight_kg": 5
+        }
+      ],
+      "rpe_last_set": 10,
+      "notes": ""
+    }
+  ],
+  "warmup_completed": [],
+  "session_notes": "out if time, will do body weight hip thrusts at home",
+  "duration_min": 36
+}
