@@ -1,0 +1,144 @@
+{
+  "date": "2026-10-30",
+  "day_type": "D",
+  "planned_date": "2026-10-19",
+  "exercises": [
+    {
+      "name": "Squat Machine",
+      "target_sets": 3,
+      "target_reps": "10",
+      "target_weight_kg": 10,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 8,
+          "weight_kg": null
+        },
+        {
+          "set": 2,
+          "reps": 10,
+          "weight_kg": 10
+        },
+        {
+          "set": 3,
+          "reps": 10,
+          "weight_kg": 10
+        }
+      ],
+      "rpe_last_set": 8,
+      "variant": "Hack squat",
+      "notes": ""
+    },
+    {
+      "name": "Weighted Dip",
+      "target_sets": 3,
+      "target_reps": "8",
+      "target_weight_kg": 5,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 8,
+          "weight_kg": 5
+        },
+        {
+          "set": 2,
+          "reps": 8,
+          "weight_kg": 5
+        },
+        {
+          "set": 3,
+          "reps": 8,
+          "weight_kg": 5
+        }
+      ],
+      "rpe_last_set": 8,
+      "variant": "Weighted dip",
+      "notes": ""
+    },
+    {
+      "name": "Face Pull",
+      "target_sets": 3,
+      "target_reps": "12",
+      "target_weight_kg": 35,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 12,
+          "weight_kg": 35
+        },
+        {
+          "set": 2,
+          "reps": 12,
+          "weight_kg": 35
+        },
+        {
+          "set": 3,
+          "reps": 12,
+          "weight_kg": 35
+        }
+      ],
+      "rpe_last_set": 7,
+      "variant": "Cable rope face pull",
+      "notes": ""
+    },
+    {
+      "name": "Suitcase Hold (straps)",
+      "target_sets": 2,
+      "target_reps": "60",
+      "target_weight_kg": 24,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 60,
+          "weight_kg": 24
+        },
+        {
+          "set": 2,
+          "reps": 60,
+          "weight_kg": 24
+        }
+      ],
+      "rpe_last_set": 6,
+      "variant": "Kettlebell",
+      "notes": ""
+    },
+    {
+      "name": "Lateral Raise (drop set)",
+      "target_sets": 3,
+      "target_reps": "to failure",
+      "target_weight_kg": 7.5,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 11,
+          "weight_kg": null
+        },
+        {
+          "set": 2,
+          "reps": 8,
+          "weight_kg": null
+        },
+        {
+          "set": 3,
+          "reps": 10,
+          "weight_kg": null
+        }
+      ],
+      "rpe_last_set": 10,
+      "variant": "DB",
+      "notes": ""
+    }
+  ],
+  "warmup_completed": [
+    "Couch stretch",
+    "Seated 90/90 hip switch",
+    "90/90 push-up",
+    "Side plank",
+    "Clamshell",
+    "Side-lying hip abduction",
+    "Seated good morning, unloaded",
+    "Straddle hold"
+  ],
+  "session_notes": "",
+  "duration_min": 33
+}
