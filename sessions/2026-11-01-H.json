@@ -1,0 +1,137 @@
+{
+  "date": "2026-11-01",
+  "day_type": "H",
+  "planned_date": "2026-10-10",
+  "exercises": [
+    {
+      "name": "Pike Push-up",
+      "target_sets": 3,
+      "target_reps": "8",
+      "target_weight_kg": 0,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 8,
+          "weight_kg": 0
+        },
+        {
+          "set": 2,
+          "reps": 8,
+          "weight_kg": 0
+        },
+        {
+          "set": 3,
+          "reps": 8,
+          "weight_kg": 0
+        }
+      ],
+      "rpe_last_set": 9,
+      "notes": ""
+    },
+    {
+      "name": "Bulgarian Split Squat",
+      "target_sets": 3,
+      "target_reps": "12",
+      "target_weight_kg": 0,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 12,
+          "weight_kg": 0
+        },
+        {
+          "set": 2,
+          "reps": 12,
+          "weight_kg": 0
+        },
+        {
+          "set": 3,
+          "reps": 12,
+          "weight_kg": 0
+        }
+      ],
+      "rpe_last_set": 7,
+      "notes": ""
+    },
+    {
+      "name": "Pull",
+      "target_sets": 3,
+      "target_reps": "8",
+      "target_weight_kg": 0,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 12,
+          "weight_kg": 0
+        },
+        {
+          "set": 2,
+          "reps": 15,
+          "weight_kg": 0
+        },
+        {
+          "set": 3,
+          "reps": 15,
+          "weight_kg": 0
+        }
+      ],
+      "rpe_last_set": 5,
+      "variant": "Single-arm door-frame row",
+      "notes": ""
+    },
+    {
+      "name": "Single-leg Hip Thrust",
+      "target_sets": 3,
+      "target_reps": "12",
+      "target_weight_kg": 0,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 5,
+          "weight_kg": 0
+        },
+        {
+          "set": 2,
+          "reps": 12,
+          "weight_kg": 0
+        },
+        {
+          "set": 3,
+          "reps": 12,
+          "weight_kg": 0
+        }
+      ],
+      "rpe_last_set": 8,
+      "notes": ""
+    },
+    {
+      "name": "Push-up",
+      "target_sets": 3,
+      "target_reps": "12",
+      "target_weight_kg": 0,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 13,
+          "weight_kg": 0
+        },
+        {
+          "set": 2,
+          "reps": 12,
+          "weight_kg": 0
+        },
+        {
+          "set": 3,
+          "reps": 10,
+          "weight_kg": 0
+        }
+      ],
+      "rpe_last_set": 10,
+      "variant": "Feet-elevated push-up",
+      "notes": ""
+    }
+  ],
+  "warmup_completed": [],
+  "session_notes": "one set of single leg hip thrust the two other both legs",
+  "duration_min": 98
+}
