@@ -19,8 +19,8 @@
   },
   {
    "name": "Side plank",
-   "dose": "1 x 40 s per side",
-   "note": "One hold per side. Knees or feet. No top-leg raise."
+   "dose": "2 x 40 s per side",
+   "note": "Oblique builder, now progressive. Ladder, move up one step when the last hold is steady with no hip sag: 2x40 -> 2x50 -> 2x60 s, then a 5 kg plate on the top hip and back to 2x30, climb to 60 again, then 10 kg. Never past 60 s, add weight instead. Feet stacked, no top-leg raise. When you move up a step, write it in the session notes (e.g. \"SP 2x50\")."
   },
   {
    "name": "Clamshell",
@@ -296,7 +296,7 @@
   "D": {
    "date": "2026-11-02",
    "day_type": "D",
-   "session_notes": "What changed: suitcase hold goes to 75 s (24 kg was RPE 6). Face pull 40. Everything else holds. Do not stack D the day after B.",
+   "session_notes": "What changed: suitcase hold is 3 sets x 60 s now. Side plank in the warm-up is 2 x 40 s with a ladder to climb. Face pull 40. Do not stack D the day after B.",
    "exercises": [
     {
      "name": "Squat Machine",
@@ -338,11 +338,11 @@
     },
     {
      "name": "Suitcase Hold (straps)",
-     "target_sets": 2,
-     "target_reps": "75",
+     "target_sets": 3,
+     "target_reps": "60",
      "target_weight_kg": 24,
      "rest_sec": 60,
-     "notes": "24 kg for 60 s was RPE 6. 24 kg is the heaviest you have logged, so add time: 75 s per side. If the gym has a 28 kg kettlebell, use it for 60 s instead and log the weight.",
+     "notes": "3 sets now (was 2) for more oblique work. 24 kg x 60 s per side was RPE 6. When all 3 sets are RPE 7 or less, go 75 s, or 28 kg for 60 s if the gym has one (log the weight). Stand tall, do not lean away from the bell.",
      "variants": [
       "DB",
       "Kettlebell"
