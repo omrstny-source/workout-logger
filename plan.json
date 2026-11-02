@@ -1,438 +1,438 @@
 {
-  "generated": "2026-10-19",
-  "recommended_day": "A",
-  "warmup": [
-    {
-      "name": "Couch stretch",
-      "dose": "30-40 s per side",
-      "note": "Tuck the pelvis BEFORE you lean. Hips stop you before the knee does."
-    },
-    {
-      "name": "Seated 90/90 hip switch",
-      "dose": "6-8 switches per side",
-      "note": "Slow, no hands if you can."
-    },
-    {
-      "name": "90/90 push-up",
-      "dose": "5-8 per side",
-      "note": "From 90/90, torso down over the front leg to the floor and back. Hands assist at first; goal is the glute lifting you unaided."
-    },
-    {
-      "name": "Side plank",
-      "dose": "1 x 40 s per side",
-      "note": "One hold per side. Knees or feet. No top-leg raise."
-    },
-    {
-      "name": "Clamshell",
-      "dose": "15 per side",
-      "note": "No toe-down cue."
-    },
-    {
-      "name": "Side-lying hip abduction",
-      "dose": "12 per side",
-      "note": "NEW - you asked for this on 08-09. Straight top leg, lift to ~30 deg, no rolling back. If you still cannot feel the glute after two sessions, say so and it comes back out."
-    },
-    {
-      "name": "Seated good morning, unloaded",
-      "dose": "8 slow reps",
-      "note": "No bar. Hinge-pattern stretch, working toward depth."
-    },
-    {
-      "name": "Straddle hold",
-      "dose": "45-60 s",
-      "note": "Capped at 60 s so it does not pre-fatigue the box squat."
-    }
-  ],
-  "days": {
-    "A": {
-      "date": "2026-10-19",
-      "day_type": "A",
-      "session_notes": "NEW 4-day rotation, ~45-50 min. Overhead day. Machine shoulder press replaces the barbell OHP (no plate loading); the barbell is still a variant. Pec deck is straight sets now, preacher curl is the finisher. Core and glutes today come from the warm-up.",
-      "exercises": [
-        {
-          "name": "Shoulder Press - top set",
-          "target_sets": 1,
-          "target_reps": "5",
-          "target_weight_kg": 40,
-          "rest_sec": 150,
-          "notes": "40 is your barbell number (40x5 RPE 7). On a machine: First time on a machine = baseline: find RPE 7-8 for the reps and log it. Weights don't carry between variants. Never behind the neck.",
-          "variants": [
-            "Machine shoulder press",
-            "Barbell OHP in rack",
-            "Seated DB press"
-          ]
-        },
-        {
-          "name": "Shoulder Press - back-off",
-          "target_sets": 2,
-          "target_reps": "8",
-          "target_weight_kg": 35,
-          "rest_sec": 90,
-          "notes": "Barbell: 35x8 (you did 8 and 7). Machine: ~85% of the top set. Ribs down.",
-          "variants": [
-            "Machine shoulder press",
-            "Barbell OHP in rack",
-            "Seated DB press"
-          ]
-        },
-        {
-          "name": "Leg Press 45 (partial ROM)",
-          "target_sets": 3,
-          "target_reps": "8",
-          "target_weight_kg": 140,
-          "rest_sec": 120,
-          "notes": "Held at 140 (3x8 RPE 8). Knee is the boss.",
-          "variants": [
-            "Leg press 45",
-            "Hack squat"
-          ]
-        },
-        {
-          "name": "Lat Pulldown",
-          "target_sets": 3,
-          "target_reps": "10",
-          "target_weight_kg": 50,
-          "rest_sec": 90,
-          "notes": "+5: 45 was 3x10 at RPE 8. Chest up, pull to the collarbone. RPE 8 cap, stop on any catch in the back.",
-          "variants": [
-            "Cable lat pulldown",
-            "Plate loaded pulldown"
-          ]
-        },
-        {
-          "name": "Pec Deck Fly",
-          "target_sets": 3,
-          "target_reps": "12",
-          "target_weight_kg": 40,
-          "rest_sec": 75,
-          "notes": "Straight sets now, not a drop set. Nearest pin to 40 (47 to failure gave 10). RPE 7 or under = 43 next time.",
-          "variants": [
-            "Pec deck",
-            "Cable fly"
-          ]
-        },
-        {
-          "name": "Machine Preacher Curl (drop set)",
-          "target_sets": 3,
-          "target_reps": "to failure",
-          "target_weight_kg": 35,
-          "rest_sec": 0,
-          "notes": "35 -> 25 -> 20. 30 gave 13 on the first drop, so +5. Want 10-12 on the first drop.",
-          "variants": [
-            "Machine preacher",
-            "DB/EZ on preacher bench",
-            "Cable curl"
-          ],
-          "sets": [
-            {
-              "weight_kg": 35
-            },
-            {
-              "weight_kg": 25
-            },
-            {
-              "weight_kg": 20
-            }
-          ]
-        }
-      ]
-    },
-    "B": {
-      "date": "2026-10-19",
-      "day_type": "B",
-      "session_notes": "NEW 4-day rotation. Chest day. Squat moves to a machine (pendulum / perfect squat / hack) so you don't have to load a bar; barbell box squat only as a last resort. Hip thrust on a machine where there is one. Calf raises in the bench and row rests.",
-      "exercises": [
-        {
-          "name": "Plate Loaded Bench Press - top set",
-          "target_sets": 1,
-          "target_reps": "3",
-          "target_weight_kg": 75,
-          "rest_sec": 180,
-          "notes": "Held at 75 (RPE 8). Heaviest set first.",
-          "variants": [
-            "Plate loaded bench",
-            "Chest press machine",
-            "Smith flat bench"
-          ]
-        },
-        {
-          "name": "Plate Loaded Bench Press - back-off",
-          "target_sets": 2,
-          "target_reps": "7",
-          "target_weight_kg": 60,
-          "rest_sec": 120,
-          "notes": "Held at 60 (7, 7 at RPE 9). First rep of each set paused 2 s. Calf raises in these rests.",
-          "variants": [
-            "Plate loaded bench",
-            "Chest press machine",
-            "Smith flat bench"
-          ]
-        },
-        {
-          "name": "Squat Machine",
-          "target_sets": 3,
-          "target_reps": "8",
-          "target_weight_kg": 20,
-          "rest_sec": 120,
-          "notes": "Matrix perfect squat: 10x10 was RPE 7, so 20. Pendulum or hack: First time on a machine = baseline: find RPE 7-8 for the reps and log it. Weights don't carry between variants. Depth the knee allows.",
-          "variants": [
-            "Pendulum squat",
-            "Perfect squat (Matrix)",
-            "Hack squat",
-            "Barbell box squat"
-          ]
-        },
-        {
-          "name": "Machine Seated Row",
-          "target_sets": 3,
-          "target_reps": "12",
-          "target_weight_kg": 20,
-          "rest_sec": 90,
-          "notes": "20 for 12 now (3x10 at RPE 8). RPE 8 cap. Calf raises in these rests.",
-          "variants": [
-            "Machine seated row",
-            "Cable seated row",
-            "Chest-supported T-bar row"
-          ]
-        },
-        {
-          "name": "Hip Thrust",
-          "target_sets": 3,
-          "target_reps": "12",
-          "target_weight_kg": 25,
-          "rest_sec": 90,
-          "notes": "Barbell: 3x15 at 20 was clean, so 25x12, only if your back was fine after 10-18; otherwise 20x15. Machine: First time on a machine = baseline: find RPE 7-8 for the reps and log it. Weights don't carry between variants. Ribs down, 2 s squeeze, stop at straight. Any lower back = end the set.",
-          "variants": [
-            "Hip thrust machine / glute drive",
-            "Smith hip thrust",
-            "Barbell hip thrust"
-          ]
-        },
-        {
-          "name": "Lying Incline DB Curl (drop set)",
-          "target_sets": 3,
-          "target_reps": "to failure",
-          "target_weight_kg": 10,
-          "rest_sec": 0,
-          "notes": "10 -> 7.5 -> 5. You got 8 on the first drop, so hold 10. Want 10-12.",
-          "sets": [
-            {
-              "weight_kg": 10
-            },
-            {
-              "weight_kg": 7.5
-            },
-            {
-              "weight_kg": 5
-            }
-          ]
-        }
-      ]
-    },
-    "C": {
-      "date": "2026-10-19",
-      "day_type": "C",
-      "session_notes": "NEW 4-day rotation. Back + hinge day. Back extension goes to 3x8 BW at RPE 6-7. Hammer curl is the finisher, straight sets. Wrist + reverse curl superset goes in the back extension rests.",
-      "exercises": [
-        {
-          "name": "Pull-Up Parallel Close Grip - top set",
-          "target_sets": 1,
-          "target_reps": "5",
-          "target_weight_kg": 5,
-          "rest_sec": 90,
-          "notes": "Held at +5 (RPE 8). Stop the set AND the exercise on any catch in the back."
-        },
-        {
-          "name": "Pull-Up Parallel Close Grip - back-off",
-          "target_sets": 2,
-          "target_reps": "5",
-          "target_weight_kg": 0,
-          "rest_sec": 90,
-          "notes": "Bodyweight, 4 -> 5 reps (RPE 7)."
-        },
-        {
-          "name": "45 Back Extension (stop at neutral)",
-          "target_sets": 3,
-          "target_reps": "8",
-          "target_weight_kg": 0,
-          "rest_sec": 90,
-          "notes": "2x8 was RPE 6, so a 3rd set. Squeeze glutes, chin tucked, STOP AT NEUTRAL, never arch. Wrist + reverse curl superset in these rests."
-        },
-        {
-          "name": "DB Incline Bench Press",
-          "target_sets": 3,
-          "target_reps": "10",
-          "target_weight_kg": 20,
-          "rest_sec": 90,
-          "notes": "20 gave 12/10/8 at RPE 10. Hold 20 and get all three sets to 10.",
-          "variants": [
-            "DB incline",
-            "Incline press machine",
-            "Smith incline"
-          ]
-        },
-        {
-          "name": "Pallof Press (half-kneeling)",
-          "target_sets": 2,
-          "target_reps": "10",
-          "target_weight_kg": 18,
-          "rest_sec": 60,
-          "notes": "10 per side, 2 s hold. Cables differ: 18 at your usual gym, ~11 on the other one."
-        },
-        {
-          "name": "Hammer Curl",
-          "target_sets": 3,
-          "target_reps": "8",
-          "target_weight_kg": 17.5,
-          "rest_sec": 60,
-          "notes": "Finisher, straight sets. 17.5 (no 18 kg DB). 2x8 was RPE 10, so hold and add a set.",
-          "variants": [
-            "DB",
-            "Rope cable"
-          ]
-        }
-      ]
-    },
-    "D": {
-      "date": "2026-10-19",
-      "day_type": "D",
-      "session_notes": "NEW DAY. Carry + core, plus what the other days miss. Squat machine is lighter than Day B (3x10). Dips cover chest and triceps. Suitcase hold is the carry. Lateral raise drop set to finish.",
-      "exercises": [
-        {
-          "name": "Squat Machine",
-          "target_sets": 3,
-          "target_reps": "10",
-          "target_weight_kg": 10,
-          "rest_sec": 120,
-          "notes": "Lighter than Day B. Matrix: 10 for 10 was RPE 7, so 10x10 here. Pendulum or hack: First time on a machine = baseline: find RPE 7-8 for the reps and log it. Weights don't carry between variants.",
-          "variants": [
-            "Pendulum squat",
-            "Perfect squat (Matrix)",
-            "Hack squat",
-            "Barbell box squat"
-          ]
-        },
-        {
-          "name": "Weighted Dip",
-          "target_sets": 3,
-          "target_reps": "8",
-          "target_weight_kg": 5,
-          "rest_sec": 90,
-          "notes": "+1 set at +5 kg (2x8 RPE 8). Stop at ~90 deg elbow, slight forward lean.",
-          "variants": [
-            "Weighted dip",
-            "Seated dip machine"
-          ]
-        },
-        {
-          "name": "Face Pull",
-          "target_sets": 3,
-          "target_reps": "12",
-          "target_weight_kg": 35,
-          "rest_sec": 60,
-          "notes": "+5: 3x15 at 30 was RPE 8. Rear delts and scap retraction, no body english.",
-          "variants": [
-            "Cable rope face pull",
-            "Reverse pec deck"
-          ]
-        },
-        {
-          "name": "Suitcase Hold (straps)",
-          "target_sets": 2,
-          "target_reps": "60",
-          "target_weight_kg": 24,
-          "rest_sec": 60,
-          "notes": "Held at 24 (RPE 8). If the heaviest DB is 20, hold for 75 s. Ribs down, don't hitch the hip.",
-          "variants": [
-            "DB",
-            "Kettlebell"
-          ],
-          "unit": "s/side"
-        },
-        {
-          "name": "Lateral Raise (drop set)",
-          "target_sets": 3,
-          "target_reps": "to failure",
-          "target_weight_kg": 7.5,
-          "rest_sec": 0,
-          "notes": "7.5 -> 5 -> 2.5. 7.5 gave 10/10/8 at RPE 10, so it starts here.",
-          "variants": [
-            "DB",
-            "Cable",
-            "Machine"
-          ],
-          "sets": [
-            {
-              "weight_kg": 7.5
-            },
-            {
-              "weight_kg": 5
-            },
-            {
-              "weight_kg": 2.5
-            }
-          ]
-        }
-      ]
-    },
-    "H": {
-      "date": "2026-10-10",
-      "day_type": "H",
-      "session_notes": "Use this only to replace a missed gym day. It doesn't move the A/B/C rotation. Bodyweight only: every set ends 1-2 reps short of failure, or it doesn't count as growth work. Too easy (target hit at RPE 7)? Slow the lowering to 4-5 s or add a pause before adding reps. Pick the pull variant you actually did so the log stays honest.",
-      "exercises": [
-        {
-          "name": "Pike Push-up",
-          "target_sets": 3,
-          "target_reps": "8",
-          "target_weight_kg": 0,
-          "rest_sec": 90,
-          "notes": "Feet on bed for harder, floor for easier. Head travels in front of the hands."
-        },
-        {
-          "name": "Bulgarian Split Squat",
-          "target_sets": 3,
-          "target_reps": "12",
-          "unit": "reps/side",
-          "target_weight_kg": 0,
-          "rest_sec": 90,
-          "notes": "Rear foot on bed or chair, 3 s down. Slight forward lean, ribs down, never arch to go deeper. Knee sets the depth."
-        },
-        {
-          "name": "Pull",
-          "variants": [
-            "Chin-up",
-            "Single-arm door-frame row",
-            "Towel door row"
-          ],
-          "target_sets": 3,
-          "target_reps": "8",
-          "target_weight_kg": 0,
-          "rest_sec": 120,
-          "notes": "Chin-up 8 (palms toward you), RPE 8 cap, stop on any catch. No bar: door-frame row 12 per side, feet closer to the frame = harder. Towel row: stand on the push-to-open side so pulling shuts the door."
-        },
-        {
-          "name": "Single-leg Hip Thrust",
-          "target_sets": 3,
-          "target_reps": "12",
-          "unit": "reps/side",
-          "target_weight_kg": 0,
-          "rest_sec": 90,
-          "notes": "Shoulders on bed or sofa (floor = glute bridge). 2 s squeeze, ribs down, stop at neutral, never arch past straight."
-        },
-        {
-          "name": "Push-up",
-          "variants": [
-            "Feet-elevated push-up",
-            "Tempo push-up (floor)",
-            "Archer push-up"
-          ],
-          "target_sets": 3,
-          "target_reps": "12",
-          "target_weight_kg": 0,
-          "rest_sec": 90,
-          "notes": "Feet on bed if there is one. Floor: 3 s down, 1 s chest on floor. End the set when the hips sag."
-        }
-      ]
-    }
+ "generated": "2026-11-02",
+ "recommended_day": "C",
+ "warmup": [
+  {
+   "name": "Couch stretch",
+   "dose": "30-40 s per side",
+   "note": "Tuck the pelvis BEFORE you lean. Hips stop you before the knee does."
+  },
+  {
+   "name": "Seated 90/90 hip switch",
+   "dose": "6-8 switches per side",
+   "note": "Slow, no hands if you can."
+  },
+  {
+   "name": "90/90 push-up",
+   "dose": "5-8 per side",
+   "note": "From 90/90, torso down over the front leg to the floor and back. Hands assist at first; goal is the glute lifting you unaided."
+  },
+  {
+   "name": "Side plank",
+   "dose": "1 x 40 s per side",
+   "note": "One hold per side. Knees or feet. No top-leg raise."
+  },
+  {
+   "name": "Clamshell",
+   "dose": "15 per side",
+   "note": "No toe-down cue."
+  },
+  {
+   "name": "Side-lying hip abduction",
+   "dose": "12 per side",
+   "note": "NEW - you asked for this on 08-09. Straight top leg, lift to ~30 deg, no rolling back. If you still cannot feel the glute after two sessions, say so and it comes back out."
+  },
+  {
+   "name": "Seated good morning, unloaded",
+   "dose": "8 slow reps",
+   "note": "No bar. Hinge-pattern stretch, working toward depth."
+  },
+  {
+   "name": "Straddle hold",
+   "dose": "45-60 s",
+   "note": "Capped at 60 s so it does not pre-fatigue the box squat."
   }
+ ],
+ "days": {
+  "A": {
+   "date": "2026-11-02",
+   "day_type": "A",
+   "session_notes": "What changed: shoulder press targets now match what you actually lifted (60 top / 50 back-off). Lat pulldown 55, pec deck 45, preacher starts at 40. Leg press holds at 140.",
+   "exercises": [
+    {
+     "name": "Shoulder Press - top set",
+     "target_sets": 1,
+     "target_reps": "5",
+     "target_weight_kg": 60,
+     "rest_sec": 150,
+     "notes": "Machine: 60x5 was RPE 8 on 10-26. Hold 60 until it is RPE 7, then 65. Barbell/DB variants: weights do not carry.",
+     "variants": [
+      "Machine shoulder press",
+      "Barbell OHP in rack",
+      "Seated DB press"
+     ]
+    },
+    {
+     "name": "Shoulder Press - back-off",
+     "target_sets": 2,
+     "target_reps": "8",
+     "target_weight_kg": 50,
+     "rest_sec": 90,
+     "notes": "Machine: 50x8 was RPE 9. Hold 50 until both sets are RPE 8 or less.",
+     "variants": [
+      "Machine shoulder press",
+      "Barbell OHP in rack",
+      "Seated DB press"
+     ]
+    },
+    {
+     "name": "Leg Press 45 (partial ROM)",
+     "target_sets": 3,
+     "target_reps": "8",
+     "target_weight_kg": 140,
+     "rest_sec": 120,
+     "notes": "140x8 went RPE 8 -> 9. Hold 140.",
+     "variants": [
+      "Leg press 45",
+      "Hack squat"
+     ]
+    },
+    {
+     "name": "Lat Pulldown",
+     "target_sets": 3,
+     "target_reps": "10",
+     "target_weight_kg": 55,
+     "rest_sec": 90,
+     "notes": "50x10 for all three at RPE 8 -> 55. If set 3 drops below 8 reps, finish at 50.",
+     "variants": [
+      "Cable lat pulldown",
+      "Plate loaded pulldown"
+     ]
+    },
+    {
+     "name": "Pec Deck Fly",
+     "target_sets": 3,
+     "target_reps": "12",
+     "target_weight_kg": 45,
+     "rest_sec": 75,
+     "notes": "40x12 was RPE 7 -> 45.",
+     "variants": [
+      "Pec deck",
+      "Cable fly"
+     ]
+    },
+    {
+     "name": "Machine Preacher Curl (drop set)",
+     "target_sets": 3,
+     "target_reps": "to failure",
+     "target_weight_kg": 40,
+     "rest_sec": 0,
+     "notes": "First drop was 13 at 35, above the 10-12 target -> start 40, then 30, then 20. All to failure.",
+     "variants": [
+      "Machine preacher",
+      "DB/EZ on preacher bench",
+      "Cable curl"
+     ],
+     "sets": [
+      {
+       "weight_kg": 40
+      },
+      {
+       "weight_kg": 30
+      },
+      {
+       "weight_kg": 20
+      }
+     ]
+    }
+   ]
+  },
+  "B": {
+   "date": "2026-11-02",
+   "day_type": "B",
+   "session_notes": "What changed: hip thrust moved up to 3rd so it does not get cut again. Hack squat 30. Bench holds at 75 / 60. If you are short on time, drop the seated row, not the hip thrust.",
+   "exercises": [
+    {
+     "name": "Plate Loaded Bench Press - top set",
+     "target_sets": 1,
+     "target_reps": "3",
+     "target_weight_kg": 75,
+     "rest_sec": 180,
+     "notes": "75x3 was RPE 9 (RPE 8 on 10-12). Hold 75.",
+     "variants": [
+      "Plate loaded bench",
+      "Chest press machine",
+      "Smith flat bench"
+     ]
+    },
+    {
+     "name": "Plate Loaded Bench Press - back-off",
+     "target_sets": 2,
+     "target_reps": "7",
+     "target_weight_kg": 60,
+     "rest_sec": 120,
+     "notes": "60x7 RPE 8, better than RPE 9 last time. Hold 60. First rep of each set paused 2 s.",
+     "variants": [
+      "Plate loaded bench",
+      "Chest press machine",
+      "Smith flat bench"
+     ]
+    },
+    {
+     "name": "Squat Machine",
+     "target_sets": 3,
+     "target_reps": "8",
+     "target_weight_kg": 30,
+     "rest_sec": 120,
+     "notes": "Hack squat 20x8 was RPE 6 -> 30. Log the weight on every set (set 1 came through blank). Other variants: weights do not carry.",
+     "variants": [
+      "Pendulum squat",
+      "Perfect squat (Matrix)",
+      "Hack squat",
+      "Barbell box squat"
+     ]
+    },
+    {
+     "name": "Hip Thrust",
+     "target_sets": 3,
+     "target_reps": "12",
+     "target_weight_kg": 25,
+     "rest_sec": 90,
+     "notes": "MOVED UP to slot 3. It was skipped on 10-29 when time ran out, and it is the priority lift for the back. Ribs down, 2 s squeeze, stop at neutral. If you run short, cut the seated row instead.",
+     "variants": [
+      "Hip thrust machine / glute drive",
+      "Smith hip thrust",
+      "Barbell hip thrust"
+     ]
+    },
+    {
+     "name": "Machine Seated Row",
+     "target_sets": 3,
+     "target_reps": "12",
+     "target_weight_kg": 20,
+     "rest_sec": 90,
+     "notes": "20x12 was RPE 9. Hold at 20 (your cap). First thing to cut if you are short on time.",
+     "variants": [
+      "Machine seated row",
+      "Cable seated row",
+      "Chest-supported T-bar row"
+     ]
+    },
+    {
+     "name": "Lying Incline DB Curl (drop set)",
+     "target_sets": 3,
+     "target_reps": "to failure",
+     "target_weight_kg": 10,
+     "rest_sec": 0,
+     "notes": "10 -> 7.5 -> 5. You got 8 on the first drop, so hold 10. Want 10-12.",
+     "sets": [
+      {
+       "weight_kg": 10
+      },
+      {
+       "weight_kg": 7.5
+      },
+      {
+       "weight_kg": 5
+      }
+     ]
+    }
+   ]
+  },
+  "C": {
+   "date": "2026-11-02",
+   "day_type": "C",
+   "session_notes": "RECOMMENDED NEXT. You have not done Day C since the 4-day rotation started (last pull-up and back extension were 10-17). This is the back day. Targets unchanged: pull-up 5 top, DB incline 20, hammer 17.5. Wrist + reverse curl go in the back extension rests.",
+   "exercises": [
+    {
+     "name": "Pull-Up Parallel Close Grip - top set",
+     "target_sets": 1,
+     "target_reps": "5",
+     "target_weight_kg": 5,
+     "rest_sec": 90,
+     "notes": "Held at +5 (RPE 8). Stop the set AND the exercise on any catch in the back."
+    },
+    {
+     "name": "Pull-Up Parallel Close Grip - back-off",
+     "target_sets": 2,
+     "target_reps": "5",
+     "target_weight_kg": 0,
+     "rest_sec": 90,
+     "notes": "Bodyweight, 4 -> 5 reps (RPE 7)."
+    },
+    {
+     "name": "45 Back Extension (stop at neutral)",
+     "target_sets": 3,
+     "target_reps": "8",
+     "target_weight_kg": 0,
+     "rest_sec": 90,
+     "notes": "2x8 was RPE 6, so a 3rd set. Squeeze glutes, chin tucked, STOP AT NEUTRAL, never arch. Wrist + reverse curl superset in these rests."
+    },
+    {
+     "name": "DB Incline Bench Press",
+     "target_sets": 3,
+     "target_reps": "10",
+     "target_weight_kg": 20,
+     "rest_sec": 90,
+     "notes": "20 gave 12/10/8 at RPE 10. Hold 20 and get all three sets to 10.",
+     "variants": [
+      "DB incline",
+      "Incline press machine",
+      "Smith incline"
+     ]
+    },
+    {
+     "name": "Pallof Press (half-kneeling)",
+     "target_sets": 2,
+     "target_reps": "10",
+     "target_weight_kg": 18,
+     "rest_sec": 60,
+     "notes": "10 per side, 2 s hold. Cables differ: 18 at your usual gym, ~11 on the other one."
+    },
+    {
+     "name": "Hammer Curl",
+     "target_sets": 3,
+     "target_reps": "8",
+     "target_weight_kg": 17.5,
+     "rest_sec": 60,
+     "notes": "Finisher, straight sets. 17.5 (no 18 kg DB). 2x8 was RPE 10, so hold and add a set.",
+     "variants": [
+      "DB",
+      "Rope cable"
+     ]
+    }
+   ]
+  },
+  "D": {
+   "date": "2026-11-02",
+   "day_type": "D",
+   "session_notes": "What changed: suitcase hold goes to 75 s (24 kg was RPE 6). Face pull 40. Everything else holds. Do not stack D the day after B.",
+   "exercises": [
+    {
+     "name": "Squat Machine",
+     "target_sets": 3,
+     "target_reps": "10",
+     "target_weight_kg": 10,
+     "rest_sec": 120,
+     "notes": "Hack squat 10x10 was RPE 8 the day after Day B. Hold 10. Avoid doing D the day after B, the squat is on both.",
+     "variants": [
+      "Pendulum squat",
+      "Perfect squat (Matrix)",
+      "Hack squat",
+      "Barbell box squat"
+     ]
+    },
+    {
+     "name": "Weighted Dip",
+     "target_sets": 3,
+     "target_reps": "8",
+     "target_weight_kg": 5,
+     "rest_sec": 90,
+     "notes": "5 kg 3x8 at RPE 8. Hold. Stop at ~90 degrees elbow, slight forward lean.",
+     "variants": [
+      "Weighted dip",
+      "Seated dip machine"
+     ]
+    },
+    {
+     "name": "Face Pull",
+     "target_sets": 3,
+     "target_reps": "12",
+     "target_weight_kg": 40,
+     "rest_sec": 60,
+     "notes": "35x12 was RPE 7 -> 40 (you have used 40 before).",
+     "variants": [
+      "Cable rope face pull",
+      "Reverse pec deck"
+     ]
+    },
+    {
+     "name": "Suitcase Hold (straps)",
+     "target_sets": 2,
+     "target_reps": "75",
+     "target_weight_kg": 24,
+     "rest_sec": 60,
+     "notes": "24 kg for 60 s was RPE 6. 24 kg is the heaviest you have logged, so add time: 75 s per side. If the gym has a 28 kg kettlebell, use it for 60 s instead and log the weight.",
+     "variants": [
+      "DB",
+      "Kettlebell"
+     ],
+     "unit": "s/side"
+    },
+    {
+     "name": "Lateral Raise (drop set)",
+     "target_sets": 3,
+     "target_reps": "to failure",
+     "target_weight_kg": 7.5,
+     "rest_sec": 0,
+     "notes": "7.5 -> 5 -> 2.5. 7.5 gave 10/10/8 at RPE 10, so it starts here.",
+     "variants": [
+      "DB",
+      "Cable",
+      "Machine"
+     ],
+     "sets": [
+      {
+       "weight_kg": 7.5
+      },
+      {
+       "weight_kg": 5
+      },
+      {
+       "weight_kg": 2.5
+      }
+     ]
+    }
+   ]
+  },
+  "H": {
+   "date": "2026-10-10",
+   "day_type": "H",
+   "session_notes": "Use this only to replace a missed gym day. It doesn't move the A/B/C rotation. Bodyweight only: every set ends 1-2 reps short of failure, or it doesn't count as growth work. Too easy (target hit at RPE 7)? Slow the lowering to 4-5 s or add a pause before adding reps. Pick the pull variant you actually did so the log stays honest.",
+   "exercises": [
+    {
+     "name": "Pike Push-up",
+     "target_sets": 3,
+     "target_reps": "8",
+     "target_weight_kg": 0,
+     "rest_sec": 90,
+     "notes": "Feet on bed for harder, floor for easier. Head travels in front of the hands."
+    },
+    {
+     "name": "Bulgarian Split Squat",
+     "target_sets": 3,
+     "target_reps": "12",
+     "unit": "reps/side",
+     "target_weight_kg": 0,
+     "rest_sec": 90,
+     "notes": "Rear foot on bed or chair, 3 s down. Slight forward lean, ribs down, never arch to go deeper. Knee sets the depth."
+    },
+    {
+     "name": "Pull",
+     "variants": [
+      "Chin-up",
+      "Single-arm door-frame row",
+      "Towel door row"
+     ],
+     "target_sets": 3,
+     "target_reps": "8",
+     "target_weight_kg": 0,
+     "rest_sec": 120,
+     "notes": "Chin-up 8 (palms toward you), RPE 8 cap, stop on any catch. No bar: door-frame row 12 per side, feet closer to the frame = harder. Towel row: stand on the push-to-open side so pulling shuts the door."
+    },
+    {
+     "name": "Single-leg Hip Thrust",
+     "target_sets": 3,
+     "target_reps": "12",
+     "unit": "reps/side",
+     "target_weight_kg": 0,
+     "rest_sec": 90,
+     "notes": "Shoulders on bed or sofa (floor = glute bridge). 2 s squeeze, ribs down, stop at neutral, never arch past straight."
+    },
+    {
+     "name": "Push-up",
+     "variants": [
+      "Feet-elevated push-up",
+      "Tempo push-up (floor)",
+      "Archer push-up"
+     ],
+     "target_sets": 3,
+     "target_reps": "12",
+     "target_weight_kg": 0,
+     "rest_sec": 90,
+     "notes": "Feet on bed if there is one. Floor: 3 s down, 1 s chest on floor. End the set when the hips sag."
+    }
+   ]
+  }
+ }
 }
