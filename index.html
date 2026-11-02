@@ -449,6 +449,79 @@
     .modal p  { font-size: 14px; color: #d1d5db; line-height: 1.6; margin-bottom: 6px; }
     .modal ul { font-size: 13px; color: #fca5a5; line-height: 1.8; margin: 8px 0 16px 16px; }
     .modal-actions { display: flex; flex-direction: column; gap: 8px; margin-top: 18px; }
+
+    /* ── Training frequency (strip + history screen) ─── */
+    /* Gym = indigo (the app's primary), Home = teal. Pair validated for CVD and
+       contrast on the #1f2937 card. Cells also carry the day letter, so the
+       split never relies on colour alone. */
+    .train-strip {
+      margin: 10px 12px 0; padding: 12px 14px;
+      background: #1f2937; border: 1px solid #374151; border-radius: 12px;
+      cursor: pointer;
+    }
+    .ts-days { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; }
+    .ts-day { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+    .ts-wd { font-size: 10px; font-weight: 700; color: #6b7280; }
+    .ts-day.today .ts-wd { color: #f9fafb; }
+    .ts-dot {
+      width: 30px; height: 30px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 11px; font-weight: 800; color: #fff;
+      background: #111827; border: 1.5px solid #374151;
+    }
+    .ts-day.today .ts-dot { border-color: #9ca3af; }
+    .ts-dot.gym  { background: #6366f1; border-color: #6366f1; }
+    .ts-dot.home { background: #0fa89a; border-color: #0fa89a; }
+    .ts-day.future .ts-dot { opacity: 0.45; }
+    .ts-counts {
+      display: flex; justify-content: space-between; align-items: center;
+      margin-top: 10px; font-size: 13px; color: #9ca3af;
+    }
+    .ts-counts b { color: #f9fafb; font-size: 15px; }
+    .ts-counts .more { color: #6b7280; font-size: 12px; }
+
+    .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 0 12px 12px; }
+    .stat-tile { background: #1f2937; border-radius: 14px; padding: 14px; }
+    .stat-tile .k { font-size: 11px; font-weight: 700; color: #6b7280; text-transform: uppercase; letter-spacing: 0.07em; }
+    .stat-tile .v { font-size: 30px; font-weight: 800; margin-top: 4px; }
+    .stat-tile .s { font-size: 12px; color: #9ca3af; margin-top: 2px; }
+
+    .cal-nav { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+    .cal-nav h3 { font-size: 15px; font-weight: 700; }
+    .cal-nav .s { font-size: 12px; color: #9ca3af; font-weight: 400; margin-left: 6px; }
+    .cal-btn {
+      background: #374151; border: 1px solid #4b5563; color: #d1d5db;
+      width: 36px; height: 32px; border-radius: 8px; font-size: 16px; cursor: pointer;
+    }
+    .cal-btn:disabled { opacity: 0.3; cursor: default; }
+    .cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; }
+    .cal-wd { font-size: 10px; font-weight: 700; color: #6b7280; text-align: center; padding-bottom: 2px; }
+    .cal-cell {
+      aspect-ratio: 1; border-radius: 8px; background: #111827;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      font-size: 12px; color: #6b7280; border: 1.5px solid transparent;
+    }
+    .cal-cell.blank { background: none; }
+    .cal-cell.today { border-color: #9ca3af; color: #f9fafb; }
+    .cal-cell.gym  { background: #6366f1; color: #fff; cursor: pointer; }
+    .cal-cell.home { background: #0fa89a; color: #fff; cursor: pointer; }
+    .cal-cell .l { font-size: 10px; font-weight: 800; margin-top: 1px; }
+    .cal-detail { min-height: 18px; margin-top: 10px; font-size: 13px; color: #d1d5db; }
+    .legend { display: flex; gap: 14px; font-size: 12px; color: #9ca3af; margin-top: 8px; }
+    .legend i { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 5px; vertical-align: -1px; }
+
+    .wk-bars { display: grid; grid-template-columns: repeat(8, 1fr); gap: 6px; align-items: end; height: 130px; }
+    .wk-col { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; height: 100%; cursor: pointer; }
+    .wk-val { font-size: 11px; font-weight: 700; color: #d1d5db; margin-bottom: 3px; }
+    .wk-stack { width: 70%; display: flex; flex-direction: column-reverse; gap: 2px; }
+    .wk-seg { width: 100%; }
+    .wk-seg.gym  { background: #6366f1; }
+    .wk-seg.home { background: #0fa89a; }
+    .wk-stack .wk-seg:last-child { border-radius: 4px 4px 0 0; }
+    .wk-base { height: 1px; background: #374151; margin-top: 0; }
+    .wk-labels { display: grid; grid-template-columns: repeat(8, 1fr); gap: 6px; margin-top: 4px; }
+    .wk-labels span { font-size: 10px; color: #6b7280; text-align: center; }
+    .wk-labels span.cur { color: #f9fafb; font-weight: 700; }
   </style>
 </head>
 <body>
@@ -500,6 +573,7 @@
   </div>
 
   <div class="back-banner" id="back-banner" onclick="showScreen('back')"></div>
+  <div class="train-strip" id="train-strip" onclick="showScreen('history')"></div>
 
   <div class="day-select-wrap" id="day-select-wrap" style="display:none">
     <label for="day-select">Training day</label>
@@ -618,6 +692,41 @@
   </div>
 </div>
 
+<!-- ── TRAINING HISTORY SCREEN ────────────────────────────── -->
+<div id="screen-history" class="screen">
+  <div class="header">
+    <div class="header-text">
+      <h1>Training</h1>
+      <div class="sub">When you trained</div>
+    </div>
+    <button class="settings-btn" onclick="showScreen('session')" title="Close">&#x2715;</button>
+  </div>
+
+  <div class="section-label">Counts</div>
+  <div class="stat-grid" id="hist-stats"></div>
+
+  <div class="section-label">Calendar</div>
+  <div class="card">
+    <div class="cal-nav">
+      <button class="cal-btn" onclick="shiftCalMonth(-1)" aria-label="Previous month">&lsaquo;</button>
+      <h3 id="cal-title"></h3>
+      <button class="cal-btn" id="cal-next" onclick="shiftCalMonth(1)" aria-label="Next month">&rsaquo;</button>
+    </div>
+    <div class="cal-grid" id="cal-grid"></div>
+    <div class="legend"><span><i style="background:#6366f1"></i>Gym</span><span><i style="background:#0fa89a"></i>Home</span></div>
+    <div class="cal-detail" id="cal-detail"></div>
+  </div>
+
+  <div class="section-label">Last 8 weeks</div>
+  <div class="card">
+    <div class="wk-bars" id="wk-bars"></div>
+    <div class="wk-base"></div>
+    <div class="wk-labels" id="wk-labels"></div>
+    <div class="cal-detail" id="wk-detail"></div>
+  </div>
+  <div class="page-bottom-spacer"></div>
+</div>
+
 <!-- ── MODAL ────────────────────────────────────────────────────────────── -->
 <div id="modal-overlay" class="modal-overlay hidden">
   <div class="modal">
@@ -633,6 +742,7 @@ let planFile = null;          // whole plan.json (may hold several days)
 let plan     = null;          // the day currently selected
 let currentDay = null;        // 'A' | 'B' | 'C'
 let dayHistory = null;        // { A: 'YYYY-MM-DD', ... } last trained per day
+let sessionLog = null;        // [{ date: 'YYYY-MM-DD', day: 'A' }, ...] every session saved
 let sessionStartTime = null;
 let restTimer = { id: null, elTimer: null, elCountdown: null };
 
@@ -726,18 +836,27 @@ async function fetchDayHistory(repo, token) {
     if (!res.ok) throw new Error(`sessions listing failed (${res.status})`);
     const files = await res.json();
     const hist = {};
+    const log  = [];
     (Array.isArray(files) ? files : []).forEach(f => {
       // sessions/YYYY-MM-DD-<DAY>.json. `_planned` files are not training done.
       const m = /^(\d{4}-\d{2}-\d{2})-([A-Z])\.json$/.exec(f.name || '');
       if (!m) return;
       const [, date, day] = m;
+      log.push({ date, day });
       if (!hist[day] || date > hist[day]) hist[day] = date;
     });
     lsSet('cached_day_history', JSON.stringify(hist));
+    sessionLog = log;
+    lsSet('cached_session_log', JSON.stringify(log));
     return hist;
   } catch (err) {
+    sessionLog = cachedSessionLog();
     return cachedDayHistory();   // offline: stale history still beats a frozen field
   }
+}
+
+function cachedSessionLog() {
+  try { return JSON.parse(ls('cached_session_log') || 'null'); } catch (e) { return null; }
 }
 
 function cachedDayHistory() {
@@ -1371,7 +1490,8 @@ const _showScreen = showScreen;
 window.showScreen = function(name) {
   if (name === 'settings') showScreen_settings_prep();
   if (name === 'back')     renderBack();
-  if (name === 'session')  renderBackBanner();
+  if (name === 'session')  { renderBackBanner(); renderTrainStrip(); }
+  if (name === 'history')  renderHistory();
   _showScreen(name);
   window.scrollTo({ top: 0 });
 };
@@ -1386,11 +1506,12 @@ function saveSettings() {
 // app opens on the right session without needing a new plan pushed.
 function advanceDay() {
   const order = ROTATION.filter(d => planFile?.days?.[d]);
-  if (order.length < 2) return;
+  if (order.length < 2) { recordSessionLocally(currentDay); return; }
   // Record the save locally: the suggestion must be right immediately, before
   // the next sessions listing comes back from GitHub.
   dayHistory = Object.assign({}, dayHistory || {}, { [currentDay]: todayISO() });
   lsSet('cached_day_history', JSON.stringify(dayHistory));
+  recordSessionLocally(currentDay);
   const next = computeRecommendedDay(order)
             || order[(order.indexOf(currentDay) + 1) % order.length];
   currentDay = next;
@@ -1752,6 +1873,153 @@ function renderBackBanner() {
   el.classList.toggle('show', !!msg);
   el.classList.toggle('done', done);
   if (msg) el.innerHTML = msg;
+}
+
+// ─── Training frequency ───────────────────────────────────────────────────────
+// Built from the sessions/ listing that already drives the day suggestion, so it
+// costs no extra request. Weeks start on Monday. Home (H) counts as a session but
+// is coloured apart, because the trainer reads gym and home days differently.
+const WD = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
+let calMonth = null;          // first-of-month ISO shown on the history screen
+
+function recordSessionLocally(day) {
+  const today = todayISO();
+  sessionLog = (sessionLog || cachedSessionLog() || []).slice();
+  if (!sessionLog.some(x => x.date === today && x.day === day)) sessionLog.push({ date: today, day });
+  lsSet('cached_session_log', JSON.stringify(sessionLog));
+}
+
+function isoOf(d) {
+  const p = v => String(v).padStart(2, '0');
+  return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}`;
+}
+function dateOf(iso) { return new Date(iso + 'T12:00:00'); }
+function addDays(iso, n) { const d = dateOf(iso); d.setDate(d.getDate() + n); return isoOf(d); }
+function weekStart(iso) { const d = dateOf(iso); return addDays(iso, -((d.getDay() + 6) % 7)); }
+
+function sessionsByDate() {
+  const map = {};
+  (sessionLog || []).forEach(x => { (map[x.date] = map[x.date] || []).push(x.day); });
+  Object.values(map).forEach(a => a.sort());
+  return map;
+}
+function countRange(from, to) {           // inclusive ISO range
+  const r = { gym: 0, home: 0 };
+  (sessionLog || []).forEach(x => {
+    if (x.date >= from && x.date <= to) r[x.day === 'H' ? 'home' : 'gym']++;
+  });
+  r.total = r.gym + r.home;
+  return r;
+}
+function monthBounds(iso) {
+  const d = dateOf(iso);
+  const first = isoOf(new Date(d.getFullYear(), d.getMonth(), 1, 12));
+  const last  = isoOf(new Date(d.getFullYear(), d.getMonth() + 1, 0, 12));
+  return [first, last];
+}
+function kindOf(days) { return days.every(d => d === 'H') ? 'home' : 'gym'; }
+function splitText(c) {
+  if (!c.total) return 'none yet';
+  return [c.gym ? `${c.gym} gym` : '', c.home ? `${c.home} home` : ''].filter(Boolean).join(' · ');
+}
+function describeDay(iso, days) {
+  const when = dateOf(iso).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' });
+  return `${when}: ${days.map(dayTitle).join(', ')}`;
+}
+
+function renderTrainStrip() {
+  const el = document.getElementById('train-strip');
+  if (!el) return;
+  if (!sessionLog) sessionLog = cachedSessionLog();
+  if (!sessionLog) { el.style.display = 'none'; return; }
+  el.style.display = 'block';
+  const today = todayISO(), mon = weekStart(today), by = sessionsByDate();
+  const cells = WD.map((wd, i) => {
+    const iso = addDays(mon, i), days = by[iso] || [];
+    const cls = [iso === today ? 'today' : '', iso > today ? 'future' : ''].join(' ');
+    const dot = days.length ? kindOf(days) : '';
+    return `<div class="ts-day ${cls}"><span class="ts-wd">${wd}</span>`
+         + `<span class="ts-dot ${dot}">${days.join('')}</span></div>`;
+  }).join('');
+  const [mFirst] = monthBounds(today);
+  const w = countRange(mon, addDays(mon, 6)), m = countRange(mFirst, today);
+  const lw = countRange(addDays(mon, -7), addDays(mon, -1));
+  el.innerHTML = `<div class="ts-days">${cells}</div>
+    <div class="ts-counts"><span><b>${w.total}</b> this week &middot; <b>${m.total}</b> this month</span>
+    <span class="more">last week ${lw.total} &rsaquo;</span></div>`;
+}
+
+function renderHistory() {
+  if (!sessionLog) sessionLog = cachedSessionLog() || [];
+  const today = todayISO(), mon = weekStart(today);
+  const [mFirst, mLast] = monthBounds(today);
+  const [pFirst, pLast] = monthBounds(addDays(mFirst, -1));
+  const tiles = [
+    ['This week',  countRange(mon, addDays(mon, 6))],
+    ['Last week',  countRange(addDays(mon, -7), addDays(mon, -1))],
+    ['This month', countRange(mFirst, mLast)],
+    ['Last month', countRange(pFirst, pLast)],
+  ];
+  document.getElementById('hist-stats').innerHTML = tiles.map(([k, c]) =>
+    `<div class="stat-tile"><div class="k">${k}</div><div class="v">${c.total}</div><div class="s">${splitText(c)}</div></div>`
+  ).join('');
+  if (!calMonth) calMonth = mFirst;
+  renderCalendar();
+  renderWeekBars();
+}
+
+function shiftCalMonth(n) {
+  const d = dateOf(calMonth);
+  const next = isoOf(new Date(d.getFullYear(), d.getMonth() + n, 1, 12));
+  if (next > monthBounds(todayISO())[0]) return;
+  calMonth = next;
+  renderCalendar();
+}
+
+function renderCalendar() {
+  const today = todayISO(), by = sessionsByDate();
+  const [first, last] = monthBounds(calMonth);
+  const c = countRange(first, last);
+  document.getElementById('cal-title').innerHTML =
+    `${dateOf(first).toLocaleDateString('en-GB', { month: 'long', year: 'numeric' })}<span class="s">${c.total} session${c.total === 1 ? '' : 's'}</span>`;
+  document.getElementById('cal-next').disabled = first >= monthBounds(today)[0];
+  document.getElementById('cal-detail').textContent = '';
+  const lead = (dateOf(first).getDay() + 6) % 7;
+  let html = WD.map(w => `<div class="cal-wd">${w}</div>`).join('');
+  html += '<div class="cal-cell blank"></div>'.repeat(lead);
+  for (let iso = first; iso <= last; iso = addDays(iso, 1)) {
+    const days = by[iso] || [];
+    const cls = ['cal-cell', days.length ? kindOf(days) : '', iso === today ? 'today' : ''].join(' ');
+    const tip = days.length ? escapeHtml(describeDay(iso, days)) : '';
+    html += `<div class="${cls}"${days.length ? ` title="${tip}" onclick="showCalDetail('cal-detail', this.title)"` : ''}>`
+          + `${dateOf(iso).getDate()}${days.length ? `<span class="l">${days.join('')}</span>` : ''}</div>`;
+  }
+  document.getElementById('cal-grid').innerHTML = html;
+}
+
+function showCalDetail(id, text) { document.getElementById(id).textContent = text; }
+
+function renderWeekBars() {
+  const mon = weekStart(todayISO());
+  const weeks = [];
+  for (let i = 7; i >= 0; i--) {
+    const from = addDays(mon, -7 * i);
+    weeks.push({ from, c: countRange(from, addDays(from, 6)) });
+  }
+  const max = Math.max(4, ...weeks.map(w => w.c.total));
+  const px = n => Math.round((n / max) * 104);
+  document.getElementById('wk-bars').innerHTML = weeks.map(w => {
+    const segs = (w.c.gym  ? `<div class="wk-seg gym"  style="height:${px(w.c.gym)}px"></div>`  : '')
+               + (w.c.home ? `<div class="wk-seg home" style="height:${px(w.c.home)}px"></div>` : '');
+    const when = dateOf(w.from).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+    const tip = `Week of ${when}: ${w.c.total} (${splitText(w.c)})`;
+    return `<div class="wk-col" title="${tip}" onclick="showCalDetail('wk-detail', this.title)">`
+         + `<div class="wk-val">${w.c.total}</div><div class="wk-stack">${segs}</div></div>`;
+  }).join('');
+  document.getElementById('wk-labels').innerHTML = weeks.map((w, i) => {
+    const d = dateOf(w.from);
+    return `<span class="${i === 7 ? 'cur' : ''}">${i === 7 ? 'now' : `${d.getDate()}/${d.getMonth() + 1}`}</span>`;
+  }).join('');
 }
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
