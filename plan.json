@@ -1,16 +1,36 @@
 {
-  "generated": "2026-11-03",
+  "generated": "2026-11-07",
   "recommended_day": "D",
   "warmup": [
     {
-      "name": "Couch stretch",
-      "dose": "30-40 s per side",
-      "note": "Tuck the pelvis BEFORE you lean. Hips stop you before the knee does."
+      "name": "Elephant walk",
+      "dose": "15 per side, slow",
+      "note": "Hamstring nerve glide (movementbydavid step 1). Hinge forward, hands toward the floor, bend one knee, shift hips toward it so the other leg straightens. Tingling behind the straight knee is the point. Alternate."
     },
     {
-      "name": "Seated 90/90 hip switch",
-      "dose": "6-8 switches per side",
-      "note": "Slow, no hands if you can."
+      "name": "Calf + soleus stretch",
+      "dose": "30 s + 30 s per side",
+      "note": "Ankle range for the deep squat. Calf: toes up on a plate, knee straight, lean in. Soleus: foot flat, push the knee past the toes as far as it goes. Knee past toes is good, not dangerous."
+    },
+    {
+      "name": "Supported deep squat hold",
+      "dose": "2 x 30 s",
+      "note": "Hold a rack upright, sink as deep as the knee allows, heels down. Push knees forward and hips out. Right knee sets the depth: pressure is fine, a pinch means come up a bit."
+    },
+    {
+      "name": "Lunge pulses + couch stretch",
+      "dose": "10 pulses, then 30 s hold, per side",
+      "note": "Half-kneeling, hands down, back toes anchored: lift the back knee off the floor, sink the hip, 10x. Then hold the couch stretch (or reach the arm up and over if couch is too much). Tuck the pelvis BEFORE you lean. You should feel it creep into the abs, never into the lower back."
+    },
+    {
+      "name": "Active hamstring stretch",
+      "dose": "30 s per side",
+      "note": "Half-kneeling, front leg straight, heel down, hinge until you feel the stretch. Then PUSH the heel hard into the floor for the whole 30 s, so the hamstring works while it is long."
+    },
+    {
+      "name": "Kneeling rock-back",
+      "dose": "10 slow rocks",
+      "note": "Knee flexion. On all fours with a pad under the knees, rock the hips back toward the heels with hands taking weight. Stop at pressure, never pain. Right knee: if your surgeon said flexion is mechanically blocked, rock only to where it stops and do not push."
     },
     {
       "name": "90/90 push-up",
@@ -18,36 +38,21 @@
       "note": "From 90/90, torso down over the front leg to the floor and back. Hands assist at first; goal is the glute lifting you unaided."
     },
     {
-      "name": "Side plank",
-      "dose": "2 x 40 s per side",
-      "note": "Oblique builder, now progressive. Ladder, move up one step when the last hold is steady with no hip sag: 2x40 -> 2x50 -> 2x60 s, then a 5 kg plate on the top hip and back to 2x30, climb to 60 again, then 10 kg. Never past 60 s, add weight instead. Feet stacked, no top-leg raise. When you move up a step, write it in the session notes (e.g. \"SP 2x50\")."
+      "name": "Elevated pancake",
+      "dose": "2 x 30 s",
+      "note": "Replaces the straddle hold. Sit on a plate or step, legs wide, toes up, flat back, reach forward toward something at the same height. Track it: fingers, then elbows on the bench, then lower the seat."
     },
     {
       "name": "Clamshell",
       "dose": "15 per side",
       "note": "No toe-down cue."
-    },
-    {
-      "name": "Side-lying hip abduction",
-      "dose": "12 per side",
-      "note": "NEW - you asked for this on 08-09. Straight top leg, lift to ~30 deg, no rolling back. If you still cannot feel the glute after two sessions, say so and it comes back out."
-    },
-    {
-      "name": "Seated good morning, unloaded",
-      "dose": "8 slow reps",
-      "note": "No bar. Hinge-pattern stretch, working toward depth."
-    },
-    {
-      "name": "Straddle hold",
-      "dose": "45-60 s",
-      "note": "Capped at 60 s so it does not pre-fatigue the box squat."
     }
   ],
   "days": {
     "A": {
-      "date": "2026-11-02",
+      "date": "2026-11-07",
       "day_type": "A",
-      "session_notes": "What changed: shoulder press targets now match what you actually lifted (60 top / 50 back-off). Lat pulldown 55, pec deck 45, preacher starts at 40. Leg press holds at 140.",
+      "session_notes": "What changed: leg press is OUT, Seated Leg Curl replaces it (hamstrings). NEW Side Bend for the obliques. Pec deck 3 -> 2 sets to pay for it. Warm-up is new: hips, knees, hamstrings.",
       "exercises": [
         {
           "name": "Shoulder Press - top set",
@@ -76,15 +81,15 @@
           ]
         },
         {
-          "name": "Leg Press 45 (partial ROM)",
+          "name": "Seated Leg Curl",
           "target_sets": 3,
-          "target_reps": "8",
-          "target_weight_kg": 140,
-          "rest_sec": 120,
-          "notes": "140x8 went RPE 8 -> 9. Hold 140.",
+          "target_reps": "10",
+          "target_weight_kg": 35,
+          "rest_sec": 90,
+          "notes": "NEW, replaces the leg press. 35 is a guess: if set 1 is easier than RPE 7, go up 5 for sets 2-3 and log what you used. Lean the torso forward so the hamstrings start long. 2 s on the way up. Let the right knee set how far you curl; the stretched part at the top matters more than the squeeze.",
           "variants": [
-            "Leg press 45",
-            "Hack squat"
+            "Seated leg curl",
+            "Lying leg curl"
           ]
         },
         {
@@ -93,7 +98,7 @@
           "target_reps": "10",
           "target_weight_kg": 55,
           "rest_sec": 90,
-          "notes": "50x10 for all three at RPE 8 -> 55. If set 3 drops below 8 reps, finish at 50.",
+          "notes": "50x10 for all three at RPE 8 -> 55. If set 3 drops below 8 reps, finish at 50. Full stretch at the top every rep: the lats are a big part of how wide your ribcage looks.",
           "variants": [
             "Cable lat pulldown",
             "Plate loaded pulldown"
@@ -101,14 +106,28 @@
         },
         {
           "name": "Pec Deck Fly",
-          "target_sets": 3,
+          "target_sets": 2,
           "target_reps": "12",
           "target_weight_kg": 45,
           "rest_sec": 75,
-          "notes": "40x12 was RPE 7 -> 45.",
+          "notes": "2 sets now (was 3) to make room for the side bend. 40x12 was RPE 7 -> 45.",
           "variants": [
             "Pec deck",
             "Cable fly"
+          ]
+        },
+        {
+          "name": "Side Bend",
+          "target_sets": 2,
+          "target_reps": "12",
+          "unit": "reps/side",
+          "target_weight_kg": 20,
+          "rest_sec": 60,
+          "notes": "NEW, obliques. One DB, free hand on your head. Lower toward the bell slowly (2 s), come up until you lean a little past vertical the other way. No twisting, no leaning back. 20 kg DB to start (you hold 24 for 60 s at RPE 6). Any back twinge: stop the exercise and tell me. 45 deg version: bodyweight, hip on the pad, same rules.",
+          "variants": [
+            "DB side bend",
+            "45 deg side bend (roman chair)",
+            "Cable side bend"
           ]
         },
         {
@@ -138,9 +157,9 @@
       ]
     },
     "B": {
-      "date": "2026-11-02",
+      "date": "2026-11-07",
       "day_type": "B",
-      "session_notes": "What changed: hip thrust moved up to 3rd so it does not get cut again. Hack squat 30. Bench holds at 75 / 60. If you are short on time, drop the seated row, not the hip thrust.",
+      "session_notes": "What changed: Hip Thrust is now 2nd, right after bench. It got skipped twice for time, and it is your main glute lift. Squat machine 3 -> 2 sets. NEW Cable Woodchop for the obliques. Short on time: cut the seated row, never the hip thrust.",
       "exercises": [
         {
           "name": "Plate Loaded Bench Press - top set",
@@ -169,30 +188,30 @@
           ]
         },
         {
-          "name": "Squat Machine",
-          "target_sets": 3,
-          "target_reps": "8",
-          "target_weight_kg": 30,
-          "rest_sec": 120,
-          "notes": "Hack squat 20x8 was RPE 6 -> 30. Log the weight on every set (set 1 came through blank). Other variants: weights do not carry.",
-          "variants": [
-            "Pendulum squat",
-            "Perfect squat (Matrix)",
-            "Hack squat",
-            "Barbell box squat"
-          ]
-        },
-        {
           "name": "Hip Thrust",
           "target_sets": 3,
           "target_reps": "12",
           "target_weight_kg": 25,
           "rest_sec": 90,
-          "notes": "MOVED UP to slot 3. It was skipped on 10-29 when time ran out, and it is the priority lift for the back. Ribs down, 2 s squeeze, stop at neutral. If you run short, cut the seated row instead.",
+          "notes": "MOVED TO SLOT 2. Lower-glute cues: chin tucked, eyes forward (not at the ceiling), shins vertical at the top, tuck the pelvis and squeeze 2 s, stop at neutral. If you feel it in the hamstrings, move the feet closer. If you feel it in the quads, move them further out.",
           "variants": [
             "Hip thrust machine / glute drive",
             "Smith hip thrust",
             "Barbell hip thrust"
+          ]
+        },
+        {
+          "name": "Squat Machine",
+          "target_sets": 2,
+          "target_reps": "8",
+          "target_weight_kg": 30,
+          "rest_sec": 120,
+          "notes": "2 sets now (was 3): less leg push, more glute. Hack squat 20x8 was RPE 6 -> 30. Log the weight on every set (set 1 came through blank). Other variants: weights do not carry.",
+          "variants": [
+            "Pendulum squat",
+            "Perfect squat (Matrix)",
+            "Hack squat",
+            "Barbell box squat"
           ]
         },
         {
@@ -209,12 +228,25 @@
           ]
         },
         {
+          "name": "Cable Woodchop",
+          "target_sets": 2,
+          "target_reps": "12",
+          "unit": "reps/side",
+          "target_weight_kg": 15,
+          "rest_sec": 60,
+          "notes": "NEW, obliques. High to low: cable above your head, arms long, rotate down across your body to the opposite knee. Turn through the ribs, let the back heel pivot, no arching. 2 s back up. 15 to start (your Pallof is 18-24, this one moves). Log the stack number.",
+          "variants": [
+            "High-to-low cable woodchop",
+            "Low-to-high cable woodchop"
+          ]
+        },
+        {
           "name": "Lying Incline DB Curl (drop set)",
           "target_sets": 3,
           "target_reps": "to failure",
           "target_weight_kg": 10,
           "rest_sec": 0,
-          "notes": "10 -> 7.5 -> 5. You got 8 on the first drop, so hold 10. Want 10-12.",
+          "notes": "10 -> 7.5 -> 5. You got 10 on the first drop, so hold 10 and aim for 12.",
           "sets": [
             {
               "weight_kg": 10
@@ -230,9 +262,9 @@
       ]
     },
     "C": {
-      "date": "2026-11-03",
+      "date": "2026-11-07",
       "day_type": "C",
-      "session_notes": "Pull-up top +2.5 (7.5), back ext 3x10 BW, Pallof 18 -> 24, DB incline holds 20 (RPE 9), hammer holds 17.5. Back day. Wrist + reverse curl go in the back extension rests.",
+      "session_notes": "What changed: back extension is now glute-biased (toes out, upper back rounded) and is your lower-glute builder. Pallof press is OUT, Cable Woodchop 3x12/side replaces it. Wrist + reverse curl still go in the back extension rests.",
       "exercises": [
         {
           "name": "Pull-Up Parallel Close Grip - top set",
@@ -256,7 +288,7 @@
           "target_reps": "10",
           "target_weight_kg": 0,
           "rest_sec": 90,
-          "notes": "3x8 BW was RPE 7, so reps go to 10, no load yet. Squeeze glutes, chin tucked, STOP AT NEUTRAL, never arch. Wrist + reverse curl superset in these rests."
+          "notes": "NOW GLUTE-BIASED: toes turned out ~30 deg, pad just below the hip crease, upper back slightly rounded, chin tucked. Drive your hips into the pad with the glutes to come up, STOP AT NEUTRAL, never arch. 3x8 BW was RPE 7, so 10 reps. Once 3x12 is RPE 7, hold a 5 kg plate. Wrist + reverse curl superset in these rests."
         },
         {
           "name": "DB Incline Bench Press",
@@ -272,12 +304,17 @@
           ]
         },
         {
-          "name": "Pallof Press (half-kneeling)",
-          "target_sets": 2,
-          "target_reps": "10",
-          "target_weight_kg": 24,
+          "name": "Cable Woodchop",
+          "target_sets": 3,
+          "target_reps": "12",
+          "unit": "reps/side",
+          "target_weight_kg": 15,
           "rest_sec": 60,
-          "notes": "10 per side, 2 s hold. You did 24 x10 as a 3rd set on 11-02, so 24 is the target at your usual gym; ~11 on the other one."
+          "notes": "NEW, replaces the Pallof press (a hold builds less muscle than a moving lift). High to low, arms long, turn through the ribs, back heel pivots, no arching, 2 s back up. 15 to start. Log the stack number.",
+          "variants": [
+            "High-to-low cable woodchop",
+            "Low-to-high cable woodchop"
+          ]
         },
         {
           "name": "Hammer Curl",
@@ -294,22 +331,20 @@
       ]
     },
     "D": {
-      "date": "2026-11-02",
+      "date": "2026-11-07",
       "day_type": "D",
-      "session_notes": "What changed: suitcase hold is 3 sets x 60 s now. Side plank in the warm-up is 2 x 40 s with a ladder to climb. Face pull 40. Do not stack D the day after B.",
+      "session_notes": "What changed: squat machine is OUT, Cable Pull-Through replaces it (glutes and hamstrings, spine-friendly hinge). That leaves the squat on Day B only, so you can now do D the day after B.",
       "exercises": [
         {
-          "name": "Squat Machine",
+          "name": "Cable Pull-Through",
           "target_sets": 3,
-          "target_reps": "10",
-          "target_weight_kg": 10,
-          "rest_sec": 120,
-          "notes": "Hack squat 10x10 was RPE 8 the day after Day B. Hold 10. Avoid doing D the day after B, the squat is on both.",
+          "target_reps": "12",
+          "target_weight_kg": 25,
+          "rest_sec": 90,
+          "notes": "NEW. Rope on the low pulley, face away, rope between your legs. Push the hips back until the hamstrings are stretched, knees soft, then stand up by squeezing the glutes. Stop at neutral, no leaning back. The deep stretch at the bottom is what builds the lower glute. 25 to start; if 12 is RPE 7 or easier, +5. DB RDL variant: start 2 x 17.5, weights do not carry.",
           "variants": [
-            "Pendulum squat",
-            "Perfect squat (Matrix)",
-            "Hack squat",
-            "Barbell box squat"
+            "Cable pull-through",
+            "DB Romanian deadlift"
           ]
         },
         {
@@ -342,7 +377,7 @@
           "target_reps": "60",
           "target_weight_kg": 24,
           "rest_sec": 60,
-          "notes": "3 sets now (was 2) for more oblique work. 24 kg x 60 s per side was RPE 6. When all 3 sets are RPE 7 or less, go 75 s, or 28 kg for 60 s if the gym has one (log the weight). Stand tall, do not lean away from the bell.",
+          "notes": "3 sets for the obliques. 24 kg x 60 s per side was RPE 6. When all 3 sets are RPE 7 or less, go 75 s, or 28 kg for 60 s if the gym has one (log the weight). Stand tall, do not lean away from the bell.",
           "variants": [
             "DB",
             "Kettlebell"
