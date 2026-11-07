@@ -411,26 +411,41 @@
       ]
     },
     "H": {
-      "date": "2026-10-10",
+      "date": "2026-11-07",
       "day_type": "H",
-      "session_notes": "Use this only to replace a missed gym day. It doesn't move the A/B/C rotation. Bodyweight only: every set ends 1-2 reps short of failure, or it doesn't count as growth work. Too easy (target hit at RPE 7)? Slow the lowering to 4-5 s or add a pause before adding reps. Pick the pull variant you actually did so the log stays honest.",
+      "session_notes": "What changed: hip thrust moved up to 2nd, split squat 3 -> 2 sets and glute-biased, NEW sliding leg curl (hamstrings) and side plank hip dips (obliques). Pike and push-up are now one slot: pick pike if you are replacing Day A, a push-up if replacing B or C. Use this only to replace a missed gym day; it doesn't move the rotation. Every set ends 1-2 reps short of failure. Too easy (target at RPE 7)? Slow the lowering to 4-5 s or add a pause before adding reps. Warm-up at home: calf stretch on a stair, squat hold on a door frame, pancake sitting on a cushion.",
       "exercises": [
         {
-          "name": "Pike Push-up",
+          "name": "Push",
+          "variants": [
+            "Pike push-up",
+            "Feet-elevated push-up",
+            "Tempo push-up (floor)",
+            "Archer push-up"
+          ],
           "target_sets": 3,
           "target_reps": "8",
           "target_weight_kg": 0,
           "rest_sec": 90,
-          "notes": "Feet on bed for harder, floor for easier. Head travels in front of the hands."
+          "notes": "Pike: 8, feet on bed for harder, head travels in front of the hands. Push-up variants: aim for 12, feet on bed if there is one, floor = 3 s down, 1 s chest on floor. End the set when the hips sag."
         },
         {
-          "name": "Bulgarian Split Squat",
+          "name": "Single-leg Hip Thrust",
           "target_sets": 3,
           "target_reps": "12",
           "unit": "reps/side",
           "target_weight_kg": 0,
           "rest_sec": 90,
-          "notes": "Rear foot on bed or chair, 3 s down. Slight forward lean, ribs down, never arch to go deeper. Knee sets the depth."
+          "notes": "MOVED UP to slot 2, the main glute lift. Shoulders on bed or sofa (floor = glute bridge). Chin tucked, 2 s squeeze, ribs down, stop at neutral, never arch past straight."
+        },
+        {
+          "name": "Bulgarian Split Squat",
+          "target_sets": 2,
+          "target_reps": "12",
+          "unit": "reps/side",
+          "target_weight_kg": 0,
+          "rest_sec": 90,
+          "notes": "2 sets now (was 3), and glute-biased: front foot a bit further out, torso leaned forward ~30 deg, push through the front heel. Rear foot on bed or chair, 3 s down, ribs down, never arch to go deeper. Knee sets the depth."
         },
         {
           "name": "Pull",
@@ -446,26 +461,26 @@
           "notes": "Chin-up 8 (palms toward you), RPE 8 cap, stop on any catch. No bar: door-frame row 12 per side, feet closer to the frame = harder. Towel row: stand on the push-to-open side so pulling shuts the door."
         },
         {
-          "name": "Single-leg Hip Thrust",
+          "name": "Sliding Leg Curl",
+          "variants": [
+            "Both legs",
+            "Lowering only (both up, slide out 4 s)",
+            "Single leg"
+          ],
           "target_sets": 3,
+          "target_reps": "8",
+          "target_weight_kg": 0,
+          "rest_sec": 90,
+          "notes": "NEW, hamstrings. On your back, heels on a towel (hard floor) or in socks, hips up in a bridge. Slide the heels out slowly (3 s) keeping the hips up, then pull them back in. Can't pull back yet? Use 'lowering only': slide out, drop the hips, walk the feet back in. Right knee sets how far you curl in."
+        },
+        {
+          "name": "Side Plank Hip Dip",
+          "target_sets": 2,
           "target_reps": "12",
           "unit": "reps/side",
           "target_weight_kg": 0,
-          "rest_sec": 90,
-          "notes": "Shoulders on bed or sofa (floor = glute bridge). 2 s squeeze, ribs down, stop at neutral, never arch past straight."
-        },
-        {
-          "name": "Push-up",
-          "variants": [
-            "Feet-elevated push-up",
-            "Tempo push-up (floor)",
-            "Archer push-up"
-          ],
-          "target_sets": 3,
-          "target_reps": "12",
-          "target_weight_kg": 0,
-          "rest_sec": 90,
-          "notes": "Feet on bed if there is one. Floor: 3 s down, 1 s chest on floor. End the set when the hips sag."
+          "rest_sec": 60,
+          "notes": "NEW, obliques (the side plank left the warm-up). On the forearm, feet stacked, lower the hip toward the floor and lift it higher than straight, 2 s pause at the top. Too easy: hold a water bottle or bag on the top hip. No top-leg raise."
         }
       ]
     }
