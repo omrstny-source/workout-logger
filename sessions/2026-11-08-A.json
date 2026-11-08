@@ -1,0 +1,177 @@
+{
+  "date": "2026-11-08",
+  "day_type": "A",
+  "planned_date": "2026-11-07",
+  "exercises": [
+    {
+      "name": "Shoulder Press - top set",
+      "target_sets": 1,
+      "target_reps": "5",
+      "target_weight_kg": 60,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 5,
+          "weight_kg": 60
+        }
+      ],
+      "rpe_last_set": 6,
+      "variant": "Machine shoulder press",
+      "notes": ""
+    },
+    {
+      "name": "Shoulder Press - back-off",
+      "target_sets": 2,
+      "target_reps": "8",
+      "target_weight_kg": 50,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 8,
+          "weight_kg": 50
+        },
+        {
+          "set": 2,
+          "reps": 8,
+          "weight_kg": 50
+        }
+      ],
+      "rpe_last_set": 7,
+      "variant": "Machine shoulder press",
+      "notes": ""
+    },
+    {
+      "name": "Seated Leg Curl",
+      "target_sets": 3,
+      "target_reps": "10",
+      "target_weight_kg": 35,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 10,
+          "weight_kg": 40
+        },
+        {
+          "set": 2,
+          "reps": 10,
+          "weight_kg": 40
+        },
+        {
+          "set": 3,
+          "reps": 10,
+          "weight_kg": 40
+        }
+      ],
+      "rpe_last_set": 7,
+      "variant": "Seated leg curl",
+      "notes": ""
+    },
+    {
+      "name": "Lat Pulldown",
+      "target_sets": 3,
+      "target_reps": "10",
+      "target_weight_kg": 55,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 10,
+          "weight_kg": 55
+        },
+        {
+          "set": 2,
+          "reps": 10,
+          "weight_kg": 55
+        },
+        {
+          "set": 3,
+          "reps": 8,
+          "weight_kg": 55
+        }
+      ],
+      "rpe_last_set": 10,
+      "variant": "Cable lat pulldown",
+      "notes": ""
+    },
+    {
+      "name": "Pec Deck Fly",
+      "target_sets": 2,
+      "target_reps": "12",
+      "target_weight_kg": 45,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 12,
+          "weight_kg": 47
+        },
+        {
+          "set": 2,
+          "reps": 9,
+          "weight_kg": 47
+        }
+      ],
+      "rpe_last_set": 10,
+      "variant": "Pec deck",
+      "notes": ""
+    },
+    {
+      "name": "Side Bend",
+      "target_sets": 2,
+      "target_reps": "12",
+      "target_weight_kg": 20,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 12,
+          "weight_kg": 20
+        },
+        {
+          "set": 2,
+          "reps": 12,
+          "weight_kg": 20
+        }
+      ],
+      "rpe_last_set": 9,
+      "variant": "DB side bend",
+      "notes": ""
+    },
+    {
+      "name": "Machine Preacher Curl (drop set)",
+      "target_sets": 3,
+      "target_reps": "to failure",
+      "target_weight_kg": 40,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 9,
+          "weight_kg": 40
+        },
+        {
+          "set": 2,
+          "reps": 7,
+          "weight_kg": 30
+        },
+        {
+          "set": 3,
+          "reps": 6,
+          "weight_kg": 20
+        }
+      ],
+      "rpe_last_set": 10,
+      "variant": "Machine preacher",
+      "notes": ""
+    }
+  ],
+  "warmup_completed": [
+    "Elephant walk",
+    "Calf + soleus stretch",
+    "Supported deep squat hold",
+    "Lunge pulses + couch stretch",
+    "Active hamstring stretch",
+    "Kneeling rock-back",
+    "90/90 push-up",
+    "Elevated pancake",
+    "Clamshell"
+  ],
+  "session_notes": "cable lat pulldown could have done 2 more but my technique broke down even with straps,",
+  "duration_min": 46
+}
