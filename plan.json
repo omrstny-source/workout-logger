@@ -1,6 +1,6 @@
 {
-  "generated": "2026-11-07",
-  "recommended_day": "D",
+  "generated": "2026-11-09",
+  "recommended_day": "B",
   "warmup": [
     {
       "name": "Elephant walk",
@@ -52,15 +52,15 @@
     "A": {
       "date": "2026-11-07",
       "day_type": "A",
-      "session_notes": "What changed: leg press is OUT, Seated Leg Curl replaces it (hamstrings). NEW Side Bend for the obliques. Pec deck 3 -> 2 sets to pay for it. Warm-up is new: hips, knees, hamstrings.",
+      "session_notes": "Shoulder press up (top 65, back-off 55), leg curl 45. Pulldown 55, pec deck 45, side bend 20, preacher 40 all hold. Pulldown: stop the set when form breaks, not when the arms do. Warm-up stays: hips, knees, hamstrings.",
       "exercises": [
         {
           "name": "Shoulder Press - top set",
           "target_sets": 1,
           "target_reps": "5",
-          "target_weight_kg": 60,
+          "target_weight_kg": 65,
           "rest_sec": 150,
-          "notes": "Machine: 60x5 was RPE 8 on 10-26. Hold 60 until it is RPE 7, then 65. Barbell/DB variants: weights do not carry.",
+          "notes": "Machine: 60x5 was RPE 6 on 11-08 -> 65. Hold 65 until it is RPE 7, then 70. Barbell/DB variants: weights do not carry.",
           "variants": [
             "Machine shoulder press",
             "Barbell OHP in rack",
@@ -71,9 +71,9 @@
           "name": "Shoulder Press - back-off",
           "target_sets": 2,
           "target_reps": "8",
-          "target_weight_kg": 50,
+          "target_weight_kg": 55,
           "rest_sec": 90,
-          "notes": "Machine: 50x8 was RPE 9. Hold 50 until both sets are RPE 8 or less.",
+          "notes": "Machine: 50x8 both sets, last at RPE 7 on 11-08 -> 55. Hold 55 until both sets are RPE 8 or less.",
           "variants": [
             "Machine shoulder press",
             "Barbell OHP in rack",
@@ -84,9 +84,9 @@
           "name": "Seated Leg Curl",
           "target_sets": 3,
           "target_reps": "10",
-          "target_weight_kg": 35,
+          "target_weight_kg": 45,
           "rest_sec": 90,
-          "notes": "NEW, replaces the leg press. 35 is a guess: if set 1 is easier than RPE 7, go up 5 for sets 2-3 and log what you used. Lean the torso forward so the hamstrings start long. 2 s on the way up. Let the right knee set how far you curl; the stretched part at the top matters more than the squeeze.",
+          "notes": "40x10 all three at RPE 7 on 11-08 -> 45. Lean the torso forward so the hamstrings start long. 2 s on the way up. Let the right knee set how far you curl; the stretched part at the top matters more than the squeeze.",
           "variants": [
             "Seated leg curl",
             "Lying leg curl"
@@ -98,7 +98,7 @@
           "target_reps": "10",
           "target_weight_kg": 55,
           "rest_sec": 90,
-          "notes": "50x10 for all three at RPE 8 -> 55. If set 3 drops below 8 reps, finish at 50. Full stretch at the top every rep: the lats are a big part of how wide your ribcage looks.",
+          "notes": "55: 10, 10, 8 at RPE 10 and form broke on set 3 -> hold 55. If set 3 drops below 8 reps, finish at 50. Full stretch at the top every rep: the lats are a big part of how wide your ribcage looks.",
           "variants": [
             "Cable lat pulldown",
             "Plate loaded pulldown"
@@ -110,7 +110,7 @@
           "target_reps": "12",
           "target_weight_kg": 45,
           "rest_sec": 75,
-          "notes": "2 sets now (was 3) to make room for the side bend. 40x12 was RPE 7 -> 45.",
+          "notes": "2 sets. 47x12 then 47x9 at RPE 10 on 11-08 -> back to 45 until both sets hit 12.",
           "variants": [
             "Pec deck",
             "Cable fly"
