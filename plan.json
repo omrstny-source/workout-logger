@@ -333,15 +333,15 @@
     "D": {
       "date": "2026-11-07",
       "day_type": "D",
-      "session_notes": "What changed: squat machine is OUT, Cable Pull-Through replaces it (glutes and hamstrings, spine-friendly hinge). That leaves the squat on Day B only, so you can now do D the day after B.",
+      "session_notes": "Pull-through +5 (30), face pull +5 (45), suitcase locks in 27.5 x 60 s, dip holds at 5 (RPE 9), lateral raise holds at 7.5. Squat machine is OUT and Cable Pull-Through replaces it (glutes and hamstrings, spine-friendly hinge). That leaves the squat on Day B only, so you can now do D the day after B.",
       "exercises": [
         {
           "name": "Cable Pull-Through",
           "target_sets": 3,
           "target_reps": "12",
-          "target_weight_kg": 25,
+          "target_weight_kg": 30,
           "rest_sec": 90,
-          "notes": "NEW. Rope on the low pulley, face away, rope between your legs. Push the hips back until the hamstrings are stretched, knees soft, then stand up by squeezing the glutes. Stop at neutral, no leaning back. The deep stretch at the bottom is what builds the lower glute. 25 to start; if 12 is RPE 7 or easier, +5. DB RDL variant: start 2 x 17.5, weights do not carry.",
+          "notes": "NEW. Rope on the low pulley, face away, rope between your legs. Push the hips back until the hamstrings are stretched, knees soft, then stand up by squeezing the glutes. Stop at neutral, no leaning back. The deep stretch at the bottom is what builds the lower glute. 25x12 was RPE 6 -> 30; if 12 is RPE 7 or easier, +5. DB RDL variant: start 2 x 17.5, weights do not carry.",
           "variants": [
             "Cable pull-through",
             "DB Romanian deadlift"
@@ -363,9 +363,9 @@
           "name": "Face Pull",
           "target_sets": 3,
           "target_reps": "12",
-          "target_weight_kg": 40,
+          "target_weight_kg": 45,
           "rest_sec": 60,
-          "notes": "35x12 was RPE 7 -> 40 (you have used 40 before).",
+          "notes": "40x12 was RPE 7 -> 45 (you have used 45 before).",
           "variants": [
             "Cable rope face pull",
             "Reverse pec deck"
@@ -375,9 +375,9 @@
           "name": "Suitcase Hold (straps)",
           "target_sets": 3,
           "target_reps": "60",
-          "target_weight_kg": 24,
+          "target_weight_kg": 27.5,
           "rest_sec": 60,
-          "notes": "3 sets for the obliques. 24 kg x 60 s per side was RPE 6. When all 3 sets are RPE 7 or less, go 75 s, or 28 kg for 60 s if the gym has one (log the weight). Stand tall, do not lean away from the bell.",
+          "notes": "3 sets for the obliques. 27.5 kg x 60 s per side was RPE 7. When all 3 sets are RPE 7 or less, go 75 s, or 30 kg for 60 s if the gym has one (log the weight). Stand tall, do not lean away from the bell.",
           "variants": [
             "DB",
             "Kettlebell"
@@ -390,7 +390,7 @@
           "target_reps": "to failure",
           "target_weight_kg": 7.5,
           "rest_sec": 0,
-          "notes": "7.5 -> 5 -> 2.5. 7.5 gave 10/10/8 at RPE 10, so it starts here.",
+          "notes": "7.5 -> 5 -> 2.5. 7.5 gave 11/10/10 at RPE 10, so it holds here.",
           "variants": [
             "DB",
             "Cable",
