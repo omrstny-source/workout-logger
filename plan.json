@@ -206,11 +206,12 @@
           "target_reps": "8",
           "target_weight_kg": 30,
           "rest_sec": 120,
-          "notes": "2 sets now (was 3): less leg push, more glute. Hack squat 20x8 was RPE 6 -> 30. Log the weight on every set (set 1 came through blank). Other variants: weights do not carry.",
+          "notes": "2 sets now (was 3): less leg push, more glute. Hack squat 20x8 was RPE 6 -> 30. Log the weight on every set (set 1 came through blank). Other variants: weights do not carry. Reverse hack (facing the pad): new, start light around 20 and build from its own log. Stand tall at the top, do not lean back or arch.",
           "variants": [
             "Pendulum squat",
             "Perfect squat (Matrix)",
             "Hack squat",
+            "Reverse hack squat",
             "Barbell box squat"
           ]
         },
