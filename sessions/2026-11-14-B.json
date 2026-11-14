@@ -1,0 +1,166 @@
+{
+  "date": "2026-11-14",
+  "day_type": "B",
+  "planned_date": "2026-11-07",
+  "exercises": [
+    {
+      "name": "Plate Loaded Bench Press - top set",
+      "target_sets": 1,
+      "target_reps": "3",
+      "target_weight_kg": 75,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 3,
+          "weight_kg": 75
+        }
+      ],
+      "rpe_last_set": 7,
+      "variant": "Plate loaded bench",
+      "notes": ""
+    },
+    {
+      "name": "Plate Loaded Bench Press - back-off",
+      "target_sets": 2,
+      "target_reps": "7",
+      "target_weight_kg": 60,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 7,
+          "weight_kg": 60
+        },
+        {
+          "set": 2,
+          "reps": 7,
+          "weight_kg": 60
+        }
+      ],
+      "rpe_last_set": 7,
+      "variant": "Plate loaded bench",
+      "notes": ""
+    },
+    {
+      "name": "Hip Thrust",
+      "target_sets": 3,
+      "target_reps": "12",
+      "target_weight_kg": 25,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 12,
+          "weight_kg": 25
+        },
+        {
+          "set": 2,
+          "reps": 12,
+          "weight_kg": 25
+        },
+        {
+          "set": 3,
+          "reps": 12,
+          "weight_kg": 25
+        }
+      ],
+      "rpe_last_set": 6,
+      "variant": "Barbell hip thrust",
+      "notes": ""
+    },
+    {
+      "name": "Squat Machine",
+      "target_sets": 2,
+      "target_reps": "8",
+      "target_weight_kg": 30,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 8,
+          "weight_kg": 20
+        },
+        {
+          "set": 2,
+          "reps": 8,
+          "weight_kg": 30
+        }
+      ],
+      "rpe_last_set": 7,
+      "variant": "Reverse hack squat",
+      "notes": ""
+    },
+    {
+      "name": "Machine Seated Row",
+      "target_sets": 3,
+      "target_reps": "12",
+      "target_weight_kg": 20,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 12,
+          "weight_kg": 20
+        },
+        {
+          "set": 2,
+          "reps": 12,
+          "weight_kg": 20
+        },
+        {
+          "set": 3,
+          "reps": 12,
+          "weight_kg": 20
+        }
+      ],
+      "rpe_last_set": 8,
+      "variant": "Machine seated row",
+      "notes": ""
+    },
+    {
+      "name": "Cable Woodchop",
+      "target_sets": 2,
+      "target_reps": "12",
+      "target_weight_kg": 15,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 12,
+          "weight_kg": 18
+        },
+        {
+          "set": 2,
+          "reps": 12,
+          "weight_kg": 18
+        }
+      ],
+      "rpe_last_set": 7,
+      "variant": "High-to-low cable woodchop",
+      "notes": ""
+    },
+    {
+      "name": "Lying Incline DB Curl (drop set)",
+      "target_sets": 3,
+      "target_reps": "to failure",
+      "target_weight_kg": 10,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 12,
+          "weight_kg": 12.5
+        },
+        {
+          "set": 2,
+          "reps": 10,
+          "weight_kg": 7.5
+        },
+        {
+          "set": 3,
+          "reps": 12,
+          "weight_kg": 5
+        }
+      ],
+      "rpe_last_set": 10,
+      "notes": ""
+    }
+  ],
+  "warmup_completed": [],
+  "session_notes": "",
+  "duration_min": 56
+}
