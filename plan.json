@@ -1,6 +1,6 @@
 {
-  "generated": "2026-11-09",
-  "recommended_day": "B",
+  "generated": "2026-11-14",
+  "recommended_day": "C",
   "warmup": [
     {
       "name": "Elephant walk",
@@ -159,15 +159,15 @@
     "B": {
       "date": "2026-11-07",
       "day_type": "B",
-      "session_notes": "What changed: Hip Thrust is now 2nd, right after bench. It got skipped twice for time, and it is your main glute lift. Squat machine 3 -> 2 sets. NEW Cable Woodchop for the obliques. Short on time: cut the seated row, never the hip thrust.",
+      "session_notes": "Bench up: top 77.5, back-off 62.5 (both RPE 7). Woodchop 18, curl starts at 12.5. Hip thrust, squat machine and row hold. Hip Thrust stays 2nd, right after bench: it is your main glute lift. Squat machine 2 sets. Short on time: cut the seated row, never the hip thrust.",
       "exercises": [
         {
           "name": "Plate Loaded Bench Press - top set",
           "target_sets": 1,
           "target_reps": "3",
-          "target_weight_kg": 75,
+          "target_weight_kg": 77.5,
           "rest_sec": 180,
-          "notes": "75x3 was RPE 9 (RPE 8 on 10-12). Hold 75.",
+          "notes": "75x3 was RPE 7 on 11-14 (RPE 9 on 10-29) -> 77.5. Hold 77.5 until it is RPE 7 again.",
           "variants": [
             "Plate loaded bench",
             "Chest press machine",
@@ -178,9 +178,9 @@
           "name": "Plate Loaded Bench Press - back-off",
           "target_sets": 2,
           "target_reps": "7",
-          "target_weight_kg": 60,
+          "target_weight_kg": 62.5,
           "rest_sec": 120,
-          "notes": "60x7 RPE 8, better than RPE 9 last time. Hold 60. First rep of each set paused 2 s.",
+          "notes": "60x7 both sets at RPE 7 on 11-14 -> 62.5. Hold 62.5 until both sets are RPE 7. First rep of each set paused 2 s.",
           "variants": [
             "Plate loaded bench",
             "Chest press machine",
@@ -233,9 +233,9 @@
           "target_sets": 2,
           "target_reps": "12",
           "unit": "reps/side",
-          "target_weight_kg": 15,
+          "target_weight_kg": 18,
           "rest_sec": 60,
-          "notes": "NEW, obliques. High to low: cable above your head, arms long, rotate down across your body to the opposite knee. Turn through the ribs, let the back heel pivot, no arching. 2 s back up. 15 to start (your Pallof is 18-24, this one moves). Log the stack number.",
+          "notes": "NEW, obliques. High to low: cable above your head, arms long, rotate down across your body to the opposite knee. Turn through the ribs, let the back heel pivot, no arching. 2 s back up. 18 x 12 both sides was RPE 7 on 11-14, so 18 is the target now. If it is RPE 7 again, take the next pin up and log the stack number.",
           "variants": [
             "High-to-low cable woodchop",
             "Low-to-high cable woodchop"
@@ -245,12 +245,12 @@
           "name": "Lying Incline DB Curl (drop set)",
           "target_sets": 3,
           "target_reps": "to failure",
-          "target_weight_kg": 10,
+          "target_weight_kg": 12.5,
           "rest_sec": 0,
-          "notes": "10 -> 7.5 -> 5. You got 10 on the first drop, so hold 10 and aim for 12.",
+          "notes": "12.5 -> 7.5 -> 5. You got 12 on the first drop at 12.5, so start at 12.5. Hold it until the first drop is over 12.",
           "sets": [
             {
-              "weight_kg": 10
+              "weight_kg": 12.5
             },
             {
               "weight_kg": 7.5
