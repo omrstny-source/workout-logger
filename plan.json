@@ -1,6 +1,6 @@
 {
-  "generated": "2026-11-14",
-  "recommended_day": "C",
+  "generated": "2026-11-15",
+  "recommended_day": "D",
   "warmup": [
     {
       "name": "Elephant walk",
@@ -265,7 +265,7 @@
     "C": {
       "date": "2026-11-07",
       "day_type": "C",
-      "session_notes": "What changed: back extension is now glute-biased (toes out, upper back rounded) and is your lower-glute builder. Pallof press is OUT, Cable Woodchop 3x12/side replaces it. Wrist + reverse curl still go in the back extension rests.",
+      "session_notes": "What changed: DB incline +2.5 (22.5), woodchop 24 on all sets, back extension 3x12. Pull-up top holds at 7.5 (RPE 8), hammer curl holds at 17.5 (RPE 10, form broke): clean reps only, stop the set when form goes. Back extension is glute-biased (toes out, upper back rounded) and is your lower-glute builder. Wrist + reverse curl still go in the back extension rests.",
       "exercises": [
         {
           "name": "Pull-Up Parallel Close Grip - top set",
@@ -286,18 +286,18 @@
         {
           "name": "45 Back Extension (stop at neutral)",
           "target_sets": 3,
-          "target_reps": "10",
+          "target_reps": "12",
           "target_weight_kg": 0,
           "rest_sec": 90,
-          "notes": "NOW GLUTE-BIASED: toes turned out ~30 deg, pad just below the hip crease, upper back slightly rounded, chin tucked. Drive your hips into the pad with the glutes to come up, STOP AT NEUTRAL, never arch. 3x8 BW was RPE 7, so 10 reps. Once 3x12 is RPE 7, hold a 5 kg plate. Wrist + reverse curl superset in these rests."
+          "notes": "NOW GLUTE-BIASED: toes turned out ~30 deg, pad just below the hip crease, upper back slightly rounded, chin tucked. Drive your hips into the pad with the glutes to come up, STOP AT NEUTRAL, never arch. 10/10/12 BW was RPE 7, so 12 reps. Once 3x12 is RPE 7, hold a 5 kg plate. Wrist + reverse curl superset in these rests."
         },
         {
           "name": "DB Incline Bench Press",
           "target_sets": 3,
           "target_reps": "10",
-          "target_weight_kg": 20,
+          "target_weight_kg": 22.5,
           "rest_sec": 90,
-          "notes": "3x10 at 20 done but RPE 9. Hold 20 until the last set is RPE 8 or lower.",
+          "notes": "3x10 at 20 was RPE 7 on 11-15, so +2.5 to 22.5. If this gym tops out at 20 kg DBs, stay at 20 and go for 3x12.",
           "variants": [
             "DB incline",
             "Incline press machine",
@@ -309,9 +309,9 @@
           "target_sets": 3,
           "target_reps": "12",
           "unit": "reps/side",
-          "target_weight_kg": 15,
+          "target_weight_kg": 24,
           "rest_sec": 60,
-          "notes": "NEW, replaces the Pallof press (a hold builds less muscle than a moving lift). High to low, arms long, turn through the ribs, back heel pivots, no arching, 2 s back up. 15 to start. Log the stack number.",
+          "notes": "NEW, replaces the Pallof press (a hold builds less muscle than a moving lift). High to low, arms long, turn through the ribs, back heel pivots, no arching, 2 s back up. 18/24/24 x12 was RPE 6, so 24 on all three sets. Log the stack number.",
           "variants": [
             "High-to-low cable woodchop",
             "Low-to-high cable woodchop"
