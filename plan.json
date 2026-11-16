@@ -1,6 +1,6 @@
 {
-  "generated": "2026-11-15",
-  "recommended_day": "D",
+  "generated": "2026-11-16",
+  "recommended_day": "B",
   "warmup": [
     {
       "name": "Elephant walk",
@@ -52,15 +52,15 @@
     "A": {
       "date": "2026-11-07",
       "day_type": "A",
-      "session_notes": "Shoulder press up (top 65, back-off 55), leg curl 45. Pulldown 55, pec deck 45, side bend 20, preacher 40 all hold. Pulldown: stop the set when form breaks, not when the arms do. Warm-up stays: hips, knees, hamstrings.",
+      "session_notes": "Shoulder press up (top 70, back-off 60), leg curl 50, side bend 22.5. Pulldown down to 50 for clean form. Pec deck 45 and preacher 40 hold. Pulldown: stop the set when form breaks, not when the arms do. Warm-up stays: hips, knees, hamstrings.",
       "exercises": [
         {
           "name": "Shoulder Press - top set",
           "target_sets": 1,
           "target_reps": "5",
-          "target_weight_kg": 65,
+          "target_weight_kg": 70,
           "rest_sec": 150,
-          "notes": "Machine: 60x5 was RPE 6 on 11-08 -> 65. Hold 65 until it is RPE 7, then 70. Barbell/DB variants: weights do not carry.",
+          "notes": "Machine: 65x5 was RPE 7 on 11-16 -> 70. Hold 70 until it is RPE 7, then 75. Barbell/DB variants: weights do not carry.",
           "variants": [
             "Machine shoulder press",
             "Barbell OHP in rack",
@@ -71,9 +71,9 @@
           "name": "Shoulder Press - back-off",
           "target_sets": 2,
           "target_reps": "8",
-          "target_weight_kg": 55,
+          "target_weight_kg": 60,
           "rest_sec": 90,
-          "notes": "Machine: 50x8 both sets, last at RPE 7 on 11-08 -> 55. Hold 55 until both sets are RPE 8 or less.",
+          "notes": "Machine: 55x8 both sets, last at RPE 7 on 11-16 -> 60. Hold 60 until both sets are RPE 8 or less.",
           "variants": [
             "Machine shoulder press",
             "Barbell OHP in rack",
@@ -84,9 +84,9 @@
           "name": "Seated Leg Curl",
           "target_sets": 3,
           "target_reps": "10",
-          "target_weight_kg": 45,
+          "target_weight_kg": 50,
           "rest_sec": 90,
-          "notes": "40x10 all three at RPE 7 on 11-08 -> 45. Lean the torso forward so the hamstrings start long. 2 s on the way up. Let the right knee set how far you curl; the stretched part at the top matters more than the squeeze.",
+          "notes": "50x10 all three at RPE 8 on 11-16 (you went past the 45 target) -> 50 is the target now, 55 once it is RPE 7. Lean the torso forward so the hamstrings start long. 2 s on the way up. Let the right knee set how far you curl; the stretched part at the top matters more than the squeeze.",
           "variants": [
             "Seated leg curl",
             "Lying leg curl"
@@ -96,9 +96,9 @@
           "name": "Lat Pulldown",
           "target_sets": 3,
           "target_reps": "10",
-          "target_weight_kg": 55,
+          "target_weight_kg": 50,
           "rest_sec": 90,
-          "notes": "55: 10, 10, 8 at RPE 10 and form broke on set 3 -> hold 55. If set 3 drops below 8 reps, finish at 50. Full stretch at the top every rep: the lats are a big part of how wide your ribcage looks.",
+          "notes": "55: 10, 10, 8 at RPE 10 and form broke again on 11-16 -> 50, your call. Back to 55 when all three sets are 10 clean reps. Full stretch at the top every rep: the lats are a big part of how wide your ribcage looks.",
           "variants": [
             "Cable lat pulldown",
             "Plate loaded pulldown"
@@ -110,7 +110,7 @@
           "target_reps": "12",
           "target_weight_kg": 45,
           "rest_sec": 75,
-          "notes": "2 sets. 47x12 then 47x9 at RPE 10 on 11-08 -> back to 45 until both sets hit 12.",
+          "notes": "2 sets. 47x12 then 47x8 at RPE 10 on 11-16 with stricter technique -> 45 until both sets hit 12.",
           "variants": [
             "Pec deck",
             "Cable fly"
@@ -121,9 +121,9 @@
           "target_sets": 2,
           "target_reps": "12",
           "unit": "reps/side",
-          "target_weight_kg": 20,
+          "target_weight_kg": 22.5,
           "rest_sec": 60,
-          "notes": "NEW, obliques. One DB, free hand on your head. Lower toward the bell slowly (2 s), come up until you lean a little past vertical the other way. No twisting, no leaning back. 20 kg DB to start (you hold 24 for 60 s at RPE 6). Any back twinge: stop the exercise and tell me. 45 deg version: bodyweight, hip on the pad, same rules.",
+          "notes": "NEW, obliques. One DB, free hand on your head. Lower toward the bell slowly (2 s), come up until you lean a little past vertical the other way. No twisting, no leaning back. 20x12 both sides at RPE 6 on 11-16 -> 22.5 kg DB (you hold 24 for 60 s at RPE 6). Any back twinge: stop the exercise and tell me. 45 deg version: bodyweight, hip on the pad, same rules.",
           "variants": [
             "DB side bend",
             "45 deg side bend (roman chair)",
@@ -136,7 +136,7 @@
           "target_reps": "to failure",
           "target_weight_kg": 40,
           "rest_sec": 0,
-          "notes": "First drop was 13 at 35, above the 10-12 target -> start 40, then 30, then 20. All to failure.",
+          "notes": "First drop was 9 at 40 on 11-16, under the 10-12 target -> hold 40, then 30, then 20. All to failure.",
           "variants": [
             "Machine preacher",
             "DB/EZ on preacher bench",
