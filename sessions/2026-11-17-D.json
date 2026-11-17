@@ -1,0 +1,150 @@
+{
+  "date": "2026-11-17",
+  "day_type": "D",
+  "planned_date": "2026-11-07",
+  "exercises": [
+    {
+      "name": "Cable Pull-Through",
+      "target_sets": 3,
+      "target_reps": "12",
+      "target_weight_kg": 30,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 12,
+          "weight_kg": 15
+        },
+        {
+          "set": 2,
+          "reps": 12,
+          "weight_kg": 15
+        },
+        {
+          "set": 3,
+          "reps": 12,
+          "weight_kg": 15
+        }
+      ],
+      "rpe_last_set": 9,
+      "variant": "DB Romanian deadlift",
+      "notes": ""
+    },
+    {
+      "name": "Weighted Dip",
+      "target_sets": 3,
+      "target_reps": "8",
+      "target_weight_kg": 5,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 8,
+          "weight_kg": 5
+        },
+        {
+          "set": 2,
+          "reps": 8,
+          "weight_kg": 5
+        },
+        {
+          "set": 3,
+          "reps": 8,
+          "weight_kg": 5
+        }
+      ],
+      "rpe_last_set": 8,
+      "variant": "Weighted dip",
+      "notes": ""
+    },
+    {
+      "name": "Face Pull",
+      "target_sets": 3,
+      "target_reps": "12",
+      "target_weight_kg": 45,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 12,
+          "weight_kg": 45
+        },
+        {
+          "set": 2,
+          "reps": 12,
+          "weight_kg": 45
+        },
+        {
+          "set": 3,
+          "reps": 12,
+          "weight_kg": 45
+        }
+      ],
+      "rpe_last_set": 8,
+      "variant": "Cable rope face pull",
+      "notes": ""
+    },
+    {
+      "name": "Suitcase Hold (straps)",
+      "target_sets": 3,
+      "target_reps": "60",
+      "target_weight_kg": 27.5,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 60,
+          "weight_kg": 30
+        },
+        {
+          "set": 2,
+          "reps": 60,
+          "weight_kg": 30
+        },
+        {
+          "set": 3,
+          "reps": 60,
+          "weight_kg": 30
+        }
+      ],
+      "rpe_last_set": 6,
+      "variant": "DB",
+      "notes": ""
+    },
+    {
+      "name": "Lateral Raise (drop set)",
+      "target_sets": 3,
+      "target_reps": "to failure",
+      "target_weight_kg": 7.5,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 12,
+          "weight_kg": 7.5
+        },
+        {
+          "set": 2,
+          "reps": 8,
+          "weight_kg": 5
+        },
+        {
+          "set": 3,
+          "reps": 12,
+          "weight_kg": 2.5
+        }
+      ],
+      "rpe_last_set": 10,
+      "variant": "DB",
+      "notes": ""
+    }
+  ],
+  "warmup_completed": [
+    "Elephant walk",
+    "Calf + soleus stretch",
+    "Supported deep squat hold",
+    "Lunge pulses + couch stretch",
+    "Active hamstring stretch",
+    "Kneeling rock-back",
+    "90/90 push-up",
+    "Elevated pancake",
+    "Clamshell"
+  ],
+  "session_notes": "I feel lower back from rdl (I do not have the technique managed to properly hold it and push with glutes only on one set), from dips I feel more triceps and upper back then pecks (or maybe equaly), we need to figure out a way for the ai to check and help me improve my technique (or does technique matter that much, should I just push more weight instead of worring how?)",
+  "duration_min": 43
+}
