@@ -1,6 +1,6 @@
 {
-  "generated": "2026-11-16",
-  "recommended_day": "B",
+  "generated": "2026-11-17",
+  "recommended_day": "A",
   "warmup": [
     {
       "name": "Elephant walk",
@@ -334,7 +334,7 @@
     "D": {
       "date": "2026-11-07",
       "day_type": "D",
-      "session_notes": "Pull-through +5 (30), face pull +5 (45), suitcase locks in 27.5 x 60 s, dip holds at 5 (RPE 9), lateral raise holds at 7.5. Squat machine is OUT and Cable Pull-Through replaces it (glutes and hamstrings, spine-friendly hinge). That leaves the squat on Day B only, so you can now do D the day after B.",
+      "session_notes": "Suitcase hold goes to 30 kg x 75 s (30 x 60 was RPE 6). Dip holds at 5 (RPE 8), face pull holds at 45 (RPE 8), lateral raise holds at 7.5. Pull-through target is unchanged: you did the DB RDL instead (2 x 15, RPE 9, lower back felt it), and weights do not carry across variants. Squat machine is OUT and Cable Pull-Through replaces it (glutes and hamstrings, spine-friendly hinge). That leaves the squat on Day B only, so you can now do D the day after B.",
       "exercises": [
         {
           "name": "Cable Pull-Through",
@@ -375,10 +375,10 @@
         {
           "name": "Suitcase Hold (straps)",
           "target_sets": 3,
-          "target_reps": "60",
-          "target_weight_kg": 27.5,
+          "target_reps": "75",
+          "target_weight_kg": 30,
           "rest_sec": 60,
-          "notes": "3 sets for the obliques. 27.5 kg x 60 s per side was RPE 7. When all 3 sets are RPE 7 or less, go 75 s, or 30 kg for 60 s if the gym has one (log the weight). Stand tall, do not lean away from the bell.",
+          "notes": "3 sets for the obliques. 30 kg x 60 s per side was RPE 6, so 75 s now. If the gym has no 30, hold 27.5 for 75 s (log the weight). Stand tall, do not lean away from the bell.",
           "variants": [
             "DB",
             "Kettlebell"
