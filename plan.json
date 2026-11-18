@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-17",
+  "generated": "2026-11-18",
   "recommended_day": "A",
   "warmup": [
     {
@@ -52,7 +52,7 @@
     "A": {
       "date": "2026-11-07",
       "day_type": "A",
-      "session_notes": "Shoulder press up (top 70, back-off 60), leg curl 50, side bend 22.5. Pulldown down to 50 for clean form. Pec deck 45 and preacher 40 hold. Pulldown: stop the set when form breaks, not when the arms do. Warm-up stays: hips, knees, hamstrings.",
+      "session_notes": "Preacher drop restarts at 35 (first drop stuck at 9 twice). Shoulder press up (top 70, back-off 60), leg curl 50, side bend 22.5. Pulldown down to 50 for clean form. Pec deck 45 and preacher 40 hold. Pulldown: stop the set when form breaks, not when the arms do. Warm-up stays: hips, knees, hamstrings.",
       "exercises": [
         {
           "name": "Shoulder Press - top set",
@@ -134,9 +134,9 @@
           "name": "Machine Preacher Curl (drop set)",
           "target_sets": 3,
           "target_reps": "to failure",
-          "target_weight_kg": 40,
+          "target_weight_kg": 35,
           "rest_sec": 0,
-          "notes": "First drop was 9 at 40 on 11-16, under the 10-12 target -> hold 40, then 30, then 20. All to failure.",
+          "notes": "First drop was 9 at 40 on 11-08 AND 11-16, two sessions under the 10-12 target -> back to 35, then 25, then 15. All to failure. Back to 40 once the first drop hits 12.",
           "variants": [
             "Machine preacher",
             "DB/EZ on preacher bench",
@@ -144,13 +144,13 @@
           ],
           "sets": [
             {
-              "weight_kg": 40
+              "weight_kg": 35
             },
             {
-              "weight_kg": 30
+              "weight_kg": 25
             },
             {
-              "weight_kg": 20
+              "weight_kg": 15
             }
           ]
         }
@@ -265,7 +265,7 @@
     "C": {
       "date": "2026-11-07",
       "day_type": "C",
-      "session_notes": "What changed: DB incline +2.5 (22.5), woodchop 24 on all sets, back extension 3x12. Pull-up top holds at 7.5 (RPE 8), hammer curl holds at 17.5 (RPE 10, form broke): clean reps only, stop the set when form goes. Back extension is glute-biased (toes out, upper back rounded) and is your lower-glute builder. Wrist + reverse curl still go in the back extension rests.",
+      "session_notes": "Hammer curl down to 15 x 10 (17.5 stalled with bad form). What changed: DB incline +2.5 (22.5), woodchop 24 on all sets, back extension 3x12. Pull-up top holds at 7.5 (RPE 8), hammer curl holds at 17.5 (RPE 10, form broke): clean reps only, stop the set when form goes. Back extension is glute-biased (toes out, upper back rounded) and is your lower-glute builder. Wrist + reverse curl still go in the back extension rests.",
       "exercises": [
         {
           "name": "Pull-Up Parallel Close Grip - top set",
@@ -320,10 +320,10 @@
         {
           "name": "Hammer Curl",
           "target_sets": 3,
-          "target_reps": "8",
-          "target_weight_kg": 17.5,
+          "target_reps": "10",
+          "target_weight_kg": 15,
           "rest_sec": 60,
-          "notes": "Finisher, straight sets. 17.5 (no 18 kg DB). 10/8/8 at RPE 9, so hold and get all three to 10.",
+          "notes": "Finisher, straight sets. 17.5 stalled twice (8/8/8 at RPE 10, bad form on 11-15) -> 15 x 10 with clean form. Back to 17.5 when all three sets hit 12.",
           "variants": [
             "DB",
             "Rope cable"
