@@ -52,7 +52,7 @@
     "A": {
       "date": "2026-11-07",
       "day_type": "A",
-      "session_notes": "Preacher drop restarts at 35 (first drop stuck at 9 twice). Shoulder press up (top 70, back-off 60), leg curl 50, side bend 22.5. Pulldown down to 50 for clean form. Pec deck 45 and preacher 40 hold. Pulldown: stop the set when form breaks, not when the arms do. Warm-up stays: hips, knees, hamstrings.",
+      "session_notes": "Preacher drop restarts at 35 (first drop stuck at 9 twice). Shoulder press up (top 70, back-off 60), leg curl 50, side bend 22.5. Pulldown down to 50 for clean form. Pec deck 45 holds. Pulldown: stop the set when form breaks, not when the arms do. Warm-up stays: hips, knees, hamstrings.",
       "exercises": [
         {
           "name": "Shoulder Press - top set",
@@ -265,7 +265,7 @@
     "C": {
       "date": "2026-11-07",
       "day_type": "C",
-      "session_notes": "Hammer curl down to 15 x 10 (17.5 stalled with bad form). What changed: DB incline +2.5 (22.5), woodchop 24 on all sets, back extension 3x12. Pull-up top holds at 7.5 (RPE 8), hammer curl holds at 17.5 (RPE 10, form broke): clean reps only, stop the set when form goes. Back extension is glute-biased (toes out, upper back rounded) and is your lower-glute builder. Wrist + reverse curl still go in the back extension rests.",
+      "session_notes": "Hammer curl down to 15 x 10 (17.5 stalled with bad form). What changed: DB incline +2.5 (22.5), woodchop 24 on all sets, back extension 3x12. Pull-up top holds at 7.5 (RPE 8). Back extension is glute-biased (toes out, upper back rounded) and is your lower-glute builder. Wrist + reverse curl still go in the back extension rests.",
       "exercises": [
         {
           "name": "Pull-Up Parallel Close Grip - top set",
