@@ -485,5 +485,76 @@
         }
       ]
     }
-  }
+  },
+  "warmup_quick": {
+    "A": [
+      {
+        "name": "Lunge pulses + couch stretch",
+        "dose": "5 pulses, then 20 s hold, per side",
+        "note": "The one drill every quick warm-up keeps: hip extension range is what stops the lower back from doing the work. Tuck the pelvis BEFORE you lean; feel it in the abs, never the lower back."
+      },
+      {
+        "name": "Active hamstring stretch",
+        "dose": "20 s per side",
+        "note": "Front leg straight, hinge to the stretch, then push the heel hard into the floor the whole time."
+      },
+      {
+        "name": "90/90 push-up",
+        "dose": "5 per side",
+        "note": "Torso down over the front leg and back up. Glute does the lifting, hands only assist."
+      }
+    ],
+    "B": [
+      {
+        "name": "Supported deep squat hold",
+        "dose": "1 x 40 s",
+        "note": "Hold the rack, sink as deep as the right knee allows, heels down. Pressure is fine, a pinch means come up."
+      },
+      {
+        "name": "Lunge pulses + couch stretch",
+        "dose": "5 pulses, then 20 s hold, per side",
+        "note": "The one drill every quick warm-up keeps: hip extension range is what stops the lower back from doing the work. Tuck the pelvis BEFORE you lean; feel it in the abs, never the lower back."
+      },
+      {
+        "name": "Clamshell",
+        "dose": "12 per side",
+        "note": "Wakes the glute up before the hip thrust / hinge."
+      }
+    ],
+    "C": [
+      {
+        "name": "Elephant walk",
+        "dose": "10 per side",
+        "note": "Hamstring nerve glide before the hinge. Bend one knee, shift the hips toward it, the other leg straightens."
+      },
+      {
+        "name": "Lunge pulses + couch stretch",
+        "dose": "5 pulses, then 20 s hold, per side",
+        "note": "The one drill every quick warm-up keeps: hip extension range is what stops the lower back from doing the work. Tuck the pelvis BEFORE you lean; feel it in the abs, never the lower back."
+      },
+      {
+        "name": "Active hamstring stretch",
+        "dose": "20 s per side",
+        "note": "Front leg straight, hinge to the stretch, then push the heel hard into the floor the whole time."
+      }
+    ],
+    "D": [
+      {
+        "name": "Elephant walk",
+        "dose": "10 per side",
+        "note": "Hamstring nerve glide before the hinge. Bend one knee, shift the hips toward it, the other leg straightens."
+      },
+      {
+        "name": "Lunge pulses + couch stretch",
+        "dose": "5 pulses, then 20 s hold, per side",
+        "note": "The one drill every quick warm-up keeps: hip extension range is what stops the lower back from doing the work. Tuck the pelvis BEFORE you lean; feel it in the abs, never the lower back."
+      },
+      {
+        "name": "Clamshell",
+        "dose": "12 per side",
+        "note": "Wakes the glute up before the hip thrust / hinge."
+      }
+    ]
+  },
+  "warmup_quick_note": "~4 min evening version. Couch stretch every day, plus 2 drills for that day's lifts. Never a replacement for the full block when there is time."
 }
