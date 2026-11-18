@@ -1,0 +1,171 @@
+{
+  "date": "2026-11-18",
+  "day_type": "B",
+  "planned_date": "2026-11-07",
+  "exercises": [
+    {
+      "name": "Plate Loaded Bench Press - top set",
+      "target_sets": 1,
+      "target_reps": "3",
+      "target_weight_kg": 77.5,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 3,
+          "weight_kg": 80
+        }
+      ],
+      "rpe_last_set": 9,
+      "variant": "Plate loaded bench",
+      "notes": ""
+    },
+    {
+      "name": "Plate Loaded Bench Press - back-off",
+      "target_sets": 2,
+      "target_reps": "7",
+      "target_weight_kg": 62.5,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 7,
+          "weight_kg": 62.5
+        },
+        {
+          "set": 2,
+          "reps": 7,
+          "weight_kg": 62.5
+        }
+      ],
+      "rpe_last_set": 8,
+      "variant": "Plate loaded bench",
+      "notes": ""
+    },
+    {
+      "name": "Hip Thrust",
+      "target_sets": 3,
+      "target_reps": "12",
+      "target_weight_kg": 25,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 12,
+          "weight_kg": 30
+        },
+        {
+          "set": 2,
+          "reps": 12,
+          "weight_kg": 30
+        },
+        {
+          "set": 3,
+          "reps": 12,
+          "weight_kg": 30
+        }
+      ],
+      "rpe_last_set": 7,
+      "variant": "Barbell hip thrust",
+      "notes": ""
+    },
+    {
+      "name": "Squat Machine",
+      "target_sets": 2,
+      "target_reps": "8",
+      "target_weight_kg": 30,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 8,
+          "weight_kg": 30
+        },
+        {
+          "set": 2,
+          "reps": 8,
+          "weight_kg": 30
+        }
+      ],
+      "rpe_last_set": 8,
+      "variant": "Reverse hack squat",
+      "notes": ""
+    },
+    {
+      "name": "Machine Seated Row",
+      "target_sets": 3,
+      "target_reps": "12",
+      "target_weight_kg": 20,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 12,
+          "weight_kg": 20
+        },
+        {
+          "set": 2,
+          "reps": 12,
+          "weight_kg": 20
+        },
+        {
+          "set": 3,
+          "reps": null,
+          "weight_kg": null
+        }
+      ],
+      "rpe_last_set": null,
+      "variant": "Machine seated row",
+      "notes": ""
+    },
+    {
+      "name": "Cable Woodchop",
+      "target_sets": 2,
+      "target_reps": "12",
+      "target_weight_kg": 18,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 12,
+          "weight_kg": 30
+        },
+        {
+          "set": 2,
+          "reps": 12,
+          "weight_kg": 24
+        }
+      ],
+      "rpe_last_set": 9,
+      "variant": "Low-to-high cable woodchop",
+      "notes": ""
+    },
+    {
+      "name": "Lying Incline DB Curl (drop set)",
+      "target_sets": 3,
+      "target_reps": "to failure",
+      "target_weight_kg": 12.5,
+      "sets": [
+        {
+          "set": 1,
+          "reps": null,
+          "weight_kg": null
+        },
+        {
+          "set": 2,
+          "reps": null,
+          "weight_kg": null
+        },
+        {
+          "set": 3,
+          "reps": null,
+          "weight_kg": null
+        }
+      ],
+      "rpe_last_set": null,
+      "notes": ""
+    }
+  ],
+  "warmup_completed": [
+    "Supported deep squat hold",
+    "Lunge pulses + couch stretch",
+    "Clamshell"
+  ],
+  "warmup_mode": "quick",
+  "session_notes": "its very hard to jump by 1.25kg because there are no plates for that so I had to go to 80 (+2.5) on each side. did barbell curls while doing hip thrust instead of the drop to save time, 30 is too much on the woodchop need to stick with 18-24 for a bit before I get the technique ",
+  "duration_min": 42
+}
