@@ -191,43 +191,35 @@
           "name": "Hip Thrust",
           "target_sets": 3,
           "target_reps": "12",
-          "target_weight_kg": 40,
+          "target_weight_kg": 35,
           "rest_sec": 90,
-          "notes": "Machine / glute drive. No recent log: 40 is a starting guess, adjust on set 1 and log what you used. Chin tucked, squeeze 2 s at the top, stop at neutral.",
+          "notes": "30x12 x3 at RPE 7 on 11-18 -> 35. Chin tucked, shins vertical at the top, tuck the pelvis and squeeze 2 s, stop at neutral.",
           "variants": [
+            "Barbell hip thrust",
             "Hip thrust machine / glute drive",
-            "Smith hip thrust",
-            "Barbell hip thrust"
+            "Smith hip thrust"
           ],
           "variant_targets": {
-            "Barbell hip thrust": {
+            "Hip thrust machine / glute drive": {
               "target_sets": 3,
               "target_reps": "12",
-              "target_weight_kg": 35,
-              "notes": "30x12 x3 at RPE 7 on 11-18 -> 35. Chin tucked, shins vertical at the top, tuck the pelvis and squeeze 2 s, stop at neutral."
+              "target_weight_kg": 40,
+              "notes": "No recent log: 40 is a starting guess, adjust on set 1 and log what you used. Chin tucked, squeeze 2 s at the top, stop at neutral."
             }
           }
         },
         {
           "name": "Squat Machine",
           "target_sets": 2,
-          "target_reps": "8",
+          "target_reps": "10",
           "rest_sec": 120,
-          "notes": "Pendulum squat: no log yet. Pick a load for 8 reps at about RPE 7; the next plan starts from it.",
+          "notes": "30x8 both sets at RPE 8 on 11-18 -> same 30, aim for 10 reps. At 2x10 go to 35 and back to 8.",
           "variants": [
-            "Pendulum squat",
-            "Perfect squat (Matrix)",
-            "Hack squat",
             "Reverse hack squat",
+            "Hack squat",
             "Barbell box squat"
           ],
           "variant_targets": {
-            "Reverse hack squat": {
-              "target_sets": 2,
-              "target_reps": "10",
-              "target_weight_kg": 30,
-              "notes": "30x8 both sets at RPE 8 on 11-18 -> same 30, aim for 10 reps. At 2x10 go to 35 and back to 8."
-            },
             "Hack squat": {
               "target_sets": 2,
               "target_reps": "8",
@@ -235,7 +227,7 @@
               "notes": "20x8 at RPE 6 on 10-29 -> 25 (+2.5 per side)."
             }
           },
-          "target_weight_kg": null
+          "target_weight_kg": 30
         },
         {
           "name": "Machine Seated Row",
