@@ -356,7 +356,7 @@
     "D": {
       "date": "2026-11-07",
       "day_type": "D",
-      "session_notes": "Suitcase hold goes to 30 kg x 75 s (30 x 60 was RPE 6). Dip holds at 5 (RPE 8), face pull holds at 45 (RPE 8), lateral raise holds at 7.5. NEW 11-20: the hinge slot (pull-through / DB RDL) is gone and a second, heavier hip thrust replaces it: 3 x 8 here vs 3 x 12 on B. Glutes now get two hip thrust days a week with the spine supported. Leave at least one day between B and D so the glutes recover.",
+      "session_notes": "Suitcase hold goes to 30 kg x 75 s (30 x 60 was RPE 6). Dip holds at 5 (RPE 8), face pull holds at 45 (RPE 8), lateral raise holds at 7.5. NEW 11-20: the hinge slot (pull-through / DB RDL) is gone and a second, heavier hip thrust replaces it: 3 x 8 here vs 3 x 12 on B. Glutes now get two hip thrust days a week with the spine supported. Leave at least one day between B and D so the glutes recover. Also NEW 11-20: Lying Leg Curl, alternated with Face Pull (two separate entries, done back and forth).",
       "exercises": [
         {
           "name": "Hip Thrust - heavy",
@@ -384,12 +384,24 @@
           ]
         },
         {
+          "name": "Lying Leg Curl",
+          "target_sets": 3,
+          "target_reps": "10-12",
+          "target_weight_kg": null,
+          "rest_sec": 60,
+          "notes": "NEW 11-20: second hamstring day. Alternate with Face Pull below: curl set, face pull set, back to the curl. No load yet: pick one for 10-12 at about RPE 7 (stop 2-3 reps short), the next plan starts from what you log. Hips pressed into the pad, 2 s on the way down. If the hamstrings are still sore from A, do 2 sets.",
+          "variants": [
+            "Lying leg curl",
+            "Seated leg curl"
+          ]
+        },
+        {
           "name": "Face Pull",
           "target_sets": 3,
           "target_reps": "12",
           "target_weight_kg": 45,
           "rest_sec": 60,
-          "notes": "40x12 was RPE 7 -> 45 (you have used 45 before).",
+          "notes": "40x12 was RPE 7 -> 45 (you have used 45 before). Alternate with the Lying Leg Curl above.",
           "variants": [
             "Cable rope face pull",
             "Reverse pec deck"
