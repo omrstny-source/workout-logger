@@ -170,6 +170,9 @@
     .exercise-meta { font-size: 13px; color: #9ca3af; }
     .variant-select { margin-top: 8px; width: 100%; padding: 8px; font-size: 14px; border-radius: 8px;
                       background: #111827; color: #e5e7eb; border: 1px solid #374151; }
+    .variant-hint { margin-top: 6px; font-size: 12px; color: #fbbf24; display: flex; align-items: center; gap: 8px; }
+    .variant-hint button { padding: 4px 10px; font-size: 12px; border-radius: 6px; border: 1px solid #fbbf24;
+                           background: transparent; color: #fbbf24; }
     .exercise-note { font-size: 12px; color: #6b7280; margin-top: 6px; font-style: italic; line-height: 1.4; }
 
     /* ── Day selector ────────────────────────────────── */
@@ -1180,10 +1183,17 @@ function onVariantChange(ei, value) {
 function variantPicker(ex, ei) {
   if (!hasVariants(ex)) return '';
   const cur = currentVariant(ex, ei);
+  // variants[0] is the plan's suggested move (2026-11-20): starred in the list, and
+  // when another variant is picked a one-tap line offers to go back to it.
+  const sug = ex.variants[0];
   const opts = ex.variants.map(v =>
-    `<option${v === cur ? ' selected' : ''}>${escapeHtml(v)}</option>`).join('');
-  return `<select class="variant-select" onchange="onVariantChange(${ei}, this.value)">${opts}</select>`;
+    `<option value="${escapeHtml(v)}"${v === cur ? ' selected' : ''}>${v === sug ? '★ ' : ''}${escapeHtml(v)}${v === sug ? ' (suggested)' : ''}</option>`).join('');
+  const hint = cur !== sug
+    ? `<div class="variant-hint">Suggested: ${escapeHtml(sug)} <button type="button" onclick="useSuggested(${ei})">Switch</button></div>`
+    : '';
+  return `<select class="variant-select" onchange="onVariantChange(${ei}, this.value)">${opts}</select>${hint}`;
 }
+function useSuggested(ei) { onVariantChange(ei, plan.exercises[ei].variants[0]); }
 
 // Some entries are timed or measured in distance rather than reps (suitcase holds,
 // carries). `unit` on the plan entry relabels the field so the log stops calling
