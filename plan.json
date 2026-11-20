@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-19",
+  "generated": "2026-11-20",
   "recommended_day": "C",
   "warmup": [
     {
@@ -191,29 +191,51 @@
           "name": "Hip Thrust",
           "target_sets": 3,
           "target_reps": "12",
-          "target_weight_kg": 35,
+          "target_weight_kg": 40,
           "rest_sec": 90,
-          "notes": "BARBELL numbers (the variant you use): 30x12 x3 at RPE 7 on 11-18 -> 35. Chin tucked, shins vertical at the top, tuck the pelvis and squeeze 2 s, stop at neutral. Other variants: this weight does not carry over.",
+          "notes": "Machine / glute drive. No recent log: 40 is a starting guess, adjust on set 1 and log what you used. Chin tucked, squeeze 2 s at the top, stop at neutral.",
           "variants": [
             "Hip thrust machine / glute drive",
             "Smith hip thrust",
             "Barbell hip thrust"
-          ]
+          ],
+          "variant_targets": {
+            "Barbell hip thrust": {
+              "target_sets": 3,
+              "target_reps": "12",
+              "target_weight_kg": 35,
+              "notes": "30x12 x3 at RPE 7 on 11-18 -> 35. Chin tucked, shins vertical at the top, tuck the pelvis and squeeze 2 s, stop at neutral."
+            }
+          }
         },
         {
           "name": "Squat Machine",
           "target_sets": 2,
-          "target_reps": "10",
-          "target_weight_kg": 30,
+          "target_reps": "8",
           "rest_sec": 120,
-          "notes": "REVERSE HACK numbers (the variant you use): 30x8 both sets at RPE 8 on 11-18 -> same 30, aim for 10 reps. At 2x10 go to 35 and back to 8. Other variants: this weight does not carry over.",
+          "notes": "Pendulum squat: no log yet. Pick a load for 8 reps at about RPE 7; the next plan starts from it.",
           "variants": [
             "Pendulum squat",
             "Perfect squat (Matrix)",
             "Hack squat",
             "Reverse hack squat",
             "Barbell box squat"
-          ]
+          ],
+          "variant_targets": {
+            "Reverse hack squat": {
+              "target_sets": 2,
+              "target_reps": "10",
+              "target_weight_kg": 30,
+              "notes": "30x8 both sets at RPE 8 on 11-18 -> same 30, aim for 10 reps. At 2x10 go to 35 and back to 8."
+            },
+            "Hack squat": {
+              "target_sets": 2,
+              "target_reps": "8",
+              "target_weight_kg": 25,
+              "notes": "20x8 at RPE 6 on 10-29 -> 25 (+2.5 per side)."
+            }
+          },
+          "target_weight_kg": null
         },
         {
           "name": "Machine Seated Row",
@@ -235,11 +257,19 @@
           "unit": "reps/side",
           "target_weight_kg": 24,
           "rest_sec": 60,
-          "notes": "Your call 11-18: stay at 18-24 until the technique is solid (30 was too much). Either direction is fine; turn through the ribs, back heel pivots, hips quiet.",
+          "notes": "High to low. Your call 11-18: stay at 18-24 until the technique is solid. Turn through the ribs, back heel pivots, hips quiet.",
           "variants": [
             "High-to-low cable woodchop",
             "Low-to-high cable woodchop"
-          ]
+          ],
+          "variant_targets": {
+            "Low-to-high cable woodchop": {
+              "target_sets": 2,
+              "target_reps": "12",
+              "target_weight_kg": 24,
+              "notes": "30 then 24 at RPE 9 on 11-18. Your call: stay at 18-24 until the technique is solid."
+            }
+          }
         },
         {
           "name": "Lying Incline DB Curl (drop set)",
@@ -342,11 +372,19 @@
           "target_reps": "12",
           "target_weight_kg": 30,
           "rest_sec": 90,
-          "notes": "NEW. Rope on the low pulley, face away, rope between your legs. Push the hips back until the hamstrings are stretched, knees soft, then stand up by squeezing the glutes. Stop at neutral, no leaning back. The deep stretch at the bottom is what builds the lower glute. 25x12 was RPE 6 -> 30; if 12 is RPE 7 or easier, +5. DB RDL variant: start 2 x 17.5, weights do not carry.",
+          "notes": "NEW. Rope on the low pulley, face away, rope between your legs. Push the hips back until the hamstrings are stretched, knees soft, then stand up by squeezing the glutes. Stop at neutral, no leaning back. The deep stretch at the bottom is what builds the lower glute. 25x12 was RPE 6 -> 30; if 12 is RPE 7 or easier, +5.",
           "variants": [
             "Cable pull-through",
             "DB Romanian deadlift"
-          ]
+          ],
+          "variant_targets": {
+            "DB Romanian deadlift": {
+              "target_sets": 3,
+              "target_reps": "12",
+              "target_weight_kg": 15,
+              "notes": "15x12 x3 at RPE 9 on 11-17, felt in the lower back. Hold 15. Push the hips back, shins still, stop the set when you lose the glute squeeze."
+            }
+          }
         },
         {
           "name": "Weighted Dip",
@@ -383,7 +421,15 @@
             "DB",
             "Kettlebell"
           ],
-          "unit": "s/side"
+          "unit": "s/side",
+          "variant_targets": {
+            "Kettlebell": {
+              "target_sets": 3,
+              "target_reps": "75",
+              "target_weight_kg": 24,
+              "notes": "24 kg x 60 s at RPE 6 on 10-30 -> 75 s."
+            }
+          }
         },
         {
           "name": "Lateral Raise (drop set)",
