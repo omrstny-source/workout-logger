@@ -1,0 +1,158 @@
+{
+  "date": "2026-11-21",
+  "day_type": "C",
+  "planned_date": "2026-11-07",
+  "exercises": [
+    {
+      "name": "Pull-Up Parallel Close Grip - top set",
+      "target_sets": 1,
+      "target_reps": "5",
+      "target_weight_kg": 7.5,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 5,
+          "weight_kg": 7.5
+        }
+      ],
+      "rpe_last_set": 7,
+      "notes": ""
+    },
+    {
+      "name": "Pull-Up Parallel Close Grip - back-off",
+      "target_sets": 2,
+      "target_reps": "5",
+      "target_weight_kg": 0,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 5,
+          "weight_kg": 0
+        },
+        {
+          "set": 2,
+          "reps": 5,
+          "weight_kg": 0
+        }
+      ],
+      "rpe_last_set": 7,
+      "notes": ""
+    },
+    {
+      "name": "45 Back Extension (stop at neutral)",
+      "target_sets": 3,
+      "target_reps": "12",
+      "target_weight_kg": 0,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 12,
+          "weight_kg": 0
+        },
+        {
+          "set": 2,
+          "reps": 12,
+          "weight_kg": 0
+        },
+        {
+          "set": 3,
+          "reps": 12,
+          "weight_kg": 0
+        }
+      ],
+      "rpe_last_set": 7,
+      "notes": ""
+    },
+    {
+      "name": "DB Incline Bench Press",
+      "target_sets": 3,
+      "target_reps": "10",
+      "target_weight_kg": 22.5,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 10,
+          "weight_kg": 22.5
+        },
+        {
+          "set": 2,
+          "reps": 10,
+          "weight_kg": 22.5
+        },
+        {
+          "set": 3,
+          "reps": 9,
+          "weight_kg": 22.5
+        }
+      ],
+      "rpe_last_set": 10,
+      "variant": "DB incline",
+      "notes": ""
+    },
+    {
+      "name": "Cable Woodchop",
+      "target_sets": 3,
+      "target_reps": "12",
+      "target_weight_kg": 24,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 12,
+          "weight_kg": 24
+        },
+        {
+          "set": 2,
+          "reps": 12,
+          "weight_kg": 24
+        },
+        {
+          "set": 3,
+          "reps": 12,
+          "weight_kg": 24
+        }
+      ],
+      "rpe_last_set": 8,
+      "variant": "High-to-low cable woodchop",
+      "notes": ""
+    },
+    {
+      "name": "Hammer Curl",
+      "target_sets": 3,
+      "target_reps": "10",
+      "target_weight_kg": 15,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 10,
+          "weight_kg": 15
+        },
+        {
+          "set": 2,
+          "reps": 10,
+          "weight_kg": 15
+        },
+        {
+          "set": 3,
+          "reps": 10,
+          "weight_kg": 15
+        }
+      ],
+      "rpe_last_set": 9,
+      "variant": "DB",
+      "notes": ""
+    }
+  ],
+  "warmup_completed": [
+    "Elephant walk",
+    "Calf + soleus stretch",
+    "Supported deep squat hold",
+    "Lunge pulses + couch stretch",
+    "Active hamstring stretch",
+    "Kneeling rock-back",
+    "90/90 push-up",
+    "Elevated pancake"
+  ],
+  "warmup_mode": "full",
+  "session_notes": "",
+  "duration_min": 45
+}
