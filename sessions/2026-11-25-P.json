@@ -1,0 +1,137 @@
+{
+  "date": "2026-11-25",
+  "day_type": "P",
+  "planned_date": "2026-11-25",
+  "exercises": [
+    {
+      "name": "Chest Press - light",
+      "target_sets": 2,
+      "target_reps": "20",
+      "target_weight_kg": 40,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 20,
+          "weight_kg": 36
+        },
+        {
+          "set": 2,
+          "reps": 20,
+          "weight_kg": 36
+        }
+      ],
+      "rpe_last_set": 6,
+      "variant": "Plate loaded bench",
+      "notes": ""
+    },
+    {
+      "name": "Lat Pulldown - light",
+      "target_sets": 2,
+      "target_reps": "20",
+      "target_weight_kg": 35,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 20,
+          "weight_kg": 38
+        },
+        {
+          "set": 2,
+          "reps": 20,
+          "weight_kg": 35
+        }
+      ],
+      "rpe_last_set": 5,
+      "variant": "Cable lat pulldown",
+      "notes": ""
+    },
+    {
+      "name": "Seated Row - light",
+      "target_sets": 2,
+      "target_reps": "20",
+      "target_weight_kg": 10,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 20,
+          "weight_kg": 21
+        },
+        {
+          "set": 2,
+          "reps": 20,
+          "weight_kg": 21
+        }
+      ],
+      "rpe_last_set": 5,
+      "variant": "Machine seated row",
+      "notes": ""
+    },
+    {
+      "name": "Lateral Raise - light",
+      "target_sets": 2,
+      "target_reps": "20",
+      "target_weight_kg": 2.5,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 20,
+          "weight_kg": 2.5
+        },
+        {
+          "set": 2,
+          "reps": 20,
+          "weight_kg": 2.5
+        }
+      ],
+      "rpe_last_set": 7,
+      "variant": "DB",
+      "notes": ""
+    },
+    {
+      "name": "Biceps Curl - light",
+      "target_sets": 2,
+      "target_reps": "20",
+      "target_weight_kg": 15,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 20,
+          "weight_kg": 15
+        },
+        {
+          "set": 2,
+          "reps": 20,
+          "weight_kg": 20
+        }
+      ],
+      "rpe_last_set": 4,
+      "variant": "Machine preacher",
+      "notes": ""
+    },
+    {
+      "name": "Triceps Pushdown - light",
+      "target_sets": 2,
+      "target_reps": "20",
+      "target_weight_kg": 20,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 20,
+          "weight_kg": 15
+        },
+        {
+          "set": 2,
+          "reps": 11,
+          "weight_kg": 15
+        }
+      ],
+      "rpe_last_set": 7,
+      "variant": "Rope pushdown",
+      "notes": ""
+    }
+  ],
+  "warmup_completed": [],
+  "warmup_mode": "full",
+  "session_notes": "",
+  "duration_min": 42
+}
