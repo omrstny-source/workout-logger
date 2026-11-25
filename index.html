@@ -925,8 +925,8 @@ function renderDaySelector() {
     const rec   = d === planFile.recommended_day ? '  ★ suggested next' : '';
     // Show the gap that produced the suggestion, so the star is never a mystery.
     const n     = daysSince(dayHistory && dayHistory[d]);
-    // Home is not in the rotation, so "never done" would read as a nudge to do it.
-    const ago   = !dayHistory || (d === 'H' && n === null) ? ''
+    // Home and Light are not in the rotation, so "never done" would read as a nudge to do them.
+    const ago   = !dayHistory || (!ROTATION.includes(d) && n === null) ? ''
                 : (n === null ? '  (never done)' : `  (${n}d ago)`);
     return `<option value="${d}"${d === currentDay ? ' selected' : ''}>${label}${rec}${ago}</option>`;
   }).join('');
@@ -971,13 +971,15 @@ function renderDayProgress() {
 function setKey(ei, si, day) { return `s_${day || currentDay}_${ei}_${si}`; }
 
 // ─── Render session ────────────────────────────────────────────────────────────
-const DAY_LABELS = { A: 'Overhead', B: 'Chest', C: 'Back + Hinge', D: 'Carry + Core', H: 'missed gym' };
+const DAY_LABELS = { A: 'Overhead', B: 'Chest', C: 'Back + Hinge', D: 'Carry + Core', P: 'florbal day', H: 'missed gym' };
 
 // Day H is the home/hotel stand-in for a missed gym session. It is selectable and
 // logged like any day, but it never takes part in the A -> B -> C suggestion:
 // a home session does not mean the gym day it replaced was trained.
 const ROTATION = ['A', 'B', 'C', 'D'];
-function dayShort(d) { return d === 'H' ? 'Home' : `Day ${d}`; }
+// Day P (2026-11-25) is the light upper-body pump day for florbal evenings. Like H it
+// sits outside the rotation: it does not count as the full day it stands in for.
+function dayShort(d) { return d === 'H' ? 'Home' : d === 'P' ? 'Light' : `Day ${d}`; }
 function dayTitle(d) { return `${dayShort(d)} — ${DAY_LABELS[d] || ''}`.replace(/ — $/, ''); }
 
 function renderSession() {
