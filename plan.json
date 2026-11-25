@@ -1,6 +1,6 @@
 {
-  "generated": "2026-11-24",
-  "recommended_day": "B",
+  "generated": "2026-11-25",
+  "recommended_day": "C",
   "warmup": [
     {
       "name": "Elephant walk",
@@ -167,15 +167,15 @@
     "B": {
       "date": "2026-11-24",
       "day_type": "B",
-      "session_notes": "NEW: the machine row becomes a single-arm cable row to the hip (lower lats, the back part of your side), 2x12 per side, pick the load. Bench top holds at 80 (you jumped +2.5/side, no 1.25 plates). Hip thrust 30 -> 35, reverse hack 30 for 2x10, woodchop 24. Hip Thrust stays 2nd, right after bench: it is your main glute lift. Short on time: cut the row, never the hip thrust.",
+      "session_notes": "Bench top 80 now for 4 reps, back-off set 1 up to 67.5, reverse hack 30 -> 35 (2x8), hip thrust holds at 40 (RPE 9), cable row starts at 15. Hip Thrust stays 2nd, right after bench: it is your main glute lift. Short on time: cut the row, never the hip thrust.",
       "exercises": [
         {
           "name": "Plate Loaded Bench Press - top set",
           "target_sets": 1,
-          "target_reps": "3",
+          "target_reps": "4",
           "target_weight_kg": 80,
           "rest_sec": 180,
-          "notes": "80x3 at RPE 9 on 11-18 (you went +2.5 per side: no 1.25 plates). Hold 80 until it is RPE 7-8. Next jump is 85 (+2.5 per side), so add a 4th rep before that.",
+          "notes": "80x3 at RPE 8 on 11-24 (was RPE 9 on 11-18). Now 80x4: earn the 4th rep before the jump to 85 (+2.5 per side, no 1.25 plates).",
           "variants": [
             "Plate loaded bench",
             "Chest press machine",
@@ -186,22 +186,30 @@
           "name": "Plate Loaded Bench Press - back-off",
           "target_sets": 2,
           "target_reps": "7",
-          "target_weight_kg": 62.5,
+          "target_weight_kg": 67.5,
           "rest_sec": 120,
-          "notes": "62.5x7 both sets, RPE 8 on 11-18. Hold until both sets are RPE 7. First rep of each set paused 2 s.",
+          "notes": "62.5x7 both sets, RPE 7 on 11-24. Plate step is +5, so per-set: set 1 goes to 67.5 x 7, set 2 stays 62.5 x 7. When set 1 at 67.5 is RPE 8 or less, move set 2 up too. First rep of each set paused 2 s.",
           "variants": [
             "Plate loaded bench",
             "Chest press machine",
             "Smith flat bench"
+          ],
+          "sets": [
+            {
+              "weight_kg": 67.5
+            },
+            {
+              "weight_kg": 62.5
+            }
           ]
         },
         {
           "name": "Hip Thrust",
           "target_sets": 3,
           "target_reps": "12",
-          "target_weight_kg": 35,
+          "target_weight_kg": 40,
           "rest_sec": 90,
-          "notes": "30x12 x3 at RPE 7 on 11-18 -> 35. Chin tucked, shins vertical at the top, tuck the pelvis and squeeze 2 s, stop at neutral.",
+          "notes": "40x12 x3 at RPE 9 on 11-24 (you went above the 35 target). Hold 40 until it is RPE 8 or less, then 45. Chin tucked, shins vertical at the top, tuck the pelvis and squeeze 2 s, stop at neutral.",
           "variants": [
             "Barbell hip thrust",
             "Hip thrust machine / glute drive",
@@ -219,9 +227,9 @@
         {
           "name": "Squat Machine",
           "target_sets": 2,
-          "target_reps": "10",
+          "target_reps": "8",
           "rest_sec": 120,
-          "notes": "30x8 both sets at RPE 8 on 11-18 -> same 30, aim for 10 reps. At 2x10 go to 35 and back to 8.",
+          "notes": "30x10 both sets at RPE 7 on 11-24 -> 35, back to 8 reps. Build to 2x10 at 35, then 40 and back to 8.",
           "variants": [
             "Reverse hack squat",
             "Hack squat",
@@ -235,13 +243,13 @@
               "notes": "20x8 at RPE 6 on 10-29 -> 25 (+2.5 per side)."
             }
           },
-          "target_weight_kg": 30
+          "target_weight_kg": 35
         },
         {
           "name": "Seated Row",
           "target_sets": 2,
           "target_reps": "12",
-          "target_weight_kg": null,
+          "target_weight_kg": 15,
           "unit": "reps/side",
           "rest_sec": 60,
           "variants": [
@@ -257,7 +265,7 @@
               "notes": "20x12 (3rd set not logged 11-18). Hold at 20 (your cap)."
             }
           },
-          "notes": "NEW 11-24, for the back part of your side: this row works the LOWER lats, which attach on the hip bone and the low back. Low cable, one handle, seated or half-kneeling. Start long with the shoulder pulled forward, then drive the ELBOW back and DOWN to your hip pocket, not up to the armpit. Torso stays square, no twisting to finish (that makes the obliques work too). 2 s back to the stretch. No load yet: pick one for 12 at about RPE 7 and log it. 2 sets per side, so it costs about the same time as the 3 machine sets. Still the first thing to cut when short on time."
+          "notes": "NEW 11-24, for the back part of your side: this row works the LOWER lats, which attach on the hip bone and the low back. Low cable, one handle, seated or half-kneeling. Start long with the shoulder pulled forward, then drive the ELBOW back and DOWN to your hip pocket, not up to the armpit. Torso stays square, no twisting to finish (that makes the obliques work too). 2 s back to the stretch. First log 11-24: 15x12 per side at RPE 9. Hold 15 until it is RPE 8 or less, then 20. 2 sets per side, so it costs about the same time as the 3 machine sets. Still the first thing to cut when short on time."
         },
         {
           "name": "Cable Woodchop",
@@ -286,7 +294,7 @@
           "target_reps": "to failure",
           "target_weight_kg": 12.5,
           "rest_sec": 0,
-          "notes": "Skipped on 11-18 (barbell curls in the hip-thrust rests instead, fine on a short day). Start at 12.5 -> 7.5 -> 5; the drop set is the stronger biceps hit when you have the 3 minutes.",
+          "notes": "Done 11-24: 10, 10, 14 reps to failure (loads not logged, assumed 12.5 -> 7.5 -> 5). Hold 12.5 -> 7.5 -> 5; log the loads next time.",
           "sets": [
             {
               "weight_kg": 12.5
