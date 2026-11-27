@@ -498,7 +498,7 @@
     "P": {
       "date": "2026-11-26",
       "day_type": "P",
-      "session_notes": "Pulldown +5 (40), curl +5 (20), pushdown -5 (15, set 2 fell to 11), chest press stays 40, raise holds 2.5, row held at 10 (see flag). NEW: light day for florbal evenings. Upper body only, 2 x 20 per exercise, every set stops with ~4 reps left (RPE 6). No drop sets, no failure, no legs, no core: florbal covers those tonight. About 35 min with the warm-up. It does not move the A-B-C-D rotation: your next full day stays the starred one. Progress: both sets hit 20 at RPE 6 or less, next time one step up. A set that hits RPE 8: drop a step.",
+      "session_notes": "Light day for florbal evenings, now machines only: pin in, no plates. Big lifts 2 x 10, small lifts 2 x 12, every set stops with 3-4 reps left (RPE 6-7). Heavier weight for fewer reps grows more muscle than light 20-rep sets when you stop short of failure, and it tires you less before florbal. No drop sets, no legs, no core. About 30 min with the warm-up. It does not move the A-B-C-D rotation. Progress: both sets hit the target at RPE 6 or less, next time one pin down the stack. RPE 8 or missed reps: one pin up. No weight shown = new machine: pick one where rep 10 leaves 3-4 in the tank, the app remembers it.",
       "warmup": [
         {
           "name": "Lunge pulses + couch stretch",
@@ -513,30 +513,38 @@
         {
           "name": "Ramp set",
           "dose": "10 reps at half weight",
-          "note": "One easy set on the chest press and one on the pulldown before the first working set."
+          "note": "One easy set of 10 on the chest press and one on the pulldown, about half the working pin, before the first working set."
         }
       ],
       "exercises": [
         {
           "name": "Chest Press - light",
           "target_sets": 2,
-          "target_reps": "20",
-          "target_weight_kg": 40,
-          "rest_sec": 75,
-          "notes": "40 kg is about 60% of your bench back-off load. Stop with 4 reps left in the tank (RPE 6). Never to failure.",
+          "target_reps": "10",
+          "target_weight_kg": null,
+          "rest_sec": 90,
+          "notes": "New machine, no log yet: pick a pin where rep 10 leaves 3-4 in the tank. Handles at mid-chest. Stop with 3-4 reps left (RPE 6-7). Never to failure.",
           "variants": [
-            "Plate loaded bench",
             "Chest press machine",
+            "Plate loaded bench",
             "DB flat press"
-          ]
+          ],
+          "variant_targets": {
+            "Plate loaded bench": {
+              "target_sets": 2,
+              "target_reps": "10",
+              "target_weight_kg": 45,
+              "notes": "You did 36 x 20 at RPE 6 on 11-25, so about 45 x 10 lands at RPE 6-7. Stop with 3-4 reps left (RPE 6-7). Never to failure."
+            }
+          }
         },
         {
           "name": "Lat Pulldown - light",
           "target_sets": 2,
-          "target_reps": "20",
-          "target_weight_kg": 40,
-          "rest_sec": 75,
-          "notes": "Day A works at 50 x 10, this is 40 x 20. Elbows to the back pockets. Stop with 4 reps left in the tank (RPE 6). Never to failure.",
+          "target_reps": "10",
+          "target_weight_kg": 45,
+          "rest_sec": 90,
+          "notes": "You pulled 38 x 20 at RPE 5 on 11-25, so 45 x 10 lands at about RPE 6-7. Elbows to the back pockets. Stop with 3-4 reps left (RPE 6-7). Never to failure.",
           "variants": [
             "Cable lat pulldown",
             "Plate loaded pulldown"
@@ -545,10 +553,10 @@
         {
           "name": "Seated Row - light",
           "target_sets": 2,
-          "target_reps": "20",
-          "target_weight_kg": 10,
-          "rest_sec": 75,
-          "notes": "Well under your 20 kg machine-row cap. Chest on the pad, no swinging from the lower back. Stop with 4 reps left in the tank (RPE 6). Never to failure.",
+          "target_reps": "10",
+          "target_weight_kg": 20,
+          "rest_sec": 90,
+          "notes": "Held at 20 kg, your own cap on this machine since the 09-03 back pull. On 11-25 you did 21 x 20 at RPE 5, so 20 x 10 will feel easy: slow the lowering to 3 s instead of adding weight. Chest on the pad. Stop with 3-4 reps left (RPE 6-7). Never to failure.",
           "variants": [
             "Machine seated row",
             "Chest-supported T-bar row",
@@ -558,23 +566,31 @@
         {
           "name": "Lateral Raise - light",
           "target_sets": 2,
-          "target_reps": "20",
-          "target_weight_kg": 2.5,
+          "target_reps": "12",
+          "target_weight_kg": null,
           "rest_sec": 60,
-          "notes": "5 kg x 15 has rated RPE 8-9 for you, so 20 reps at RPE 6 means 2.5 kg (or the lightest cable stack). Stop with 4 reps left in the tank (RPE 6). Never to failure.",
+          "notes": "New machine, no log yet: pick a pin where rep 12 leaves 3-4 in the tank. Lead with the elbows. Stop with 3-4 reps left (RPE 6-7). Never to failure.",
           "variants": [
-            "DB",
+            "Machine",
             "Cable",
-            "Machine"
-          ]
+            "DB"
+          ],
+          "variant_targets": {
+            "DB": {
+              "target_sets": 2,
+              "target_reps": "12",
+              "target_weight_kg": 5,
+              "notes": "You did 2.5 x 20 at RPE 7 on 11-25; 5 x 12 should land near RPE 7. Stop with 3-4 reps left (RPE 6-7). Never to failure."
+            }
+          }
         },
         {
           "name": "Biceps Curl - light",
           "target_sets": 2,
-          "target_reps": "20",
-          "target_weight_kg": 20,
+          "target_reps": "12",
+          "target_weight_kg": 25,
           "rest_sec": 60,
-          "notes": "Your preacher drop sets finish at 15-20 kg, and 20 x 20 rated RPE 4 on 11-25, so 20 x 20 should land near RPE 6. Straight sets, no drops. Stop with 4 reps left in the tank (RPE 6). Never to failure.",
+          "notes": "You did 20 x 20 at RPE 4 on 11-25, so 25 x 12 lands at about RPE 6-7. Straight sets, no drops. Stop with 3-4 reps left (RPE 6-7). Never to failure.",
           "variants": [
             "Machine preacher",
             "Cable curl",
@@ -584,10 +600,10 @@
         {
           "name": "Triceps Pushdown - light",
           "target_sets": 2,
-          "target_reps": "20",
+          "target_reps": "12",
           "target_weight_kg": 15,
           "rest_sec": 60,
-          "notes": "Rope. You did 3 x 15 at 25 in June; 15 x 20 sits well below that. Elbows pinned to your sides. Stop with 4 reps left in the tank (RPE 6). Never to failure.",
+          "notes": "On 11-25 set 2 fell to 11 reps at 15 kg, so this stack is heavier than the June one. 15 x 12 for now; if both sets feel like RPE 5, go to 20 next time. Elbows pinned to your sides. Stop with 3-4 reps left (RPE 6-7). Never to failure.",
           "variants": [
             "Rope pushdown",
             "Straight bar pushdown"
