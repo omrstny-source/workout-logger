@@ -554,14 +554,16 @@
           "name": "Seated Row - light",
           "target_sets": 2,
           "target_reps": "10",
-          "target_weight_kg": 20,
-          "rest_sec": 90,
-          "notes": "Held at 20 kg, your own cap on this machine since the 09-03 back pull. On 11-25 you did 21 x 20 at RPE 5, so 20 x 10 will feel easy: slow the lowering to 3 s instead of adding weight. Chest on the pad. Stop with 3-4 reps left (RPE 6-7). Never to failure.",
+          "target_weight_kg": 15,
+          "rest_sec": 60,
+          "notes": "Single-arm cable row, your pick. Day B works at 15 x 12/side (RPE 9), so 15 x 10/side lands at about RPE 7. Pull the elbow to the hip, not the armpit: that is the lower lats. Stop with 3-4 reps left (RPE 6-7). Never to failure.",
           "variants": [
-            "Machine seated row",
+            "Single-arm cable row to hip",
+            "Seated cable row (both arms)",
             "Chest-supported T-bar row",
-            "Single-arm cable row to hip"
-          ]
+            "Machine seated row"
+          ],
+          "unit": "reps/side"
         },
         {
           "name": "Lateral Raise - light",
