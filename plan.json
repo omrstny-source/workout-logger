@@ -1,6 +1,6 @@
 {
-  "generated": "2026-11-26",
-  "recommended_day": "C",
+  "generated": "2026-11-27",
+  "recommended_day": "A",
   "warmup": [
     {
       "name": "Elephant walk",
@@ -381,15 +381,15 @@
     "D": {
       "date": "2026-11-24",
       "day_type": "D",
-      "session_notes": "Suitcase hold goes to 30 kg x 75 s (30 x 60 was RPE 6). Dip holds at 5 (RPE 8), face pull holds at 45 (RPE 8), lateral raise holds at 7.5. NEW 11-20: the hinge slot (pull-through / DB RDL) is gone and a second, heavier hip thrust replaces it: 3 x 8 here vs 3 x 12 on B. Glutes now get two hip thrust days a week with the spine supported. Leave at least one day between B and D so the glutes recover. Also NEW 11-20: Lying Leg Curl, alternated with Face Pull (two separate entries, done back and forth).",
+      "session_notes": "Hip thrust 40 -> 45, dip 5 -> 7.5, lateral raise first drop 7.5 -> 10; seated leg curl 50 and reverse pec deck 19 hold (RPE 9), suitcase holds 30 x 75 s (RPE 9). 11-27: you switched to seated leg curl (lying pulled hair/skin, no full range) and reverse pec deck (more rear delt than face pull); both now have their own targets. Hip thrust - heavy is 3 x 8 here vs 3 x 12 on B, leave at least one day between B and D so the glutes recover. Lying Leg Curl alternates with Face Pull (curl set, face pull set, back).",
       "exercises": [
         {
           "name": "Hip Thrust - heavy",
           "target_sets": 3,
           "target_reps": "8",
-          "target_weight_kg": 40,
+          "target_weight_kg": 45,
           "rest_sec": 120,
-          "notes": "NEW: second glute day, heavier and fewer reps than B (B is 3 x 12). 40 is a guess from 30x12 at RPE 7 on B: if set 1 feels RPE 9 or harder, drop to 35. Chin tucked, shins vertical at the top, tuck the pelvis, 1 s squeeze, stop at neutral, no arching.",
+          "notes": "40 x 10/10/10 at RPE 8 (target 8) -> 45. Second glute day, heavier and fewer reps than B (B is 3 x 12). Chin tucked, shins vertical at the top, tuck the pelvis, 1 s squeeze, stop at neutral, no arching.",
           "variants": [
             "Barbell hip thrust",
             "Smith hip thrust",
@@ -400,9 +400,9 @@
           "name": "Weighted Dip",
           "target_sets": 3,
           "target_reps": "8",
-          "target_weight_kg": 5,
+          "target_weight_kg": 7.5,
           "rest_sec": 90,
-          "notes": "5 kg 3x8 at RPE 8. Hold. Stop at ~90 degrees elbow, slight forward lean.",
+          "notes": "5 kg 3x8 at RPE 7 -> 7.5. Stop at ~90 degrees elbow, slight forward lean.",
           "variants": [
             "Weighted dip",
             "Seated dip machine"
@@ -418,7 +418,15 @@
           "variants": [
             "Lying leg curl",
             "Seated leg curl"
-          ]
+          ],
+          "variant_targets": {
+            "Seated leg curl": {
+              "target_sets": 3,
+              "target_reps": "10-12",
+              "target_weight_kg": 50,
+              "notes": "First log 11-27: 50 x 12/12/12 at RPE 9. Hold 50 until the last set is RPE 8 or less. Lean back slightly (you feel it nearer the glutes), 2 s on the way down."
+            }
+          }
         },
         {
           "name": "Face Pull",
@@ -430,7 +438,15 @@
           "variants": [
             "Cable rope face pull",
             "Reverse pec deck"
-          ]
+          ],
+          "variant_targets": {
+            "Reverse pec deck": {
+              "target_sets": 3,
+              "target_reps": "12",
+              "target_weight_kg": 19,
+              "notes": "First log 11-27: 19 x 12/12/12 at RPE 9. Hold 19 until the last set is RPE 8 or less."
+            }
+          }
         },
         {
           "name": "Suitcase Hold (straps)",
@@ -438,7 +454,7 @@
           "target_reps": "75",
           "target_weight_kg": 30,
           "rest_sec": 60,
-          "notes": "3 sets for the obliques. 30 kg x 60 s per side was RPE 6, so 75 s now. If the gym has no 30, hold 27.5 for 75 s (log the weight). Stand tall, do not lean away from the bell. This also loads the quadratus lumborum, the deep muscle on the back part of your side, on the side opposite the bell.",
+          "notes": "3 sets for the obliques. 30 kg x 75 s per side was RPE 9 (11-27): hold 75 s. If the gym has no 30, hold 27.5 for 75 s (log the weight). Stand tall, do not lean away from the bell. This also loads the quadratus lumborum, the deep muscle on the back part of your side, on the side opposite the bell.",
           "variants": [
             "DB",
             "Kettlebell"
@@ -457,9 +473,9 @@
           "name": "Lateral Raise (drop set)",
           "target_sets": 3,
           "target_reps": "to failure",
-          "target_weight_kg": 7.5,
+          "target_weight_kg": 10,
           "rest_sec": 0,
-          "notes": "7.5 -> 5 -> 2.5. 7.5 gave 11/10/10 at RPE 10, so it holds here.",
+          "notes": "10 -> 5 -> 2.5. 7.5 gave 12/10/10 at RPE 10 (first drop hit 12), so the first load moves to 10.",
           "variants": [
             "DB",
             "Cable",
@@ -467,7 +483,7 @@
           ],
           "sets": [
             {
-              "weight_kg": 7.5
+              "weight_kg": 10
             },
             {
               "weight_kg": 5
