@@ -1,0 +1,170 @@
+{
+  "date": "2026-11-27",
+  "day_type": "D",
+  "planned_date": "2026-11-24",
+  "exercises": [
+    {
+      "name": "Hip Thrust - heavy",
+      "target_sets": 3,
+      "target_reps": "8",
+      "target_weight_kg": 40,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 10,
+          "weight_kg": 40
+        },
+        {
+          "set": 2,
+          "reps": 10,
+          "weight_kg": 40
+        },
+        {
+          "set": 3,
+          "reps": 10,
+          "weight_kg": 40
+        }
+      ],
+      "rpe_last_set": 8,
+      "variant": "Barbell hip thrust",
+      "notes": ""
+    },
+    {
+      "name": "Weighted Dip",
+      "target_sets": 3,
+      "target_reps": "8",
+      "target_weight_kg": 5,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 8,
+          "weight_kg": 5
+        },
+        {
+          "set": 2,
+          "reps": 8,
+          "weight_kg": 5
+        },
+        {
+          "set": 3,
+          "reps": 8,
+          "weight_kg": 5
+        }
+      ],
+      "rpe_last_set": 7,
+      "variant": "Weighted dip",
+      "notes": ""
+    },
+    {
+      "name": "Lying Leg Curl",
+      "target_sets": 3,
+      "target_reps": "10-12",
+      "target_weight_kg": null,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 12,
+          "weight_kg": 50
+        },
+        {
+          "set": 2,
+          "reps": 12,
+          "weight_kg": 50
+        },
+        {
+          "set": 3,
+          "reps": 12,
+          "weight_kg": 50
+        }
+      ],
+      "rpe_last_set": 9,
+      "variant": "Seated leg curl",
+      "notes": ""
+    },
+    {
+      "name": "Face Pull",
+      "target_sets": 3,
+      "target_reps": "12",
+      "target_weight_kg": null,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 12,
+          "weight_kg": 19
+        },
+        {
+          "set": 2,
+          "reps": 12,
+          "weight_kg": 19
+        },
+        {
+          "set": 3,
+          "reps": 12,
+          "weight_kg": 19
+        }
+      ],
+      "rpe_last_set": 9,
+      "variant": "Reverse pec deck",
+      "notes": ""
+    },
+    {
+      "name": "Suitcase Hold (straps)",
+      "target_sets": 3,
+      "target_reps": "75",
+      "target_weight_kg": 30,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 75,
+          "weight_kg": 30
+        },
+        {
+          "set": 2,
+          "reps": 75,
+          "weight_kg": 30
+        },
+        {
+          "set": 3,
+          "reps": 75,
+          "weight_kg": 30
+        }
+      ],
+      "rpe_last_set": 9,
+      "variant": "DB",
+      "notes": ""
+    },
+    {
+      "name": "Lateral Raise (drop set)",
+      "target_sets": 3,
+      "target_reps": "to failure",
+      "target_weight_kg": 7.5,
+      "sets": [
+        {
+          "set": 1,
+          "reps": 12,
+          "weight_kg": 7.5
+        },
+        {
+          "set": 2,
+          "reps": 10,
+          "weight_kg": 5
+        },
+        {
+          "set": 3,
+          "reps": 10,
+          "weight_kg": 2.5
+        }
+      ],
+      "rpe_last_set": 10,
+      "variant": "DB",
+      "notes": ""
+    }
+  ],
+  "warmup_completed": [
+    "Elephant walk",
+    "Lunge pulses + couch stretch"
+  ],
+  "warmup_mode": "quick",
+  "session_notes": "lying leg curl bad pulls on my hair and skin on leg so the limit is uncomfotabulity not weight and cannot go full range of motion so went to seated, doing seated curl leaned back makes me feel hamstrings closer to my glutes which seems preferable, wanted to try reverse peck deck and I feel the back and back shoulder more then on face pull, suitcase hold is not great even with straps the most limiting factor are my wrist I do feel side muscles but i feel my forarms more I do the furst rep without straps tho...ok I take that back the right miscles are firing well and it feels good but it does feel more like stability excersize then muscle growing one,",
+  "duration_min": 52
+}
